@@ -403,59 +403,54 @@ const Index = () => {
                   <p className="text-lg text-gray-700 leading-relaxed">
                     Mit ATB.LAW haben wir unsere Vision einer modernen und innovativen Anwalts­kanzlei verwirklicht. Wir sind ein Team mit gemeinsamen Werten und Zielen. Uns ist wichtig, dass unsere Mandant:innen nicht nur die bestmögliche Rechts­beratung erhalten, sondern sich auch als geschätzte Partner fühlen.
                   </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="flex items-center gap-2 px-4 py-3 bg-blue-100 rounded-xl">
-                      <CheckCircle className="h-5 w-5 text-blue-600" />
-                      <span className="text-blue-800 font-medium">Modern & Innovativ</span>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span className="text-gray-800 font-medium">Modern & Innovativ</span>
                     </div>
-                    <div className="flex items-center gap-2 px-4 py-3 bg-blue-100 rounded-xl">
-                      <Heart className="h-5 w-5 text-blue-600" />
-                      <span className="text-blue-800 font-medium">Geschätzte Partner</span>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span className="text-gray-800 font-medium">Geschätzte Partnerschaft</span>
                     </div>
-                    <div className="flex items-center gap-2 px-4 py-3 bg-green-100 rounded-xl">
-                      <Award className="h-5 w-5 text-green-600" />
-                      <span className="text-green-800 font-medium">Bestmögliche Beratung</span>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span className="text-gray-800 font-medium">Bestmögliche Rechtsberatung</span>
                     </div>
-                    <div className="flex items-center gap-2 px-4 py-3 bg-purple-100 rounded-xl">
-                      <Users className="h-5 w-5 text-purple-600" />
-                      <span className="text-purple-800 font-medium">Gemeinsame Werte</span>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <span className="text-gray-800 font-medium">Gemeinsame Werte & Ziele</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="space-y-6">
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white border-0 transition-all duration-300 hover:scale-105">
+                    <Button size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white border-0 transition-all duration-300">
                       <Phone className="mr-2 h-5 w-5" />
                       Jetzt kontaktieren
                     </Button>
-                    <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-blue-200 text-blue-700 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300">
-                      <User className="mr-2 h-5 w-5" />
+                    <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 transition-all duration-300">
                       Mehr erfahren
                     </Button>
                   </div>
                   
-                  <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border border-blue-200">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="p-2 bg-blue-600 rounded-lg">
-                        <Star className="h-5 w-5 text-white" />
-                      </div>
-                      <h3 className="text-lg font-semibold text-blue-900">Ihre Vorteile</h3>
-                    </div>
-                    <ul className="space-y-2 text-blue-800">
-                      <li className="flex items-center gap-2">
+                  <div className="border-l-4 border-blue-600 pl-6 py-4 bg-gray-50">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Ihre Vorteile</h3>
+                    <div className="space-y-2 text-gray-700">
+                      <div className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-blue-600" />
                         <span>Kostenlose Erstberatung</span>
-                      </li>
-                      <li className="flex items-center gap-2">
+                      </div>
+                      <div className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-blue-600" />
                         <span>24/7 Erreichbarkeit</span>
-                      </li>
-                      <li className="flex items-center gap-2">
+                      </div>
+                      <div className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-blue-600" />
                         <span>Erfolgsbasierte Abrechnung</span>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
