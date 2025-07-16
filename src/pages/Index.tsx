@@ -518,9 +518,9 @@ const Index = () => {
                 </CarouselItem>
               </CarouselContent>
 
-              {/* Navigation Buttons - Modern design, positioned far outside */}
-              <CarouselPrevious className="absolute -left-20 top-1/2 -translate-y-1/2 h-12 w-12 rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200" />
-              <CarouselNext className="absolute -right-20 top-1/2 -translate-y-1/2 h-12 w-12 rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200" />
+              {/* Navigation Buttons - Glasmorphic design */}
+              <CarouselPrevious className="absolute -left-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl" />
+              <CarouselNext className="absolute -right-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl" />
 
               {/* Dots Indicator */}
               <div className="flex justify-center mt-8 space-x-2">
