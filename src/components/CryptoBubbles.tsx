@@ -128,9 +128,9 @@ const CryptoBubbles = () => {
       y,
       crypto: randomCrypto.name,
       svg: randomCrypto.svg,
-      size: Math.random() * 20 + 50, // 50-70px for better visibility
+      size: Math.random() * 25 + 60, // 60-85px for better visibility
       opacity: 0,
-      scale: 0
+      scale: 0.1
     };
   };
 
@@ -142,23 +142,23 @@ const CryptoBubbles = () => {
       console.log('Creating new bubble:', newBubble);
       setBubbles(prev => [...prev, newBubble]);
       
-      // Animate bubble appearance
-      setTimeout(() => {
+      // Animate bubble appearance immediately
+      requestAnimationFrame(() => {
         setBubbles(prev => 
           prev.map(bubble => 
             bubble.id === newBubble.id 
-              ? { ...bubble, opacity: 0.9, scale: 1 }
+              ? { ...bubble, opacity: 0.85, scale: 1 }
               : bubble
           )
         );
-      }, 50);
+      });
       
       // Remove bubble after animation
       setTimeout(() => {
         setBubbles(prev => prev.filter(bubble => bubble.id !== newBubble.id));
-      }, 3500);
+      }, 4000);
       
-    }, 1000 + Math.random() * 2000); // Random interval between 1s and 3s
+    }, 800 + Math.random() * 1500); // More frequent bubbles
     
     return () => clearInterval(interval);
   }, []);
@@ -166,11 +166,11 @@ const CryptoBubbles = () => {
   console.log('Rendering bubbles:', bubbles.length);
 
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden z-20">
+    <div className="absolute inset-0 pointer-events-none overflow-hidden z-30">
       {bubbles.map((bubble) => (
         <div
           key={bubble.id}
-          className="absolute transition-all duration-500 ease-out"
+          className="absolute transition-all duration-300 ease-out"
           style={{
             left: `${bubble.x}%`,
             top: `${bubble.y}%`,
@@ -178,19 +178,19 @@ const CryptoBubbles = () => {
             height: `${bubble.size}px`,
             opacity: bubble.opacity,
             transform: `scale(${bubble.scale}) translate(-50%, -50%)`,
-            animation: `float 4s ease-in-out infinite, fadeInOut 3.5s ease-in-out forwards`,
-            zIndex: 25
+            animation: `float 4s ease-in-out infinite`,
+            zIndex: 35
           }}
         >
           <div 
-            className="w-full h-full backdrop-blur-sm rounded-full border border-white/30 flex items-center justify-center p-2 shadow-lg hover:scale-110 transition-transform duration-300"
+            className="w-full h-full backdrop-blur-sm rounded-full border flex items-center justify-center p-1 shadow-2xl"
             style={{
-              background: 'var(--gradient-glass)',
-              borderColor: 'var(--border-glass)',
-              boxShadow: 'var(--shadow-glass)'
+              background: 'rgba(255, 255, 255, 0.15)',
+              borderColor: 'rgba(255, 255, 255, 0.3)',
+              boxShadow: '0 8px 32px rgba(31, 38, 135, 0.37), 0 0 20px rgba(59, 130, 246, 0.5)'
             }}
           >
-            <div className="w-full h-full opacity-95">
+            <div className="w-full h-full flex items-center justify-center">
               {bubble.svg}
             </div>
           </div>
