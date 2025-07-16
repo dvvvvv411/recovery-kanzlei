@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera, Euro, Building2, Target } from "lucide-react";
+import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera, Euro, Building2, Target, ChevronRight, AlertTriangle, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { NewsCarousel } from "@/components/NewsCarousel";
@@ -667,49 +667,207 @@ const Index = () => {
       </Section>
 
       {/* Services Section */}
-      {/* Footer */}
-      <footer className="bg-card border-t py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <Scale className="h-6 w-6 text-primary" />
-                <span className="font-bold text-foreground">CryptoLaw</span>
+      {/* Enhanced Professional Footer */}
+      <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-orange-500/10"></div>
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent"></div>
+        
+        <div className="relative z-10">
+          {/* Main Footer Content */}
+          <div className="container mx-auto px-4 py-16">
+            <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-8 mb-12">
+              
+              {/* Company Info & Newsletter */}
+              <div className="lg:col-span-2">
+                <div className="flex items-center space-x-3 mb-6">
+                  <div className="p-2 bg-gradient-to-r from-blue-600 to-orange-500 rounded-lg">
+                    <Scale className="h-8 w-8 text-white" />
+                  </div>
+                  <div>
+                    <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+                      CryptoLaw
+                    </span>
+                    <p className="text-sm text-gray-400">Rechtsanwaltskanzlei</p>
+                  </div>
+                </div>
+                
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Spezialisiert auf Kryptowährungsrecht, Betrugswiederherstellung und Anlegerschutz. 
+                  Mit über 10 Jahren Erfahrung im Finanzrecht sind wir Ihr vertrauensvoller Partner 
+                  bei komplexen Rechtsfragen im digitalen Zeitalter.
+                </p>
+
+                {/* Newsletter Signup */}
+                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
+                  <h4 className="font-semibold mb-3 text-white">Newsletter abonnieren</h4>
+                  <p className="text-sm text-gray-400 mb-3">Bleiben Sie über aktuelle Rechtsentwicklungen informiert</p>
+                  <div className="flex gap-2">
+                    <input 
+                      type="email" 
+                      placeholder="Ihre E-Mail-Adresse" 
+                      className="flex-1 px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    <Button size="sm" className="bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600">
+                      <Mail className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
               </div>
-              <p className="text-muted-foreground text-sm">
-                Ihre Experten für Kryptowährungsrecht und Betrugswiederherstellung.
-              </p>
+
+              {/* Legal Services */}
+              <div>
+                <h3 className="font-semibold text-white mb-6 text-lg">Rechtsgebiete</h3>
+                <ul className="space-y-3">
+                  {[
+                    "Krypto-Betrug Recovery",
+                    "Blockchain-Recht",
+                    "Finanzmarktrecht",
+                    "Anlegerschutz",
+                    "Verbraucherschutz",
+                    "Zivilrecht",
+                    "Handelsrecht",
+                    "IT-Recht"
+                  ].map((service) => (
+                    <li key={service}>
+                      <a href="#" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center group">
+                        <ChevronRight className="h-3 w-3 mr-2 text-blue-400 group-hover:translate-x-1 transition-transform duration-200" />
+                        {service}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Contact Information */}
+              <div>
+                <h3 className="font-semibold text-white mb-6 text-lg">Kontakt</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <MapPin className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                    <div className="text-sm">
+                      <p className="text-white font-medium">Hauptsitz Berlin</p>
+                      <p className="text-gray-300">Unter den Linden 42</p>
+                      <p className="text-gray-300">10117 Berlin</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-blue-400 flex-shrink-0" />
+                    <div className="text-sm">
+                      <p className="text-white font-medium">+49 30 123 456 789</p>
+                      <p className="text-gray-400">Mo-Fr 8:00-18:00</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
+                    <div className="text-sm">
+                      <p className="text-white font-medium">info@cryptolaw.de</p>
+                      <p className="text-gray-400">24h Notfall-Hotline</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-3">
+                    <Clock className="h-5 w-5 text-blue-400 flex-shrink-0" />
+                    <div className="text-sm">
+                      <p className="text-white font-medium">Notfall-Service</p>
+                      <p className="text-gray-400">24/7 verfügbar</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Emergency Contact Button */}
+                <Button className="w-full mt-6 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white border-0">
+                  <AlertTriangle className="h-4 w-4 mr-2" />
+                  Notfall-Kontakt
+                </Button>
+              </div>
+
+              {/* Legal & Compliance */}
+              <div>
+                <h3 className="font-semibold text-white mb-6 text-lg">Rechtliches</h3>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "Impressum",
+                    "Datenschutzerklärung",
+                    "AGB",
+                    "Widerrufsrecht",
+                    "Cookie-Richtlinie",
+                    "Haftungsausschluss"
+                  ].map((legal) => (
+                    <li key={legal}>
+                      <a href="#" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm">
+                        {legal}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Trust Indicators */}
+                <div className="space-y-4">
+                  <div className="bg-slate-800/50 rounded-lg p-3 border border-slate-700">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <Shield className="h-4 w-4 text-green-400" />
+                      <span className="text-sm font-medium text-white">Zertifiziert</span>
+                    </div>
+                    <p className="text-xs text-gray-400">RAK Berlin zugelassen</p>
+                  </div>
+                  
+                  <div className="bg-slate-800/50 rounded-lg p-3 border border-slate-700">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <Award className="h-4 w-4 text-blue-400" />
+                      <span className="text-sm font-medium text-white">Ausgezeichnet</span>
+                    </div>
+                    <p className="text-xs text-gray-400">Top Anwalt 2024</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3 className="font-semibold text-foreground mb-4">Leistungen</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Krypto-Betrug Recovery</li>
-                <li>Finanzrecht</li>
-                <li>Anlegerschutz</li>
-                <li>Rechtsberatung</li>
-              </ul>
+
+            {/* Social Media & Bottom Bar */}
+            <div className="border-t border-slate-700 pt-8">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                {/* Social Media Links */}
+                <div className="flex items-center space-x-4">
+                  <span className="text-sm text-gray-400 mr-2">Folgen Sie uns:</span>
+                  {[
+                    { icon: Linkedin, label: "LinkedIn", href: "#" },
+                    { icon: Twitter, label: "Twitter", href: "#" },
+                    { icon: Facebook, label: "Facebook", href: "#" },
+                    { icon: Youtube, label: "YouTube", href: "#" }
+                  ].map(({ icon: Icon, label, href }) => (
+                    <a
+                      key={label}
+                      href={href}
+                      className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors duration-200 group"
+                      aria-label={label}
+                    >
+                      <Icon className="h-4 w-4 text-gray-400 group-hover:text-white" />
+                    </a>
+                  ))}
+                </div>
+
+                {/* Certifications & Awards */}
+                <div className="flex items-center space-x-6 text-xs text-gray-400">
+                  <div className="flex items-center space-x-2">
+                    <Shield className="h-4 w-4 text-green-400" />
+                    <span>ISO 27001 zertifiziert</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Award className="h-4 w-4 text-blue-400" />
+                    <span>Rechtsanwaltskammer Berlin</span>
+                  </div>
+                </div>
+
+                {/* Copyright */}
+                <div className="text-sm text-gray-400 text-center md:text-right">
+                  <p>&copy; 2024 CryptoLaw Rechtsanwaltskanzlei.</p>
+                  <p>Alle Rechte vorbehalten.</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3 className="font-semibold text-foreground mb-4">Unternehmen</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Über uns</li>
-                <li>Team</li>
-                <li>Karriere</li>
-                <li>Presse</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold text-foreground mb-4">Rechtliches</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Impressum</li>
-                <li>Datenschutz</li>
-                <li>AGB</li>
-                <li>Widerrufsrecht</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 CryptoLaw. Alle Rechte vorbehalten.</p>
           </div>
         </div>
       </footer>
