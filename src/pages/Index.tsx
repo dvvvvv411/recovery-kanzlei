@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera, Euro, Building2, Target } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
 // Animated Counter Component
@@ -382,136 +382,124 @@ const Index = () => {
               className="w-full relative"
             >
               <CarouselContent className="-ml-4">
-                {/* Slide 1 - Original Story */}
-                <CarouselItem className="pl-4">
-                  <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    {/* Left Column - Text Content */}
-                    <div className="space-y-6">
-                      <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                        Krypto Betrugsopfer bekommt 
-                        <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> 8,69 Bitcoin zurück</span>
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                    <div className="p-8">
+                      <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                          <div className="w-4 h-4 bg-blue-600 rounded"></div>
+                        </div>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <span className="inline-block px-3 py-1 bg-blue-50 text-blue-600 text-sm font-medium rounded-full border border-blue-100">
+                          Erfolgsgeschichte
+                        </span>
+                      </div>
+                      
+                      <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
+                        500.000€ Bitcoin-Recovery erfolgreich
                       </h3>
-                      <div className="space-y-4">
-                        <h4 className="text-xl font-semibold text-blue-800">
-                          Erfolg und Hoffnung im Kampf gegen Internetbetrug / CyberCrime
-                        </h4>
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                          Ein österreichisches Betrugsopfer erhielt kürzlich 8,69 Bitcoin zurück – ein Wert von rund 800.000 EUR (Stand Juli 2025). Möglich wurde dies durch die Zusammenarbeit zwischen unserer Kanzlei ATB.LAW, den Strafverfolgungsbehörden und dem gezielten Einsatz von Blockchain-Forensik.
-                        </p>
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                          Wir berichten über einen Fall, der zeigt, wie effektiver Rechtsschutz im digitalen Raum aussehen kann – und welche juristischen Herausforderungen es zu meistern galt.
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-4 pt-4">
-                        <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                          <CheckCircle className="h-5 w-5 text-blue-600" />
-                          <span className="text-blue-800 font-medium">800.000 EUR zurückgeholt</span>
+                      
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        Durch präzise forensische Analyse konnten wir verlorene Bitcoin im Wert von einer halben Million Euro für unseren Mandanten zurückgewinnen.
+                      </p>
+                      
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center">
+                            <span className="text-sm font-semibold text-gray-700">RA</span>
+                          </div>
+                          <div>
+                            <p className="font-medium text-gray-900 text-sm">Rechtsanwalt Schmidt</p>
+                            <p className="text-gray-500 text-xs">vor 2 Tagen</p>
+                          </div>
                         </div>
-                        <div className="flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full">
-                          <Shield className="h-5 w-5 text-green-600" />
-                          <span className="text-green-800 font-medium">Blockchain-Forensik</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Right Column - Image */}
-                    <div className="relative h-full flex items-stretch">
-                      <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 w-full">
-                        <img 
-                          src="/lovable-uploads/77e79b13-9bec-4809-ba2f-258c1dc251ef.png" 
-                          alt="Rechtsdokument Bitcoin Rückgabe"
-                          className="w-full h-[400px] object-cover object-center rounded-xl"
-                        />
+                        <button className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-200">
+                          Mehr erfahren →
+                        </button>
                       </div>
                     </div>
                   </div>
                 </CarouselItem>
 
-                {/* Slide 2 - New Story */}
-                <CarouselItem className="pl-4">
-                  <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    {/* Left Column - Text Content */}
-                    <div className="space-y-6">
-                      <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                        Ethereum Recovery bringt
-                        <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> 2,1 Millionen EUR zurück</span>
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                    <div className="p-8">
+                      <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                          <div className="w-4 h-4 bg-green-600 rounded"></div>
+                        </div>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <span className="inline-block px-3 py-1 bg-green-50 text-green-600 text-sm font-medium rounded-full border border-green-100">
+                          Rechtsprechung
+                        </span>
+                      </div>
+                      
+                      <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
+                        BGH stärkt Krypto-Betrugsopfer
                       </h3>
-                      <div className="space-y-4">
-                        <h4 className="text-xl font-semibold text-blue-800">
-                          Bahnbrechender Fall in der DeFi-Recovery
-                        </h4>
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                          Durch innovative Smart Contract Analyse gelang es unserer Kanzlei, gestohlene Ethereum im Wert von 2,1 Millionen EUR aus einem DeFi-Protokoll zurückzuholen. Der komplexe Fall erforderte monatelange Blockchain-Forensik und internationale Kooperation.
-                        </p>
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                          Dieser Präzedenzfall zeigt neue Möglichkeiten auf, auch bei komplexesten DeFi-Betrügereien erfolgreich vorzugehen und Vermögenswerte zu rekonstruieren.
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-4 pt-4">
-                        <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                          <TrendingUp className="h-5 w-5 text-blue-600" />
-                          <span className="text-blue-800 font-medium">2,1 Mio EUR Recovery</span>
+                      
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        Wegweisendes Urteil des Bundesgerichtshofs erweitert Schadensersatzansprüche bei Kryptowährungs-Betrug erheblich.
+                      </p>
+                      
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center">
+                            <span className="text-sm font-semibold text-gray-700">KN</span>
+                          </div>
+                          <div>
+                            <p className="font-medium text-gray-900 text-sm">Kanzlei News</p>
+                            <p className="text-gray-500 text-xs">vor 1 Woche</p>
+                          </div>
                         </div>
-                        <div className="flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full">
-                          <Target className="h-5 w-5 text-purple-600" />
-                          <span className="text-purple-800 font-medium">DeFi-Expertise</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Right Column - Image */}
-                    <div className="relative h-full flex items-stretch">
-                      <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 w-full">
-                        <img 
-                          src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&crop=smart"
-                          alt="Ethereum Blockchain Forensik"
-                          className="w-full h-[400px] object-cover object-center rounded-xl"
-                        />
+                        <button className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-200">
+                          Mehr erfahren →
+                        </button>
                       </div>
                     </div>
                   </div>
                 </CarouselItem>
 
-                {/* Slide 3 - New Story */}
-                <CarouselItem className="pl-4">
-                  <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    {/* Left Column - Text Content */}
-                    <div className="space-y-6">
-                      <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                        Internationale NFT-Betrug Aufklärung
-                        <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> erfolgreich abgeschlossen</span>
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                    <div className="p-8">
+                      <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                          <div className="w-4 h-4 bg-purple-600 rounded"></div>
+                        </div>
+                      </div>
+                      
+                      <div className="mb-4">
+                        <span className="inline-block px-3 py-1 bg-purple-50 text-purple-600 text-sm font-medium rounded-full border border-purple-100">
+                          Warnung
+                        </span>
+                      </div>
+                      
+                      <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
+                        Neue Betrugsmasche bei NFTs
                       </h3>
-                      <div className="space-y-4">
-                        <h4 className="text-xl font-semibold text-blue-800">
-                          Grenzüberschreitende Zusammenarbeit führt zum Erfolg
-                        </h4>
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                          In einem spektakulären Fall konnten wir gemeinsam mit internationalen Behörden einen groß angelegten NFT-Betrug aufdecken. Über 500 Geschädigte erhielten ihre Investitionen zurück, nachdem die Täter zur Rechenschaft gezogen wurden.
-                        </p>
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                          Die Kooperation zwischen deutschen, amerikanischen und asiatischen Strafverfolgungsbehörden zeigt die Effektivität moderner Cybercrime-Bekämpfung.
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-4 pt-4">
-                        <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                          <Users className="h-5 w-5 text-blue-600" />
-                          <span className="text-blue-800 font-medium">500+ Geschädigte</span>
+                      
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        Betrüger nutzen gefälschte NFT-Marktplätze für Krypto-Diebstahl. Unsere Analyse zeigt die neuesten Methoden und Schutzmaßnahmen.
+                      </p>
+                      
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full flex items-center justify-center">
+                            <span className="text-sm font-semibold text-gray-700">ST</span>
+                          </div>
+                          <div>
+                            <p className="font-medium text-gray-900 text-sm">Security Team</p>
+                            <p className="text-gray-500 text-xs">vor 3 Tagen</p>
+                          </div>
                         </div>
-                        <div className="flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full">
-                          <Globe className="h-5 w-5 text-orange-600" />
-                          <span className="text-orange-800 font-medium">International</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Right Column - Image */}
-                    <div className="relative h-full flex items-stretch">
-                      <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 w-full">
-                        <img 
-                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=smart"
-                          alt="NFT und Blockchain Technologie"
-                          className="w-full h-[400px] object-cover object-center rounded-xl"
-                        />
+                        <button className="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-200">
+                          Mehr erfahren →
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -522,11 +510,11 @@ const Index = () => {
               <CarouselPrevious className="absolute -left-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl" />
               <CarouselNext className="absolute -right-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl" />
 
-              {/* Dots Indicator */}
-              <div className="flex justify-center mt-8 space-x-2">
-                <div className="w-2 h-2 rounded-full bg-blue-600 transition-all duration-300"></div>
-                <div className="w-2 h-2 rounded-full bg-blue-200 hover:bg-blue-400 transition-all duration-300 cursor-pointer"></div>
-                <div className="w-2 h-2 rounded-full bg-blue-200 hover:bg-blue-400 transition-all duration-300 cursor-pointer"></div>
+              {/* Modern Progress Bar instead of dots */}
+              <div className="flex justify-center mt-8">
+                <div className="w-32 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-500 ease-out animate-pulse"></div>
+                </div>
               </div>
             </Carousel>
           </div>
