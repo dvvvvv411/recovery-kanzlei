@@ -378,6 +378,143 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* Testimonials & Awards Section */}
+      <Section className="py-16 bg-gradient-to-br from-white via-gray-50/50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 via-transparent to-blue-600/5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-100/20 via-transparent to-transparent"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Left Column - Awards */}
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                    Ausgezeichnete 
+                    <span className="bg-gradient-to-r from-orange-500 to-blue-600 bg-clip-text text-transparent"> Kompetenz</span>
+                  </h2>
+                  <p className="text-lg text-gray-700">
+                    Unsere Expertise wird regelmäßig von führenden Bewertungsportalen und Fachmagazinen anerkannt.
+                  </p>
+                </div>
+                
+                {/* Awards Images */}
+                <div className="space-y-6">
+                  {/* anwalt.de Rating Card */}
+                  <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <img 
+                      src="/lovable-uploads/7edeed99-525e-43a2-bc10-8d0175049754.png" 
+                      alt="anwalt.de 5.0 Sterne Bewertung"
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                  
+                  {/* Multiple Awards */}
+                  <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    <img 
+                      src="/lovable-uploads/5ea7e3c1-6d4f-4274-80b0-e82b8b3cb534.png" 
+                      alt="Verschiedene Auszeichnungen 2024/2025"
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Testimonials */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-3 mb-8">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.34 70.81" className="h-8 w-auto">
+                    <path fill="#e95a0c" d="M103.12,48.56h-17.71l-3.52,9.66h-5.14l15.02-39.66h4.86l15.14,39.66h-5.14l-3.52-9.66Zm-1.56-4.25l-7.26-19.83h-.11l-7.21,19.83h14.58Z"></path>
+                    <path fill="#e95a0c" d="M149.93,18.56V58.22h-4.97l-22.23-31.28h-.11v31.28h-4.86V18.56h4.8l22.4,31.61h.11V18.56h4.86Z"></path>
+                    <path fill="#e95a0c" d="M208.09,18.56l-12.68,39.66h-4.69l-9.16-32.51h-.06l-9.33,32.51h-4.69l-12.68-39.66h5.19l9.77,31.67h.11l8.94-31.67h5.31l8.94,31.78h.06l9.77-31.78h5.19Z"></path>
+                    <path fill="#e95a0c" d="M233.18,48.56h-17.71l-3.52,9.66h-5.14l15.02-39.66h4.86l15.14,39.66h-5.14l-3.52-9.66Zm-1.56-4.25l-7.26-19.83h-.11l-7.21,19.83h14.58Z"></path>
+                    <path fill="#e95a0c" d="M247.81,18.56h4.86V53.75h19.66v4.47h-24.52V18.56Z"></path>
+                    <path fill="#e95a0c" d="M277.86,23.03h-11.9v-4.47h28.71v4.47h-11.95V58.22h-4.86V23.03Z"></path>
+                    <path fill="#385171" d="M293.41,54.37c0-2.2,1.69-3.92,3.92-3.92,2.09,0,3.85,1.72,3.85,3.92s-1.76,3.85-3.85,3.85c-2.23,0-3.92-1.72-3.92-3.85Z"></path>
+                    <path fill="#385171" d="M308.75,18.56h11.9c12.57,0,20.56,8.15,20.56,19.88s-7.76,19.77-20.39,19.77h-12.07V18.56Zm11.73,35.24c9.55,0,15.75-6.42,15.75-15.36s-6.26-15.47-15.53-15.47h-7.09v30.83h6.87Z"></path>
+                    <path fill="#385171" d="M345.87,18.56h24.3v4.47h-19.38v13.24h15.92v4.47h-15.92v13.01h20.55v4.47h-25.47V18.56Z"></path>
+                    <circle fill="#385171" cx="35.41" cy="35.41" r="35.41"></circle>
+                    <g><path fill="#fff" d="M42.65,39.13l6.62-12.98c.19-.38,.73-.38,.92,0l6.62,12.98s0,.02,0,.03h.55c-.67,3.61-3.83,6.35-7.63,6.35s-6.96-2.74-7.63-6.35h.55s0-.02,0,.03Zm11.53,.03l-3.99-8.12c-.19-.38-.74-.38-.92,0l-3.99,8.12h8.91Z"></path><path fill="#fff" d="M14.44,46.03s0-.02,0-.03l6.62-12.98c.19-.38,.73-.38,.92,0l6.62,12.98s0,.02,0,.03h.55c-.67,3.61-3.83,6.35-7.63,6.35s-6.96-2.74-7.63-6.35h.55Zm11.54,0l-3.99-8.12c-.19-.38-.74-.38-.92,0l-3.99,8.12h8.91Z"></path><rect fill="#fff" x="18.13" y="24.08" width="33.15" height="3.56" rx=".92" ry=".92" transform="translate(-5.07 8.79) rotate(-13.46)"></rect></g>
+                  </svg>
+                  <span className="text-lg font-semibold text-gray-700">Bewertungen</span>
+                </div>
+
+                {/* Testimonials */}
+                <div className="space-y-4">
+                  {/* Testimonial 1 */}
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div className="flex items-center gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-orange-500 text-orange-500" />
+                      ))}
+                      <span className="text-sm text-gray-600 ml-2">5,0</span>
+                    </div>
+                    <p className="text-gray-700 mb-3 italic">
+                      "Hervorragende Beratung bei meinem Krypto-Betrugsfall. Das Team hat mich professionell durch den gesamten Prozess begleitet und konnte tatsächlich einen großen Teil meiner verlorenen Investition zurückholen."
+                    </p>
+                    <div className="text-sm text-gray-500">
+                      <div className="font-medium">Michael S.</div>
+                      <div>vor 2 Wochen</div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 2 */}
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div className="flex items-center gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-orange-500 text-orange-500" />
+                      ))}
+                      <span className="text-sm text-gray-600 ml-2">5,0</span>
+                    </div>
+                    <p className="text-gray-700 mb-3 italic">
+                      "Kompetente und verständliche Beratung. Die Anwälte kennen sich sehr gut mit Blockchain-Technologie aus und konnten mir bei einem komplexen ICO-Betrugsfall helfen."
+                    </p>
+                    <div className="text-sm text-gray-500">
+                      <div className="font-medium">Sarah M.</div>
+                      <div>vor 1 Monat</div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 3 */}
+                  <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                    <div className="flex items-center gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-orange-500 text-orange-500" />
+                      ))}
+                      <span className="text-sm text-gray-600 ml-2">5,0</span>
+                    </div>
+                    <p className="text-gray-700 mb-3 italic">
+                      "Schnelle und effiziente Hilfe bei einem Wallet-Hack. Das Team arbeitet sehr strukturiert und transparent. Kann ich nur weiterempfehlen!"
+                    </p>
+                    <div className="text-sm text-gray-500">
+                      <div className="font-medium">Thomas K.</div>
+                      <div>vor 3 Wochen</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Summary Stats */}
+                <div className="bg-gradient-to-r from-orange-50 to-blue-50 rounded-lg p-6 mt-6">
+                  <div className="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                      <div className="text-2xl font-bold text-gray-900">5,0</div>
+                      <div className="text-sm text-gray-600">Durchschnitt</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-gray-900">127</div>
+                      <div className="text-sm text-gray-600">Bewertungen</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-gray-900">100%</div>
+                      <div className="text-sm text-gray-600">Weiterempfehlung</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Services Section */}
       <Section id="services">
         <div className="container mx-auto px-4">
