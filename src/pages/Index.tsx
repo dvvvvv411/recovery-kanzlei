@@ -375,53 +375,6 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* Smart & Simple Section */}
-      <Section className="py-16 bg-gradient-to-br from-white via-blue-50/30 to-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-blue-600/5"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
-        <div className="relative z-10">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              {/* Left Column - Image */}
-              <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
-                <div className="relative group max-w-md">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                  <img 
-                    src="/lovable-uploads/59e58b67-56b6-4a59-b22f-4df7d39063a2.png"
-                    alt="Developer working with modern technology"
-                    className="relative w-full h-auto rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300"
-                  />
-                </div>
-              </div>
-
-              {/* Right Column - Content */}
-              <div className="order-1 lg:order-2 space-y-6 flex flex-col justify-center">
-                <div className="space-y-4">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                    We keep it 
-                    <span className="bg-gradient-to-r from-blue-600 to-primary bg-clip-text text-transparent"> smart, but simple</span>
-                  </h2>
-                  
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Mit ATB.LAW haben wir unsere Vision einer modernen und innovativen Anwalts­kanzlei verwirklicht. Wir sind ein Team mit gemeinsamen Werten und Zielen. Uns ist wichtig, dass unsere Mandant:innen nicht nur die bestmögliche Rechts­beratung erhalten, sondern sich auch als geschätzte Partner fühlen.
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
-                    className="bg-gradient-to-r from-blue-600 to-primary text-white border-0 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 px-8 py-4"
-                  >
-                    Mehr erfahren
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
-
       {/* Partner Logo Carousel Section */}
       <Section className="py-8 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-600/2 via-transparent to-orange-500/2"></div>
