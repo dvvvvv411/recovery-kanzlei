@@ -396,10 +396,15 @@ const Index = () => {
               opts={{
                 align: "start",
                 loop: true,
+                duration: 30,
+                dragFree: true,
+                slidesToScroll: 1,
               }}
               plugins={[
                 Autoplay({
                   delay: 4000,
+                  stopOnInteraction: false,
+                  stopOnMouseEnter: true,
                 })
               ]}
               className="w-full max-w-6xl mx-auto"
