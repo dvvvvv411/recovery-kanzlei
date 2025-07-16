@@ -75,7 +75,7 @@ export const NewsCarousel = () => {
 
             {/* Right Column - Image */}
             <div className="relative h-full flex items-stretch">
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 w-full">
+              <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
                 <img 
                   src="/lovable-uploads/77e79b13-9bec-4809-ba2f-258c1dc251ef.png" 
                   alt="Rechtsdokument Bitcoin Rückgabe"
@@ -120,7 +120,7 @@ export const NewsCarousel = () => {
 
             {/* Right Column - Image */}
             <div className="relative h-full flex items-stretch">
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 w-full">
+              <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
                 <img 
                   src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&crop=smart"
                   alt="Ethereum Blockchain Forensik"
@@ -165,7 +165,7 @@ export const NewsCarousel = () => {
 
             {/* Right Column - Image */}
             <div className="relative h-full flex items-stretch">
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 w-full">
+              <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
                 <img 
                   src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=smart"
                   alt="NFT und Blockchain Technologie"
@@ -178,8 +178,8 @@ export const NewsCarousel = () => {
       </CarouselContent>
 
       {/* Navigation Buttons - Glasmorphic design */}
-      <CarouselPrevious className="absolute -left-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl" />
-      <CarouselNext className="absolute -right-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl" />
+      <CarouselPrevious className="absolute -left-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300" />
+      <CarouselNext className="absolute -right-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300" />
 
       {/* Modern Progress Indicators */}
       <div className="flex justify-center mt-8 space-x-3">
@@ -189,7 +189,7 @@ export const NewsCarousel = () => {
             onClick={() => scrollTo(index)}
             className={`transition-all duration-300 rounded-full ${
               index === current
-                ? 'w-8 h-3 bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg'
+                ? 'w-8 h-3 bg-gradient-to-r from-blue-600 to-blue-700'
                 : 'w-3 h-3 bg-blue-200 hover:bg-blue-400 hover:scale-110'
             }`}
             aria-label={`Go to slide ${index + 1}`}
