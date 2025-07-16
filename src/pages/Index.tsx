@@ -504,48 +504,6 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* Partner Logo Carousel Section */}
-      <Section className="py-8 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/2 via-transparent to-orange-500/2"></div>
-        <div className="relative z-10">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl lg:text-3xl font-bold text-blue-600 mb-2">
-                Vertrauensvolle Partnerschaften
-              </h2>
-              <p className="text-muted-foreground">Gemeinsam für Ihre Rechte</p>
-            </div>
-            
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              plugins={[
-                Autoplay({
-                  delay: 3000,
-                })
-              ]}
-              className="w-full max-w-6xl mx-auto"
-            >
-              <CarouselContent className="-ml-2 md:-ml-4">
-                {partnerLogos.map((partner, index) => (
-                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
-                    <div className="group flex items-center justify-center h-20 p-4 transition-all duration-300 hover:scale-110">
-                      <img
-                        src={partner.logo}
-                        alt={partner.name}
-                        className="max-h-full max-w-full object-contain transition-all duration-300 opacity-90 group-hover:opacity-100"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-          </div>
-        </div>
-      </Section>
-
       {/* Testimonials & Awards Section */}
       <Section className="py-16 bg-gradient-to-br from-white via-gray-50/50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 via-transparent to-blue-600/5"></div>
@@ -662,6 +620,48 @@ const Index = () => {
 
               </div>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Partner Logo Carousel Section */}
+      <Section className="py-8 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/2 via-transparent to-orange-500/2"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl lg:text-3xl font-bold text-blue-600 mb-2">
+                Vertrauensvolle Partnerschaften
+              </h2>
+              <p className="text-muted-foreground">Gemeinsam für Ihre Rechte</p>
+            </div>
+            
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                })
+              ]}
+              className="w-full max-w-6xl mx-auto"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {partnerLogos.map((partner, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
+                    <div className="group flex items-center justify-center h-20 p-4 transition-all duration-300 hover:scale-110">
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className="max-h-full max-w-full object-contain transition-all duration-300 opacity-90 group-hover:opacity-100"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
       </Section>
