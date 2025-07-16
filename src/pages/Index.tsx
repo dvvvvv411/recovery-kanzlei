@@ -381,35 +381,81 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch">
               {/* Left Column - Image */}
               <div className="relative h-full flex items-stretch">
                 <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
                   <img 
                     src="/lovable-uploads/68251422-67c7-4a32-9eb6-935634b7e4ff.png" 
                     alt="Moderne Anwaltskanzlei - Team bei der Arbeit"
-                    className="w-full h-[500px] object-cover object-center rounded-xl"
+                    className="w-full h-full min-h-[600px] object-cover object-center rounded-xl"
                   />
                 </div>
               </div>
 
               {/* Right Column - Text Content */}
-              <div className="space-y-6">
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                  We keep it smart, but 
-                  <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> simple</span>
-                </h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Mit ATB.LAW haben wir unsere Vision einer modernen und innovativen Anwalts­kanzlei verwirklicht. Wir sind ein Team mit gemeinsamen Werten und Zielen. Uns ist wichtig, dass unsere Mandant:innen nicht nur die bestmögliche Rechts­beratung erhalten, sondern sich auch als geschätzte Partner fühlen.
-                </p>
-                <div className="flex items-center gap-4 pt-4">
-                  <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                    <CheckCircle className="h-5 w-5 text-blue-600" />
-                    <span className="text-blue-800 font-medium">Modern & Innovativ</span>
+              <div className="space-y-8 flex flex-col justify-between">
+                <div className="space-y-6">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                    We keep it smart, but 
+                    <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> simple</span>
+                  </h2>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Mit ATB.LAW haben wir unsere Vision einer modernen und innovativen Anwalts­kanzlei verwirklicht. Wir sind ein Team mit gemeinsamen Werten und Zielen. Uns ist wichtig, dass unsere Mandant:innen nicht nur die bestmögliche Rechts­beratung erhalten, sondern sich auch als geschätzte Partner fühlen.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="flex items-center gap-2 px-4 py-3 bg-blue-100 rounded-xl">
+                      <CheckCircle className="h-5 w-5 text-blue-600" />
+                      <span className="text-blue-800 font-medium">Modern & Innovativ</span>
+                    </div>
+                    <div className="flex items-center gap-2 px-4 py-3 bg-blue-100 rounded-xl">
+                      <Heart className="h-5 w-5 text-blue-600" />
+                      <span className="text-blue-800 font-medium">Geschätzte Partner</span>
+                    </div>
+                    <div className="flex items-center gap-2 px-4 py-3 bg-green-100 rounded-xl">
+                      <Award className="h-5 w-5 text-green-600" />
+                      <span className="text-green-800 font-medium">Bestmögliche Beratung</span>
+                    </div>
+                    <div className="flex items-center gap-2 px-4 py-3 bg-purple-100 rounded-xl">
+                      <Users className="h-5 w-5 text-purple-600" />
+                      <span className="text-purple-800 font-medium">Gemeinsame Werte</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                    <Heart className="h-5 w-5 text-blue-600" />
-                    <span className="text-blue-800 font-medium">Geschätzte Partner</span>
+                </div>
+
+                <div className="space-y-6">
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white border-0 transition-all duration-300 hover:scale-105">
+                      <Phone className="mr-2 h-5 w-5" />
+                      Jetzt kontaktieren
+                    </Button>
+                    <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-blue-200 text-blue-700 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300">
+                      <User className="mr-2 h-5 w-5" />
+                      Mehr erfahren
+                    </Button>
+                  </div>
+                  
+                  <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border border-blue-200">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="p-2 bg-blue-600 rounded-lg">
+                        <Star className="h-5 w-5 text-white" />
+                      </div>
+                      <h3 className="text-lg font-semibold text-blue-900">Ihre Vorteile</h3>
+                    </div>
+                    <ul className="space-y-2 text-blue-800">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-blue-600" />
+                        <span>Kostenlose Erstberatung</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-blue-600" />
+                        <span>24/7 Erreichbarkeit</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 text-blue-600" />
+                        <span>Erfolgsbasierte Abrechnung</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
