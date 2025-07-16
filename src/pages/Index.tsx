@@ -1,7 +1,49 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
-import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera } from "lucide-react";
+import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera, Euro, Building2, Target } from "lucide-react";
+import { useEffect, useState } from "react";
+
+// Animated Counter Component
+const AnimatedCounter = ({ end, duration = 2000, suffix = "" }: { end: number; duration?: number; suffix?: string }) => {
+  const [count, setCount] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasStarted) {
+          setHasStarted(true);
+          let startTime: number;
+          const step = (timestamp: number) => {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            setCount(Math.floor(easeOutQuart * end));
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            } else {
+              setCount(end);
+            }
+          };
+          requestAnimationFrame(step);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    
+    const element = document.getElementById(`counter-${end}`);
+    if (element) observer.observe(element);
+    
+    return () => observer.disconnect();
+  }, [end, duration, hasStarted]);
+  
+  return (
+    <span id={`counter-${end}`} className="text-4xl lg:text-5xl font-bold text-white">
+      {count.toLocaleString()}{suffix}
+    </span>
+  );
+};
 
 const Index = () => {
   const services = [
@@ -215,6 +257,74 @@ const Index = () => {
               <p className="text-lg lg:text-xl text-white leading-relaxed text-left">
                 Wir verstehen uns nicht „nur" als Rechtsvertreter im klassischen Sinn, sondern vielmehr als langfristiger Wegbegleiter und Partner. Mandant:innen sollen von unserer Arbeit auch tatsächlich profitieren. Wir legen daher den Fokus auf die individuellen Bedürfnisse und finden gemeinsam maßgeschneiderte Lösungen.
               </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Company Statistics Section */}
+      <Section className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/20"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-4 gap-8">
+            {/* First Stat */}
+            <div className="text-center relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
+              <div className="relative bg-gray-800/50 backdrop-blur-md p-8 rounded-xl border border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)]">
+                <div className="mb-4">
+                  <Euro className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <AnimatedCounter end={15} suffix="+" />
+                </div>
+                <p className="text-white/90 text-lg font-medium leading-tight">
+                  Euro verfolgtes Schadens­volumen bei Cybercrime
+                </p>
+              </div>
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
+            </div>
+
+            {/* Second Stat */}
+            <div className="text-center relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
+              <div className="relative bg-gray-800/50 backdrop-blur-md p-8 rounded-xl border border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)]">
+                <div className="mb-4">
+                  <Users className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <AnimatedCounter end={50} suffix=" Mio+" />
+                </div>
+                <p className="text-white/90 text-lg font-medium leading-tight">
+                  topmotivierte Mitarbeiter:innen
+                </p>
+              </div>
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
+            </div>
+
+            {/* Third Stat */}
+            <div className="text-center relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
+              <div className="relative bg-gray-800/50 backdrop-blur-md p-8 rounded-xl border border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)]">
+                <div className="mb-4">
+                  <Building2 className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <AnimatedCounter end={13} />
+                </div>
+                <p className="text-white/90 text-lg font-medium leading-tight">
+                  Erfolgreich abgewickelte Immobilientransaktionen
+                </p>
+              </div>
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
+            </div>
+
+            {/* Fourth Stat */}
+            <div className="text-center relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
+              <div className="relative bg-gray-800/50 backdrop-blur-md p-8 rounded-xl border border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)]">
+                <div className="mb-4">
+                  <Target className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <AnimatedCounter end={1000} suffix="+" />
+                </div>
+                <p className="text-white/90 text-lg font-medium leading-tight">
+                  Erfolgreiche Fälle
+                </p>
+              </div>
             </div>
           </div>
         </div>
