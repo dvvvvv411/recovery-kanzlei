@@ -391,86 +391,113 @@ const Index = () => {
               </p>
             </div>
 
-            {/* Team Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-              {/* Daniel Azem */}
-              <div className="text-left">
-                <div className="mb-6">
-                  <img
-                    src="https://atb.law/wp-content/uploads/2024/05/Daniel-Azem-1025x1536.jpg"
-                    alt="Daniel Azem"
-                    className="w-full h-auto object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Daniel Azem</h3>
-                <p className="text-gray-600">Rechtsanwalt</p>
-              </div>
+            {/* Team Carousel */}
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 4000,
+                })
+              ]}
+              className="w-full max-w-6xl mx-auto"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {/* Daniel Azem */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="https://atb.law/wp-content/uploads/2024/05/Daniel-Azem-1025x1536.jpg"
+                        alt="Daniel Azem"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Daniel Azem</h3>
+                    <p className="text-gray-600">Rechtsanwalt</p>
+                  </div>
+                </CarouselItem>
 
-              {/* Anela Blöch */}
-              <div className="text-left">
-                <div className="mb-6">
-                  <img
-                    src="https://atb.law/wp-content/uploads/2024/05/Anela-Bloech-1366x2048.jpg"
-                    alt="Anela Blöch"
-                    className="w-full h-auto object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Anela Blöch</h3>
-                <p className="text-gray-600">Rechtsanwältin</p>
-              </div>
+                {/* Anela Blöch */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="https://atb.law/wp-content/uploads/2024/05/Anela-Bloech-1366x2048.jpg"
+                        alt="Anela Blöch"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Anela Blöch</h3>
+                    <p className="text-gray-600">Rechtsanwältin</p>
+                  </div>
+                </CarouselItem>
 
-              {/* Roman Taudes */}
-              <div className="text-left">
-                <div className="mb-6">
-                  <img
-                    src="https://atb.law/wp-content/uploads/2024/05/Roman-Taudes-1-1025x1536.jpg"
-                    alt="Roman Taudes"
-                    className="w-full h-auto object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Roman Taudes</h3>
-                <p className="text-gray-600">Rechtsanwalt</p>
-              </div>
+                {/* Roman Taudes */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="https://atb.law/wp-content/uploads/2024/05/Roman-Taudes-1-1025x1536.jpg"
+                        alt="Roman Taudes"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Roman Taudes</h3>
+                    <p className="text-gray-600">Rechtsanwalt</p>
+                  </div>
+                </CarouselItem>
 
-              {/* Patrick Brunsteiner */}
-              <div className="text-left">
-                <div className="mb-6">
-                  <img
-                    src="https://atb.law/wp-content/uploads/2024/05/Patrick-Brunsteiner-1-1366x2048.jpg"
-                    alt="Patrick Brunsteiner"
-                    className="w-full h-auto object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Patrick Brunsteiner</h3>
-                <p className="text-gray-600">Rechtsanwaltsanwärter</p>
-              </div>
+                {/* Patrick Brunsteiner */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="https://atb.law/wp-content/uploads/2024/05/Patrick-Brunsteiner-1-1366x2048.jpg"
+                        alt="Patrick Brunsteiner"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Patrick Brunsteiner</h3>
+                    <p className="text-gray-600">Rechtsanwaltsanwärter</p>
+                  </div>
+                </CarouselItem>
 
-              {/* Olja Drljevic */}
-              <div className="text-left">
-                <div className="mb-6">
-                  <img
-                    src="https://atb.law/wp-content/uploads/2025/05/088A7307-1366x2048.jpg"
-                    alt="Olja Drljevic"
-                    className="w-full h-auto object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Olja Drljevic</h3>
-                <p className="text-gray-600">Teamassistentin</p>
-              </div>
+                {/* Olja Drljevic */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="https://atb.law/wp-content/uploads/2025/05/088A7307-1366x2048.jpg"
+                        alt="Olja Drljevic"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Olja Drljevic</h3>
+                    <p className="text-gray-600">Teamassistentin</p>
+                  </div>
+                </CarouselItem>
 
-              {/* Nerma Hadzic */}
-              <div className="text-left">
-                <div className="mb-6">
-                  <img
-                    src="https://atb.law/wp-content/uploads/2024/05/Nerma-Hadzic-1025x1536.jpg"
-                    alt="Nerma Hadzic"
-                    className="w-full h-auto object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Nerma Hadzic</h3>
-                <p className="text-gray-600">Teamassistentin</p>
-              </div>
-            </div>
+                {/* Nerma Hadzic */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="https://atb.law/wp-content/uploads/2024/05/Nerma-Hadzic-1025x1536.jpg"
+                        alt="Nerma Hadzic"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Nerma Hadzic</h3>
+                    <p className="text-gray-600">Teamassistentin</p>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </Section>
