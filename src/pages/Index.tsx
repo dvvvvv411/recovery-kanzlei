@@ -323,6 +323,61 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* Krypto Betrugsopfer Section */}
+      <Section className="py-16 bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-blue-600/5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Left Column - Text Content */}
+              <div className="space-y-6">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                  Krypto Betrugsopfer bekommt 
+                  <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> 8,69 Bitcoin zurück</span>
+                </h2>
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-blue-800">
+                    Erfolg und Hoffnung im Kampf gegen Internetbetrug / CyberCrime
+                  </h3>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Ein österreichisches Betrugsopfer erhielt kürzlich 8,69 Bitcoin zurück – ein Wert von rund 800.000 EUR (Stand Juli 2025). Möglich wurde dies durch die Zusammenarbeit zwischen unserer Kanzlei ATB.LAW, den Strafverfolgungsbehörden und dem gezielten Einsatz von Blockchain-Forensik.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Wir berichten über einen Fall, der zeigt, wie effektiver Rechtsschutz im digitalen Raum aussehen kann – und welche juristischen Herausforderungen es zu meistern galt.
+                  </p>
+                </div>
+                <div className="flex items-center gap-4 pt-4">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
+                    <CheckCircle className="h-5 w-5 text-blue-600" />
+                    <span className="text-blue-800 font-medium">800.000 EUR zurückgeholt</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full">
+                    <Shield className="h-5 w-5 text-green-600" />
+                    <span className="text-green-800 font-medium">Blockchain-Forensik</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Image */}
+              <div className="relative">
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2">
+                  <img 
+                    src="/lovable-uploads/77e79b13-9bec-4809-ba2f-258c1dc251ef.png" 
+                    alt="Rechtsdokument Bitcoin Rückgabe"
+                    className="w-full h-auto rounded-xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-600/20 rounded-full blur-xl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Services Section */}
       <Section id="services">
         <div className="container mx-auto px-4">
