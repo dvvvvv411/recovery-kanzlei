@@ -670,7 +670,7 @@ const Index = () => {
       {/* Enhanced Professional Footer */}
       <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
         {/* Background Effects */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-orange-500/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-blue-500/5 to-blue-400/10"></div>
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent"></div>
         
         <div className="relative z-10">
@@ -681,11 +681,11 @@ const Index = () => {
               {/* Company Info & Newsletter */}
               <div className="lg:col-span-2">
                 <div className="flex items-center space-x-3 mb-6">
-                  <div className="p-2 bg-gradient-to-r from-blue-600 to-orange-500 rounded-lg">
+                  <div className="p-2 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg">
                     <Scale className="h-8 w-8 text-white" />
                   </div>
                   <div>
-                    <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
                       CryptoLaw
                     </span>
                     <p className="text-sm text-gray-400">Rechtsanwaltskanzlei</p>
@@ -708,7 +708,7 @@ const Index = () => {
                       placeholder="Ihre E-Mail-Adresse" 
                       className="flex-1 px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                    <Button size="sm" className="bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600">
+                    <Button size="sm" className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600">
                       <Mail className="h-4 w-4" />
                     </Button>
                   </div>
@@ -778,7 +778,7 @@ const Index = () => {
                 </div>
 
                 {/* Emergency Contact Button */}
-                <Button className="w-full mt-6 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white border-0">
+                <Button className="w-full mt-6 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white border-0">
                   <AlertTriangle className="h-4 w-4 mr-2" />
                   Notfall-Kontakt
                 </Button>
