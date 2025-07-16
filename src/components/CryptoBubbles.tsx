@@ -6,6 +6,7 @@ const CryptoBubbles = () => {
     x: number;
     y: number;
     crypto: string;
+    svg: React.ReactNode;
     size: number;
     opacity: number;
     scale: number;
@@ -94,24 +95,24 @@ const CryptoBubbles = () => {
     
     switch (side) {
       case 0: // top
-        x = Math.random() * 100;
-        y = -10;
+        x = Math.random() * 80 + 10; // Keep within visible bounds
+        y = -5;
         break;
       case 1: // right
-        x = 110;
-        y = Math.random() * 100;
+        x = 105;
+        y = Math.random() * 80 + 10;
         break;
       case 2: // bottom
-        x = Math.random() * 100;
-        y = 110;
+        x = Math.random() * 80 + 10;
+        y = 105;
         break;
       case 3: // left
-        x = -10;
-        y = Math.random() * 100;
+        x = -5;
+        y = Math.random() * 80 + 10;
         break;
       default:
-        x = Math.random() * 100;
-        y = Math.random() * 100;
+        x = Math.random() * 80 + 10;
+        y = Math.random() * 80 + 10;
     }
     
     return { x, y };
@@ -127,15 +128,18 @@ const CryptoBubbles = () => {
       y,
       crypto: randomCrypto.name,
       svg: randomCrypto.svg,
-      size: Math.random() * 30 + 40, // 40-70px
+      size: Math.random() * 20 + 50, // 50-70px for better visibility
       opacity: 0,
       scale: 0
     };
   };
 
   useEffect(() => {
+    console.log('CryptoBubbles component mounted');
+    
     const interval = setInterval(() => {
       const newBubble = createBubble();
+      console.log('Creating new bubble:', newBubble);
       setBubbles(prev => [...prev, newBubble]);
       
       // Animate bubble appearance
@@ -143,28 +147,30 @@ const CryptoBubbles = () => {
         setBubbles(prev => 
           prev.map(bubble => 
             bubble.id === newBubble.id 
-              ? { ...bubble, opacity: Math.random() * 0.4 + 0.6, scale: 1 }
+              ? { ...bubble, opacity: 0.9, scale: 1 }
               : bubble
           )
         );
-      }, 100);
+      }, 50);
       
       // Remove bubble after animation
       setTimeout(() => {
         setBubbles(prev => prev.filter(bubble => bubble.id !== newBubble.id));
-      }, 4000);
+      }, 3500);
       
-    }, 800 + Math.random() * 1200); // Random interval between 800ms and 2s
+    }, 1000 + Math.random() * 2000); // Random interval between 1s and 3s
     
     return () => clearInterval(interval);
   }, []);
 
+  console.log('Rendering bubbles:', bubbles.length);
+
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+    <div className="absolute inset-0 pointer-events-none overflow-hidden z-20">
       {bubbles.map((bubble) => (
         <div
           key={bubble.id}
-          className="absolute transition-all duration-1000 ease-out"
+          className="absolute transition-all duration-500 ease-out"
           style={{
             left: `${bubble.x}%`,
             top: `${bubble.y}%`,
@@ -172,12 +178,20 @@ const CryptoBubbles = () => {
             height: `${bubble.size}px`,
             opacity: bubble.opacity,
             transform: `scale(${bubble.scale}) translate(-50%, -50%)`,
-            animation: `float 4s ease-in-out infinite, fadeInOut 4s ease-in-out forwards`
+            animation: `float 4s ease-in-out infinite, fadeInOut 3.5s ease-in-out forwards`,
+            zIndex: 25
           }}
         >
-          <div className="w-full h-full bg-gradient-glass backdrop-blur-md rounded-full border border-white/20 shadow-glass flex items-center justify-center p-2 hover:scale-110 transition-transform duration-300">
-            <div className="w-full h-full opacity-90">
-              {cryptoLogos.find(crypto => crypto.name === bubble.crypto)?.svg}
+          <div 
+            className="w-full h-full backdrop-blur-sm rounded-full border border-white/30 flex items-center justify-center p-2 shadow-lg hover:scale-110 transition-transform duration-300"
+            style={{
+              background: 'var(--gradient-glass)',
+              borderColor: 'var(--border-glass)',
+              boxShadow: 'var(--shadow-glass)'
+            }}
+          >
+            <div className="w-full h-full opacity-95">
+              {bubble.svg}
             </div>
           </div>
         </div>

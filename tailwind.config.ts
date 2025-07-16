@@ -67,11 +67,14 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-light': 'var(--gradient-light)'
+				'gradient-light': 'var(--gradient-light)',
+				'gradient-glass': 'var(--gradient-glass)',
+				'gradient-mystery': 'var(--gradient-mystery)'
 			},
 			boxShadow: {
 				'modern': 'var(--shadow-modern)',
-				'card': 'var(--shadow-card)'
+				'card': 'var(--shadow-card)',
+				'glass': 'var(--shadow-glass)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -98,7 +101,9 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 4s ease-in-out infinite',
+				'fadeInOut': 'fadeInOut 3.5s ease-in-out forwards'
 			}
 		}
 	},
