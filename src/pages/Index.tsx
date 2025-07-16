@@ -141,7 +141,7 @@ const Index = () => {
               Kontakt
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
             </a>
-            <Button className="bg-gradient-primary hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.6)] transition-all duration-300 text-white border-0 font-medium">
+            <Button variant="outline" className="bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-primary/50 transition-all duration-300 shadow-glass hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.6)] hover:border-primary/80" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 20px hsl(214 100% 60% / 0.3), var(--shadow-glass)' }}>
               Beratung anfragen
             </Button>
           </div>
