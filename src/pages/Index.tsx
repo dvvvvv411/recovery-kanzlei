@@ -394,63 +394,44 @@ const Index = () => {
               </div>
 
               {/* Right Column - Text Content */}
-              <div className="space-y-8 flex flex-col justify-between">
-                <div className="space-y-6">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                    We keep it smart, but 
-                    <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> simple</span>
-                  </h2>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Mit ATB.LAW haben wir unsere Vision einer modernen und innovativen Anwalts­kanzlei verwirklicht. Wir sind ein Team mit gemeinsamen Werten und Zielen. Uns ist wichtig, dass unsere Mandant:innen nicht nur die bestmögliche Rechts­beratung erhalten, sondern sich auch als geschätzte Partner fühlen.
+              <div className="space-y-10 flex flex-col justify-center h-full">
+                <div className="space-y-8">
+                  <div className="space-y-6">
+                    <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                      We keep it smart, but 
+                      <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> simple</span>
+                    </h2>
+                    <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-blue-800"></div>
+                  </div>
+                  
+                  <p className="text-xl text-gray-700 leading-relaxed font-light">
+                    Mit ATB.LAW haben wir unsere Vision einer modernen und innovativen Anwalts­kanzlei verwirklicht. Wir sind ein Team mit gemeinsamen Werten und Zielen.
                   </p>
                   
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span className="text-gray-800 font-medium">Modern & Innovativ</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span className="text-gray-800 font-medium">Geschätzte Partnerschaft</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span className="text-gray-800 font-medium">Bestmögliche Rechtsberatung</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span className="text-gray-800 font-medium">Gemeinsame Werte & Ziele</span>
-                    </div>
-                  </div>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Uns ist wichtig, dass unsere Mandant:innen nicht nur die bestmögliche Rechts­beratung erhalten, sondern sich auch als geschätzte Partner fühlen.
+                  </p>
                 </div>
 
-                <div className="space-y-6">
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white border-0 transition-all duration-300">
-                      <Phone className="mr-2 h-5 w-5" />
-                      Jetzt kontaktieren
-                    </Button>
-                    <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 transition-all duration-300">
-                      Mehr erfahren
-                    </Button>
+                <div className="space-y-8">
+                  <div className="grid grid-cols-2 gap-8 text-center">
+                    <div className="space-y-2">
+                      <div className="text-3xl font-bold text-blue-600">15+</div>
+                      <div className="text-sm text-gray-600 uppercase tracking-wider">Jahre Erfahrung</div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="text-3xl font-bold text-blue-600">500+</div>
+                      <div className="text-sm text-gray-600 uppercase tracking-wider">Erfolgreiche Fälle</div>
+                    </div>
                   </div>
                   
-                  <div className="border-l-4 border-blue-600 pl-6 py-4 bg-gray-50">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">Ihre Vorteile</h3>
-                    <div className="space-y-2 text-gray-700">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-blue-600" />
-                        <span>Kostenlose Erstberatung</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-blue-600" />
-                        <span>24/7 Erreichbarkeit</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-blue-600" />
-                        <span>Erfolgsbasierte Abrechnung</span>
-                      </div>
-                    </div>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button size="lg" className="text-lg px-8 py-4 h-auto bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300">
+                      Jetzt kontaktieren
+                    </Button>
+                    <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-gray-300 text-gray-700 hover:bg-gray-50 transition-all duration-300">
+                      Mehr erfahren
+                    </Button>
                   </div>
                 </div>
               </div>
