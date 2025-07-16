@@ -166,7 +166,7 @@ const CryptoBubbles = () => {
   console.log('Rendering bubbles:', bubbles.length);
 
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden z-30">
+    <div className="absolute inset-0 pointer-events-none overflow-hidden z-8">
       {bubbles.map((bubble) => (
         <div
           key={bubble.id}
@@ -179,7 +179,7 @@ const CryptoBubbles = () => {
             opacity: bubble.opacity,
             transform: `scale(${bubble.scale}) translate(-50%, -50%)`,
             animation: `float 4s ease-in-out infinite`,
-            zIndex: 35
+            zIndex: 8
           }}
         >
           <div 

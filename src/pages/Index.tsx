@@ -130,7 +130,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <Section className="py-20 lg:py-32 relative overflow-hidden h-[70vh] flex items-center">
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full z-0">
           <iframe 
             src="https://player.vimeo.com/video/1101576926?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=1&background=1" 
             frameBorder="0" 
@@ -140,9 +140,9 @@ const Index = () => {
             title="Crypto Background Video"
           />
         </div>
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary/30"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-black/60 z-5"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary/30 z-5"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-5"></div>
         <CryptoBubbles />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
