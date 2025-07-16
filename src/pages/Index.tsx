@@ -263,7 +263,10 @@ const Index = () => {
       </Section>
 
       {/* Company Statistics Section */}
-      <Section className="py-16 bg-gray-900">
+      <Section className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/20"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-4 gap-8 items-center">
             {/* First Stat */}
@@ -312,6 +315,7 @@ const Index = () => {
               </p>
             </div>
           </div>
+        </div>
         </div>
       </Section>
 
