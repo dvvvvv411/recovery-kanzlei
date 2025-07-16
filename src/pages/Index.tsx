@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera } from "lucide-react";
-import heroImage from "@/assets/crypto-hero-bg.jpg";
-import heroVideo from "@/assets/crypto-hero-video.mp4";
 
 const Index = () => {
   const services = [
@@ -131,15 +129,17 @@ const Index = () => {
 
       {/* Hero Section */}
       <Section className="py-20 lg:py-32 relative overflow-hidden min-h-screen flex items-center">
-        <video 
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
+        <div className="absolute inset-0 w-full h-full">
+          <div style={{padding:"56.25% 0 0 0", position:"relative", width:"100%", height:"100%"}}>
+            <iframe 
+              src="https://player.vimeo.com/video/1101576926?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=1&background=1" 
+              frameBorder="0" 
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+              style={{position:"absolute", top:"0", left:"0", width:"100%", height:"100%"}} 
+              title="Crypto Background Video"
+            />
+          </div>
+        </div>
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
