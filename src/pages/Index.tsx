@@ -375,6 +375,178 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* Unser Team Section */}
+      <Section className="py-16 bg-gradient-to-br from-white via-blue-50/30 to-gray-50 relative overflow-hidden" id="team">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-blue-600/5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            {/* Section Header */}
+            <SectionHeader>
+              <SectionTitle className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-4">
+                Unser Team
+              </SectionTitle>
+              <SectionDescription className="text-gray-600 max-w-2xl mx-auto">
+                Lernen Sie die Experten kennen, die sich leidenschaftlich für die Wiederherstellung Ihrer Krypto-Vermögenswerte einsetzen
+              </SectionDescription>
+            </SectionHeader>
+
+            {/* Team Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Dr. Alexandra Schmidt */}
+              <Card className="group hover:shadow-xl transition-all duration-500 border-blue-100 hover:border-blue-200 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all duration-500">
+                      <img 
+                        src="https://images.unsplash.com/photo-1494790108755-2616b612b048?w=300&h=300&fit=crop&crop=face"
+                        alt="Dr. Alexandra Schmidt"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
+                      Partner
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">
+                    Dr. Alexandra Schmidt
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-3">Geschäftsführende Partnerin</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Spezialistin für Kryptowährungsrecht mit über 15 Jahren Erfahrung in der Wiederherstellung digitaler Vermögenswerte
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Marcus Weber */}
+              <Card className="group hover:shadow-xl transition-all duration-500 border-blue-100 hover:border-blue-200 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all duration-500">
+                      <img 
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                        alt="Marcus Weber"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
+                      Senior Associate
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">
+                    Marcus Weber
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-3">Blockchain-Forensik Experte</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Technischer Leiter für Blockchain-Analysen und digitale Spurenverfolgung mit Fokus auf komplexe Betrugsstrukturen
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Sarah Müller */}
+              <Card className="group hover:shadow-xl transition-all duration-500 border-blue-100 hover:border-blue-200 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all duration-500">
+                      <img 
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
+                        alt="Sarah Müller"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
+                      Associate
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">
+                    Sarah Müller
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-3">Internationale Rechtsdurchsetzung</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Expertin für grenzüberschreitende Rechtsdurchsetzung und internationale Zusammenarbeit bei Krypto-Recovery-Fällen
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Dr. Thomas Berger */}
+              <Card className="group hover:shadow-xl transition-all duration-500 border-blue-100 hover:border-blue-200 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all duration-500">
+                      <img 
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+                        alt="Dr. Thomas Berger"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
+                      Partner
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">
+                    Dr. Thomas Berger
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-3">Finanzrecht & Compliance</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Spezialist für Finanzmarktregulierung und Compliance mit umfassender Expertise in Kryptowährungsvorschriften
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Lisa Chen */}
+              <Card className="group hover:shadow-xl transition-all duration-500 border-blue-100 hover:border-blue-200 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all duration-500">
+                      <img 
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop&crop=face"
+                        alt="Lisa Chen"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
+                      Junior Associate
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">
+                    Lisa Chen
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-3">Cybersecurity & Forensik</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    IT-Forensik-Spezialistin mit Fokus auf Cybersecurity und digitale Beweissicherung bei Kryptowährungsdelikten
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Michael Hoffmann */}
+              <Card className="group hover:shadow-xl transition-all duration-500 border-blue-100 hover:border-blue-200 bg-white/80 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all duration-500">
+                      <img 
+                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face"
+                        alt="Michael Hoffmann"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">
+                      Associate
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">
+                    Michael Hoffmann
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-3">Mandantenbetreuung & Recovery</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Erfahrener Anwalt für Mandantenbetreuung und Recovery-Verfahren mit persönlichem Fokus auf Kundenzufriedenheit
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Partner Logo Carousel Section */}
       <Section className="py-8 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-600/2 via-transparent to-orange-500/2"></div>
