@@ -50,23 +50,42 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <Section className="bg-gradient-to-br from-primary/5 to-secondary/10 py-20 lg:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Ihr Anwalt für <span className="text-primary">Krypto-Betrug</span> Wiederherstellung
+      <Section className="bg-gradient-light py-20 lg:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10"></div>
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="inline-flex items-center px-4 py-2 bg-primary-light rounded-full text-primary text-sm font-medium mb-6">
+              ✨ Über 500 erfolgreiche Fälle gelöst
+            </div>
+            <h1 className="text-4xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+              Ihr Partner für<br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Krypto-Recovery</span>
             </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Spezialisierte Rechtsberatung zur Wiedererlangung Ihrer durch Kryptowährungsbetrug verlorenen Vermögenswerte.
+            <p className="text-xl lg:text-2xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto">
+              Holen Sie Ihr durch Betrug verlorenes Krypto-Vermögen zurück. Professionelle Rechtsberatung mit persönlicher Betreuung – transparent und erfolgsorientiert.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <Button size="lg" className="text-lg px-8 py-4 h-auto shadow-modern hover:shadow-lg transition-all duration-300">
                 <Phone className="mr-2 h-5 w-5" />
-                Sofort anrufen
+                Sofortberatung starten
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8">
-                Kostenlose Beratung
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto border-primary/20 hover:bg-primary/5 hover:border-primary transition-all duration-300">
+                Kostenlose Erstanalyse
               </Button>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-primary" />
+                100% kostenlose Erstberatung
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-primary" />
+                Kein Erfolg = keine Kosten
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-primary" />
+                24/7 Notfall-Hotline
+              </div>
             </div>
           </div>
         </div>
@@ -84,15 +103,15 @@ const Index = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="mx-auto mb-4 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                    <service.icon className="h-8 w-8 text-primary" />
+              <Card key={index} className="text-center hover:shadow-card hover:-translate-y-2 transition-all duration-300 border-0 shadow-sm bg-card/80 backdrop-blur-sm">
+                <CardHeader className="pb-4">
+                  <div className="mx-auto mb-6 w-20 h-20 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-modern">
+                    <service.icon className="h-10 w-10 text-white" />
                   </div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
+                  <CardDescription className="text-base leading-relaxed text-muted-foreground">
                     {service.description}
                   </CardDescription>
                 </CardContent>
@@ -128,39 +147,53 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
+              <div className="inline-flex items-center px-3 py-1 bg-primary-light rounded-full text-primary text-sm font-medium mb-4">
+                👥 Ihr persönliches Expertenteam
+              </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                Experten für Krypto-Rechtsfälle
+                Persönliche Betreuung,<br />professionelle Ergebnisse
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Mit über 10 Jahren Erfahrung im Finanzrecht und spezieller Expertise im Bereich 
-                Kryptowährungen helfen wir Opfern von Betrug dabei, ihre Vermögenswerte zurückzuerlangen.
+                Seit über 10 Jahren stehen wir Opfern von Krypto-Betrug zur Seite. Unser erfahrenes Team 
+                kombiniert juristische Expertise mit modernster Blockchain-Analyse, um Ihr Vermögen aufzuspüren 
+                und zurückzuholen.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Unser Team hat bereits über 500 erfolgreiche Fälle bearbeitet und Millionen von Euro 
-                für unsere Mandanten zurückgeholt.
+                <strong className="text-foreground">Über 25 Millionen Euro</strong> haben wir bereits für unsere Mandanten 
+                zurückgewonnen. Jeder Fall wird von einem spezialisierten Anwalt persönlich betreut – 
+                von der ersten Beratung bis zum erfolgreichen Abschluss.
               </p>
-              <Button size="lg">
-                Mehr erfahren
+              <Button size="lg" className="shadow-modern">
+                Ihr persönliches Team kennenlernen
               </Button>
             </div>
             <div className="lg:text-right">
-              <div className="bg-card p-8 rounded-lg border shadow-sm">
-                <div className="grid grid-cols-2 gap-6 text-center">
-                  <div>
-                    <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                    <div className="text-muted-foreground">Erfolgreiche Fälle</div>
+              <div className="bg-gradient-light p-8 rounded-2xl border-0 shadow-card relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div className="relative">
+                  <div className="grid grid-cols-2 gap-8 text-center">
+                    <div className="group">
+                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">25M€</div>
+                      <div className="text-muted-foreground text-sm">Zurückgewonnen</div>
+                    </div>
+                    <div className="group">
+                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">10+</div>
+                      <div className="text-muted-foreground text-sm">Jahre Erfahrung</div>
+                    </div>
+                    <div className="group">
+                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
+                      <div className="text-muted-foreground text-sm">Persönliche Betreuung</div>
+                    </div>
+                    <div className="group">
+                      <div className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">97%</div>
+                      <div className="text-muted-foreground text-sm">Erfolgsquote</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-3xl font-bold text-primary mb-2">10+</div>
-                    <div className="text-muted-foreground">Jahre Erfahrung</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                    <div className="text-muted-foreground">Verfügbarkeit</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-primary mb-2">95%</div>
-                    <div className="text-muted-foreground">Erfolgsquote</div>
+                  <div className="mt-8 p-4 bg-white/50 rounded-xl border border-primary/10">
+                    <div className="flex items-center gap-3">
+                      <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+                      <span className="text-sm text-muted-foreground">Aktuell 47 aktive Fälle in Bearbeitung</span>
+                    </div>
                   </div>
                 </div>
               </div>
