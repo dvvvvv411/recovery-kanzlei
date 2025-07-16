@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera } from "lucide-react";
 import heroImage from "@/assets/crypto-hero-bg.jpg";
+import heroVideo from "@/assets/crypto-hero-video.mp4";
 
 const Index = () => {
   const services = [
@@ -130,43 +131,48 @@ const Index = () => {
 
       {/* Hero Section */}
       <Section className="py-20 lg:py-32 relative overflow-hidden min-h-screen flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-mystery backdrop-blur-[1px]"></div>
+        <video 
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-glass backdrop-blur-md rounded-full text-primary text-sm font-medium mb-6 border border-[var(--border-glass)] shadow-glass">
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-glass backdrop-blur-md rounded-full text-white text-sm font-medium mb-6 border border-[var(--border-glass)] shadow-glass" style={{ textShadow: 'var(--text-glow)' }}>
               ✨ Über 500 erfolgreiche Fälle gelöst
             </div>
-            <h1 className="text-4xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-4xl lg:text-7xl font-bold text-white mb-6 leading-tight" style={{ textShadow: 'var(--text-glow-strong)' }}>
               Ihr Partner für<br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Krypto-Recovery</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 20px hsl(214 100% 60% / 0.8))' }}>Krypto-Recovery</span>
             </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl text-gray-100 mb-10 leading-relaxed max-w-3xl mx-auto" style={{ textShadow: 'var(--text-glow)' }}>
               Holen Sie Ihr durch Betrug verlorenes Krypto-Vermögen zurück. Professionelle Rechtsberatung mit persönlicher Betreuung – transparent und erfolgsorientiert.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-glass backdrop-blur-md border-[var(--border-glass)] hover:bg-background/20 hover:border-primary transition-all duration-300 shadow-glass">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300 shadow-glass" style={{ textShadow: 'var(--text-glow)' }}>
                 <Phone className="mr-2 h-5 w-5" />
                 Sofortberatung starten
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-glass backdrop-blur-md border-[var(--border-glass)] hover:bg-background/20 hover:border-primary transition-all duration-300 shadow-glass">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300 shadow-glass" style={{ textShadow: 'var(--text-glow)' }}>
                 Kostenlose Erstanalyse
               </Button>
             </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-primary" />
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-200">
+              <div className="flex items-center gap-2" style={{ textShadow: 'var(--text-glow)' }}>
+                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" />
                 100% kostenlose Erstberatung
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-primary" />
+              <div className="flex items-center gap-2" style={{ textShadow: 'var(--text-glow)' }}>
+                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" />
                 Kein Erfolg = keine Kosten
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-primary" />
+              <div className="flex items-center gap-2" style={{ textShadow: 'var(--text-glow)' }}>
+                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" />
                 24/7 Notfall-Hotline
               </div>
             </div>
