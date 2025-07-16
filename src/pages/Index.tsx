@@ -263,53 +263,82 @@ const Index = () => {
       </Section>
 
       {/* Company Statistics Section */}
-      <Section className="py-16 bg-gray-900">
-        <div className="container mx-auto px-4">
+      <Section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/10"></div>
+        <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl opacity-40"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-4 gap-8 items-center">
             {/* First Stat */}
-            <div className="text-center relative">
-              <div className="mb-2">
-                <AnimatedCounter end={15} suffix="+" />
+            <div className="text-center relative group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-primary rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
+                <div className="relative bg-gradient-glass backdrop-blur-md border border-primary/30 rounded-xl p-6 shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)] hover:shadow-[0_0_50px_hsl(214_100%_60%_/_0.5)] transition-all duration-500">
+                  <div className="mb-3">
+                    <AnimatedCounter end={15} suffix="+" />
+                  </div>
+                  <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
+                    Jahre Fachexpertise
+                  </p>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full animate-pulse shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]"></div>
+                </div>
               </div>
-              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
-                Jahre Fachexpertise
-              </p>
-              {/* Divider */}
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
+              {/* Modern Divider */}
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
             </div>
 
             {/* Second Stat */}
-            <div className="text-center relative">
-              <div className="mb-2">
-                <AnimatedCounter end={50} suffix=" Mio+" />
+            <div className="text-center relative group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-primary rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
+                <div className="relative bg-gradient-glass backdrop-blur-md border border-primary/30 rounded-xl p-6 shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)] hover:shadow-[0_0_50px_hsl(214_100%_60%_/_0.5)] transition-all duration-500">
+                  <div className="mb-3">
+                    <AnimatedCounter end={50} suffix=" Mio+" />
+                  </div>
+                  <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
+                    Euro verfolgtes Schadensvolumen bei Cybercrime
+                  </p>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full animate-pulse shadow-[0_0_10px_hsl(200_100%_60%_/_0.8)]"></div>
+                </div>
               </div>
-              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
-                Euro verfolgtes Schadensvolumen bei Cybercrime
-              </p>
-              {/* Divider */}
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
+              {/* Modern Divider */}
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
             </div>
 
             {/* Third Stat */}
-            <div className="text-center relative">
-              <div className="mb-2">
-                <AnimatedCounter end={13} />
+            <div className="text-center relative group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-primary rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
+                <div className="relative bg-gradient-glass backdrop-blur-md border border-primary/30 rounded-xl p-6 shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)] hover:shadow-[0_0_50px_hsl(214_100%_60%_/_0.5)] transition-all duration-500">
+                  <div className="mb-3">
+                    <AnimatedCounter end={13} />
+                  </div>
+                  <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
+                    topmotivierte Mitarbeiter:innen
+                  </p>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-cyan-400 rounded-full animate-pulse shadow-[0_0_10px_hsl(180_100%_60%_/_0.8)]"></div>
+                </div>
               </div>
-              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
-                topmotivierte Mitarbeiter:innen
-              </p>
-              {/* Divider */}
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
+              {/* Modern Divider */}
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
             </div>
 
             {/* Fourth Stat */}
-            <div className="text-center">
-              <div className="mb-2">
-                <AnimatedCounter end={1000} suffix="+" />
+            <div className="text-center relative group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-primary rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
+                <div className="relative bg-gradient-glass backdrop-blur-md border border-primary/30 rounded-xl p-6 shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)] hover:shadow-[0_0_50px_hsl(214_100%_60%_/_0.5)] transition-all duration-500">
+                  <div className="mb-3">
+                    <AnimatedCounter end={1000} suffix="+" />
+                  </div>
+                  <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
+                    Erfolgreich abgewickelte Immobilientransaktionen
+                  </p>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-indigo-400 rounded-full animate-pulse shadow-[0_0_10px_hsl(240_100%_60%_/_0.8)]"></div>
+                </div>
               </div>
-              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
-                Erfolgreich abgewickelte Immobilientransaktionen
-              </p>
             </div>
           </div>
         </div>
