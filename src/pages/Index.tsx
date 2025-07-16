@@ -267,7 +267,7 @@ const Index = () => {
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/10"></div>
         <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl opacity-40"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-blue/10 rounded-full blur-3xl opacity-40"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-4 gap-8 items-center">
@@ -300,7 +300,7 @@ const Index = () => {
                   <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
                     Euro verfolgtes Schadensvolumen bei Cybercrime
                   </p>
-                  <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full animate-pulse shadow-[0_0_10px_hsl(200_100%_60%_/_0.8)]"></div>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-accent-blue rounded-full animate-pulse shadow-[0_0_10px_hsl(200_100%_60%_/_0.8)]"></div>
                 </div>
               </div>
               {/* Modern Divider */}
@@ -318,7 +318,7 @@ const Index = () => {
                   <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
                     topmotivierte Mitarbeiter:innen
                   </p>
-                  <div className="absolute top-2 right-2 w-2 h-2 bg-cyan-400 rounded-full animate-pulse shadow-[0_0_10px_hsl(180_100%_60%_/_0.8)]"></div>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-accent-cyan rounded-full animate-pulse shadow-[0_0_10px_hsl(180_100%_60%_/_0.8)]"></div>
                 </div>
               </div>
               {/* Modern Divider */}
@@ -336,7 +336,7 @@ const Index = () => {
                   <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
                     Erfolgreich abgewickelte Immobilientransaktionen
                   </p>
-                  <div className="absolute top-2 right-2 w-2 h-2 bg-indigo-400 rounded-full animate-pulse shadow-[0_0_10px_hsl(240_100%_60%_/_0.8)]"></div>
+                  <div className="absolute top-2 right-2 w-2 h-2 bg-accent-indigo rounded-full animate-pulse shadow-[0_0_10px_hsl(240_100%_60%_/_0.8)]"></div>
                 </div>
               </div>
             </div>

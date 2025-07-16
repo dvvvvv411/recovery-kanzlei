@@ -18,6 +18,10 @@ All colors MUST be HSL.
     --primary-foreground: 210 40% 98%;
     --primary-light: 214 100% 95%;
     --primary-dark: 214 100% 40%;
+    --accent-blue: 200 100% 60%;
+    --accent-cyan: 180 100% 60%;
+    --accent-indigo: 240 100% 60%;
+    --white: 0 0% 100%;
     --secondary: 210 40% 96%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96%;
