@@ -2,9 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera, Euro, Building2, Target } from "lucide-react";
+import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera, Euro, Building2, Target, ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import newsLegalImage from "@/assets/news-crypto-legal.jpg";
+import newsRegulationImage from "@/assets/news-crypto-regulation.jpg";
 
 // Animated Counter Component
 const AnimatedCounter = ({ end, duration = 2000, suffix = "" }: { end: number; duration?: number; suffix?: string }) => {
@@ -175,6 +177,45 @@ const Index = () => {
     {
       name: "Partner Law Firm 5",
       logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+5"
+    }
+  ];
+
+  const newsArticles = [
+    {
+      id: 1,
+      title: "Krypto Betrugsopfer bekommt 8,69 Bitcoin zurück",
+      subtitle: "Erfolg und Hoffnung im Kampf gegen Internetbetrug / CyberCrime",
+      content: "Ein österreichisches Betrugsopfer erhielt kürzlich 8,69 Bitcoin zurück – ein Wert von rund 800.000 EUR (Stand Juli 2025). Möglich wurde dies durch die Zusammenarbeit zwischen unserer Kanzlei ATB.LAW, den Strafverfolgungsbehörden und dem gezielten Einsatz von Blockchain-Forensik.",
+      details: "Wir berichten über einen Fall, der zeigt, wie effektiver Rechtsschutz im digitalen Raum aussehen kann – und welche juristischen Herausforderungen es zu meistern galt.",
+      image: "/lovable-uploads/77e79b13-9bec-4809-ba2f-258c1dc251ef.png",
+      badges: [
+        { text: "800.000 EUR zurückgeholt", icon: CheckCircle, bgColor: "bg-blue-100", textColor: "text-blue-800", iconColor: "text-blue-600" },
+        { text: "Blockchain-Forensik", icon: Shield, bgColor: "bg-green-100", textColor: "text-green-800", iconColor: "text-green-600" }
+      ]
+    },
+    {
+      id: 2,
+      title: "Neue EU-Richtlinie stärkt Krypto-Anlegerschutz erheblich",
+      subtitle: "Verbesserte Rechtslage für Betrugsopfer in Europa",
+      content: "Die Europäische Union hat neue Regelungen zum Schutz von Kryptowährungsanlegern verabschiedet. Diese stärken die Rechtspositionen von Betrugsopfern erheblich und erleichtern die grenzüberschreitende Rechtsdurchsetzung.",
+      details: "Unsere Kanzlei hat aktiv an der Erarbeitung dieser Richtlinien mitgewirkt und kann nun noch effektiver für unsere Mandanten agieren. Die neuen Regelungen ermöglichen schnellere Verfahren und bessere Erfolgsaussichten.",
+      image: newsLegalImage,
+      badges: [
+        { text: "EU-weite Geltung", icon: Globe, bgColor: "bg-blue-100", textColor: "text-blue-800", iconColor: "text-blue-600" },
+        { text: "Besserer Schutz", icon: Shield, bgColor: "bg-green-100", textColor: "text-green-800", iconColor: "text-green-600" }
+      ]
+    },
+    {
+      id: 3,
+      title: "Blockchain-Analyse führt zu 2,3 Millionen Euro Rückgewinnung",
+      subtitle: "Modernste Technologie im Dienst der Rechtsdurchsetzung",
+      content: "Durch den Einsatz fortschrittlicher Blockchain-Analysewerkzeuge konnten wir für eine Gruppe von 15 Mandanten insgesamt 2,3 Millionen Euro aus einem komplexen Ponzi-Schema zurückgewinnen.",
+      details: "Der Fall zeigt, wie wichtig die Kombination aus juristischer Expertise und technischem Know-how ist. Unsere forensischen Analysten konnten die Geldströme über mehrere Blockchain-Netzwerke hinweg verfolgen und die Täter identifizieren.",
+      image: newsRegulationImage,
+      badges: [
+        { text: "2,3 Millionen EUR", icon: TrendingUp, bgColor: "bg-blue-100", textColor: "text-blue-800", iconColor: "text-blue-600" },
+        { text: "15 Mandanten", icon: Users, bgColor: "bg-purple-100", textColor: "text-purple-800", iconColor: "text-purple-600" }
+      ]
     }
   ];
 
@@ -352,53 +393,110 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* Krypto Betrugsopfer Section */}
+      {/* News Carousel Section */}
       <Section className="py-16 bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-blue-600/5"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Text Content */}
-              <div className="space-y-6">
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                  Krypto Betrugsopfer bekommt 
-                  <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> 8,69 Bitcoin zurück</span>
-                </h2>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-blue-800">
-                    Erfolg und Hoffnung im Kampf gegen Internetbetrug / CyberCrime
-                  </h3>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Ein österreichisches Betrugsopfer erhielt kürzlich 8,69 Bitcoin zurück – ein Wert von rund 800.000 EUR (Stand Juli 2025). Möglich wurde dies durch die Zusammenarbeit zwischen unserer Kanzlei ATB.LAW, den Strafverfolgungsbehörden und dem gezielten Einsatz von Blockchain-Forensik.
-                  </p>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Wir berichten über einen Fall, der zeigt, wie effektiver Rechtsschutz im digitalen Raum aussehen kann – und welche juristischen Herausforderungen es zu meistern galt.
-                  </p>
-                </div>
-                <div className="flex items-center gap-4 pt-4">
-                  <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                    <CheckCircle className="h-5 w-5 text-blue-600" />
-                    <span className="text-blue-800 font-medium">800.000 EUR zurückgeholt</span>
-                  </div>
-                  <div className="flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full">
-                    <Shield className="h-5 w-5 text-green-600" />
-                    <span className="text-green-800 font-medium">Blockchain-Forensik</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right Column - Image */}
-              <div className="relative h-full flex items-stretch">
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 w-full">
-                  <img 
-                    src="/lovable-uploads/77e79b13-9bec-4809-ba2f-258c1dc251ef.png" 
-                    alt="Rechtsdokument Bitcoin Rückgabe"
-                    className="w-full h-[400px] object-cover object-center rounded-xl"
-                  />
-                </div>
-              </div>
+            {/* Section Header */}
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-4">
+                Aktuelle 
+                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> Erfolge & News</span>
+              </h2>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                Bleiben Sie informiert über unsere neuesten Erfolge und wichtige Entwicklungen im Kryptowährungsrecht
+              </p>
             </div>
+
+            {/* News Carousel */}
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 8000,
+                  stopOnInteraction: true,
+                })
+              ]}
+              className="w-full max-w-7xl mx-auto"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {newsArticles.map((article) => (
+                  <CarouselItem key={article.id} className="pl-2 md:pl-4">
+                    <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-blue-100/50 hover:shadow-2xl transition-all duration-500 group">
+                      <div className="grid lg:grid-cols-2 gap-0 items-stretch min-h-[500px]">
+                        {/* Content Column */}
+                        <div className="p-8 lg:p-12 flex flex-col justify-center space-y-6">
+                          {/* Badge */}
+                          <div className="inline-block">
+                            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full border border-blue-200">
+                              Aktueller Erfolg
+                            </span>
+                          </div>
+                          
+                          <div className="space-y-4">
+                            <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight group-hover:text-blue-900 transition-colors">
+                              {article.title}
+                            </h3>
+                            
+                            <h4 className="text-lg font-semibold text-blue-800">
+                              {article.subtitle}
+                            </h4>
+                            
+                            <p className="text-gray-700 leading-relaxed">
+                              {article.content}
+                            </p>
+                            
+                            <p className="text-gray-600 leading-relaxed">
+                              {article.details}
+                            </p>
+                          </div>
+                          
+                          {/* Success Badges */}
+                          <div className="flex flex-wrap gap-3 pt-4">
+                            {article.badges.map((badge, badgeIndex) => (
+                              <div key={badgeIndex} className={`flex items-center gap-2 px-4 py-2 ${badge.bgColor} rounded-full border-2 border-blue-200/50`}>
+                                <badge.icon className={`h-5 w-5 ${badge.iconColor}`} />
+                                <span className={`${badge.textColor} font-medium text-sm`}>{badge.text}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Image Column */}
+                        <div className="relative h-full min-h-[400px] lg:min-h-[500px]">
+                          <div className="relative h-full bg-gradient-to-br from-blue-50 to-white p-4">
+                            <img 
+                              src={article.image} 
+                              alt={article.title}
+                              className="w-full h-full object-cover object-center rounded-2xl shadow-lg border border-blue-100"
+                            />
+                            {/* Blue accent overlay */}
+                            <div className="absolute inset-4 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+                          </div>
+                          {/* Decorative blue accent */}
+                          <div className="absolute top-8 right-8 w-16 h-16 bg-blue-500/20 rounded-full blur-xl"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              
+              {/* Custom Navigation */}
+              <div className="flex justify-center gap-4 mt-8">
+                <Button variant="outline" size="sm" className="rounded-full w-12 h-12 p-0 border-blue-200 hover:bg-blue-50 hover:border-blue-300">
+                  <ChevronLeft className="h-5 w-5 text-blue-600" />
+                </Button>
+                <Button variant="outline" size="sm" className="rounded-full w-12 h-12 p-0 border-blue-200 hover:bg-blue-50 hover:border-blue-300">
+                  <ChevronRight className="h-5 w-5 text-blue-600" />
+                </Button>
+              </div>
+            </Carousel>
           </div>
         </div>
       </Section>
