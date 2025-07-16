@@ -40,6 +40,8 @@ All colors MUST be HSL.
     --border-glass: hsl(214 100% 50% / 0.2);
     --text-glow: 0 0 20px hsl(214 100% 60% / 0.6);
     --text-glow-strong: 0 0 40px hsl(214 100% 70% / 0.8);
+    --glow-pulse: 0 0 20px hsl(214 100% 60% / 0.4), 0 0 40px hsl(214 100% 60% / 0.2), 0 0 60px hsl(214 100% 60% / 0.1);
+    --glow-pulse-strong: 0 0 30px hsl(214 100% 60% / 0.8), 0 0 60px hsl(214 100% 60% / 0.4), 0 0 90px hsl(214 100% 60% / 0.2);
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 214 100% 50%;
@@ -82,6 +84,8 @@ All colors MUST be HSL.
     --border-glass: hsl(214 100% 60% / 0.3);
     --text-glow: 0 0 20px hsl(214 100% 40% / 0.8);
     --text-glow-strong: 0 0 40px hsl(214 100% 50% / 1);
+    --glow-pulse: 0 0 25px hsl(214 100% 40% / 0.6), 0 0 50px hsl(214 100% 40% / 0.3), 0 0 75px hsl(214 100% 40% / 0.15);
+    --glow-pulse-strong: 0 0 40px hsl(214 100% 50% / 1), 0 0 80px hsl(214 100% 50% / 0.5), 0 0 120px hsl(214 100% 50% / 0.25);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 214 100% 60%;
@@ -100,5 +104,162 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Keyframes for animations */
+  @keyframes accordion-down {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+    to {
+      height: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+
+  @keyframes scale-in {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-out {
+    from {
+      transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes glow-pulse {
+    0% {
+      filter: drop-shadow(0 0 20px hsl(214 100% 60% / 0.6)) drop-shadow(0 0 40px hsl(214 100% 60% / 0.3));
+    }
+    50% {
+      filter: drop-shadow(0 0 30px hsl(214 100% 60% / 0.8)) drop-shadow(0 0 60px hsl(214 100% 60% / 0.5)) drop-shadow(0 0 90px hsl(214 100% 60% / 0.3));
+    }
+    100% {
+      filter: drop-shadow(0 0 20px hsl(214 100% 60% / 0.6)) drop-shadow(0 0 40px hsl(214 100% 60% / 0.3));
+    }
+  }
+
+  /* Animation classes */
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+
+  .animate-fade-out {
+    animation: fade-out 0.3s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.2s ease-out;
+  }
+
+  .animate-scale-out {
+    animation: scale-out 0.2s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.3s ease-out;
+  }
+
+  .animate-slide-out-right {
+    animation: slide-out-right 0.3s ease-out;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite alternate;
+  }
+
+  .animate-enter {
+    animation: fade-in 0.3s ease-out, scale-in 0.2s ease-out;
+  }
+
+  .animate-exit {
+    animation: fade-out 0.3s ease-out, scale-out 0.2s ease-out;
+  }
+
+  /* Interactive Elements */
+  .story-link {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  .pulse {
+    @apply animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite];
   }
 }
