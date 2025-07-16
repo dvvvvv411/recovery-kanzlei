@@ -361,7 +361,7 @@ const Index = () => {
             {/* Section Header */}
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Krypto News
+                Kanzlei News
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Aktuelle Entwicklungen und Erfolgsgeschichten aus der Welt der Kryptowährung-Recovery
@@ -376,7 +376,7 @@ const Index = () => {
               }}
               plugins={[
                 Autoplay({
-                  delay: 6000,
+                  delay: 7000,
                 }),
               ]}
               className="w-full relative"
@@ -518,9 +518,9 @@ const Index = () => {
                 </CarouselItem>
               </CarouselContent>
 
-              {/* Navigation Buttons */}
-              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 backdrop-blur-sm border-blue-200 hover:bg-blue-50 hover:border-blue-300 shadow-lg transition-all duration-300" />
-              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white/90 backdrop-blur-sm border-blue-200 hover:bg-blue-50 hover:border-blue-300 shadow-lg transition-all duration-300" />
+              {/* Navigation Buttons - Outside the cards */}
+              <CarouselPrevious className="absolute -left-12 top-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white border-2 border-blue-100 hover:bg-blue-50 hover:border-blue-300 shadow-xl transition-all duration-300 hover:scale-110" />
+              <CarouselNext className="absolute -right-12 top-1/2 -translate-y-1/2 h-14 w-14 rounded-full bg-white border-2 border-blue-100 hover:bg-blue-50 hover:border-blue-300 shadow-xl transition-all duration-300 hover:scale-110" />
 
               {/* Dots Indicator */}
               <div className="flex justify-center mt-8 space-x-2">
