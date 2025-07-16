@@ -110,19 +110,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="absolute top-0 left-0 right-0 z-50 bg-gradient-glass backdrop-blur-md border-b border-white/20">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Scale className="h-8 w-8 text-white drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 10px hsl(214 100% 60% / 0.8))' }} />
-            <span className="text-xl font-bold text-white" style={{ textShadow: 'var(--text-glow)' }}>CryptoLaw</span>
+            <Scale className="h-8 w-8 text-primary" />
+            <span className="text-xl font-bold text-foreground">CryptoLaw</span>
           </div>
-          <div className="hidden md:flex items-center space-x-6">
-            <a href="#services" className="text-white/90 hover:text-white transition-colors" style={{ textShadow: 'var(--text-glow)' }}>Leistungen</a>
-            <a href="#team" className="text-white/90 hover:text-white transition-colors" style={{ textShadow: 'var(--text-glow)' }}>Team</a>
-            <a href="#successes" className="text-white/90 hover:text-white transition-colors" style={{ textShadow: 'var(--text-glow)' }}>Erfolge</a>
-            <a href="#about" className="text-white/90 hover:text-white transition-colors" style={{ textShadow: 'var(--text-glow)' }}>Über uns</a>
-            <a href="#contact" className="text-white/90 hover:text-white transition-colors" style={{ textShadow: 'var(--text-glow)' }}>Kontakt</a>
-            <Button variant="outline" className="bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300" style={{ textShadow: 'var(--text-glow)' }}>Beratung anfragen</Button>
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#services" className="text-foreground hover:text-primary transition-colors">Leistungen</a>
+            <a href="#team" className="text-foreground hover:text-primary transition-colors">Team</a>
+            <a href="#successes" className="text-foreground hover:text-primary transition-colors">Erfolge</a>
+            <a href="#about" className="text-foreground hover:text-primary transition-colors">Über uns</a>
+            <a href="#contact" className="text-foreground hover:text-primary transition-colors">Kontakt</a>
+            <Button variant="outline" className="bg-gradient-glass backdrop-blur-md border-[var(--border-glass)] hover:bg-background/20 shadow-glass">Beratung anfragen</Button>
           </div>
         </div>
       </nav>
