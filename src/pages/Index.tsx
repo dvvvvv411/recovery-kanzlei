@@ -181,6 +181,24 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* Success as a Service Section */}
+      <Section className="py-16 bg-gradient-primary">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-4 gap-8 items-center">
+            <div className="col-span-1">
+              <h2 className="text-2xl lg:text-3xl font-bold text-white text-center">
+                SUCCESS AS A SERVICE
+              </h2>
+            </div>
+            <div className="col-span-3">
+              <p className="text-lg lg:text-xl text-white leading-relaxed text-left">
+                Wir verstehen uns nicht „nur" als Rechtsvertreter im klassischen Sinn, sondern vielmehr als langfristiger Wegbegleiter und Partner. Mandant:innen sollen von unserer Arbeit auch tatsächlich profitieren. Wir legen daher den Fokus auf die individuellen Bedürfnisse und finden gemeinsam maßgeschneiderte Lösungen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Services Section */}
       <Section id="services">
         <div className="container mx-auto px-4">
