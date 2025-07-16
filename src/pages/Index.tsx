@@ -130,15 +130,14 @@ const Index = () => {
       {/* Hero Section */}
       <Section className="py-20 lg:py-32 relative overflow-hidden min-h-screen flex items-center">
         <div className="absolute inset-0 w-full h-full">
-          <div style={{padding:"56.25% 0 0 0", position:"relative", width:"100%", height:"100%"}}>
-            <iframe 
-              src="https://player.vimeo.com/video/1101576926?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=1&background=1" 
-              frameBorder="0" 
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-              style={{position:"absolute", top:"0", left:"0", width:"100%", height:"100%"}} 
-              title="Crypto Background Video"
-            />
-          </div>
+          <iframe 
+            src="https://player.vimeo.com/video/1101576926?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=1&background=1" 
+            frameBorder="0" 
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{width:"100%", height:"100%", objectFit:"cover"}} 
+            title="Crypto Background Video"
+          />
         </div>
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
         <div className="container mx-auto px-4 relative z-10">
