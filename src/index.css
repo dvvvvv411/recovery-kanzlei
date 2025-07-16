@@ -93,28 +93,6 @@ All colors MUST be HSL.
   }
 }
 
-@layer components {
-  .animate-glow {
-    animation: glow 3s ease-in-out infinite alternate;
-  }
-
-  @keyframes glow {
-    from {
-      text-shadow: 
-        var(--text-glow-strong), 
-        0 0 60px hsl(214 100% 60% / 0.8),
-        0 0 90px hsl(214 100% 70% / 0.4);
-    }
-    to {
-      text-shadow: 
-        var(--text-glow-strong), 
-        0 0 80px hsl(214 100% 70% / 1),
-        0 0 120px hsl(214 100% 80% / 0.6),
-        0 0 160px hsl(214 100% 90% / 0.3);
-    }
-  }
-}
-
 @layer base {
   * {
     @apply border-border;

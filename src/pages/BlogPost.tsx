@@ -87,7 +87,7 @@ const BlogPost = () => {
               <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Betrugsbekämpfung</Badge>
             </div>
             
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight animate-glow" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
               Krypto Betrugsopfer bekommt <span className="bg-gradient-primary bg-clip-text text-transparent">8,69 Bitcoin</span> zurück
             </h1>
             
