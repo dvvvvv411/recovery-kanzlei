@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera } from "lucide-react";
+import CryptoBubbles from "@/components/CryptoBubbles";
 
 const Index = () => {
   const services = [
@@ -142,6 +143,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary/30"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+        <CryptoBubbles />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-glass backdrop-blur-md rounded-full text-white text-sm font-medium mb-6 border border-[var(--border-glass)] shadow-glass animate-pulse" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 30px hsl(214 100% 60% / 0.5), var(--shadow-glass)' }}>
