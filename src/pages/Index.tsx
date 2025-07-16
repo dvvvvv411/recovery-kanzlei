@@ -154,28 +154,28 @@ const Index = () => {
 
   const partnerLogos = [
     {
-      name: "anwalt.de",
-      logo: "https://www.anwalt.de/logo.png"
+      name: "Cybercrime Komplettschutz",
+      logo: "/lovable-uploads/da91dba8-4542-49e2-a65f-f3c47c7a5afd.png"
     },
     {
-      name: "Partner Law Firm 1",
-      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+1"
+      name: "Polizei Nordrhein-Westfalen",
+      logo: "/lovable-uploads/1834d8de-5216-4084-be7f-b4973552d4e2.png"
     },
     {
-      name: "Partner Law Firm 2", 
-      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+2"
+      name: "Bundeskriminalamt", 
+      logo: "/lovable-uploads/b2f48b3f-04a9-45fa-93e8-b4a2979906d0.png"
     },
     {
-      name: "Partner Law Firm 3",
-      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+3"
+      name: "Coinbase",
+      logo: "/lovable-uploads/40855976-8084-4aa6-8ab3-40a1b0d75ab6.png"
     },
     {
-      name: "Partner Law Firm 4",
-      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+4"
+      name: "Binance",
+      logo: "/lovable-uploads/a353d06a-d600-40b4-8ac2-e8fae21230d5.png"
     },
     {
-      name: "Partner Law Firm 5",
-      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+5"
+      name: "HKCM",
+      logo: "/lovable-uploads/a086ae08-4b5f-455b-b45e-f472a01b4701.png"
     }
   ];
 
