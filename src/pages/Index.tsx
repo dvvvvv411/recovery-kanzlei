@@ -457,7 +457,7 @@ const Index = () => {
                 <div>
                   <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
                     Ausgezeichnete 
-                    <span className="bg-gradient-to-r from-orange-500 to-blue-600 bg-clip-text text-transparent"> Kompetenz</span>
+                    <span className="text-orange-500"> Kompetenz</span>
                   </h2>
                   <p className="text-lg text-gray-700">
                     Unsere Expertise wird regelmäßig von führenden Bewertungsportalen und Fachmagazinen anerkannt.
