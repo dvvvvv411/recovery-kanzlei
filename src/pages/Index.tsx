@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { Shield, Scale, Users, Phone, Mail, MapPin, Clock, CheckCircle, Award, TrendingUp, Star, User, Gavel, Heart, Globe, TreePine, Camera, Euro, Building2, Target } from "lucide-react";
 import { useEffect, useState } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 // Animated Counter Component
 const AnimatedCounter = ({ end, duration = 2000, suffix = "" }: { end: number; duration?: number; suffix?: string }) => {
@@ -147,6 +149,33 @@ const Index = () => {
     "Handelsblatt: 'Pioniere der Krypto-Recovery'",
     "ARD: 'Experten für digitale Vermögenswerte'",
     "Legal Tribune: 'Führend in Blockchain-Recht'"
+  ];
+
+  const partnerLogos = [
+    {
+      name: "anwalt.de",
+      logo: "https://www.anwalt.de/logo.png"
+    },
+    {
+      name: "Partner Law Firm 1",
+      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+1"
+    },
+    {
+      name: "Partner Law Firm 2", 
+      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+2"
+    },
+    {
+      name: "Partner Law Firm 3",
+      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+3"
+    },
+    {
+      name: "Partner Law Firm 4",
+      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+4"
+    },
+    {
+      name: "Partner Law Firm 5",
+      logo: "https://via.placeholder.com/200x80/f0f0f0/333333?text=Partner+5"
+    }
   ];
 
   return (
@@ -374,6 +403,48 @@ const Index = () => {
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-600/20 rounded-full blur-xl"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Partner Logo Carousel Section */}
+      <Section className="py-8 bg-gradient-to-r from-orange-500/10 via-orange-300/5 to-blue-500/10 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-blue-600/10"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-orange-600 to-blue-600 bg-clip-text text-transparent mb-2">
+                Vertrauensvolle Partnerschaften
+              </h2>
+              <p className="text-muted-foreground">Gemeinsam für Ihre Rechte</p>
+            </div>
+            
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                })
+              ]}
+              className="w-full max-w-6xl mx-auto"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {partnerLogos.map((partner, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
+                    <div className="group flex items-center justify-center h-20 p-4 transition-all duration-300 hover:scale-110">
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
       </Section>
