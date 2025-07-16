@@ -139,39 +139,41 @@ const Index = () => {
             title="Crypto Background Video"
           />
         </div>
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-glass backdrop-blur-md rounded-full text-white text-sm font-medium mb-6 border border-[var(--border-glass)] shadow-glass" style={{ textShadow: 'var(--text-glow)' }}>
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-glass backdrop-blur-md rounded-full text-white text-sm font-medium mb-6 border border-[var(--border-glass)] shadow-glass animate-pulse" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 30px hsl(214 100% 60% / 0.5), var(--shadow-glass)' }}>
               ✨ Über 500 erfolgreiche Fälle gelöst
             </div>
-            <h1 className="text-4xl lg:text-7xl font-bold text-white mb-6 leading-tight" style={{ textShadow: 'var(--text-glow-strong)' }}>
+            <h1 className="text-4xl lg:text-7xl font-bold text-white mb-6 leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
               Ihr Partner für<br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 20px hsl(214 100% 60% / 0.8))' }}>Krypto-Recovery</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 40px hsl(214 100% 60% / 1)) drop-shadow(0 0 80px hsl(214 100% 60% / 0.6))' }}>Krypto-Recovery</span>
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-100 mb-10 leading-relaxed max-w-3xl mx-auto" style={{ textShadow: 'var(--text-glow)' }}>
+            <p className="text-xl lg:text-2xl text-gray-100 mb-10 leading-relaxed max-w-3xl mx-auto" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
               Holen Sie Ihr durch Betrug verlorenes Krypto-Vermögen zurück. Professionelle Rechtsberatung mit persönlicher Betreuung – transparent und erfolgsorientiert.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300 shadow-glass" style={{ textShadow: 'var(--text-glow)' }}>
-                <Phone className="mr-2 h-5 w-5" />
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300 shadow-glass hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.6)]" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 20px hsl(214 100% 60% / 0.3), var(--shadow-glass)' }}>
+                <Phone className="mr-2 h-5 w-5 drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 10px hsl(214 100% 60% / 0.8))' }} />
                 Sofortberatung starten
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300 shadow-glass" style={{ textShadow: 'var(--text-glow)' }}>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 h-auto bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300 shadow-glass hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.6)]" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 20px hsl(214 100% 60% / 0.3), var(--shadow-glass)' }}>
                 Kostenlose Erstanalyse
               </Button>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-200">
-              <div className="flex items-center gap-2" style={{ textShadow: 'var(--text-glow)' }}>
-                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" />
+              <div className="flex items-center gap-2 p-2 rounded-lg" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 15px hsl(214 100% 60% / 0.2)' }}>
+                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 10px hsl(214 100% 60% / 0.8))' }} />
                 100% kostenlose Erstberatung
               </div>
-              <div className="flex items-center gap-2" style={{ textShadow: 'var(--text-glow)' }}>
-                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" />
+              <div className="flex items-center gap-2 p-2 rounded-lg" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 15px hsl(214 100% 60% / 0.2)' }}>
+                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 10px hsl(214 100% 60% / 0.8))' }} />
                 Kein Erfolg = keine Kosten
               </div>
-              <div className="flex items-center gap-2" style={{ textShadow: 'var(--text-glow)' }}>
-                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" />
+              <div className="flex items-center gap-2 p-2 rounded-lg" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 15px hsl(214 100% 60% / 0.2)' }}>
+                <CheckCircle className="h-4 w-4 text-primary drop-shadow-lg" style={{ filter: 'drop-shadow(0 0 10px hsl(214 100% 60% / 0.8))' }} />
                 24/7 Notfall-Hotline
               </div>
             </div>
