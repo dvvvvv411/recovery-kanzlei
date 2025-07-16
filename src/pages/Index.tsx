@@ -375,6 +375,49 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* We Keep It Smart Section */}
+      <Section className="py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50/30 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-blue-600/5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Left Column - Image */}
+              <div className="relative h-full flex items-stretch">
+                <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
+                  <img 
+                    src="/lovable-uploads/68251422-67c7-4a32-9eb6-935634b7e4ff.png" 
+                    alt="Moderne Anwaltskanzlei - Team bei der Arbeit"
+                    className="w-full h-[500px] object-cover object-center rounded-xl"
+                  />
+                </div>
+              </div>
+
+              {/* Right Column - Text Content */}
+              <div className="space-y-6">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                  We keep it smart, but 
+                  <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> simple</span>
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Mit ATB.LAW haben wir unsere Vision einer modernen und innovativen Anwalts­kanzlei verwirklicht. Wir sind ein Team mit gemeinsamen Werten und Zielen. Uns ist wichtig, dass unsere Mandant:innen nicht nur die bestmögliche Rechts­beratung erhalten, sondern sich auch als geschätzte Partner fühlen.
+                </p>
+                <div className="flex items-center gap-4 pt-4">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
+                    <CheckCircle className="h-5 w-5 text-blue-600" />
+                    <span className="text-blue-800 font-medium">Modern & Innovativ</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
+                    <Heart className="h-5 w-5 text-blue-600" />
+                    <span className="text-blue-800 font-medium">Geschätzte Partner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Partner Logo Carousel Section */}
       <Section className="py-8 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-600/2 via-transparent to-orange-500/2"></div>
