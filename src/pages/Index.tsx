@@ -381,10 +381,10 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
               {/* Left Column - Image */}
-              <div className="order-2 lg:order-1">
-                <div className="relative group">
+              <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
+                <div className="relative group max-w-md">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                   <img 
                     src="/lovable-uploads/59e58b67-56b6-4a59-b22f-4df7d39063a2.png"
@@ -395,7 +395,7 @@ const Index = () => {
               </div>
 
               {/* Right Column - Content */}
-              <div className="order-1 lg:order-2 space-y-6">
+              <div className="order-1 lg:order-2 space-y-6 flex flex-col justify-center">
                 <div className="space-y-4">
                   <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
                     We keep it 
