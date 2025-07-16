@@ -161,14 +161,8 @@ const CarouselContent = React.forwardRef<
         className={cn(
           "flex",
           orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
-          "transition-transform duration-300 ease-in-out will-change-transform",
           className
         )}
-        style={{
-          transform: 'translate3d(0, 0, 0)',
-          backfaceVisibility: 'hidden',
-          perspective: '1000px'
-        }}
         {...props}
       />
     </div>
