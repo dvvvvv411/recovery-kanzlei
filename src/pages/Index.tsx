@@ -375,6 +375,106 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* Unser Team Section */}
+      <Section className="py-16 bg-gradient-to-br from-white via-gray-50/30 to-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-blue-600/5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Unser Team
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Lernen Sie unser erfahrenes Team kennen
+              </p>
+            </div>
+
+            {/* Team Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+              {/* Daniel Azem */}
+              <div className="text-left">
+                <div className="mb-6">
+                  <img
+                    src="https://atb.law/wp-content/uploads/2024/05/Daniel-Azem-1025x1536.jpg"
+                    alt="Daniel Azem"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Daniel Azem</h3>
+                <p className="text-gray-600">Rechtsanwalt</p>
+              </div>
+
+              {/* Anela Blöch */}
+              <div className="text-left">
+                <div className="mb-6">
+                  <img
+                    src="https://atb.law/wp-content/uploads/2024/05/Anela-Bloech-1366x2048.jpg"
+                    alt="Anela Blöch"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Anela Blöch</h3>
+                <p className="text-gray-600">Rechtsanwältin</p>
+              </div>
+
+              {/* Roman Taudes */}
+              <div className="text-left">
+                <div className="mb-6">
+                  <img
+                    src="https://atb.law/wp-content/uploads/2024/05/Roman-Taudes-1-1025x1536.jpg"
+                    alt="Roman Taudes"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Roman Taudes</h3>
+                <p className="text-gray-600">Rechtsanwalt</p>
+              </div>
+
+              {/* Patrick Brunsteiner */}
+              <div className="text-left">
+                <div className="mb-6">
+                  <img
+                    src="https://atb.law/wp-content/uploads/2024/05/Patrick-Brunsteiner-1-1366x2048.jpg"
+                    alt="Patrick Brunsteiner"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Patrick Brunsteiner</h3>
+                <p className="text-gray-600">Rechtsanwaltsanwärter</p>
+              </div>
+
+              {/* Olja Drljevic */}
+              <div className="text-left">
+                <div className="mb-6">
+                  <img
+                    src="https://atb.law/wp-content/uploads/2025/05/088A7307-1366x2048.jpg"
+                    alt="Olja Drljevic"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Olja Drljevic</h3>
+                <p className="text-gray-600">Teamassistentin</p>
+              </div>
+
+              {/* Nerma Hadzic */}
+              <div className="text-left">
+                <div className="mb-6">
+                  <img
+                    src="https://atb.law/wp-content/uploads/2024/05/Nerma-Hadzic-1025x1536.jpg"
+                    alt="Nerma Hadzic"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Nerma Hadzic</h3>
+                <p className="text-gray-600">Teamassistentin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Partner Logo Carousel Section */}
       <Section className="py-8 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-600/2 via-transparent to-orange-500/2"></div>
