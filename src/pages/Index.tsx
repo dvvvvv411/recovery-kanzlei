@@ -245,7 +245,10 @@ const Index = () => {
       </Section>
 
       {/* Success as a Service Section */}
-      <Section className="py-16 bg-gradient-primary">
+      <Section className="py-16 bg-gradient-to-br from-primary via-primary/90 to-primary/80 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-4 gap-8 items-center">
             <div className="col-span-1">
@@ -259,6 +262,7 @@ const Index = () => {
               </p>
             </div>
           </div>
+        </div>
         </div>
       </Section>
 
