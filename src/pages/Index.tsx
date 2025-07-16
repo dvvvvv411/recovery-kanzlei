@@ -272,7 +272,7 @@ const Index = () => {
                 <AnimatedCounter end={15} suffix="+" />
               </div>
               <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
-                Euro verfolgtes Schadens­volumen bei Cybercrime
+                Jahre Fachexpertise
               </p>
               {/* Divider */}
               <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
@@ -284,7 +284,7 @@ const Index = () => {
                 <AnimatedCounter end={50} suffix=" Mio+" />
               </div>
               <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
-                topmotivierte Mitarbeiter:innen
+                Euro verfolgtes Schadensvolumen bei Cybercrime
               </p>
               {/* Divider */}
               <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
@@ -296,7 +296,7 @@ const Index = () => {
                 <AnimatedCounter end={13} />
               </div>
               <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
-                Erfolgreich abgewickelte Immobilientransaktionen
+                topmotivierte Mitarbeiter:innen
               </p>
               {/* Divider */}
               <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
@@ -308,7 +308,7 @@ const Index = () => {
                 <AnimatedCounter end={1000} suffix="+" />
               </div>
               <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
-                Erfolgreiche Fälle
+                Erfolgreich abgewickelte Immobilientransaktionen
               </p>
             </div>
           </div>
