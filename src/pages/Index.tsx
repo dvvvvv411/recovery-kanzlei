@@ -396,11 +396,7 @@ const Index = () => {
                     alt="Rechtsdokument Bitcoin Rückgabe"
                     className="w-full h-[400px] object-cover object-center rounded-xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
                 </div>
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
-                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-600/20 rounded-full blur-xl"></div>
               </div>
             </div>
           </div>
