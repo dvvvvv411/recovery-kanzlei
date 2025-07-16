@@ -134,8 +134,8 @@ const Index = () => {
             src="https://player.vimeo.com/video/1101576926?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=1&background=1" 
             frameBorder="0" 
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{width:"100%", height:"100%", objectFit:"cover"}} 
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            style={{width:"177.78vh", height:"100vh", minWidth:"100%", minHeight:"100%"}} 
             title="Crypto Background Video"
           />
         </div>
