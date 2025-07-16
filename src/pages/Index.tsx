@@ -389,12 +389,12 @@ const Index = () => {
               </div>
 
               {/* Right Column - Image */}
-              <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2">
+              <div className="relative h-full flex items-stretch">
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-white p-2 w-full">
                   <img 
                     src="/lovable-uploads/77e79b13-9bec-4809-ba2f-258c1dc251ef.png" 
                     alt="Rechtsdokument Bitcoin Rückgabe"
-                    className="w-full h-auto rounded-xl"
+                    className="w-full h-[400px] object-cover object-center rounded-xl"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
                 </div>
