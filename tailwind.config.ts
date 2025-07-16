@@ -94,11 +94,30 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'cryptoFloat': {
+					'0%, 100%': {
+						transform: 'translate(-50%, -50%) translateY(0px) rotate(0deg)',
+						opacity: '0.6',
+					},
+					'25%': {
+						transform: 'translate(-50%, -50%) translateY(-10px) rotate(90deg)',
+						opacity: '1',
+					},
+					'50%': {
+						transform: 'translate(-50%, -50%) translateY(-5px) rotate(180deg)',
+						opacity: '0.8',
+					},
+					'75%': {
+						transform: 'translate(-50%, -50%) translateY(-15px) rotate(270deg)',
+						opacity: '1',
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'cryptoFloat': 'cryptoFloat 3s ease-in-out infinite'
 			}
 		}
 	},
