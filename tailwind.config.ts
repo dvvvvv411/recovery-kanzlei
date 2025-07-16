@@ -24,10 +24,6 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				white: 'hsl(var(--white))',
-				'accent-blue': 'hsl(var(--accent-blue))',
-				'accent-cyan': 'hsl(var(--accent-cyan))',
-				'accent-indigo': 'hsl(var(--accent-indigo))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
