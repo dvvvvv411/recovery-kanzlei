@@ -263,68 +263,53 @@ const Index = () => {
       </Section>
 
       {/* Company Statistics Section */}
-      <Section className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/20"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-4 gap-8">
+      <Section className="py-16 bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-4 gap-8 items-center">
             {/* First Stat */}
-            <div className="text-center relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
-              <div className="relative bg-gray-800/50 backdrop-blur-md p-8 rounded-xl border border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)]">
-                <div className="mb-4">
-                  <Euro className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <AnimatedCounter end={15} suffix="+" />
-                </div>
-                <p className="text-white/90 text-lg font-medium leading-tight">
-                  Euro verfolgtes Schadens­volumen bei Cybercrime
-                </p>
+            <div className="text-center relative">
+              <div className="mb-2">
+                <AnimatedCounter end={15} suffix="+" />
               </div>
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
+              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
+                Euro verfolgtes Schadens­volumen bei Cybercrime
+              </p>
+              {/* Divider */}
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
             </div>
 
             {/* Second Stat */}
-            <div className="text-center relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
-              <div className="relative bg-gray-800/50 backdrop-blur-md p-8 rounded-xl border border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)]">
-                <div className="mb-4">
-                  <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <AnimatedCounter end={50} suffix=" Mio+" />
-                </div>
-                <p className="text-white/90 text-lg font-medium leading-tight">
-                  topmotivierte Mitarbeiter:innen
-                </p>
+            <div className="text-center relative">
+              <div className="mb-2">
+                <AnimatedCounter end={50} suffix=" Mio+" />
               </div>
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
+              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
+                topmotivierte Mitarbeiter:innen
+              </p>
+              {/* Divider */}
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
             </div>
 
             {/* Third Stat */}
-            <div className="text-center relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
-              <div className="relative bg-gray-800/50 backdrop-blur-md p-8 rounded-xl border border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)]">
-                <div className="mb-4">
-                  <Building2 className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <AnimatedCounter end={13} />
-                </div>
-                <p className="text-white/90 text-lg font-medium leading-tight">
-                  Erfolgreich abgewickelte Immobilientransaktionen
-                </p>
+            <div className="text-center relative">
+              <div className="mb-2">
+                <AnimatedCounter end={13} />
               </div>
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/50 to-transparent"></div>
+              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
+                Erfolgreich abgewickelte Immobilientransaktionen
+              </p>
+              {/* Divider */}
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
             </div>
 
             {/* Fourth Stat */}
-            <div className="text-center relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
-              <div className="relative bg-gray-800/50 backdrop-blur-md p-8 rounded-xl border border-gray-700/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.3)]">
-                <div className="mb-4">
-                  <Target className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <AnimatedCounter end={1000} suffix="+" />
-                </div>
-                <p className="text-white/90 text-lg font-medium leading-tight">
-                  Erfolgreiche Fälle
-                </p>
+            <div className="text-center">
+              <div className="mb-2">
+                <AnimatedCounter end={1000} suffix="+" />
               </div>
+              <p className="text-white/70 text-sm uppercase tracking-wider font-medium">
+                Erfolgreiche Fälle
+              </p>
             </div>
           </div>
         </div>
