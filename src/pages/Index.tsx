@@ -660,23 +660,6 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* Summary Stats */}
-                <div className="bg-gradient-to-r from-orange-50 to-blue-50 rounded-lg p-6 mt-6">
-                  <div className="grid grid-cols-3 gap-4 text-center">
-                    <div>
-                      <div className="text-2xl font-bold text-gray-900">5,0</div>
-                      <div className="text-sm text-gray-600">Durchschnitt</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-gray-900">127</div>
-                      <div className="text-sm text-gray-600">Bewertungen</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-gray-900">100%</div>
-                      <div className="text-sm text-gray-600">Weiterempfehlung</div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
