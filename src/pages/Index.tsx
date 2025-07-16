@@ -510,7 +510,7 @@ const Index = () => {
         <div className="relative z-10">
           <div className="container mx-auto px-4">
             <div className="text-center mb-8">
-              <h2 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-orange-600 to-blue-600 bg-clip-text text-transparent mb-2">
+              <h2 className="text-2xl lg:text-3xl font-bold text-blue-600 mb-2">
                 Vertrauensvolle Partnerschaften
               </h2>
               <p className="text-muted-foreground">Gemeinsam für Ihre Rechte</p>
@@ -535,7 +535,7 @@ const Index = () => {
                       <img
                         src={partner.logo}
                         alt={partner.name}
-                        className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
+                        className="max-h-full max-w-full object-contain transition-all duration-300 opacity-90 group-hover:opacity-100"
                       />
                     </div>
                   </CarouselItem>
