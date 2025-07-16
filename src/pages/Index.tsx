@@ -408,8 +408,8 @@ const Index = () => {
       </Section>
 
       {/* Partner Logo Carousel Section */}
-      <Section className="py-8 bg-gradient-to-r from-orange-500/10 via-orange-300/5 to-blue-500/10 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-blue-600/10"></div>
+      <Section className="py-8 bg-gradient-to-b from-blue-500/10 via-blue-300/5 to-orange-500/10 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/8 via-transparent to-orange-600/8"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
             <div className="text-center mb-8">
