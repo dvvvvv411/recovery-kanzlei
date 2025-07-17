@@ -109,9 +109,9 @@ const Blog = () => {
       <Section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {blogPosts.map((post, index) => (
-                <article key={post.id} className="group relative h-[60vh] flex flex-col border rounded-lg overflow-hidden bg-white shadow-lg">
+                <article key={post.id} className="group relative h-[400px] flex flex-col border rounded-lg overflow-hidden bg-white shadow-lg">
                   {/* Transparent blog post layout - image and text exactly 50% each */}
                   <Link to={`/blog-post/${post.id}`} className="block h-full flex flex-col">
                     {/* Image Section - Exactly 50% */}
@@ -126,10 +126,10 @@ const Blog = () => {
                     </div>
 
                     {/* Text Section - Exactly 50% */}
-                    <div className="h-1/2 p-4 flex flex-col justify-between bg-white">
+                    <div className="h-1/2 p-3 flex flex-col justify-between bg-white">
                       <div>
                         {/* Tags */}
-                        <div className="flex flex-wrap gap-2 mb-3">
+                        <div className="flex flex-wrap gap-1 mb-2">
                           {post.tags.map((tag) => (
                             <span key={tag} className="px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20">
                               {tag}
@@ -138,19 +138,19 @@ const Blog = () => {
                         </div>
 
                         {/* Title */}
-                        <h2 className="text-lg lg:text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                        <h2 className="text-base lg:text-lg font-bold mb-2 text-foreground group-hover:text-primary transition-colors duration-300 line-clamp-2">
                           {post.title}
                         </h2>
 
                         {/* Excerpt */}
-                        <p className="text-sm text-muted-foreground mb-4 leading-relaxed line-clamp-3">
+                        <p className="text-sm text-muted-foreground mb-3 leading-relaxed line-clamp-3">
                           {post.excerpt}
                         </p>
                       </div>
 
                       <div>
                         {/* Meta Info */}
-                        <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground mb-3">
+                        <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground mb-2">
                           <div className="flex items-center gap-1">
                             <Calendar className="w-3 h-3" />
                             <span>{post.date}</span>
