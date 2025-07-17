@@ -163,7 +163,7 @@ const UnserePartner = () => {
 
       {/* Partners Sections */}
       {partners.map((partner, index) => (
-        <Section key={partner.name} className={`py-20 ${index % 2 === 0 ? 'bg-background' : 'bg-gray-50/50'}`}>
+        <Section key={partner.name} className={`py-20 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-gray-100'}`}>
           <div className="container mx-auto px-4">
             <div className={`grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
               
