@@ -29,8 +29,8 @@ export const Header = () => {
               <ChevronDown className="h-4 w-4" />
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-primary text-white border-primary/30 shadow-xl p-6 w-80 rounded-lg" sideOffset={8}>
-              <div className="grid grid-cols-1 gap-4">
+            <DropdownMenuContent className="bg-primary text-white border-primary/30 shadow-xl p-8 w-screen rounded-none" sideOffset={8} align="start"  style={{ marginLeft: 'calc(-50vw + 50%)' }}>
+              <div className="max-w-6xl mx-auto grid grid-cols-4 gap-8">
                 <DropdownMenuItem className="hover:bg-white/20 p-3 rounded-md text-white cursor-pointer">
                   <a href="/#about" className="w-full">Über Uns</a>
                 </DropdownMenuItem>
@@ -51,8 +51,8 @@ export const Header = () => {
               <ChevronDown className="h-4 w-4" />
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-primary text-white border-primary/30 shadow-xl p-6 w-96 rounded-lg" sideOffset={8}>
-              <div className="grid grid-cols-2 gap-4">
+            <DropdownMenuContent className="bg-primary text-white border-primary/30 shadow-xl p-8 w-screen rounded-none" sideOffset={8} align="start" style={{ marginLeft: 'calc(-50vw + 50%)' }}>
+              <div className="max-w-6xl mx-auto grid grid-cols-2 gap-8">
                 <div className="space-y-2">
                   <DropdownMenuItem className="hover:bg-white/20 p-3 rounded-md text-white cursor-pointer">
                     <a href="/#services" className="w-full">Cybercrime</a>
