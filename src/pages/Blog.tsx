@@ -1,9 +1,13 @@
 import { Section } from "@/components/ui/section";
 import { Calendar, Clock, User, Scale, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import { useState, useMemo } from "react";
 
 const Blog = () => {
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  
   const blogPosts = [
     {
       id: "krypto-betrugsopfer-bekommt-869-bitcoin-zurueck",
@@ -33,6 +37,21 @@ const Blog = () => {
       tags: ["Verbraucherrecht", "Bankrecht", "OGH-Urteil"]
     }
   ];
+
+  // Get all unique tags
+  const allTags = useMemo(() => {
+    const tags = new Set<string>();
+    blogPosts.forEach(post => {
+      post.tags.forEach(tag => tags.add(tag));
+    });
+    return Array.from(tags);
+  }, []);
+
+  // Filter posts based on selected tag
+  const filteredPosts = useMemo(() => {
+    if (!selectedTag) return blogPosts;
+    return blogPosts.filter(post => post.tags.includes(selectedTag));
+  }, [selectedTag, blogPosts]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -105,12 +124,52 @@ const Blog = () => {
         </div>
       </Section>
 
+      {/* Descriptive Text Section */}
+      <Section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Unser Blog bietet Ihnen eine verständ­liche Einführung in verschiedene Rechts­gebiete. 
+              Wir erklären komplexe Sach­verhalte einfach und präzise und helfen Ihnen, den Überblick zu behalten. 
+              Hier finden Sie aktuelle Informationen und praktische Tipps.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* Filter Tags Section */}
+      <Section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-wrap gap-2 justify-center">
+              <Badge
+                variant={selectedTag === null ? "default" : "outline"}
+                className="cursor-pointer transition-all duration-200 hover:scale-105"
+                onClick={() => setSelectedTag(null)}
+              >
+                Alle Artikel
+              </Badge>
+              {allTags.map((tag) => (
+                <Badge
+                  key={tag}
+                  variant={selectedTag === tag ? "default" : "outline"}
+                  className="cursor-pointer transition-all duration-200 hover:scale-105"
+                  onClick={() => setSelectedTag(tag)}
+                >
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Blog Posts Grid - 3 Columns */}
       <Section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {blogPosts.map((post, index) => (
+              {filteredPosts.map((post, index) => (
                 <article key={post.id} className="group relative h-[400px] flex flex-col">
                   {/* Direct blog post layout - no card background */}
                   <Link to={`/blog-post/${post.id}`} className="block h-full flex flex-col">
