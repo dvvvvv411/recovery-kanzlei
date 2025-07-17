@@ -105,17 +105,17 @@ const Blog = () => {
         </div>
       </Section>
 
-      {/* Blog Posts Grid */}
+      {/* Blog Posts Grid - 3 Columns */}
       <Section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid gap-16 lg:gap-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
                 <article key={post.id} className="group relative">
                   {/* Transparent blog post layout - image top, text bottom */}
                   <Link to={`/blog-post/${post.id}`} className="block">
                     {/* Image Section - 50% */}
-                    <div className="relative h-[50vh] overflow-hidden rounded-lg">
+                    <div className="relative h-[40vh] overflow-hidden rounded-lg">
                       <img 
                         src={post.image}
                         alt={post.title}
@@ -125,7 +125,7 @@ const Blog = () => {
                     </div>
 
                     {/* Text Section - 50% */}
-                    <div className="py-12">
+                    <div className="py-8">
                       {/* Tags */}
                       <div className="flex flex-wrap gap-2 mb-4">
                         {post.tags.map((tag) => (
@@ -136,22 +136,22 @@ const Blog = () => {
                       </div>
 
                       {/* Title */}
-                      <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                      <h2 className="text-xl lg:text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300 line-clamp-2">
                         {post.title}
                       </h2>
 
                       {/* Excerpt */}
-                      <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                      <p className="text-sm text-muted-foreground mb-4 leading-relaxed line-clamp-3">
                         {post.excerpt}
                       </p>
 
                       {/* Meta Info */}
-                      <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-6">
-                        <div className="flex items-center gap-2">
+                      <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground mb-4">
+                        <div className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
                           <span>{post.date}</span>
                         </div>
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-1">
                           <Clock className="w-4 h-4" />
                           <span>{post.readTime} Lesezeit</span>
                         </div>
@@ -162,17 +162,13 @@ const Blog = () => {
                       </div>
 
                       {/* Read More Link */}
-                      <div className="flex items-center gap-2 text-primary font-medium group-hover:gap-4 transition-all duration-300">
+                      <div className="flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all duration-300">
                         <span>Artikel lesen</span>
-                        <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                        <ChevronRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
                       </div>
                     </div>
                   </Link>
 
-                  {/* Separator Line */}
-                  {index < blogPosts.length - 1 && (
-                    <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-                  )}
                 </article>
               ))}
             </div>
