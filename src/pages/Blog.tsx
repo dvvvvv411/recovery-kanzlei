@@ -2,6 +2,7 @@ import { Section } from "@/components/ui/section";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, User, Scale, Mail, ChevronRight, MapPin, Phone, AlertTriangle, Shield, Award, Linkedin, Twitter, Facebook, Youtube, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -137,79 +138,61 @@ const Blog = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post) => (
-                <div key={post.id} className="group relative">
-                  {/* Glass Card */}
-                  <div className="relative overflow-hidden rounded-xl bg-gradient-glass backdrop-blur-md border border-[var(--border-glass)] shadow-glass hover:shadow-[0_0_40px_hsl(214_100%_60%_/_0.3)] transition-all duration-500 hover:border-primary/50">
-                    {/* Image Section */}
-                    <div className="relative overflow-hidden">
-                      <img 
-                        src={post.image} 
-                        alt={post.title}
-                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                      <div className="absolute top-4 left-4">
-                        <div className="flex flex-wrap gap-1">
-                          {post.badges.slice(0, 2).map((badge, index) => (
-                            <Badge key={index} variant="secondary" className="bg-black/70 backdrop-blur-md text-white border-white/30 text-xs">
-                              {badge}
-                            </Badge>
-                          ))}
-                        </div>
-                      </div>
-                      {/* Gradient overlay at bottom */}
-                      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background/80 to-transparent"></div>
-                    </div>
-                    
-                    {/* Content Section */}
-                    <div className="p-6 space-y-4">
-                      <div>
-                        <h3 className="text-xl font-bold leading-tight group-hover:text-primary transition-colors duration-300 mb-3">
-                          <Link to={post.slug} className="hover:no-underline">
-                            {post.title}
-                          </Link>
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
-                          {post.subtitle}
-                        </p>
-                      </div>
-                      
-                      {/* Meta Information */}
-                      <div className="flex items-center gap-4 text-xs text-muted-foreground/80">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="w-3 h-3" />
-                          <span>{post.date}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
-                          <span>{post.readTime}</span>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center gap-1 text-xs text-muted-foreground/80">
-                        <User className="w-3 h-3" />
-                        <span>{post.author}</span>
-                      </div>
-                      
-                      {/* CTA Button */}
-                      <div className="pt-2">
-                        <Link to={post.slug} className="w-full block">
-                          <Button 
-                            variant="outline" 
-                            className="w-full bg-gradient-glass backdrop-blur-md border-white/20 text-foreground hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-all duration-300 hover:shadow-[0_0_20px_hsl(214_100%_60%_/_0.4)] group-hover:border-primary/60"
-                            style={{ boxShadow: 'var(--shadow-glass)' }}
-                          >
-                            Artikel lesen
-                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                          </Button>
-                        </Link>
+                <Card key={post.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <div className="flex flex-wrap gap-1">
+                        {post.badges.slice(0, 2).map((badge, index) => (
+                          <Badge key={index} variant="secondary" className="bg-black/70 text-white border-white/30 text-xs">
+                            {badge}
+                          </Badge>
+                        ))}
                       </div>
                     </div>
                   </div>
                   
-                  {/* Hover glow effect */}
-                  <div className="absolute inset-0 rounded-xl bg-gradient-primary opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none"></div>
-                </div>
+                  <CardHeader>
+                    <CardTitle className="text-xl leading-tight group-hover:text-primary transition-colors">
+                      <Link to={post.slug} className="hover:no-underline">
+                        {post.title}
+                      </Link>
+                    </CardTitle>
+                    <CardDescription className="text-sm leading-relaxed">
+                      {post.subtitle}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent>
+                    <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" />
+                        <span>{post.date}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Clock className="w-3 h-3" />
+                        <span>{post.readTime}</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1 mt-2 text-xs text-muted-foreground">
+                      <User className="w-3 h-3" />
+                      <span>{post.author}</span>
+                    </div>
+                  </CardContent>
+                  
+                  <CardFooter>
+                    <Link to={post.slug} className="w-full">
+                      <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        Artikel lesen
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
+                  </CardFooter>
+                </Card>
               ))}
             </div>
           </div>
