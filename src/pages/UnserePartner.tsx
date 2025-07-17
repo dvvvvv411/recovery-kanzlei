@@ -74,7 +74,7 @@ const UnserePartner = () => {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/a1335713-5cdf-45cf-814a-cd7ddca2e1b7.png" 
+              src="/lovable-uploads/3863a302-63a5-4e77-ac24-0c7f1592c2ea.png" 
               alt="CryptoLaw Logo" 
               className="h-12 w-auto"
             />
@@ -271,7 +271,7 @@ const UnserePartner = () => {
               <div className="lg:col-span-2">
                 <div className="flex items-center mb-6">
                   <img 
-                    src="/lovable-uploads/a1335713-5cdf-45cf-814a-cd7ddca2e1b7.png" 
+                    src="/lovable-uploads/3863a302-63a5-4e77-ac24-0c7f1592c2ea.png" 
                     alt="CryptoLaw Logo" 
                     className="h-16 w-auto"
                   />
