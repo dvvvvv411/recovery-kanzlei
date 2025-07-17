@@ -125,7 +125,7 @@ const Blog = () => {
       </Section>
 
       {/* Descriptive Text Section */}
-      <Section className="py-6">
+      <Section className="pt-4 pb-2">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -138,7 +138,7 @@ const Blog = () => {
       </Section>
 
       {/* Filter Tags Section */}
-      <Section className="py-4">
+      <Section className="pb-4">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-wrap gap-2 justify-center">
@@ -165,7 +165,7 @@ const Blog = () => {
       </Section>
 
       {/* Blog Posts Grid - 3 Columns */}
-      <Section className="py-8">
+      <Section className="pt-2">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
