@@ -152,26 +152,6 @@ const UnserePartner = () => {
             </p>
           </div>
           
-          {/* Stats Section */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
-            {[
-              { number: "4", label: "Strategische Partner", icon: Users },
-              { number: "95%", label: "Weltweite Marktabdeckung", icon: Globe },
-              { number: "430M€", label: "Zurückgeholt", icon: Shield },
-              { number: "130", label: "Länder-Netzwerk", icon: Building }
-            ].map((stat, index) => {
-              const Icon = stat.icon;
-              return (
-                <div key={index} className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-primary/10 border border-primary/20 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:bg-gradient-primary/20 group-hover:border-primary/40 transition-all duration-300">
-                    <Icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <div className="text-4xl font-bold text-foreground mb-2">{stat.number}</div>
-                  <div className="text-base text-muted-foreground font-medium">{stat.label}</div>
-                </div>
-              );
-            })}
-          </div>
         </div>
       </Section>
 
