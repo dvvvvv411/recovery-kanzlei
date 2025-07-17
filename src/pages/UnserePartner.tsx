@@ -21,7 +21,7 @@ const UnserePartner = () => {
         "12 Darknet-Marktplätze geschlossen",
         "300+ Opfer entschädigt"
       ],
-      image: partnerBkaImage
+      image: "/lovable-uploads/b1bb97a0-3f6c-454d-8e4e-f6573e76af70.png"
     },
     {
       name: "Coinbase",
@@ -35,7 +35,7 @@ const UnserePartner = () => {
         "24h Reaktionszeit bei Notfällen",
         "Direkter Compliance-Zugang"
       ],
-      image: partnerCoinbaseImage
+      image: "/lovable-uploads/bf80d9d0-5e0f-4d66-b6cb-e3fff7d7cc81.png"
     },
     {
       name: "Binance",
@@ -49,7 +49,7 @@ const UnserePartner = () => {
         "Global Investigation Access",
         "1000+ Mandanten unterstützt"
       ],
-      image: partnerBinanceImage
+      image: "/lovable-uploads/8eadc01d-8c41-4213-b472-60333894bf20.png"
     },
     {
       name: "IOSCO",
@@ -63,7 +63,7 @@ const UnserePartner = () => {
         "130 Länder Netzwerk-Zugang",
         "Bevorzugter Beratungsstatus"
       ],
-      image: partnerIoscoImage
+      image: "/lovable-uploads/2655fc4c-f436-4ab5-b230-31c66c479f13.png"
     }
   ];
 
