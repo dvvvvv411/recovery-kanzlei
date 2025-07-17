@@ -29,14 +29,14 @@ export const Header = () => {
               <ChevronDown size={16} />
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-gradient-glass backdrop-blur-md border-[var(--border-glass)] shadow-glass text-white z-50">
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+            <DropdownMenuContent className="bg-black/60 backdrop-blur-lg border-white/20 shadow-2xl text-white z-50 rounded-lg"  style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}>
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <Link to="/#about" className="w-full">Über Uns</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <Link to="/#team" className="w-full">Team</Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <Link to="/blog" className="w-full">News</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -49,29 +49,29 @@ export const Header = () => {
               <ChevronDown size={16} />
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-gradient-glass backdrop-blur-md border-[var(--border-glass)] shadow-glass text-white z-50 w-80">
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+            <DropdownMenuContent className="bg-black/60 backdrop-blur-lg border-white/20 shadow-2xl text-white z-50 w-80 rounded-lg" style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}>
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <a href="/#services" className="w-full">Cybercrime</a>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <a href="/#services" className="w-full">Datenschutz und Compliance</a>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <a href="/#services" className="w-full">Gesellschafts- und Unternehmensrecht</a>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <a href="/#services" className="w-full">Immobilienrecht</a>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <a href="/#services" className="w-full">Private Clients / Family Offices</a>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <a href="/#services" className="w-full">Prozessführung</a>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <a href="/#services" className="w-full">Wertpapier- und Kapitalmarktrecht</a>
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:bg-white/10 focus:bg-white/10">
+              <DropdownMenuItem className="hover:bg-white/20 focus:bg-white/20 text-white/90 hover:text-white transition-colors">
                 <a href="/#services" className="w-full">Kryptonachverfolgung und Mittelherkunftsnachweis</a>
               </DropdownMenuItem>
             </DropdownMenuContent>
