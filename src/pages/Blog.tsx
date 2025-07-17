@@ -111,7 +111,7 @@ const Blog = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {blogPosts.map((post, index) => (
-                <article key={post.id} className="group relative h-[70vh] flex flex-col border rounded-lg overflow-hidden bg-white shadow-lg">
+                <article key={post.id} className="group relative h-[60vh] flex flex-col border rounded-lg overflow-hidden bg-white shadow-lg">
                   {/* Transparent blog post layout - image and text exactly 50% each */}
                   <Link to={`/blog-post/${post.id}`} className="block h-full flex flex-col">
                     {/* Image Section - Exactly 50% */}
@@ -119,13 +119,14 @@ const Blog = () => {
                       <img 
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                        style={{ objectPosition: 'center top' }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
 
                     {/* Text Section - Exactly 50% */}
-                    <div className="h-1/2 p-6 flex flex-col justify-between">
+                    <div className="h-1/2 p-4 flex flex-col justify-between bg-white">
                       <div>
                         {/* Tags */}
                         <div className="flex flex-wrap gap-2 mb-3">
