@@ -174,8 +174,8 @@ const Index = () => {
       logo: "/lovable-uploads/a353d06a-d600-40b4-8ac2-e8fae21230d5.png"
     },
     {
-      name: "HKCM",
-      logo: "/lovable-uploads/a086ae08-4b5f-455b-b45e-f472a01b4701.png"
+      name: "IOSCO",
+      logo: "/lovable-uploads/7cf1155a-1e93-404a-bb7f-b70fbba16ab9.png"
     }
   ];
 
