@@ -111,22 +111,21 @@ const Blog = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {blogPosts.map((post, index) => (
-                <article key={post.id} className="group relative h-[400px] flex flex-col border rounded-lg overflow-hidden bg-white shadow-lg">
-                  {/* Transparent blog post layout - image and text exactly 50% each */}
+                <article key={post.id} className="group relative h-[400px] flex flex-col">
+                  {/* Direct blog post layout - no card background */}
                   <Link to={`/blog-post/${post.id}`} className="block h-full flex flex-col">
                     {/* Image Section - Exactly 50% */}
-                    <div className="relative h-1/2 overflow-hidden">
+                    <div className="relative h-1/2 overflow-hidden rounded-t-lg">
                       <img 
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                        style={{ objectPosition: 'center top' }}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
 
                     {/* Text Section - Exactly 50% */}
-                    <div className="h-1/2 p-3 flex flex-col justify-between bg-white">
+                    <div className="h-1/2 p-3 flex flex-col justify-between">
                       <div>
                         {/* Tags */}
                         <div className="flex flex-wrap gap-1 mb-2">
