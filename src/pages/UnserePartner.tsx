@@ -138,20 +138,27 @@ const UnserePartner = () => {
         </div>
       </Section>
 
-      {/* Introduction Section */}
-      <Section className="py-16 bg-gradient-to-b from-background to-gray-50/50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-              Ein globales Netzwerk für Ihre Rechte
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              In der komplexen Welt der Kryptowährungen sind starke Partnerschaften entscheidend für den Erfolg. 
-              Unsere strategischen Allianzen mit führenden Börsen, Strafverfolgungsbehörden und internationalen 
-              Regulierungsorganisationen ermöglichen es uns, auch in den schwierigsten Fällen erfolgreich zu sein.
-            </p>
+      {/* Global Network Section */}
+      <Section className="py-16 bg-gradient-to-br from-primary via-primary/90 to-primary/80 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-4 gap-8 items-center">
+              <div className="col-span-1">
+                <h2 className="text-2xl lg:text-3xl font-bold text-white text-center">
+                  Ein globales Netzwerk für Ihre Rechte
+                </h2>
+              </div>
+              <div className="col-span-3">
+                <p className="text-lg lg:text-xl text-white leading-relaxed text-left">
+                  In der komplexen Welt der Kryptowährungen sind starke Partnerschaften entscheidend für den Erfolg. 
+                  Unsere strategischen Allianzen mit führenden Börsen, Strafverfolgungsbehörden und internationalen 
+                  Regulierungsorganisationen ermöglichen es uns, auch in den schwierigsten Fällen erfolgreich zu sein.
+                </p>
+              </div>
+            </div>
           </div>
-          
         </div>
       </Section>
 
