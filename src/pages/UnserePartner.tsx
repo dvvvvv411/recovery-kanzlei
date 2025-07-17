@@ -217,7 +217,6 @@ const UnserePartner = () => {
                     alt={`Partnerschaft mit ${partner.name}`}
                     className="w-full h-[400px] object-cover rounded-2xl shadow-2xl group-hover:shadow-3xl transition-all duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
                 </div>
               </div>
             </div>
