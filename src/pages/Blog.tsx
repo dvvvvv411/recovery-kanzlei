@@ -109,13 +109,13 @@ const Blog = () => {
       <Section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {blogPosts.map((post, index) => (
-                <article key={post.id} className="group relative h-[80vh] flex flex-col">
+                <article key={post.id} className="group relative h-[70vh] flex flex-col border rounded-lg overflow-hidden bg-white shadow-lg">
                   {/* Transparent blog post layout - image and text exactly 50% each */}
                   <Link to={`/blog-post/${post.id}`} className="block h-full flex flex-col">
                     {/* Image Section - Exactly 50% */}
-                    <div className="relative h-1/2 overflow-hidden rounded-t-lg">
+                    <div className="relative h-1/2 overflow-hidden">
                       <img 
                         src={post.image}
                         alt={post.title}
