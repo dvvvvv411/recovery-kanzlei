@@ -212,7 +212,6 @@ const UnserePartner = () => {
               {/* Image */}
               <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                 <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-primary rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                   <img 
                     src={partner.image} 
                     alt={`Partnerschaft mit ${partner.name}`}
