@@ -72,13 +72,12 @@ const UnserePartner = () => {
       {/* Navigation - same as other pages */}
       <nav className="absolute top-0 left-0 right-0 z-50 bg-gradient-glass backdrop-blur-md border-b border-[var(--border-glass)] shadow-glass">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
-          <div className="flex items-center space-x-2">
-            <div className="p-2 bg-gradient-primary rounded-lg shadow-[0_0_20px_hsl(214_100%_60%_/_0.4)]">
-              <Scale className="h-6 w-6 text-white drop-shadow-lg" />
-            </div>
-            <span className="text-xl font-bold text-white" style={{ textShadow: 'var(--text-glow)' }}>
-              Crypto<span className="bg-gradient-primary bg-clip-text text-transparent">Law</span>
-            </span>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/a1335713-5cdf-45cf-814a-cd7ddca2e1b7.png" 
+              alt="CryptoLaw Logo" 
+              className="h-12 w-auto"
+            />
           </div>
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)] relative group" style={{ textShadow: 'var(--text-glow)' }}>
@@ -270,16 +269,12 @@ const UnserePartner = () => {
               
               {/* Company Info & Newsletter */}
               <div className="lg:col-span-2">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="p-2 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg">
-                    <Scale className="h-8 w-8 text-white" />
-                  </div>
-                  <div>
-                    <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
-                      CryptoLaw
-                    </span>
-                    <p className="text-sm text-gray-400">Rechtsanwaltskanzlei</p>
-                  </div>
+                <div className="flex items-center mb-6">
+                  <img 
+                    src="/lovable-uploads/a1335713-5cdf-45cf-814a-cd7ddca2e1b7.png" 
+                    alt="CryptoLaw Logo" 
+                    className="h-16 w-auto"
+                  />
                 </div>
                 
                 <p className="text-gray-300 mb-6 leading-relaxed">
