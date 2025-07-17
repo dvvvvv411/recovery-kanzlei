@@ -153,7 +153,7 @@ const UnserePartner = () => {
           </div>
           
           {/* Stats Section */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
             {[
               { number: "4", label: "Strategische Partner", icon: Users },
               { number: "95%", label: "Weltweite Marktabdeckung", icon: Globe },
@@ -162,12 +162,12 @@ const UnserePartner = () => {
             ].map((stat, index) => {
               const Icon = stat.icon;
               return (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 text-center group hover:shadow-xl transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="h-6 w-6 text-white" />
+                <div key={index} className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-primary/10 border border-primary/20 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:bg-gradient-primary/20 group-hover:border-primary/40 transition-all duration-300">
+                    <Icon className="h-8 w-8 text-primary" />
                   </div>
-                  <div className="text-3xl font-bold text-primary mb-2">{stat.number}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-4xl font-bold text-foreground mb-2">{stat.number}</div>
+                  <div className="text-base text-muted-foreground font-medium">{stat.label}</div>
                 </div>
               );
             })}
@@ -197,25 +197,28 @@ const UnserePartner = () => {
                   </div>
                 </div>
                 
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                   {partner.description}
                 </p>
                 
-                <div className="bg-white rounded-xl p-6 mb-8 shadow-lg border border-gray-200">
-                  <h4 className="text-xl font-semibold mb-4 text-foreground">Unsere Partnerschaft</h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                <div className="mb-8">
+                  <h4 className="text-2xl font-bold mb-4 text-foreground">Unsere Partnerschaft</h4>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
                     {partner.story}
                   </p>
                 </div>
                 
                 {/* Achievements */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {partner.achievements.map((achievement, achievementIndex) => (
-                    <div key={achievementIndex} className="flex items-center gap-3 bg-green-50 rounded-lg p-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                      <span className="text-sm font-medium text-green-800">{achievement}</span>
-                    </div>
-                  ))}
+                <div className="space-y-3">
+                  <h5 className="text-lg font-semibold text-foreground mb-4">Erfolge und Kennzahlen</h5>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {partner.achievements.map((achievement, achievementIndex) => (
+                      <div key={achievementIndex} className="flex items-center gap-3 py-2">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                        <span className="text-base font-medium text-foreground">{achievement}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
               
@@ -293,14 +296,14 @@ const UnserePartner = () => {
                 </p>
 
                 {/* Newsletter Signup */}
-                <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
+                <div className="mt-8 pt-6 border-t border-slate-700">
                   <h4 className="font-semibold mb-3 text-white">Newsletter abonnieren</h4>
-                  <p className="text-sm text-gray-400 mb-3">Bleiben Sie über aktuelle Rechtsentwicklungen informiert</p>
+                  <p className="text-sm text-gray-400 mb-4">Bleiben Sie über aktuelle Rechtsentwicklungen informiert</p>
                   <div className="flex gap-2">
                     <input 
                       type="email" 
                       placeholder="Ihre E-Mail-Adresse" 
-                      className="flex-1 px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="flex-1 px-3 py-2 bg-slate-700/50 border border-slate-600/50 rounded text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 backdrop-blur-sm"
                     />
                     <Button size="sm" className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600">
                       <Mail className="h-4 w-4" />
@@ -391,14 +394,12 @@ const UnserePartner = () => {
                 </ul>
 
                 {/* Trust Indicators */}
-                <div className="space-y-4">
-                  <div className="bg-slate-800/50 rounded-lg p-3 border border-slate-700">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <Shield className="h-4 w-4 text-green-400" />
-                      <span className="text-sm font-medium text-white">Zertifiziert</span>
-                    </div>
-                    <p className="text-xs text-gray-400">RAK Berlin zugelassen</p>
+                <div className="mt-6 pt-4 border-t border-slate-700">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <Shield className="h-4 w-4 text-green-400" />
+                    <span className="text-sm font-medium text-white">Zertifiziert</span>
                   </div>
+                  <p className="text-xs text-gray-400">RAK Berlin zugelassen</p>
                 </div>
               </div>
             </div>
