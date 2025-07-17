@@ -133,66 +133,81 @@ const Blog = () => {
       </Section>
 
       {/* Blog Posts Grid */}
-      <Section className="py-16">
-        <div className="container mx-auto px-4 lg:px-8">
+      <Section className="py-16 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-50/80 via-white/40 to-gray-50/80 dark:from-gray-900/80 dark:via-gray-950/40 dark:to-gray-900/80"></div>
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post) => (
-                <Card key={post.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
-                  <div className="relative overflow-hidden">
-                    <img 
-                      src={post.image} 
-                      alt={post.title}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <div className="flex flex-wrap gap-1">
-                        {post.badges.slice(0, 2).map((badge, index) => (
-                          <Badge key={index} variant="secondary" className="bg-black/70 text-white border-white/30 text-xs">
-                            {badge}
-                          </Badge>
-                        ))}
+                <article key={post.id} className="group relative">
+                  {/* Glassmorphism container */}
+                  <div className="relative overflow-hidden rounded-xl bg-white/10 dark:bg-black/10 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-[0_8px_32px_rgba(31,38,135,0.15)] hover:shadow-[0_16px_48px_rgba(31,38,135,0.25)] transition-all duration-500 hover:scale-[1.02] hover:bg-white/15 dark:hover:bg-black/15">
+                    
+                    {/* Image with overlay */}
+                    <div className="relative overflow-hidden h-48">
+                      <img 
+                        src={post.image} 
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                      
+                      {/* Floating badges */}
+                      <div className="absolute top-4 left-4">
+                        <div className="flex flex-wrap gap-1">
+                          {post.badges.slice(0, 2).map((badge, index) => (
+                            <Badge key={index} className="bg-white/20 text-white border-white/30 text-xs backdrop-blur-sm shadow-lg">
+                              {badge}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="p-6 space-y-4">
+                      <h3 className="text-xl font-bold leading-tight text-foreground group-hover:text-primary transition-colors duration-300">
+                        <Link to={post.slug} className="hover:no-underline">
+                          {post.title}
+                        </Link>
+                      </h3>
+                      
+                      <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                        {post.subtitle}
+                      </p>
+                      
+                      {/* Meta info */}
+                      <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                        <div className="flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          <span>{post.date}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="w-3 h-3" />
+                          <span>{post.readTime}</span>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                        <User className="w-3 h-3" />
+                        <span>{post.author}</span>
+                      </div>
+                      
+                      {/* Modern button */}
+                      <div className="pt-4">
+                        <Link to={post.slug} className="block">
+                          <button className="w-full px-6 py-3 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground rounded-lg font-medium shadow-[0_4px_16px_hsl(var(--primary)/0.3)] hover:shadow-[0_8px_24px_hsl(var(--primary)/0.4)] hover:from-primary/90 hover:to-primary/70 transition-all duration-300 group/btn relative overflow-hidden">
+                            <span className="relative z-10 flex items-center justify-center gap-2">
+                              Artikel lesen
+                              <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                            </span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  
-                  <CardHeader>
-                    <CardTitle className="text-xl leading-tight group-hover:text-primary transition-colors">
-                      <Link to={post.slug} className="hover:no-underline">
-                        {post.title}
-                      </Link>
-                    </CardTitle>
-                    <CardDescription className="text-sm leading-relaxed">
-                      {post.subtitle}
-                    </CardDescription>
-                  </CardHeader>
-                  
-                  <CardContent>
-                    <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                      <div className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        <span>{post.date}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        <span>{post.readTime}</span>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-1 mt-2 text-xs text-muted-foreground">
-                      <User className="w-3 h-3" />
-                      <span>{post.author}</span>
-                    </div>
-                  </CardContent>
-                  
-                  <CardFooter>
-                    <Link to={post.slug} className="w-full">
-                      <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                        Artikel lesen
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Button>
-                    </Link>
-                  </CardFooter>
-                </Card>
+                </article>
               ))}
             </div>
           </div>
