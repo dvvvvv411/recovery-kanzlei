@@ -80,17 +80,13 @@ const BlogPostPrivateClients = () => {
                   <BreadcrumbLink href="/kompetenzen" className="text-white/80 hover:text-white">Kompetenzen</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
-                <BreadcrumbPage className="text-white">Cybercrime</BreadcrumbPage>
+                <BreadcrumbPage className="text-white">Private Clients | Family Offices</BreadcrumbPage>
               </BreadcrumbList>
             </Breadcrumb>
             
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Cybercrime</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Private Clients | Family Offices</span>
             </h1>
-            
-            <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
-              Ihr Anwalt für CyberCrime und Internetkriminalität
-            </p>
           </div>
         </div>
       </Section>
@@ -101,24 +97,15 @@ const BlogPostPrivateClients = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground mb-8 leading-relaxed">
-                Internetkriminalität – auch bekannt als CyberCrime – zählt zu den dynamischsten Bedrohungen unserer Zeit. Digitale Prozesse durchdringen heute nahezu jeden Lebensbereich – ob im Beruf oder im Privatleben. Diese Entwicklung nutzen Cyberkriminelle gezielt aus: Phishing-Attacken, Anlagebetrug mit Kryptowährungen, Ransomware-Angriffe auf Unternehmen oder Identitätsdiebstahl sind längst keine Einzelfälle mehr.
+                Wir begleiten unsere Mandant:innen bei der langfristigen Planung ihres Vermögens. Unser Ziel ist es, sowohl privates als auch unternehmerisches Vermögen vor innerfamiliären Konflikten zu schützen und eine geregelte Weitergabe an die nächste Generation sicherzustellen.
               </p>
 
               <p className="mb-8 text-foreground">
-                Als auf CyberCrime spezialisierte Kanzlei unterstützen wir unsere Mandant:innen seit Jahren bei der rechtlichen Aufarbeitung von Angriffen im digitalen Raum. Unser Fokus liegt auf der forensischen Nachverfolgung von Kryptotransaktionen, der Sicherung von Beweismitteln sowie der effektiven Vertretung in Strafverfahren, Ermittlungsverfahren und zivilrechtlichen Klagen.
+                Bei ATB.LAW beraten wir Private Clients bei der vorsorglichen Vermögens- und Nachfolgeplanung. Hierbei unterstützen wir Sie insbesondere bei der Vorsorge für den Ablebensfall sowie für den Fall unvorhersehbarer Lebensumstände, wie etwa den Verlust der Geschäftsfähigkeit durch Krankheit oder Unfall. Unser erfahrenes Team berücksichtigt hierbei in höchstem Maße Ihre persönliche und familiäre Lebenssituation und erarbeitet auf Sie abgestimmte Lösungen zum Schutz Ihres Vermögens. Als Schnittstelle zu unserem gesellschaftsrechtlichen Schwerpunkt beraten wir auch Familienunternehmen (Family Offices) bei der Gestaltung der Vermögensstrukturen und der gesellschaftsrechtlichen Nachfolge.
               </p>
 
               <p className="mb-8 text-foreground">
-                Wir verfügen über fundierte Expertise als zertifizierte Datenschutz- und Geldwäschebeauftragte und arbeiten eng mit technischen CyberSecurity-Spezialisten zusammen. Dadurch garantieren wir eine gesamtheitliche und technisch fundierte Betreuung – von der Analyse des Angriffs bis zur rechtlichen Durchsetzung Ihrer Ansprüche.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Als Ihr Anwalt für CyberCrime vertreten wir Sie auch vor der Datenschutzbehörde sowie gegenüber Plattformbetreibern, Finanzdienstleistern oder Kryptowährungsbörsen. Unsere langjährige Erfahrung im Bereich Internetkriminalität macht uns zu einem verlässlichen Partner – auch in komplexen und grenzüberschreitenden Fällen.
-              </p>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Vertrauen Sie auf erfahrene Spezialisten für CyberCrime</h2>
-              <p className="mb-8 text-foreground">
-                Unsere Kanzlei vereint juristische Präzision mit technischem Know-how. Wenn Sie Opfer eines Cyberangriffs wurden oder präventiv rechtliche Beratung suchen: Wir sind für Sie da – schnell, diskret und professionell.
+                Als Mediatoren setzen wir uns dafür ein, im Falle von Konflikten eine rasche und effektive Lösung zu finden. Für den Fall, dass der Weg zu Gericht dennoch unvermeidbar ist, vertreten wir Sie mit vollem Einsatz bei Gerichtsprozessen.
               </p>
             </div>
           </div>
@@ -136,54 +123,72 @@ const BlogPostPrivateClients = () => {
                 Unsere Schwerpunkte
               </h2>
               <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto">
-                Expertise in allen Bereichen der Internetkriminalität
+                Unsere Spezialgebiete im Private Client & Family Office Bereich
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="prevention" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="nachfolgeplanung" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Prävention – Cyber Resilienz
+                    Nachfolgeplanung
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die NIS2 Richtlinie wurde noch nicht einmal in nationales Recht (NISG 2024) gegossen, schon steht mit dem Cyber Resilience Act (Verordnung über horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen) der nächste EU-Rechtsakt zur Sicherstellung von Cybersicherheitsanforderungen in den Startlöchern.
+                    Eine vorausschauende Nachfolgeplanung sichert den reibungslosen Übergang Ihres Vermögens in die nächste Generation. Dies sind häufig sensible Themen, welche neben qualifizierter rechtlicher Expertise auch höchste Sensibilität und Feingefühl in der Beratung erfordern.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="ransomware" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="testamente" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Ransomware – Incident Response
+                    Testamente
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Ihr Unternehmen wurde gehackt, Daten sind verschlüsselt und die Angreifer verlangen Lösegeld? Es steht viel auf dem Spiel! Gemeinsam mit unseren auf Cyber-Attacken spezialisierten IT-Security und Forensik Partnern unterstützen wir Sie diskret bei der schnellstmöglichen Bewältigung dieser Herausforderung.
+                    Rest in Peace! Für ein friedvolles Ableben sollte die Vermögensnachfolge vom Erblasser:in geregelt werden. Wir analysieren auf der Grundlage der gesetzlichen Erbfolge und Ihres Vermögens Ihre erbrechtliche Ausgangssituation und modifizieren diese nach Ihren Wünschen und Zielen.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="fraud" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="vorsorge" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Anlagebetrug – Datenmissbrauch
+                    Vorsorgevollmachten und Patientenverfügungen
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Vom vermeintlich lukrativen Investment mit Online Trading, bis hin zur missbräuchlichen Verwendung Ihrer Daten (Identitätsdiebstahl und Geldwäsche). Schnelles und koordiniertes Handeln ist Voraussetzung, um eine Chance zu haben, das "investierte" Vermögen zurück zu erhalten und weiteren Schaden zu verhindern. Wir kennen die Methoden der Verbrecher und wissen was zu tun ist.
+                    Tut gar nicht weh! Vorsorgevollmachten und Patientenverfügungen sind essenzielle Instrumente, um Ihre Selbstbestimmung im Falle einer Entscheidungsunfähigkeit zu wahren. Mit einer Vorsorgevollmacht bestimmen Sie vertrauenswürdige Personen, die in Ihrem Namen handeln dürfen. Eine Patientenverfügung stellt sicher, dass Ihre medizinischen Wünsche respektiert und umgesetzt werden.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="cyberbullying" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="schenkungen" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Hass im Netz
+                    Schenkungsverträge unter Lebenden und auf den Todesfall
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Das Internet ist kein rechtsfreier Raum. Hasspostings, Beleidigungen über soziale Medien oder Cybermobbing sind nicht erst seit dem am 1. Jänner 2021 in Kraft getretenen "Hass im Netz" Gesetzespaket rechtswidrig. Wir unterstützen Sie bei der strafrechtlichen Verfolgung der Täter und setzen Ihre zivil- und medienrechtlichen Ansprüche durch.
+                    "Nehmen ist seeliger als Geben" - oder andersum? Schenkungen, sowohl unter Lebenden als auch von Todes wegen, sind wichtige Instrumente der Vermögensübertragung. Durch frühzeitige Schenkungen können steuerliche Vorteile genutzt und Familienstreitigkeiten vermieden werden. Wir beraten Sie, wie Sie Ihre Vermögenswerte rechtssicher und nach Ihren Wünschen übertragen können und dennoch bestmöglich abgesichert bleiben.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="tracing" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="ehevertraege" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Asset-/Krypto Tracing
+                    Partnerschafts- und Eheverträge
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die Analyse und Nachverfolgung von Kryptotransaktionen ("Follow the Money") ist nicht nur bei der Aufklärung von Straftaten essentiell. Auch in zivilrechtlichen Verfahren, Erbstreitigkeiten und Insolvenzen steigt der Bedarf an Experten auf diesem Gebiet. Als erfahrene Rechtsanwält:innen und zertifizierte Blockchain-Forensiker bieten wir unseren Mandant:innen Expertise aus einer Hand.
+                    "Bis dass der Tod uns scheidet" - weil das nicht der einzige Scheidungsgrund ist... Partnerschafts- und Eheverträge schaffen Klarheit und schützen beide Partner:innen vor möglichen zukünftigen Konflikten.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="uebertragung" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Interfamiliäre Übertragung von Kapitalanlagen, Unternehmen und Immobilien
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Eine Übertragung von Kapitalanlagen, Betrieben und Immobilien zu Lebzeiten des Abgebenden ist natürlich besser als eine plötzliche Übernahme wegen Krankheit oder Todesfall. Oft ist es gewünscht und ratsam, den Senior oder die Seniorin noch als beratende Partner an der Seite zu haben. Daher sollte mit der Planung der Übertragung rechtzeitig begonnen werden. Dies erfordert eine sorgfältige rechtliche Vorbereitung, um steuerliche Belastungen zu minimieren und eine reibungslose Vermögensübergabe zu gewährleisten.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="nachfolge-unternehmen" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Gesellschafts- und erbrechtliche Planung der Vermögens- und Unternehmensnachfolge
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Bei der gesellschafts- und erbrechtlichen Planung der Vermögens- und Unternehmensnachfolge geht es um mehr als rein juristische Angelegenheiten. Neben der Beantwortung rechtlicher Fragen stehen bei diesen Themen oft auch Emotionen und familieninterne Befindlichkeiten im Mittelpunkt. Wir gehen mit dieser Ausnahmesituation einfühlsam, aber auch souverän und zielgerichtet um.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -204,11 +209,11 @@ const BlogPostPrivateClients = () => {
                 Unsere Expert:innen
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Lernen Sie unser spezialisiertes Cybercrime-Team kennen
+                Lernen Sie unser spezialisiertes Private Client & Family Office Team kennen
               </p>
             </div>
 
-            {/* Team Carousel - Only cybercrime relevant team members */}
+            {/* Team Carousel - Private Clients relevant team members */}
             <Carousel
               opts={{
                 align: "start",
@@ -222,7 +227,7 @@ const BlogPostPrivateClients = () => {
               className="w-full max-w-6xl mx-auto"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                {/* Bernhard Bovensiepen - Cybercrime Expert */}
+                {/* Bernhard Bovensiepen - General Legal Expert suitable for Private Clients */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
@@ -240,35 +245,38 @@ const BlogPostPrivateClients = () => {
                   </div>
                 </CarouselItem>
 
-                {/* Martin Willig - Blockchain Analyst */}
+                {/* Leonard Grimm - Corporate and Capital Markets relevant for Private Clients */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="/lovable-uploads/fb9c5d6b-b0d1-44b0-9835-4301827237bb.png"
-                        alt="Martin Willig"
+                        src="/lovable-uploads/b4127816-793a-42ef-b5e4-34987580a428.png"
+                        alt="Leonard Grimm"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Martin Willig</h3>
-                    <p className="text-gray-600">Blockchain- /Datenanalyst</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Leonard Grimm</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Prozessführung, Datenschutz/Compliance, Wertpapier- und Kapitalmarktrecht
+                    </p>
                   </div>
                 </CarouselItem>
 
-                {/* Steffen Rheinböcker - Cybercrime Expert */}
+                {/* Michael Dorn - Corporate and Real Estate relevant for Family Offices */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="/lovable-uploads/709d1496-f015-4b38-b331-9cb17b1b6eaa.png"
-                        alt="Steffen Rheinböcker"
+                        src="/lovable-uploads/49592374-fd61-4f95-b984-a0cbeeaad8f5.png"
+                        alt="Michael Dorn"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Steffen Rheinböcker</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Michael Dorn</h3>
                     <p className="text-gray-600 mb-2">Rechtsanwalt</p>
                     <p className="text-sm text-gray-500 leading-relaxed">
-                      Immobilienrecht, Prozessführung und Streitbeilegung, Cybercrime
+                      Immobilienrecht, Prozessführung, Datenschutz und Compliance
                     </p>
                   </div>
                 </CarouselItem>
