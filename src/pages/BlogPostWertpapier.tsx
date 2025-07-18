@@ -87,10 +87,6 @@ const BlogPostWertpapier = () => {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
               <span className="bg-gradient-primary bg-clip-text text-transparent">Wertpapier- und Kapitalmarktrecht</span>
             </h1>
-            
-            <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
-              Ihr Anwalt für Wertpapier- und Kapitalmarktrecht
-            </p>
           </div>
         </div>
       </Section>
@@ -101,24 +97,11 @@ const BlogPostWertpapier = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground mb-8 leading-relaxed">
-                Das Wertpapier- und Kapitalmarktrecht ist ein hochkomplexes Rechtsgebiet, das ständigen Veränderungen unterworfen ist. Digitale Transformationen und neue Finanzinstrumente wie Kryptowährungen, Security Token oder dezentrale Finanzdienstleistungen (DeFi) stellen sowohl Unternehmen als auch Anleger vor neue rechtliche Herausforderungen.
+                Wir verstehen den Kapitalmarkt/komplexe Finanzinstrumente und stehen auf Herausforderungen.
               </p>
 
               <p className="mb-8 text-foreground">
-                Als spezialisierte Kanzlei im Wertpapier- und Kapitalmarktrecht begleiten wir unsere Mandant:innen bei der Navigation durch dieses komplexe Regelwerk. Unser Fokus liegt auf der rechtssicheren Strukturierung von Kapitalmarktprodukten, der Compliance-Beratung sowie der effektiven Durchsetzung von Anlegerrechten.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Wir verfügen über fundierte Expertise in der Bewertung regulatorischer Anforderungen und arbeiten eng mit Finanzmarktaufsichtsbehörden zusammen. Dadurch gewährleisten wir eine ganzheitliche und rechtssichere Betreuung – von der Produktentwicklung bis zur Markteinführung.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Als Ihr Anwalt für Wertpapier- und Kapitalmarktrecht vertreten wir Sie auch gegenüber der Finanzmarktaufsicht (FMA) sowie in grenzüberschreitenden Verfahren. Unsere langjährige Erfahrung im Bereich Kapitalmarktrecht macht uns zu einem verlässlichen Partner – auch in komplexen internationalen Sachverhalten.
-              </p>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Vertrauen Sie auf erfahrene Spezialisten für Wertpapier- und Kapitalmarktrecht</h2>
-              <p className="mb-8 text-foreground">
-                Unsere Kanzlei vereint juristische Präzision mit praktischem Marktverständnis. Ob bei der Emission neuer Finanzinstrumente oder bei der Durchsetzung von Anlegerrechten: Wir sind für Sie da – schnell, kompetent und lösungsorientiert.
+                Die Dynamik des Kapitalmarkts und die Vielzahl an gesetzlichen Spielregeln macht es professionellen Marktteilnehmern ebenso wie Anlegern schwer den Durchblick zu behalten. Komplexe Finanzprodukte sind schon lange nicht mehr institutionellen Anlegern vorbehalten, sondern werden allzu oft auch an private Kunden verkauft. Mit dem Vormarsch von „Kryptowährungen" drängt nunmehr eine gänzlich neue Assetklasse in den Markt.
               </p>
             </div>
           </div>
@@ -136,54 +119,45 @@ const BlogPostWertpapier = () => {
                 Unsere Schwerpunkte
               </h2>
               <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto">
-                Expertise in allen Bereichen des Wertpapier- und Kapitalmarktrechts
+                Unsere Schwerpunkte im Wertpapier- und Kapitalmarktrecht
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="emission" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="fintechs" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Emission und Strukturierung von Finanzinstrumenten
+                    Beratung von FinTechs, Wertpapierfirmen und -dienstleister
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Von der Konzeption bis zur Markteinführung begleiten wir Emittenten bei der rechtssicheren Strukturierung von Anleihen, Aktien, Investmentfonds und innovativen Finanzprodukten. Besondere Expertise haben wir bei Security Token und tokenisierten Wertpapieren entwickelt.
+                    Von der Mitarbeiterschulung (Compliance) bis hin zur rechtskonformen Umsetzung neuer Produktideen. Wir bringen Know-How ein und stehen unseren Mandant:innen beratend und gestaltend zur Seite.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="compliance" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="schadenersatz" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Kapitalmarkt-Compliance und Regulierung
+                    Schadenersatzansprüche iZm (Krypto-) Futures, Swaps, Investmentfonds, Anleihen
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die Einhaltung komplexer regulatorischer Anforderungen ist entscheidend für den Markterfolg. Wir beraten Sie zu MiFID II, PRIIPS, MAR, Prospektrichtlinie und anderen relevanten Bestimmungen sowie deren Umsetzung in der Praxis.
+                    Aus über 10 Jahren Erfahrung im Zusammenhang mit Schadenersatzprozessen wissen wir worauf es ankommt. Verständnis von Finanzprodukten und Verhandlungsgeschick sind der Schlüssel zum Erfolg.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="disputes" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="krypto" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Anlegerstreitigkeiten und Schadensersatz
+                    Kryptowährungen, Finanzierungen
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Bei fehlerhafter Anlageberatung, Prospektfehlern oder anderen Pflichtverletzungen setzen wir die Rechte geschädigter Anleger konsequent durch. Unsere Expertise umfasst sowohl Individual- als auch Sammelvfahren.
+                    Streitigkeiten im Zusammenhang mit Kreditverträgen und Finanzierungen beschäftigen uns seit Beginn unserer juristischen Tätigkeit. Kryptowährungen sind unser Steckenpferd.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="crypto" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="verfahren" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Kryptowährungen und digitale Assets
+                    Zivilrechtliche-, aufsichts- und verwaltungsbehördliche Verfahren
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die rechtliche Einordnung von Kryptowährungen, ICOs, STOs und DeFi-Produkten erfordert spezielles Know-how. Wir beraten bei der regulatorischen Bewertung und helfen bei der rechtskonformen Umsetzung digitaler Finanzprodukte.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="acquisition" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
-                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Übernahmerecht und Corporate Finance
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 text-white/90">
-                    Bei Unternehmensübernahmen, Börsengängen und anderen Corporate Finance-Transaktionen sorgen wir für die Einhaltung aller kapitalmarktrechtlichen Bestimmungen und Meldepflichten.
+                    Verfahren im Zusammenhang mit Finanzprodukten stellen eine besondere Herausforderung dar. Wir nehmen die Herausforderung an und sorgen mit Akribie und Verhandlungsgeschick für das beste Ergebnis.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -204,7 +178,7 @@ const BlogPostWertpapier = () => {
                 Unsere Expert:innen
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Lernen Sie unser spezialisiertes Wertpapier- und Kapitalmarktrecht-Team kennen
+                Hier dann nochmal auf der Landingpage abgleichen bei der Sektion Unser Team, wer hierfür zuständig ist, und dann die Anwälte austauschen in der Sektion
               </p>
             </div>
 
