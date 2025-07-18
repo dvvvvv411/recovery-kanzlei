@@ -80,17 +80,13 @@ const BlogPostImmobilienrecht = () => {
                   <BreadcrumbLink href="/kompetenzen" className="text-white/80 hover:text-white">Kompetenzen</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
-                <BreadcrumbPage className="text-white">Cybercrime</BreadcrumbPage>
+                <BreadcrumbPage className="text-white">Immobilienrecht</BreadcrumbPage>
               </BreadcrumbList>
             </Breadcrumb>
             
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Cybercrime</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Immobilienrecht</span>
             </h1>
-            
-            <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
-              Ihr Anwalt für CyberCrime und Internetkriminalität
-            </p>
           </div>
         </div>
       </Section>
@@ -101,24 +97,11 @@ const BlogPostImmobilienrecht = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground mb-8 leading-relaxed">
-                Internetkriminalität – auch bekannt als CyberCrime – zählt zu den dynamischsten Bedrohungen unserer Zeit. Digitale Prozesse durchdringen heute nahezu jeden Lebensbereich – ob im Beruf oder im Privatleben. Diese Entwicklung nutzen Cyberkriminelle gezielt aus: Phishing-Attacken, Anlagebetrug mit Kryptowährungen, Ransomware-Angriffe auf Unternehmen oder Identitätsdiebstahl sind längst keine Einzelfälle mehr.
+                Eigentumswohnungen, Einfamilienhäuser, Zinshäuser oder Zweitwohnsitze – jede Immobilie ist einzigartig und bedarf daher besonderer Expertise. Ganz gleich, ob Sie Privatperson oder Unternehmer, Verkäufer oder Käufer, Investor oder Bauträger sind, bei uns erhalten Sie umfassende Beratung in allen immobilien- und baurechtlichen Angelegenheiten. Von der Planungsphase bis zur Realisierung Ihres Immobilienprojekts stehen wir Ihnen mit unserem Know-How zur Seite und unterstützen Sie bei der Erstellung und Prüfung von Vertragsdokumenten sowie in der gesamten rechtlichen Umsetzung Ihres Vorhabens.
               </p>
 
               <p className="mb-8 text-foreground">
-                Als auf CyberCrime spezialisierte Kanzlei unterstützen wir unsere Mandant:innen seit Jahren bei der rechtlichen Aufarbeitung von Angriffen im digitalen Raum. Unser Fokus liegt auf der forensischen Nachverfolgung von Kryptotransaktionen, der Sicherung von Beweismitteln sowie der effektiven Vertretung in Strafverfahren, Ermittlungsverfahren und zivilrechtlichen Klagen.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Wir verfügen über fundierte Expertise als zertifizierte Datenschutz- und Geldwäschebeauftragte und arbeiten eng mit technischen CyberSecurity-Spezialisten zusammen. Dadurch garantieren wir eine gesamtheitliche und technisch fundierte Betreuung – von der Analyse des Angriffs bis zur rechtlichen Durchsetzung Ihrer Ansprüche.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Als Ihr Anwalt für CyberCrime vertreten wir Sie auch vor der Datenschutzbehörde sowie gegenüber Plattformbetreibern, Finanzdienstleistern oder Kryptowährungsbörsen. Unsere langjährige Erfahrung im Bereich Internetkriminalität macht uns zu einem verlässlichen Partner – auch in komplexen und grenzüberschreitenden Fällen.
-              </p>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Vertrauen Sie auf erfahrene Spezialisten für CyberCrime</h2>
-              <p className="mb-8 text-foreground">
-                Unsere Kanzlei vereint juristische Präzision mit technischem Know-how. Wenn Sie Opfer eines Cyberangriffs wurden oder präventiv rechtliche Beratung suchen: Wir sind für Sie da – schnell, diskret und professionell.
+                Als Mediatoren setzen wir uns dafür ein, im Falle von Konflikten eine rasche und effektive Lösung zu finden. Für den Fall, dass der Weg zu Gericht dennoch unvermeidbar ist, vertreten wir Sie auch bei Gerichtsprozessen oder Behörden in allen bau-, miet- oder wohnungseigentumsrechtlichen Angelegenheiten.
               </p>
             </div>
           </div>
@@ -136,54 +119,72 @@ const BlogPostImmobilienrecht = () => {
                 Unsere Schwerpunkte
               </h2>
               <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto">
-                Expertise in allen Bereichen der Internetkriminalität
+                Unsere Spezialgebiete im Immobilienrecht
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="prevention" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="bautraeger" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Prävention – Cyber Resilienz
+                    Bauträgerprojekte
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die NIS2 Richtlinie wurde noch nicht einmal in nationales Recht (NISG 2024) gegossen, schon steht mit dem Cyber Resilience Act (Verordnung über horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen) der nächste EU-Rechtsakt zur Sicherstellung von Cybersicherheitsanforderungen in den Startlöchern.
+                    Von der ersten Idee bis zur finalen Umsetzung unterstützen wir Bauträger und Immobilienentwickler bei jedem Schritt ihres Projekts. Ob es um die Beschaffung von Baugenehmigungen, die Verhandlung von Verträgen mit Auftragnehmern oder die rechtliche Absicherung von Verkaufs- und Marketingaktivitäten geht – unsere Expertise im Immobilienrecht stellt sicher, dass Ihr Projekt auf einer soliden rechtlichen Grundlage steht.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="ransomware" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="verkauf" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Ransomware – Incident Response
+                    (Ver-)Kauf von Immobilien
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Ihr Unternehmen wurde gehackt, Daten sind verschlüsselt und die Angreifer verlangen Lösegeld? Es steht viel auf dem Spiel! Gemeinsam mit unseren auf Cyber-Attacken spezialisierten IT-Security und Forensik Partnern unterstützen wir Sie diskret bei der schnellstmöglichen Bewältigung dieser Herausforderung.
+                    Sie planen den Kauf oder Verkauf einer Immobilie? Unser erfahrenes Anwaltsteam steht Ihnen zur Seite. Wir prüfen und gestalten Verträge, bieten umfassende rechtliche Beratung und sorgen für eine reibungslose Abwicklung. Von der Titelprüfung bis zur Treuhandabwicklung - wir kümmern uns um alle Details, damit Sie sich entspannt zurücklehnen können.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="fraud" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="planung" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Anlagebetrug – Datenmissbrauch
+                    Planung und Strukturierung von Bauprojekten (Asset-/Share Deals)
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Vom vermeintlich lukrativen Investment mit Online Trading, bis hin zur missbräuchlichen Verwendung Ihrer Daten (Identitätsdiebstahl und Geldwäsche). Schnelles und koordiniertes Handeln ist Voraussetzung, um eine Chance zu haben, das "investierte" Vermögen zurück zu erhalten und weiteren Schaden zu verhindern. Wir kennen die Methoden der Verbrecher und wissen was zu tun ist.
+                    Der Schlüssel zu einem erfolgreichen Immobilienprojekt liegt bereits in einer gründlichen Vorbereitungsphase. Wir verstehen die Notwendigkeit, eiffizient zu arbeiten, Kosten zu senken, Haftungsrisiken zu minimieren und gleichzeitig Wachstum und Profit zu maximieren. Als erfahrene M&A- und Immobilien-Rechtsanwält:innen bieten wir umfassende Beratung aus einer Hand, um Ihre Ziele zu erreichen.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="cyberbullying" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="due-diligence" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Hass im Netz
+                    Rechtliche Due Diligence für Immobilienprojekte
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Das Internet ist kein rechtsfreier Raum. Hasspostings, Beleidigungen über soziale Medien oder Cybermobbing sind nicht erst seit dem am 1. Jänner 2021 in Kraft getretenen "Hass im Netz" Gesetzespaket rechtswidrig. Wir unterstützen Sie bei der strafrechtlichen Verfolgung der Täter und setzen Ihre zivil- und medienrechtlichen Ansprüche durch.
+                    Um die rechtliche Situation eines Unternehmens oder einer Immobilie vor einer Transaktion vollständig zu bewerten, ist eine rechtliche Due Diligence erlässlich. Durch unsere Expertise unterstützen wir bei fundierten Entscheidungen und tragen dazu bei, rechtliche Risiken zu minimieren und den Erfolg von Immobilienprojekten zu sichern.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="tracing" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="parifizierung" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Asset-/Krypto Tracing
+                    Parifizierungen / Wohnungeigentumsbegründung
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die Analyse und Nachverfolgung von Kryptotransaktionen ("Follow the Money") ist nicht nur bei der Aufklärung von Straftaten essentiell. Auch in zivilrechtlichen Verfahren, Erbstreitigkeiten und Insolvenzen steigt der Bedarf an Experten auf diesem Gebiet. Als erfahrene Rechtsanwält:innen und zertifizierte Blockchain-Forensiker bieten wir unseren Mandant:innen Expertise aus einer Hand.
+                    Wenn eine bestehende Liegenschaft in Eigentumswohnungen aufgeteilt oder bei Neubauten mehrere Wohn- bzw Geschäftseinheiten entstehen sollen, ist eine Parifizierung erforderlich. Wir unterstützen Sie bei diesem komplexen Prozess und stellen sicher, dass alle rechtlichen Anforderungen erfüllt werden, um einen reibungslosen Ablauf zu gewährleisten.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="mietrecht" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Miet- und Pachtverträge
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Das Miet- und Wohnrecht berührt nahezu jeden im Laufe seines Lebens, sei es als (Ver-)Mieter:in oder Eigentümer:in von Wohnungen, Einfamilienhäusern oder Geschäftsräumen. Durch ständige gesetzliche Anpassungen und neue oberstgerichtliche Urteile ist dieses Rechtsgebiet äußerst komplex geworden. Sie können sich bei Ihren Anliegen auf unsere Expertise verlassen.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="streitigkeiten" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Vertretung in bau- und immobilienrechtlichen Rechtsstreitigkeiten
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Im Bereich von Immobilien können oft unerwünschte Probleme auftreten. Seien es Bauverzögerungen, Mängel, Kostenüberschreitungen, Gewährleistungsthematiken oder etwa Miet- und Wohnungseigentümerstreitigkeiten. Mit fundiertem Fachwissen und jahrelanger Erfahrung setzen wir die Rechte unserer Mandant:innen sowohl gerichtlich als auch außergerichtlich erfolgreich durch.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -204,11 +205,11 @@ const BlogPostImmobilienrecht = () => {
                 Unsere Expert:innen
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Lernen Sie unser spezialisiertes Cybercrime-Team kennen
+                Lernen Sie unser spezialisiertes Immobilienrecht-Team kennen
               </p>
             </div>
 
-            {/* Team Carousel - Only cybercrime relevant team members */}
+            {/* Team Carousel - Real estate law relevant team members */}
             <Carousel
               opts={{
                 align: "start",
@@ -222,40 +223,25 @@ const BlogPostImmobilienrecht = () => {
               className="w-full max-w-6xl mx-auto"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                {/* Bernhard Bovensiepen - Cybercrime Expert */}
+                {/* Michael Dorn - Real Estate Expert */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="/lovable-uploads/2cad25d9-8d15-482b-bc38-5b1378991be6.png"
-                        alt="Bernhard Bovensiepen"
+                        src="/lovable-uploads/49592374-fd61-4f95-b984-a0cbeeaad8f5.png"
+                        alt="Michael Dorn"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Bernhard Bovensiepen</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Michael Dorn</h3>
                     <p className="text-gray-600 mb-2">Rechtsanwalt</p>
                     <p className="text-sm text-gray-500 leading-relaxed">
-                      Cybercrime, Datenschutz/Compliance, Wertpapier- und Kapitalmarktrecht, Kryptonachverfolgung und Mittelherkunftsnachweis
+                      Immobilienrecht, Prozessführung, Datenschutz und Compliance
                     </p>
                   </div>
                 </CarouselItem>
 
-                {/* Martin Willig - Blockchain Analyst */}
-                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="text-left">
-                    <div className="mb-6">
-                      <img
-                        src="/lovable-uploads/fb9c5d6b-b0d1-44b0-9835-4301827237bb.png"
-                        alt="Martin Willig"
-                        className="w-full h-auto object-cover rounded-lg shadow-lg"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Martin Willig</h3>
-                    <p className="text-gray-600">Blockchain- /Datenanalyst</p>
-                  </div>
-                </CarouselItem>
-
-                {/* Steffen Rheinböcker - Cybercrime Expert */}
+                {/* Steffen Rheinböcker - Real Estate and Litigation Expert */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
