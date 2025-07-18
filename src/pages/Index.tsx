@@ -514,7 +514,7 @@ const Index = () => {
                   {/* Multiple Awards */}
                   <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all duration-300">
                     <img 
-                      src="/lovable-uploads/5ea7e3c1-6d4f-4274-80b0-e82b8b3cb534.png" 
+                      src="/lovable-uploads/f083500d-33a2-4506-9c64-bace4f2b1753.png" 
                       alt="Verschiedene Auszeichnungen 2024/2025"
                       className="w-full h-auto rounded-lg"
                     />
