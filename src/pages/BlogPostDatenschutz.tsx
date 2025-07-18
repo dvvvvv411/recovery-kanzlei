@@ -89,7 +89,7 @@ const BlogPostDatenschutz = () => {
             </h1>
             
             <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
-              Ihr Anwalt für CyberCrime und Internetkriminalität
+              Expertise in Datenschutz und rechtlicher Compliance
             </p>
           </div>
         </div>
@@ -101,24 +101,7 @@ const BlogPostDatenschutz = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground mb-8 leading-relaxed">
-                Internetkriminalität – auch bekannt als CyberCrime – zählt zu den dynamischsten Bedrohungen unserer Zeit. Digitale Prozesse durchdringen heute nahezu jeden Lebensbereich – ob im Beruf oder im Privatleben. Diese Entwicklung nutzen Cyberkriminelle gezielt aus: Phishing-Attacken, Anlagebetrug mit Kryptowährungen, Ransomware-Angriffe auf Unternehmen oder Identitätsdiebstahl sind längst keine Einzelfälle mehr.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Als auf CyberCrime spezialisierte Kanzlei unterstützen wir unsere Mandant:innen seit Jahren bei der rechtlichen Aufarbeitung von Angriffen im digitalen Raum. Unser Fokus liegt auf der forensischen Nachverfolgung von Kryptotransaktionen, der Sicherung von Beweismitteln sowie der effektiven Vertretung in Strafverfahren, Ermittlungsverfahren und zivilrechtlichen Klagen.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Wir verfügen über fundierte Expertise als zertifizierte Datenschutz- und Geldwäschebeauftragte und arbeiten eng mit technischen CyberSecurity-Spezialisten zusammen. Dadurch garantieren wir eine gesamtheitliche und technisch fundierte Betreuung – von der Analyse des Angriffs bis zur rechtlichen Durchsetzung Ihrer Ansprüche.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Als Ihr Anwalt für CyberCrime vertreten wir Sie auch vor der Datenschutzbehörde sowie gegenüber Plattformbetreibern, Finanzdienstleistern oder Kryptowährungsbörsen. Unsere langjährige Erfahrung im Bereich Internetkriminalität macht uns zu einem verlässlichen Partner – auch in komplexen und grenzüberschreitenden Fällen.
-              </p>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Vertrauen Sie auf erfahrene Spezialisten für CyberCrime</h2>
-              <p className="mb-8 text-foreground">
-                Unsere Kanzlei vereint juristische Präzision mit technischem Know-how. Wenn Sie Opfer eines Cyberangriffs wurden oder präventiv rechtliche Beratung suchen: Wir sind für Sie da – schnell, diskret und professionell.
+                An Datenschutz und Compliance führt kein Weg mehr vorbei. Strenge gesetzliche Regulierungen mit hohen Strafdrohungen haben diese Rechtsgebiete von einem Schattendasein in das Zentrum der unternehmerischen Aufmerksamkeit gerückt. Laufend neue gesetzliche Vorgaben und gerichtliche/behördliche Entscheidungen stellen alle Beteiligten vor große Herausforderungen. Als zertifizierte Datenschutz- und Geldwäschebeauftragte sind wir mit den aktuellen Spielregeln vertraut und meistern mit unseren Mandant:innen die Herausforderungen der neuesten Judikatur und Gesetzgebung.
               </p>
             </div>
           </div>
@@ -136,54 +119,54 @@ const BlogPostDatenschutz = () => {
                 Unsere Schwerpunkte
               </h2>
               <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto">
-                Expertise in allen Bereichen der Internetkriminalität
+                Expertise in allen Bereichen des Datenschutzes und der Compliance
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="prevention" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="datenschutz" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Prävention – Cyber Resilienz
+                    Datenschutzrechtliche Beratung und Umsetzung
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die NIS2 Richtlinie wurde noch nicht einmal in nationales Recht (NISG 2024) gegossen, schon steht mit dem Cyber Resilience Act (Verordnung über horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen) der nächste EU-Rechtsakt zur Sicherstellung von Cybersicherheitsanforderungen in den Startlöchern.
+                    Seit dem Inkrafttreten der Datenschutzgrundverordnung (DSGVO) im Jahr 2018 sind bereits mehr als sechs Jahre vergangen - die "Schonfrist" ist vorbei. Datenschutzverstöße werden von der Datenschutzbehörde mittlerweile mit empfindlichen Strafen geahndet und sehen sich Unternehmen neben Reputationsverlusten auch vermehrt mit Schadenersatzansprüchen konfrontiert. Setzen Sie auf unsere Expertise als zertifizierte Datenschutzexperten und vermeiden Sie unnötige Risiken.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="ransomware" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="geldwaesche" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Ransomware – Incident Response
+                    Beratung bei Geldwäscheprävention
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Ihr Unternehmen wurde gehackt, Daten sind verschlüsselt und die Angreifer verlangen Lösegeld? Es steht viel auf dem Spiel! Gemeinsam mit unseren auf Cyber-Attacken spezialisierten IT-Security und Forensik Partnern unterstützen wir Sie diskret bei der schnellstmöglichen Bewältigung dieser Herausforderung.
+                    Risikoanalyse, Geldwäschepräventionskonzept, Schulungen? Unser Team begleitet Sie auf dem Weg durch die komplexen gesetzlichen Vorgaben iZm der Prävention von Geldwäsche und Terrorismusfinanzierung und stellt sicher, dass Sie alle rechtlichen Anforderungen erfüllen.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="fraud" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="mittelherkunft" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Anlagebetrug – Datenmissbrauch
+                    Erstellung von Mittelherkunftsnachweisen
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Vom vermeintlich lukrativen Investment mit Online Trading, bis hin zur missbräuchlichen Verwendung Ihrer Daten (Identitätsdiebstahl und Geldwäsche). Schnelles und koordiniertes Handeln ist Voraussetzung, um eine Chance zu haben, das "investierte" Vermögen zurück zu erhalten und weiteren Schaden zu verhindern. Wir kennen die Methoden der Verbrecher und wissen was zu tun ist.
+                    Wer in Kryptowährungen investiert, wird von seiner Kryptohandelsbörse und/oder Bank regelmäßig nach einem Mittelherkunftsnachweis gefragt. Die Erbringung eines solchen Nachweises ist häufig mit scheinbar unüberwindbaren Hindernissen verbunden. Als Rechtsanwälte, zertifizierte Geldwäschebeauftragte und Blockchain-Forensiker unterstützen wir unsere Mandant:innen bei der raschen Bescheinigung der Unbedenklichkeit ihrer Vermögenswerte und deren Herkunft.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="cyberbullying" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="vertretung" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Hass im Netz
+                    Rechtliche Vertretung bei Datenschutzverletzungen
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Das Internet ist kein rechtsfreier Raum. Hasspostings, Beleidigungen über soziale Medien oder Cybermobbing sind nicht erst seit dem am 1. Jänner 2021 in Kraft getretenen "Hass im Netz" Gesetzespaket rechtswidrig. Wir unterstützen Sie bei der strafrechtlichen Verfolgung der Täter und setzen Ihre zivil- und medienrechtlichen Ansprüche durch.
+                    Ob vor der Datenschutzbehörde oder vor dem Zivilgericht. Auf unsere Erfahrung bei der Durchsetzung/Abwehr von Ansprüchen aus Datenschutzverletzungen können unsere Mandant:innen zählen.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="tracing" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="nis2" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Asset-/Krypto Tracing
+                    Beratung bei NIS 2 Vorgaben
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die Analyse und Nachverfolgung von Kryptotransaktionen ("Follow the Money") ist nicht nur bei der Aufklärung von Straftaten essentiell. Auch in zivilrechtlichen Verfahren, Erbstreitigkeiten und Insolvenzen steigt der Bedarf an Experten auf diesem Gebiet. Als erfahrene Rechtsanwält:innen und zertifizierte Blockchain-Forensiker bieten wir unseren Mandant:innen Expertise aus einer Hand.
+                    Die NIS 2-Richtlinie verpflichtet Unternehmen in kritischen Sektoren, wie Energie, Gesundheit, Transport und digitale Infrastruktur, strenge Cybersicherheitsstandards zu erfüllen. Wir unterstützen Sie dabei, Ihre IT-Sicherheitsstrategien zu überprüfen und anzupassen, geeignete Sicherheitsmaßnahmen zu implementieren und die notwendige Dokumentation für eine lückenlose Compliance zu erstellen. Darüber hinaus bieten wir die gesetzlich vorgeschriebenen Schulungen für Ihre Führungskräfte an.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -204,7 +187,7 @@ const BlogPostDatenschutz = () => {
                 Unsere Expert:innen
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Lernen Sie unser spezialisiertes Cybercrime-Team kennen
+                Lernen Sie unser spezialisiertes Datenschutz- und Compliance-Team kennen
               </p>
             </div>
 
@@ -222,7 +205,7 @@ const BlogPostDatenschutz = () => {
               className="w-full max-w-6xl mx-auto"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                {/* Bernhard Bovensiepen - Cybercrime Expert */}
+                {/* Bernhard Bovensiepen - Datenschutz Expert */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
@@ -240,35 +223,38 @@ const BlogPostDatenschutz = () => {
                   </div>
                 </CarouselItem>
 
-                {/* Martin Willig - Blockchain Analyst */}
+                {/* Leonard Grimm - Datenschutz Expert */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="/lovable-uploads/fb9c5d6b-b0d1-44b0-9835-4301827237bb.png"
-                        alt="Martin Willig"
+                        src="/lovable-uploads/b4127816-793a-42ef-b5e4-34987580a428.png"
+                        alt="Leonard Grimm"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Martin Willig</h3>
-                    <p className="text-gray-600">Blockchain- /Datenanalyst</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Leonard Grimm</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Prozessführung, Datenschutz/Compliance, Wertpapier- und Kapitalmarktrecht
+                    </p>
                   </div>
                 </CarouselItem>
 
-                {/* Steffen Rheinböcker - Cybercrime Expert */}
+                {/* Michael Dorn - Datenschutz Expert */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="/lovable-uploads/709d1496-f015-4b38-b331-9cb17b1b6eaa.png"
-                        alt="Steffen Rheinböcker"
+                        src="/lovable-uploads/49592374-fd61-4f95-b984-a0cbeeaad8f5.png"
+                        alt="Michael Dorn"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Steffen Rheinböcker</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Michael Dorn</h3>
                     <p className="text-gray-600 mb-2">Rechtsanwalt</p>
                     <p className="text-sm text-gray-500 leading-relaxed">
-                      Immobilienrecht, Prozessführung und Streitbeilegung, Cybercrime
+                      Immobilienrecht, Prozessführung, Datenschutz und Compliance
                     </p>
                   </div>
                 </CarouselItem>
