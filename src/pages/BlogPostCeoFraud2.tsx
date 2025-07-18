@@ -84,12 +84,6 @@ const BlogPostCeoFraud2 = () => {
               </BreadcrumbList>
             </Breadcrumb>
             
-            <div className="flex flex-wrap gap-2 mb-6">
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">CyberCrime</Badge>
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Internetkriminalität</Badge>
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Digitale Forensik</Badge>
-            </div>
-            
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
               <span className="bg-gradient-primary bg-clip-text text-transparent">Cybercrime</span>
             </h1>
@@ -97,21 +91,6 @@ const BlogPostCeoFraud2 = () => {
             <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
               Ihr Anwalt für CyberCrime und Internetkriminalität
             </p>
-            
-            <div className="flex flex-wrap items-center gap-6 text-sm text-white/80">
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                <span>16. Juli 2025</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>6 min Lesezeit</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>ATB.LAW Team</span>
-              </div>
-            </div>
           </div>
         </div>
       </Section>
