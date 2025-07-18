@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,6 +11,7 @@ import BlogPost from "./pages/BlogPost";
 import BlogPostCeoFraud from "./pages/BlogPostCeoFraud";
 import BlogPostKreditgebuehr from "./pages/BlogPostKreditgebuehr";
 import UnserePartner from "./pages/UnserePartner";
+import Cybercrime from "./pages/Cybercrime";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/unsere-partner" element={<UnserePartner />} />
+          <Route path="/kompetenzen/cybercrime" element={<Cybercrime />} />
           <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
           <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
           <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
