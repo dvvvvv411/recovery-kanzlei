@@ -10,6 +10,7 @@ import BlogPost from "./pages/BlogPost";
 import BlogPostCeoFraud from "./pages/BlogPostCeoFraud";
 import BlogPostKreditgebuehr from "./pages/BlogPostKreditgebuehr";
 import UnserePartner from "./pages/UnserePartner";
+import Cybercrime from "./pages/Cybercrime";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
           <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
           <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
+          <Route path="/kompetenzen/cybercrime" element={<Cybercrime />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
