@@ -6,52 +6,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Calendar, Clock, User, Scale, Mail, ChevronRight, MapPin, Phone, AlertTriangle, Shield, Award, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 const BlogPostImmobilienrecht = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation - same as landing page */}
-      <nav className="absolute top-0 left-0 right-0 z-50 bg-gradient-glass backdrop-blur-md border-b border-[var(--border-glass)] shadow-glass">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-6xl">
-          <div className="flex items-center space-x-2">
-            <div className="p-2 bg-gradient-primary rounded-lg shadow-[0_0_20px_hsl(214_100%_60%_/_0.4)]">
-              <Scale className="h-6 w-6 text-white drop-shadow-lg" />
-            </div>
-            <span className="text-xl font-bold text-white" style={{ textShadow: 'var(--text-glow)' }}>
-              Crypto<span className="bg-gradient-primary bg-clip-text text-transparent">Law</span>
-            </span>
-          </div>
-          <div className="hidden md:flex items-center space-x-6">
-            <a href="/" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)] relative group" style={{ textShadow: 'var(--text-glow)' }}>
-              Home
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
-            </a>
-            <a href="#services" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)] relative group" style={{ textShadow: 'var(--text-glow)' }}>
-              Leistungen
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
-            </a>
-            <a href="#team" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)] relative group" style={{ textShadow: 'var(--text-glow)' }}>
-              Team
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
-            </a>
-            <a href="#successes" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)] relative group" style={{ textShadow: 'var(--text-glow)' }}>
-              Erfolge
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
-            </a>
-            <a href="#about" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)] relative group" style={{ textShadow: 'var(--text-glow)' }}>
-              Über uns
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
-            </a>
-            <a href="#contact" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)] relative group" style={{ textShadow: 'var(--text-glow)' }}>
-              Kontakt
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300"></div>
-            </a>
-            <Button variant="outline" className="bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-primary/50 transition-all duration-300 shadow-glass hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.6)] hover:border-primary/80" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 20px hsl(214 100% 60% / 0.3), var(--shadow-glass)' }}>
-              Beratung anfragen
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section with Breadcrumb */}
       <Section className="py-20 lg:py-32 relative overflow-hidden h-[50vh] flex items-center bg-gray-800">
@@ -307,88 +268,7 @@ const BlogPostImmobilienrecht = () => {
         </div>
       </Section>
 
-      {/* Footer Section */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Company Info */}
-            <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center space-x-2 mb-6">
-                <div className="p-2 bg-gradient-primary rounded-lg">
-                  <Scale className="h-6 w-6 text-white" />
-                </div>
-                <span className="text-xl font-bold">
-                  Crypto<span className="bg-gradient-primary bg-clip-text text-transparent">Law</span>
-                </span>
-              </div>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Spezialisierte Rechtsberatung für Cybercrime, Kryptowährung und digitale Vermögenswerte. 
-                Ihr Partner für die Wiederherstellung verlorener Crypto-Assets.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                  <Linkedin className="h-5 w-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                  <Twitter className="h-5 w-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                  <Facebook className="h-5 w-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                  <Youtube className="h-5 w-5" />
-                </a>
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Schnellzugriff</h3>
-              <ul className="space-y-2">
-                <li><a href="/#cybercrime" className="text-gray-300 hover:text-blue-400 transition-colors">Cybercrime</a></li>
-                <li><a href="/#recovery" className="text-gray-300 hover:text-blue-400 transition-colors">Krypto-Recovery</a></li>
-                <li><a href="/#team" className="text-gray-300 hover:text-blue-400 transition-colors">Unser Team</a></li>
-                <li><a href="/#contact" className="text-gray-300 hover:text-blue-400 transition-colors">Kontakt</a></li>
-              </ul>
-            </div>
-
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-blue-400" />
-                  <span className="text-gray-300">+43 (0) 512 563020</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-blue-400" />
-                  <span className="text-gray-300">office@atb.law</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 text-blue-400 mt-1" />
-                  <span className="text-gray-300">
-                    Innrain 25<br />
-                    6020 Innsbruck<br />
-                    Österreich
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              © 2024 ATB.LAW. Alle Rechte vorbehalten.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Datenschutz</a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Impressum</a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">AGB</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
