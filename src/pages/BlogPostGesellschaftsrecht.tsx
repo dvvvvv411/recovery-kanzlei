@@ -80,17 +80,13 @@ const BlogPostGesellschaftsrecht = () => {
                   <BreadcrumbLink href="/kompetenzen" className="text-white/80 hover:text-white">Kompetenzen</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
-                <BreadcrumbPage className="text-white">Cybercrime</BreadcrumbPage>
+                <BreadcrumbPage className="text-white">Gesellschafts- und Unternehmensrecht</BreadcrumbPage>
               </BreadcrumbList>
             </Breadcrumb>
             
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Cybercrime</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Gesellschafts- und Unternehmensrecht</span>
             </h1>
-            
-            <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
-              Ihr Anwalt für CyberCrime und Internetkriminalität
-            </p>
           </div>
         </div>
       </Section>
@@ -101,24 +97,15 @@ const BlogPostGesellschaftsrecht = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground mb-8 leading-relaxed">
-                Internetkriminalität – auch bekannt als CyberCrime – zählt zu den dynamischsten Bedrohungen unserer Zeit. Digitale Prozesse durchdringen heute nahezu jeden Lebensbereich – ob im Beruf oder im Privatleben. Diese Entwicklung nutzen Cyberkriminelle gezielt aus: Phishing-Attacken, Anlagebetrug mit Kryptowährungen, Ransomware-Angriffe auf Unternehmen oder Identitätsdiebstahl sind längst keine Einzelfälle mehr.
+                Unternehmensrecht verstehen wir als Querschnitt verschiedener Rechtsgebiete.
               </p>
 
               <p className="mb-8 text-foreground">
-                Als auf CyberCrime spezialisierte Kanzlei unterstützen wir unsere Mandant:innen seit Jahren bei der rechtlichen Aufarbeitung von Angriffen im digitalen Raum. Unser Fokus liegt auf der forensischen Nachverfolgung von Kryptotransaktionen, der Sicherung von Beweismitteln sowie der effektiven Vertretung in Strafverfahren, Ermittlungsverfahren und zivilrechtlichen Klagen.
+                In unserer täglichen Arbeit mit erfolgreichen nationalen sowie internationalen Unternehmen werden wir mit unterschiedlichsten unternehmerischen Problemstellungen und Bedürfnissen konfrontiert. Aufgrund der breit-gefächerten Spezialgebiete bei ATB.LAW ist es uns möglich, Unternehmen interdisziplinär und vollumfänglich zu betreuen. Wir stehen Ihnen vom allgemeinen Gesellschaftsrecht und der Betreuung bei alltäglichen unternehmensrechtlichen Fragestellungen, über Herausforderungen im Datenschutz/Compliance bis hin zu Fragen im Marken-, Medien- und Arbeitsrecht zur Verfügung.
               </p>
 
               <p className="mb-8 text-foreground">
-                Wir verfügen über fundierte Expertise als zertifizierte Datenschutz- und Geldwäschebeauftragte und arbeiten eng mit technischen CyberSecurity-Spezialisten zusammen. Dadurch garantieren wir eine gesamtheitliche und technisch fundierte Betreuung – von der Analyse des Angriffs bis zur rechtlichen Durchsetzung Ihrer Ansprüche.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Als Ihr Anwalt für CyberCrime vertreten wir Sie auch vor der Datenschutzbehörde sowie gegenüber Plattformbetreibern, Finanzdienstleistern oder Kryptowährungsbörsen. Unsere langjährige Erfahrung im Bereich Internetkriminalität macht uns zu einem verlässlichen Partner – auch in komplexen und grenzüberschreitenden Fällen.
-              </p>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Vertrauen Sie auf erfahrene Spezialisten für CyberCrime</h2>
-              <p className="mb-8 text-foreground">
-                Unsere Kanzlei vereint juristische Präzision mit technischem Know-how. Wenn Sie Opfer eines Cyberangriffs wurden oder präventiv rechtliche Beratung suchen: Wir sind für Sie da – schnell, diskret und professionell.
+                Im Bereich des Gesellschaftsrechts gestalten wir Lösungen, die auf Ihre individuellen Bedürfnisse zugeschnitten sind – von der Wahl der geeigneten Gesellschaftsform und der Gesellschaftsgründung, bis hin zur rechtlichen Abwicklung des Kaufs oder Verkaufs Ihres Unternehmens. Bei Gesellschafterstreitigkeiten können Sie auf ein erfahrenes Team an Mediatoren und Prozessanwälten vertrauen (Dispute Resolution), dies sowohl auf nationaler als auch internationaler Ebene.
               </p>
             </div>
           </div>
@@ -136,54 +123,63 @@ const BlogPostGesellschaftsrecht = () => {
                 Unsere Schwerpunkte
               </h2>
               <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto">
-                Expertise in allen Bereichen der Internetkriminalität
+                Unsere Spezialgebiete im Gesellschafts- und Unternehmensrecht
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="prevention" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="general-corporate" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Prävention – Cyber Resilienz
+                    Allgemeines Unternehmensrecht (interdisziplinär) / externe Rechtsabteilung
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die NIS2 Richtlinie wurde noch nicht einmal in nationales Recht (NISG 2024) gegossen, schon steht mit dem Cyber Resilience Act (Verordnung über horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen) der nächste EU-Rechtsakt zur Sicherstellung von Cybersicherheitsanforderungen in den Startlöchern.
+                    Eine gute Beratung im Unternehmensrecht erfordert nicht nur eine fächerübergreifende Kenntnis der rechtlichen Anforderungen, sondern insbesondere ein gutes Verständnis für wirtschaftliche und operative Zusammenhänge. Wir unterstützen laufend Unternehmen unterschiedlicher Größe als „externe Rechtsabteilung".
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="ransomware" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="corporate-law" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Ransomware – Incident Response
+                    Rechtliche Beratungen zu sämtlichen Bereichen des Gesellschaftsrechts
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Ihr Unternehmen wurde gehackt, Daten sind verschlüsselt und die Angreifer verlangen Lösegeld? Es steht viel auf dem Spiel! Gemeinsam mit unseren auf Cyber-Attacken spezialisierten IT-Security und Forensik Partnern unterstützen wir Sie diskret bei der schnellstmöglichen Bewältigung dieser Herausforderung.
+                    Die richtige Wahl der Rechtsform, optimal gestaltete Gesellschaftsverträge, Geschäftsordnungen für Geschäftsführer sowie Gesellschaftervereinbarungen können Konflikte von Gesellschaftern und Managern verhindern, sodass sich unsere Mandant:innen auf das Wesentliche konzentrieren können – das operative Geschäft und dessen Erfolg.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="fraud" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="incorporation" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Anlagebetrug – Datenmissbrauch
+                    Gesellschaftsgründungen
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Vom vermeintlich lukrativen Investment mit Online Trading, bis hin zur missbräuchlichen Verwendung Ihrer Daten (Identitätsdiebstahl und Geldwäsche). Schnelles und koordiniertes Handeln ist Voraussetzung, um eine Chance zu haben, das "investierte" Vermögen zurück zu erhalten und weiteren Schaden zu verhindern. Wir kennen die Methoden der Verbrecher und wissen was zu tun ist.
+                    Für uns als „Gesellschaftsrechtler" gehört die Gründung von Gesellschaften zu den wesentlichen kreativen Tätigkeiten. Ausgeklügelte vertragliche Grundlagen, welche bestmöglich zukünftige Entwicklungen und Szenarien berücksichtigen, bieten die Basis für unternehmerischen Erfolg.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="cyberbullying" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="ma" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Hass im Netz
+                    Unternehmenskauf/ -verkauf (M&A)
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Das Internet ist kein rechtsfreier Raum. Hasspostings, Beleidigungen über soziale Medien oder Cybermobbing sind nicht erst seit dem am 1. Jänner 2021 in Kraft getretenen "Hass im Netz" Gesetzespaket rechtswidrig. Wir unterstützen Sie bei der strafrechtlichen Verfolgung der Täter und setzen Ihre zivil- und medienrechtlichen Ansprüche durch.
+                    Ein vorteilhafter Unternehmenskauf/ -verkauf erfordert umfassende Vorbereitung, um rechtliche Risiken auszuschließen und eine lösungsorientierte Umsetzung zu gewährleisten. Als erfahrene M&A-Rechtsanwält:innen bieten wir Ihnen eine ergebnisorientierte Transaktionsberatung. Mit unserem ganzheitlichen Ansatz sehen wir uns als deal-maker und nicht deal-breaker.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="tracing" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="restructuring" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Asset-/Krypto Tracing
+                    Umgründungen, Einbringungen und Verschmelzungen
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die Analyse und Nachverfolgung von Kryptotransaktionen ("Follow the Money") ist nicht nur bei der Aufklärung von Straftaten essentiell. Auch in zivilrechtlichen Verfahren, Erbstreitigkeiten und Insolvenzen steigt der Bedarf an Experten auf diesem Gebiet. Als erfahrene Rechtsanwält:innen und zertifizierte Blockchain-Forensiker bieten wir unseren Mandant:innen Expertise aus einer Hand.
+                    Das Umgründungssteuergesetz bietet kreative Möglichkeiten für Unternehmer, die z.B. durch Umwandlung, Einbringung oder Spaltung ihre Effektivität steigern, Kosten senken, Haftungsrisiken minimieren und gleichzeitig Wachstum und Profit maximieren möchten. Wir führen Sie kompetent und erfahren durch diesen Dschungel der Gestaltungsmöglichkeiten.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="disputes" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Gesellschafterstreitigkeiten
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Wenn eine effektive Zusammenarbeit unter Mitgesellschaftern nicht mehr möglich sein sollte, ist eine rasche Lösungsfindung für das Unternehmenswohl essentiell. Bei Gesellschafterstreitigkeiten kommen wir als versierte, streiterfahrene, aber auch lösungsfördernde Rechtsanwält:innen mit Verhandlungserfahrung oft zum Einsatz.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -204,11 +200,11 @@ const BlogPostGesellschaftsrecht = () => {
                 Unsere Expert:innen
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Lernen Sie unser spezialisiertes Cybercrime-Team kennen
+                Lernen Sie unser spezialisiertes Gesellschaftsrecht-Team kennen
               </p>
             </div>
 
-            {/* Team Carousel - Only cybercrime relevant team members */}
+            {/* Team Carousel - Corporate law relevant team members */}
             <Carousel
               opts={{
                 align: "start",
@@ -222,7 +218,7 @@ const BlogPostGesellschaftsrecht = () => {
               className="w-full max-w-6xl mx-auto"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                {/* Bernhard Bovensiepen - Cybercrime Expert */}
+                {/* Bernhard Bovensiepen - General Legal Expert */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
@@ -240,22 +236,43 @@ const BlogPostGesellschaftsrecht = () => {
                   </div>
                 </CarouselItem>
 
-                {/* Martin Willig - Blockchain Analyst */}
+                {/* Leonard Grimm - Corporate Law Expert */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="/lovable-uploads/fb9c5d6b-b0d1-44b0-9835-4301827237bb.png"
-                        alt="Martin Willig"
+                        src="/lovable-uploads/b4127816-793a-42ef-b5e4-34987580a428.png"
+                        alt="Leonard Grimm"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Martin Willig</h3>
-                    <p className="text-gray-600">Blockchain- /Datenanalyst</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Leonard Grimm</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Prozessführung, Datenschutz/Compliance, Wertpapier- und Kapitalmarktrecht
+                    </p>
                   </div>
                 </CarouselItem>
 
-                {/* Steffen Rheinböcker - Cybercrime Expert */}
+                {/* Michael Dorn - Corporate and Real Estate */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="/lovable-uploads/49592374-fd61-4f95-b984-a0cbeeaad8f5.png"
+                        alt="Michael Dorn"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Michael Dorn</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Immobilienrecht, Prozessführung, Datenschutz und Compliance
+                    </p>
+                  </div>
+                </CarouselItem>
+
+                {/* Steffen Rheinböcker - Litigation and Corporate Disputes */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
