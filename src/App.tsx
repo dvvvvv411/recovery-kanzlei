@@ -26,7 +26,7 @@ const App = () => (
           <Route path="/unsere-partner" element={<UnserePartner />} />
           <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
           <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
-          <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug2" element={<BlogPostCeoFraud2 />} />
+          <Route path="/kompetenz/cybercrime" element={<BlogPostCeoFraud2 />} />
           <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
