@@ -505,8 +505,8 @@ const Index = () => {
                   {/* anwalt.de Rating Card */}
                   <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all duration-300">
                     <img 
-                      src="/lovable-uploads/7edeed99-525e-43a2-bc10-8d0175049754.png" 
-                      alt="anwalt.de 5.0 Sterne Bewertung"
+                      src="/lovable-uploads/9a06dfc4-8617-4f69-97cd-82310bdeaa2e.png" 
+                      alt="anwalt.de 5.0 Sterne Bewertung Bovensiepen & Partner"
                       className="w-full h-auto rounded-lg"
                     />
                   </div>
