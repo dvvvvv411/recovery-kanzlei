@@ -34,25 +34,25 @@ const KompetenzCybercrime = () => {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/kompetenzen" className="text-white/80 hover:text-white">Kompetenzen</BreadcrumbLink>
+                  <BreadcrumbLink href="/blog" className="text-white/80 hover:text-white">Blog</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
-                <BreadcrumbPage className="text-white">Cybercrime</BreadcrumbPage>
+                <BreadcrumbPage className="text-white">Kreditbearbeitungsgebühren unzulässig</BreadcrumbPage>
               </BreadcrumbList>
             </Breadcrumb>
             
             <div className="flex flex-wrap gap-2 mb-6">
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Cybercrime</Badge>
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Rechtshilfe</Badge>
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Strafverteidigung</Badge>
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Verbraucherrecht</Badge>
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Bankrecht</Badge>
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">OGH-Urteil</Badge>
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
-              Cybercrime <span className="bg-gradient-primary bg-clip-text text-transparent">Expertise</span>: Umfassende Rechtshilfe
+              Kreditbearbeitungsgebühren <span className="bg-gradient-primary bg-clip-text text-transparent">unzulässig</span>: OGH-Urteil ermöglicht Rückforderung
             </h1>
             
             <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
-              Spezialisierte Rechtsberatung für Cybercrime-Fälle und digitale Straftaten
+              In welchen Fällen Sie die bereits bezahlte Bearbeitungsgebühren zurückfordern können
             </p>
             
             <div className="flex flex-wrap items-center gap-6 text-sm text-white/80">
