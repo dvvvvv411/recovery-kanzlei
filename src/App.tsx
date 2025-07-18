@@ -13,6 +13,7 @@ import BlogPostKreditgebuehr from "./pages/BlogPostKreditgebuehr";
 import BlogPostGesellschaftsrecht from "./pages/BlogPostGesellschaftsrecht";
 import BlogPostDatenschutz from "./pages/BlogPostDatenschutz";
 import UnserePartner from "./pages/UnserePartner";
+import BlogPostImmobilienrecht from "./pages/BlogPostImmobilienrecht";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +29,7 @@ const App = () => (
           <Route path="/unsere-partner" element={<UnserePartner />} />
           <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
           <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
-          <Route path="/kompetenz/cybercrime" element={<BlogPostCeoFraud2 />} />
+          <Route path="/kompetenz/immobilienrecht" element={<BlogPostImmobilienrecht />} />
           <Route path="/kompetenz/datenschutz-und-compliance" element={<BlogPostDatenschutz />} />
           <Route path="/kompetenz/gesellschafts-und-unternehmensrecht" element={<BlogPostGesellschaftsrecht />} />
           <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
