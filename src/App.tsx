@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import BlogPostCeoFraud from "./pages/BlogPostCeoFraud";
+import BlogPostCeoFraud2 from "./pages/BlogPostCeoFraud2";
 import BlogPostKreditgebuehr from "./pages/BlogPostKreditgebuehr";
 import UnserePartner from "./pages/UnserePartner";
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/unsere-partner" element={<UnserePartner />} />
           <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
           <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
+          <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug2" element={<BlogPostCeoFraud2 />} />
           <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
