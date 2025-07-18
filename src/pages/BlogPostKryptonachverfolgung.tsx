@@ -80,17 +80,13 @@ const BlogPostKryptonachverfolgung = () => {
                   <BreadcrumbLink href="/kompetenzen" className="text-white/80 hover:text-white">Kompetenzen</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
-                <BreadcrumbPage className="text-white">Cybercrime</BreadcrumbPage>
+                <BreadcrumbPage className="text-white">Kryptonachverfolgung und Mittelherkunft</BreadcrumbPage>
               </BreadcrumbList>
             </Breadcrumb>
             
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Cybercrime</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Kryptonach­verfolgung und Mittel­herkunft</span>
             </h1>
-            
-            <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
-              Ihr Anwalt für CyberCrime und Internetkriminalität
-            </p>
           </div>
         </div>
       </Section>
@@ -101,24 +97,7 @@ const BlogPostKryptonachverfolgung = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground mb-8 leading-relaxed">
-                Internetkriminalität – auch bekannt als CyberCrime – zählt zu den dynamischsten Bedrohungen unserer Zeit. Digitale Prozesse durchdringen heute nahezu jeden Lebensbereich – ob im Beruf oder im Privatleben. Diese Entwicklung nutzen Cyberkriminelle gezielt aus: Phishing-Attacken, Anlagebetrug mit Kryptowährungen, Ransomware-Angriffe auf Unternehmen oder Identitätsdiebstahl sind längst keine Einzelfälle mehr.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Als auf CyberCrime spezialisierte Kanzlei unterstützen wir unsere Mandant:innen seit Jahren bei der rechtlichen Aufarbeitung von Angriffen im digitalen Raum. Unser Fokus liegt auf der forensischen Nachverfolgung von Kryptotransaktionen, der Sicherung von Beweismitteln sowie der effektiven Vertretung in Strafverfahren, Ermittlungsverfahren und zivilrechtlichen Klagen.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Wir verfügen über fundierte Expertise als zertifizierte Datenschutz- und Geldwäschebeauftragte und arbeiten eng mit technischen CyberSecurity-Spezialisten zusammen. Dadurch garantieren wir eine gesamtheitliche und technisch fundierte Betreuung – von der Analyse des Angriffs bis zur rechtlichen Durchsetzung Ihrer Ansprüche.
-              </p>
-
-              <p className="mb-8 text-foreground">
-                Als Ihr Anwalt für CyberCrime vertreten wir Sie auch vor der Datenschutzbehörde sowie gegenüber Plattformbetreibern, Finanzdienstleistern oder Kryptowährungsbörsen. Unsere langjährige Erfahrung im Bereich Internetkriminalität macht uns zu einem verlässlichen Partner – auch in komplexen und grenzüberschreitenden Fällen.
-              </p>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Vertrauen Sie auf erfahrene Spezialisten für CyberCrime</h2>
-              <p className="mb-8 text-foreground">
-                Unsere Kanzlei vereint juristische Präzision mit technischem Know-how. Wenn Sie Opfer eines Cyberangriffs wurden oder präventiv rechtliche Beratung suchen: Wir sind für Sie da – schnell, diskret und professionell.
+                Kryptowährungen bieten viele Vorteile, aber auch Herausforderungen – insbesondere, wenn es um die Nachverfolgung von Transaktionen und den Nachweis der Mittelherkunft geht. Wir helfen dabei, Krypto-Transaktionen transparent und nachvollziehbar zu machen, um gesetzliche Anforderungen zu erfüllen und finanzielle Risiken zu minimieren. Mit spezialisierten Analyse-Tools und fundiertem Know-how identifizieren wir Geldflüsse, decken potenzielle Risiken auf und unterstützen bei der rechtssicheren Dokumentation.
               </p>
             </div>
           </div>
@@ -136,51 +115,26 @@ const BlogPostKryptonachverfolgung = () => {
                 Unsere Schwerpunkte
               </h2>
               <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto">
-                Expertise in allen Bereichen der Internetkriminalität
+                Unsere Schwerpunkte in der Kryptonachverfolgung und Mittelherkunft
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="prevention" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                <AccordionItem value="mittelherkunft" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Prävention – Cyber Resilienz
+                    Mittelherkunftsnachweis
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
-                    Die NIS2 Richtlinie wurde noch nicht einmal in nationales Recht (NISG 2024) gegossen, schon steht mit dem Cyber Resilience Act (Verordnung über horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen) der nächste EU-Rechtsakt zur Sicherstellung von Cybersicherheitsanforderungen in den Startlöchern.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="ransomware" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
-                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Ransomware – Incident Response
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 text-white/90">
-                    Ihr Unternehmen wurde gehackt, Daten sind verschlüsselt und die Angreifer verlangen Lösegeld? Es steht viel auf dem Spiel! Gemeinsam mit unseren auf Cyber-Attacken spezialisierten IT-Security und Forensik Partnern unterstützen wir Sie diskret bei der schnellstmöglichen Bewältigung dieser Herausforderung.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="fraud" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
-                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Anlagebetrug – Datenmissbrauch
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 text-white/90">
-                    Vom vermeintlich lukrativen Investment mit Online Trading, bis hin zur missbräuchlichen Verwendung Ihrer Daten (Identitätsdiebstahl und Geldwäsche). Schnelles und koordiniertes Handeln ist Voraussetzung, um eine Chance zu haben, das "investierte" Vermögen zurück zu erhalten und weiteren Schaden zu verhindern. Wir kennen die Methoden der Verbrecher und wissen was zu tun ist.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="cyberbullying" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
-                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Hass im Netz
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 text-white/90">
-                    Das Internet ist kein rechtsfreier Raum. Hasspostings, Beleidigungen über soziale Medien oder Cybermobbing sind nicht erst seit dem am 1. Jänner 2021 in Kraft getretenen "Hass im Netz" Gesetzespaket rechtswidrig. Wir unterstützen Sie bei der strafrechtlichen Verfolgung der Täter und setzen Ihre zivil- und medienrechtlichen Ansprüche durch.
+                    Unsere Kanzlei erstellt rechtssichere Mittelherkunftsnachweise für Kryptowährungen, um die Transparenz und Nachvollziehbarkeit Ihrer Transaktionen sicherzustellen und gesetzliche Anforderungen zu erfüllen. Dafür analysieren wir Transaktionshistorien im Detail, identifizieren die beteiligten Wallet-Adressen und verknüpfen diese mit den entsprechenden Krypto-Börsen. Mit modernsten Blockchain-Analysetools gewährleisten wir eine lückenlose Dokumentation und machen komplexe Transaktionsketten nachvollziehbar.
+                    <br /><br />
+                    Wir legen besonderen Wert auf die transparente Darstellung der Herkunft von Einzahlungen und erfassen alle relevanten Informationen wie Zeitstempel, Beträge und beteiligte Wallets. Dabei prüfen wir die Mittelherkunft auf potenzielle Risiken und bereiten die Nachweise rechtskonform auf, um den Anforderungen von Banken und Kryptohandelsbörsen gerecht zu werden.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="tracing" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
                   <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
-                    Asset-/Krypto Tracing
+                    Asset-/Krypto Nachverfolgung
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-white/90">
                     Die Analyse und Nachverfolgung von Kryptotransaktionen ("Follow the Money") ist nicht nur bei der Aufklärung von Straftaten essentiell. Auch in zivilrechtlichen Verfahren, Erbstreitigkeiten und Insolvenzen steigt der Bedarf an Experten auf diesem Gebiet. Als erfahrene Rechtsanwält:innen und zertifizierte Blockchain-Forensiker bieten wir unseren Mandant:innen Expertise aus einer Hand.
@@ -204,11 +158,11 @@ const BlogPostKryptonachverfolgung = () => {
                 Unsere Expert:innen
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Lernen Sie unser spezialisiertes Cybercrime-Team kennen
+                Hier dann nochmal auf der Landingpage abgleichen bei der Sektion Unser Team, wer hierfür zuständig ist, und dann die Anwälte austauschen in der Sektion
               </p>
             </div>
 
-            {/* Team Carousel - Only cybercrime relevant team members */}
+            {/* Team Carousel - Only relevant team members */}
             <Carousel
               opts={{
                 align: "start",
@@ -288,10 +242,10 @@ const BlogPostKryptonachverfolgung = () => {
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Benötigen Sie rechtliche Unterstützung bei CyberCrime?
+                Benötigen Sie rechtliche Unterstützung bei Kryptonachverfolgung?
               </h2>
               <p className="text-lg text-white/90 mb-8 leading-relaxed">
-                Kontaktieren Sie unsere CyberCrime-Experten für eine unverbindliche Erstberatung. Wir helfen Ihnen bei der rechtlichen Aufarbeitung von Cyberangriffen und der Durchsetzung Ihrer Ansprüche.
+                Kontaktieren Sie unsere Experten für eine unverbindliche Erstberatung. Wir helfen Ihnen bei der Kryptonachverfolgung und dem Nachweis der Mittelherkunft.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
