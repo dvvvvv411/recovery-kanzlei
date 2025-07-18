@@ -16,6 +16,7 @@ import UnserePartner from "./pages/UnserePartner";
 import BlogPostImmobilienrecht from "./pages/BlogPostImmobilienrecht";
 import BlogPostPrivateClients from "./pages/BlogPostPrivateClients";
 import BlogPostProzessfuehrung from "./pages/BlogPostProzessfuehrung";
+import BlogPostWertpapier from "./pages/BlogPostWertpapier";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/kompetenz/gesellschafts-und-unternehmensrecht" element={<BlogPostGesellschaftsrecht />} />
           <Route path="/kompetenz/private-clients-family-offices" element={<BlogPostPrivateClients />} />
           <Route path="/kompetenz/prozessfuhrung" element={<BlogPostProzessfuehrung />} />
+          <Route path="/kompetenz/wertpapier-und-kapitalmarktrecht" element={<BlogPostWertpapier />} />
           <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
