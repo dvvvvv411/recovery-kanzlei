@@ -10,6 +10,7 @@ import BlogPost from "./pages/BlogPost";
 import BlogPostCeoFraud from "./pages/BlogPostCeoFraud";
 import BlogPostCeoFraud2 from "./pages/BlogPostCeoFraud2";
 import BlogPostKreditgebuehr from "./pages/BlogPostKreditgebuehr";
+import BlogPostDatenschutz from "./pages/BlogPostDatenschutz";
 import UnserePartner from "./pages/UnserePartner";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
           <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
           <Route path="/kompetenz/cybercrime" element={<BlogPostCeoFraud2 />} />
+          <Route path="/kompetenz/datenschutz-und-compliance" element={<BlogPostDatenschutz />} />
           <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
