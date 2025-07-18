@@ -46,15 +46,18 @@ export const Footer = () => {
               </div>
             </div>
             
-            {/* Services */}
+            {/* Kompetenzen */}
             <div>
-              <h4 className="font-semibold mb-4 text-white">Leistungen</h4>
+              <h4 className="font-semibold mb-4 text-white">Kompetenzen</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="/#services" className="text-gray-300 hover:text-blue-400 transition-colors">Krypto-Recovery</a></li>
-                <li><a href="/#services" className="text-gray-300 hover:text-blue-400 transition-colors">Finanzrecht</a></li>
-                <li><a href="/#services" className="text-gray-300 hover:text-blue-400 transition-colors">Anlegerschutz</a></li>
-                <li><a href="/#services" className="text-gray-300 hover:text-blue-400 transition-colors">Blockchain-Forensik</a></li>
-                <li><a href="/#services" className="text-gray-300 hover:text-blue-400 transition-colors">ICO-Beratung</a></li>
+                <li><a href="/#cybercrime" className="text-gray-300 hover:text-blue-400 transition-colors">Cybercrime</a></li>
+                <li><a href="/#datenschutz" className="text-gray-300 hover:text-blue-400 transition-colors">Datenschutz und Compliance</a></li>
+                <li><a href="/#gesellschaftsrecht" className="text-gray-300 hover:text-blue-400 transition-colors">Gesellschafts- und Unternehmensrecht</a></li>
+                <li><a href="/#immobilienrecht" className="text-gray-300 hover:text-blue-400 transition-colors">Immobilienrecht</a></li>
+                <li><a href="/#private-clients" className="text-gray-300 hover:text-blue-400 transition-colors">Private Clients / Family Offices</a></li>
+                <li><a href="/#prozessfuehrung" className="text-gray-300 hover:text-blue-400 transition-colors">Prozessführung</a></li>
+                <li><a href="/#wertpapier" className="text-gray-300 hover:text-blue-400 transition-colors">Wertpapier- und Kapitalmarktrecht</a></li>
+                <li><a href="/#kryptonachverfolgung" className="text-gray-300 hover:text-blue-400 transition-colors">Kryptonachverfolgung und Mittelherkunftsnachweis</a></li>
               </ul>
             </div>
             
