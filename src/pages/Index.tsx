@@ -370,93 +370,105 @@ const Index = () => {
               className="w-full max-w-6xl mx-auto"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                {/* Daniel Azem */}
+                {/* Bernhard Bovensiepen */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="https://atb.law/wp-content/uploads/2024/05/Daniel-Azem-1025x1536.jpg"
-                        alt="Daniel Azem"
+                        src="/lovable-uploads/2cad25d9-8d15-482b-bc38-5b1378991be6.png"
+                        alt="Bernhard Bovensiepen"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Daniel Azem</h3>
-                    <p className="text-gray-600">Rechtsanwalt</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Bernhard Bovensiepen</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Cybercrime, Datenschutz/Compliance, Wertpapier- und Kapitalmarktrecht, Kryptonachverfolgung und Mittelherkunftsnachweis
+                    </p>
                   </div>
                 </CarouselItem>
 
-                {/* Anela Blöch */}
+                {/* Lea Hartwig */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="https://atb.law/wp-content/uploads/2024/05/Anela-Bloech-1366x2048.jpg"
-                        alt="Anela Blöch"
+                        src="/lovable-uploads/eb203c07-90e7-479d-8fd8-fdaa83fcce97.png"
+                        alt="Lea Hartwig"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Anela Blöch</h3>
-                    <p className="text-gray-600">Rechtsanwältin</p>
-                  </div>
-                </CarouselItem>
-
-                {/* Roman Taudes */}
-                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="text-left">
-                    <div className="mb-6">
-                      <img
-                        src="https://atb.law/wp-content/uploads/2024/05/Roman-Taudes-1-1025x1536.jpg"
-                        alt="Roman Taudes"
-                        className="w-full h-auto object-cover rounded-lg shadow-lg"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Roman Taudes</h3>
-                    <p className="text-gray-600">Rechtsanwalt</p>
-                  </div>
-                </CarouselItem>
-
-                {/* Patrick Brunsteiner */}
-                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="text-left">
-                    <div className="mb-6">
-                      <img
-                        src="https://atb.law/wp-content/uploads/2024/05/Patrick-Brunsteiner-1-1366x2048.jpg"
-                        alt="Patrick Brunsteiner"
-                        className="w-full h-auto object-cover rounded-lg shadow-lg"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Patrick Brunsteiner</h3>
-                    <p className="text-gray-600">Rechtsanwaltsanwärter</p>
-                  </div>
-                </CarouselItem>
-
-                {/* Olja Drljevic */}
-                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                  <div className="text-left">
-                    <div className="mb-6">
-                      <img
-                        src="https://atb.law/wp-content/uploads/2025/05/088A7307-1366x2048.jpg"
-                        alt="Olja Drljevic"
-                        className="w-full h-auto object-cover rounded-lg shadow-lg"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Olja Drljevic</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Lea Hartwig</h3>
                     <p className="text-gray-600">Teamassistentin</p>
                   </div>
                 </CarouselItem>
 
-                {/* Nerma Hadzic */}
+                {/* Leonard Grimm */}
                 <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                   <div className="text-left">
                     <div className="mb-6">
                       <img
-                        src="https://atb.law/wp-content/uploads/2024/05/Nerma-Hadzic-1025x1536.jpg"
-                        alt="Nerma Hadzic"
+                        src="/lovable-uploads/b4127816-793a-42ef-b5e4-34987580a428.png"
+                        alt="Leonard Grimm"
                         className="w-full h-auto object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Nerma Hadzic</h3>
-                    <p className="text-gray-600">Teamassistentin</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Leonard Grimm</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Prozessführung, Datenschutz/Compliance, Wertpapier- und Kapitalmarktrecht
+                    </p>
+                  </div>
+                </CarouselItem>
+
+                {/* Martin Willig */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="/lovable-uploads/fb9c5d6b-b0d1-44b0-9835-4301827237bb.png"
+                        alt="Martin Willig"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Martin Willig</h3>
+                    <p className="text-gray-600">Blockchain- /Datenanalyst</p>
+                  </div>
+                </CarouselItem>
+
+                {/* Michael Dorn */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="/lovable-uploads/49592374-fd61-4f95-b984-a0cbeeaad8f5.png"
+                        alt="Michael Dorn"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Michael Dorn</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Immobilienrecht, Prozessführung, Datenschutz und Compliance
+                    </p>
+                  </div>
+                </CarouselItem>
+
+                {/* Steffen Rheinböcker */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="/lovable-uploads/709d1496-f015-4b38-b331-9cb17b1b6eaa.png"
+                        alt="Steffen Rheinböcker"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Steffen Rheinböcker</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Immobilienrecht, Prozessführung und Streitbeilegung, Cybercrime
+                    </p>
                   </div>
                 </CarouselItem>
               </CarouselContent>
