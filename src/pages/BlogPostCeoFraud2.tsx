@@ -2,7 +2,10 @@ import { Section } from "@/components/ui/section";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Calendar, Clock, User, Scale, Mail, ChevronRight, MapPin, Phone, AlertTriangle, Shield, Award, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const BlogPostCeoFraud2 = () => {
   return (
@@ -74,25 +77,25 @@ const BlogPostCeoFraud2 = () => {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/blog" className="text-white/80 hover:text-white">Blog</BreadcrumbLink>
+                  <BreadcrumbLink href="/kompetenzen" className="text-white/80 hover:text-white">Kompetenzen</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
-                <BreadcrumbPage className="text-white">CEO-Fraud und Überweisungsbetrug</BreadcrumbPage>
+                <BreadcrumbPage className="text-white">Cybercrime</BreadcrumbPage>
               </BreadcrumbList>
             </Breadcrumb>
             
             <div className="flex flex-wrap gap-2 mb-6">
               <Badge variant="secondary" className="bg-white/20 text-white border-white/30">CyberCrime</Badge>
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">CEO-Fraud</Badge>
-              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Überweisungsbetrug</Badge>
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Internetkriminalität</Badge>
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">Digitale Forensik</Badge>
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(214 100% 60% / 0.8)' }}>
-              CEO-Fraud und <span className="bg-gradient-primary bg-clip-text text-transparent">Überweisungsbetrug</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Cybercrime</span>
             </h1>
             
             <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(214 100% 60% / 0.4)' }}>
-              Was tun bei Falschüberweisung nach gefälschten E-Mails?
+              Ihr Anwalt für CyberCrime und Internetkriminalität
             </p>
             
             <div className="flex flex-wrap items-center gap-6 text-sm text-white/80">
@@ -118,90 +121,184 @@ const BlogPostCeoFraud2 = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-muted-foreground mb-8 italic border-l-4 border-primary pl-6">
-                Ein Klick, eine kurze Unachtsamkeit und eine erhebliche Geldsumme wurde auf ein Konto überwiesen, das sich später als Empfängerkonto von Betrügern anstatt des eigenen Geschäftspartners hausstellt. In vielen Fällen liegt ein gezielter Angriff durch CEO-Fraud vor – eine professionelle Betrugsmasche, bei der sich Täter als Entscheidungsträger oder Geschäftspartner ausgeben und Mitarbeiter (oft der Buchhaltung) durch Vorspielen falscher Tatsachen zur Überweisung bewegen.
+              <p className="text-lg text-foreground mb-8 leading-relaxed">
+                Internetkriminalität – auch bekannt als CyberCrime – zählt zu den dynamischsten Bedrohungen unserer Zeit. Digitale Prozesse durchdringen heute nahezu jeden Lebensbereich – ob im Beruf oder im Privatleben. Diese Entwicklung nutzen Cyberkriminelle gezielt aus: Phishing-Attacken, Anlagebetrug mit Kryptowährungen, Ransomware-Angriffe auf Unternehmen oder Identitätsdiebstahl sind längst keine Einzelfälle mehr.
               </p>
 
               <p className="mb-8 text-foreground">
-                Als spezialisierte Rechtsanwaltskanzlei im Bereich Cybercrime begleiten wir regelmäßig Mandanten, die Opfer solcher Täuschungshandlungen wurden.
+                Als auf CyberCrime spezialisierte Kanzlei unterstützen wir unsere Mandant:innen seit Jahren bei der rechtlichen Aufarbeitung von Angriffen im digitalen Raum. Unser Fokus liegt auf der forensischen Nachverfolgung von Kryptotransaktionen, der Sicherung von Beweismitteln sowie der effektiven Vertretung in Strafverfahren, Ermittlungsverfahren und zivilrechtlichen Klagen.
               </p>
 
               <p className="mb-8 text-foreground">
-                Durch schnelles, rechtlich fundiertes Handeln und enger Zusammenarbeit mit den Strafverfolgungsbehörden ist es möglich die Sicherstellung bzw. Beschlagnahme der überwiesenen Gelder zu erwirken, bevor diese von den Tätern weiter transferiert werden und damit der Zugriff durch die Strafverfolgungsbehörden erheblich erschwert wird.
+                Wir verfügen über fundierte Expertise als zertifizierte Datenschutz- und Geldwäschebeauftragte und arbeiten eng mit technischen CyberSecurity-Spezialisten zusammen. Dadurch garantieren wir eine gesamtheitliche und technisch fundierte Betreuung – von der Analyse des Angriffs bis zur rechtlichen Durchsetzung Ihrer Ansprüche.
               </p>
 
-              {/* CEO Fraud Illustration */}
-              <div className="my-12">
-                <img 
-                  src="/lovable-uploads/e6fcfe46-5300-4b17-bafe-fda583555ddc.png"
-                  alt="CEO-Fraud und Überweisungsbetrug - Illustration"
-                  className="w-full rounded-lg shadow-lg"
-                />
-                <p className="text-center text-sm text-muted-foreground mt-4 italic">
-                  CEO-Fraud: Professionelle Betrugsmasche mit gefälschten E-Mails
-                </p>
-              </div>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Was ist CEO-Fraud?</h2>
-              <p className="mb-6 text-foreground">
-                Beim CEO-Fraud handelt es sich um eine Form des Social Engineering: Die Täter geben sich mittels gefälschter, täuschend echt wirkender E-Mails als Geschäftsführer, leitende Mitarbeitende oder externe Geschäftspartner aus.
-              </p>
               <p className="mb-8 text-foreground">
-                Unter Ausnutzung interner Informationen und mit hohem psychologischem Druck werden Mitarbeiter dazu gebracht, (Sofort-)Überweisungen auf (meist) ausländische Bankkonten zu tätigen – häufig unter dem Hinweis auf Diskretion oder zeitkritische Transaktionen.
+                Als Ihr Anwalt für CyberCrime vertreten wir Sie auch vor der Datenschutzbehörde sowie gegenüber Plattformbetreibern, Finanzdienstleistern oder Kryptowährungsbörsen. Unsere langjährige Erfahrung im Bereich Internetkriminalität macht uns zu einem verlässlichen Partner – auch in komplexen und grenzüberschreitenden Fällen.
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Erste Schritte nach einer Falschüberweisung</h2>
-              <div className="bg-accent/30 p-6 rounded-lg my-8">
-                <ol className="space-y-3">
-                  <li className="text-foreground"><strong>1.</strong> Kontaktieren Sie umgehend Ihre Bank, um – falls möglich – die Transaktion zu stoppen oder rückgängig zu machen.</li>
-                  <li className="text-foreground"><strong>2.</strong> Sichern Sie alle relevanten Kommunikationsverläufe, insbesondere E-Mails, Anhänge und Zahlungsanweisungen.</li>
-                  <li className="text-foreground"><strong>3.</strong> Nehmen Sie rechtlichen Beistand in Anspruch, um gezielt und ohne Zeitverlust Anzeige zu erstatten.</li>
-                </ol>
-              </div>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Warum fundierter rechtlicher Beistand entscheidend ist</h2>
-              <p className="mb-6 text-foreground">
-                In der Praxis zeigt sich: Eine Anzeige allein bei der örtlichen Polizeiinspektion führt nicht zwangsläufig zu raschen und effizienten Ermittlungshandlungen. Gerade bei Überweisungsbetrug / CEO-Fraud ist es essenziell, dass die Ermittlungen von den zuständigen Spezialisten durchgeführt werden und keine Zeit verloren geht.
-              </p>
-
-              <p className="mb-6 text-foreground">Als erfahrene Kanzlei können wir</p>
-
-              <div className="bg-primary/10 p-6 rounded-lg my-8">
-                <ul className="space-y-3">
-                  <li className="text-foreground">• den Sachverhalt rechtlich korrekt einordnen</li>
-                  <li className="text-foreground">• die Anzeigeerstattung professionell abwickeln sowie die zuständigen Spezialisten der Kriminalpolizei in Kenntnis setzen</li>
-                  <li className="text-foreground">• notwendige Ermittlungsmaßnahmen beantragen und unmittelbare Anordnungen von Sicherstellungen und Beschlagnahmen erwirken</li>
-                  <li className="text-foreground">• Geldwäscheverdachtsmeldungen bei den Empfängerbanken erstatten und dadurch die Verfügungsgewalt über die Gelder faktisch einschränken</li>
-                  <li className="text-foreground">• Haftpflichtversicherungsmeldung zur Erfüllung der versicherungsrechtlichen Obliegenheitspflichten erstatten</li>
-                </ul>
-              </div>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Fazit</h2>
-              <p className="mb-6 text-foreground">
-                Bei CEO-Fraud und vergleichbaren Formen des Überweisungsbetrugs handelt es sich um professionell geplante Straftaten, die schnelle und gezielte Gegenmaßnahmen erfordern. Unsere Kanzlei verfügt über die nötige Erfahrung, die rechtliche Expertise und die notwendigen Kontakte, damit ihn Ihrem Fall die richtigen Schritte gesetzt werden und Sie eine Chance auf Rückführung der herausgelockten Gelder haben.
-              </p>
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-foreground">Vertrauen Sie auf erfahrene Spezialisten für CyberCrime</h2>
               <p className="mb-8 text-foreground">
-                Neben der akuten Soforthilfe stehen wir Ihnen auch zu Fragen der zivilrechtlichen Haftung und/oder interner Verantwortlichkeiten zur Verfügung. Gerade Fragen zur Geschäftsführerhaftung oder internen Kontrollpflichten spielen im Nachgang häufig eine zentrale Rolle.
+                Unsere Kanzlei vereint juristische Präzision mit technischem Know-how. Wenn Sie Opfer eines Cyberangriffs wurden oder präventiv rechtliche Beratung suchen: Wir sind für Sie da – schnell, diskret und professionell.
               </p>
-
-              <div className="mt-12 p-8 bg-card border rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Ihre Experten für CyberCrime & Überweisungsbetrug</h3>
-                <p className="mb-4">
-                  Bei CEO-Fraud und Überweisungsbetrug ist schnelles Handeln entscheidend. Als spezialisierte CyberCrime Anwälte unterstützen wir Sie umfassend – juristisch fundiert, schnell und effizient.
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  Für weitere Informationen und individuelle Beratung stehen Ihnen <strong>Lukas Riedler</strong> und <strong>Roman Taudes</strong> jederzeit zur Verfügung.
-                </p>
-                <div className="mt-4 flex flex-wrap gap-4">
-                  <a href="mailto:office@atb.law" className="text-primary hover:underline font-medium">
-                    office@atb.law
-                  </a>
-                  <a href="tel:+4313912345" className="text-primary hover:underline font-medium">
-                    +43 1 39 123 45
-                  </a>
-                </div>
-              </div>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Unsere Schwerpunkte Section - FAQ Style */}
+      <Section className="py-16 bg-gradient-to-br from-primary via-primary/90 to-primary/80 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+                Unsere Schwerpunkte
+              </h2>
+              <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto">
+                Expertise in allen Bereichen der Internetkriminalität
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value="prevention" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Prävention – Cyber Resilienz
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Die NIS2 Richtlinie wurde noch nicht einmal in nationales Recht (NISG 2024) gegossen, schon steht mit dem Cyber Resilience Act (Verordnung über horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen) der nächste EU-Rechtsakt zur Sicherstellung von Cybersicherheitsanforderungen in den Startlöchern.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="ransomware" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Ransomware – Incident Response
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Ihr Unternehmen wurde gehackt, Daten sind verschlüsselt und die Angreifer verlangen Lösegeld? Es steht viel auf dem Spiel! Gemeinsam mit unseren auf Cyber-Attacken spezialisierten IT-Security und Forensik Partnern unterstützen wir Sie diskret bei der schnellstmöglichen Bewältigung dieser Herausforderung.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="fraud" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Anlagebetrug – Datenmissbrauch
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Vom vermeintlich lukrativen Investment mit Online Trading, bis hin zur missbräuchlichen Verwendung Ihrer Daten (Identitätsdiebstahl und Geldwäsche). Schnelles und koordiniertes Handeln ist Voraussetzung, um eine Chance zu haben, das "investierte" Vermögen zurück zu erhalten und weiteren Schaden zu verhindern. Wir kennen die Methoden der Verbrecher und wissen was zu tun ist.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="cyberbullying" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Hass im Netz
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Das Internet ist kein rechtsfreier Raum. Hasspostings, Beleidigungen über soziale Medien oder Cybermobbing sind nicht erst seit dem am 1. Jänner 2021 in Kraft getretenen "Hass im Netz" Gesetzespaket rechtswidrig. Wir unterstützen Sie bei der strafrechtlichen Verfolgung der Täter und setzen Ihre zivil- und medienrechtlichen Ansprüche durch.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="tracing" className="bg-white/10 backdrop-blur-md rounded-lg border border-white/20">
+                  <AccordionTrigger className="px-6 py-4 text-white hover:text-white/80 text-left font-semibold">
+                    Asset-/Krypto Tracing
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-4 text-white/90">
+                    Die Analyse und Nachverfolgung von Kryptotransaktionen ("Follow the Money") ist nicht nur bei der Aufklärung von Straftaten essentiell. Auch in zivilrechtlichen Verfahren, Erbstreitigkeiten und Insolvenzen steigt der Bedarf an Experten auf diesem Gebiet. Als erfahrene Rechtsanwält:innen und zertifizierte Blockchain-Forensiker bieten wir unseren Mandant:innen Expertise aus einer Hand.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Unsere Expert:innen Section */}
+      <Section className="py-16 bg-gradient-to-br from-white via-gray-50/30 to-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-blue-600/5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
+        <div className="relative z-10">
+          <div className="container mx-auto px-4">
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Unsere Expert:innen
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Lernen Sie unser spezialisiertes Cybercrime-Team kennen
+              </p>
+            </div>
+
+            {/* Team Carousel - Only cybercrime relevant team members */}
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 4000,
+                })
+              ]}
+              className="w-full max-w-6xl mx-auto"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {/* Bernhard Bovensiepen - Cybercrime Expert */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="/lovable-uploads/2cad25d9-8d15-482b-bc38-5b1378991be6.png"
+                        alt="Bernhard Bovensiepen"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Bernhard Bovensiepen</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Cybercrime, Datenschutz/Compliance, Wertpapier- und Kapitalmarktrecht, Kryptonachverfolgung und Mittelherkunftsnachweis
+                    </p>
+                  </div>
+                </CarouselItem>
+
+                {/* Martin Willig - Blockchain Analyst */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="/lovable-uploads/fb9c5d6b-b0d1-44b0-9835-4301827237bb.png"
+                        alt="Martin Willig"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Martin Willig</h3>
+                    <p className="text-gray-600">Blockchain- /Datenanalyst</p>
+                  </div>
+                </CarouselItem>
+
+                {/* Steffen Rheinböcker - Cybercrime Expert */}
+                <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <img
+                        src="/lovable-uploads/709d1496-f015-4b38-b331-9cb17b1b6eaa.png"
+                        alt="Steffen Rheinböcker"
+                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Steffen Rheinböcker</h3>
+                    <p className="text-gray-600 mb-2">Rechtsanwalt</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      Immobilienrecht, Prozessführung und Streitbeilegung, Cybercrime
+                    </p>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              
+              {/* Navigation Buttons - Glasmorphic design matching NewsCarousel */}
+              <CarouselPrevious className="absolute -left-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300" />
+              <CarouselNext className="absolute -right-20 top-1/2 -translate-y-1/2 h-16 w-16 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-blue-600 hover:text-blue-700 transition-all duration-300" />
+            </Carousel>
           </div>
         </div>
       </Section>
