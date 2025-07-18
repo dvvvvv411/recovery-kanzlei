@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -50,7 +49,7 @@ export const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-gray-900 border-gray-700 z-50">
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/kompetenzen/cybercrime" className="w-full">Cybercrime</Link>
+                <a href="/#cybercrime" className="w-full">Cybercrime</a>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
                 <a href="/#datenschutz" className="w-full">Datenschutz und Compliance</a>
