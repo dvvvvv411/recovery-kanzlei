@@ -30,13 +30,16 @@ export const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-gray-900 border-gray-700 z-50">
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#about" className="w-full">Über Uns</a>
+                <Link to="/#about" className="w-full">Über Uns</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#team" className="w-full">Team</a>
+                <Link to="/#team" className="w-full">Team</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
                 <Link to="/blog" className="w-full">News</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
+                <Link to="/unsere-partner" className="w-full">Unsere Partner</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -49,42 +52,42 @@ export const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-gray-900 border-gray-700 z-50">
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#cybercrime" className="w-full">Cybercrime</a>
+                <Link to="/#cybercrime" className="w-full">Cybercrime</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#datenschutz" className="w-full">Datenschutz und Compliance</a>
+                <Link to="/blog/datenschutz" className="w-full">Datenschutz und Compliance</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#gesellschaftsrecht" className="w-full">Gesellschafts- und Unternehmensrecht</a>
+                <Link to="/blog/gesellschaftsrecht" className="w-full">Gesellschafts- und Unternehmensrecht</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#immobilienrecht" className="w-full">Immobilienrecht</a>
+                <Link to="/blog/immobilienrecht" className="w-full">Immobilienrecht</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#private-clients" className="w-full">Private Clients / Family Offices</a>
+                <Link to="/blog/private-clients" className="w-full">Private Clients / Family Offices</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#prozessfuehrung" className="w-full">Prozessführung</a>
+                <Link to="/blog/prozessfuehrung" className="w-full">Prozessführung</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#wertpapier" className="w-full">Wertpapier- und Kapitalmarktrecht</a>
+                <Link to="/blog/wertpapier" className="w-full">Wertpapier- und Kapitalmarktrecht</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <a href="/#kryptonachverfolgung" className="w-full">Kryptonachverfolgung und Mittelherkunftsnachweis</a>
+                <Link to="/blog/kryptonachverfolgung" className="w-full">Kryptonachverfolgung und Mittelherkunftsnachweis</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
           {/* Einzelne Links */}
-          <a href="/#successes" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
+          <Link to="/#successes" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
             Erfolge
-          </a>
-          <a href="/#contact" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
+          </Link>
+          <Link to="/#contact" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
             Kontakt
-          </a>
-          <a href="/#stellenangebote" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
+          </Link>
+          <Link to="/#stellenangebote" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
             Stellenangebote
-          </a>
+          </Link>
 
           <Button variant="outline" className="bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-primary/50 transition-all duration-300 shadow-glass hover:shadow-[0_0_30px_hsl(214_100%_60%_/_0.6)] hover:border-primary/80" style={{ textShadow: 'var(--text-glow)', boxShadow: '0 0 20px hsl(214 100% 60% / 0.3), var(--shadow-glass)' }}>
             Beratung anfragen
