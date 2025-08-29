@@ -17,13 +17,16 @@ const BlogPostImmobilienrecht = () => {
       {/* Hero Section with Breadcrumb */}
       <Section className="py-20 lg:py-32 relative overflow-hidden h-[50vh] flex items-center bg-gray-800">
         <div className="absolute inset-0 w-full h-full" style={{ top: '-64px', height: 'calc(100% + 64px)' }}>
-          <iframe 
-            src="https://player.vimeo.com/video/1114244827?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&muted=1&background=1" 
-            frameBorder="0" 
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            style={{width:"177.78vh", height:"calc(100vh + 64px)", minWidth:"100%", minHeight:"calc(100% + 64px)"}} 
-            title="Crypto Background Video"
+          <video
+            src="/video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover"
+            style={{width:"177.78vh", height:"calc(100vh + 64px)", minWidth:"100%", minHeight:"calc(100% + 64px)"}}
+            aria-label="Crypto Background Video"
           />
         </div>
         <div className="absolute inset-0 bg-black/70"></div>
