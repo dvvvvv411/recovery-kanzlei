@@ -70,7 +70,7 @@ const BlogPostKreditgebuehr = () => {
               </div>
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4" />
-                <span>ATB.LAW Team</span>
+                <span>Bovensiepen & Partner Team</span>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ const BlogPostKreditgebuehr = () => {
                   Als spezialisierte Rechtsanwälte für Verbraucher- und Bankrecht unterstützen wir Sie bei der Durchsetzung Ihrer Ansprüche – kompetent, effizient und erfolgsorientiert.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Für weitere Informationen und eine Ersteinschätzung stehen Anela Blöch und Roman Taudes jederzeit unter office@atb.law bzw. telefonisch unter 01 39 12345 zur Verfügung.
+                  Für weitere Informationen und eine Ersteinschätzung stehen Bernhard Bovensiepen und Leonard Grimm jederzeit unter office@atb.law bzw. telefonisch unter 01 39 12345 zur Verfügung.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-4">
                   <a href="mailto:office@atb.law" className="text-primary hover:underline font-medium">

@@ -65,7 +65,7 @@ const BlogPostGesellschaftsrecht = () => {
               </p>
 
               <p className="mb-8 text-foreground">
-                In unserer täglichen Arbeit mit erfolgreichen nationalen sowie internationalen Unternehmen werden wir mit unterschiedlichsten unternehmerischen Problemstellungen und Bedürfnissen konfrontiert. Aufgrund der breit-gefächerten Spezialgebiete bei ATB.LAW ist es uns möglich, Unternehmen interdisziplinär und vollumfänglich zu betreuen. Wir stehen Ihnen vom allgemeinen Gesellschaftsrecht und der Betreuung bei alltäglichen unternehmensrechtlichen Fragestellungen, über Herausforderungen im Datenschutz/Compliance bis hin zu Fragen im Marken-, Medien- und Arbeitsrecht zur Verfügung.
+                In unserer täglichen Arbeit mit erfolgreichen nationalen sowie internationalen Unternehmen werden wir mit unterschiedlichsten unternehmerischen Problemstellungen und Bedürfnissen konfrontiert. Aufgrund der breit-gefächerten Spezialgebiete bei Bovensiepen & Partner ist es uns möglich, Unternehmen interdisziplinär und vollumfänglich zu betreuen. Wir stehen Ihnen vom allgemeinen Gesellschaftsrecht und der Betreuung bei alltäglichen unternehmensrechtlichen Fragestellungen, über Herausforderungen im Datenschutz/Compliance bis hin zu Fragen im Marken-, Medien- und Arbeitsrecht zur Verfügung.
               </p>
 
               <p className="mb-8 text-foreground">

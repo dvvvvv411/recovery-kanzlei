@@ -65,7 +65,7 @@ const BlogPostPrivateClients = () => {
               </p>
 
               <p className="mb-8 text-foreground">
-                Bei ATB.LAW beraten wir Private Clients bei der vorsorglichen Vermögens- und Nachfolgeplanung. Hierbei unterstützen wir Sie insbesondere bei der Vorsorge für den Ablebensfall sowie für den Fall unvorhersehbarer Lebensumstände, wie etwa den Verlust der Geschäftsfähigkeit durch Krankheit oder Unfall. Unser erfahrenes Team berücksichtigt hierbei in höchstem Maße Ihre persönliche und familiäre Lebenssituation und erarbeitet auf Sie abgestimmte Lösungen zum Schutz Ihres Vermögens. Als Schnittstelle zu unserem gesellschaftsrechtlichen Schwerpunkt beraten wir auch Familienunternehmen (Family Offices) bei der Gestaltung der Vermögensstrukturen und der gesellschaftsrechtlichen Nachfolge.
+                Bei Bovensiepen & Partner beraten wir Private Clients bei der vorsorglichen Vermögens- und Nachfolgeplanung. Hierbei unterstützen wir Sie insbesondere bei der Vorsorge für den Ablebensfall sowie für den Fall unvorhersehbarer Lebensumstände, wie etwa den Verlust der Geschäftsfähigkeit durch Krankheit oder Unfall. Unser erfahrenes Team berücksichtigt hierbei in höchstem Maße Ihre persönliche und familiäre Lebenssituation und erarbeitet auf Sie abgestimmte Lösungen zum Schutz Ihres Vermögens. Als Schnittstelle zu unserem gesellschaftsrechtlichen Schwerpunkt beraten wir auch Familienunternehmen (Family Offices) bei der Gestaltung der Vermögensstrukturen und der gesellschaftsrechtlichen Nachfolge.
               </p>
 
               <p className="mb-8 text-foreground">
