@@ -18,35 +18,49 @@ import BlogPostPrivateClients from "./pages/BlogPostPrivateClients";
 import BlogPostProzessfuehrung from "./pages/BlogPostProzessfuehrung";
 import BlogPostWertpapier from "./pages/BlogPostWertpapier";
 import BlogPostKryptonachverfolgung from "./pages/BlogPostKryptonachverfolgung";
+import Kontakt from "./pages/Kontakt";
+import Auth from "./pages/Auth";
+import Admin from "./pages/Admin";
+import { AuthProvider } from "./hooks/useAuth";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/unsere-partner" element={<UnserePartner />} />
-          <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
-          <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
-          <Route path="/kompetenz/immobilienrecht" element={<BlogPostImmobilienrecht />} />
-          <Route path="/kompetenz/datenschutz-und-compliance" element={<BlogPostDatenschutz />} />
-          <Route path="/kompetenz/gesellschafts-und-unternehmensrecht" element={<BlogPostGesellschaftsrecht />} />
-          <Route path="/kompetenz/private-clients-family-offices" element={<BlogPostPrivateClients />} />
-          <Route path="/kompetenz/prozessfuhrung" element={<BlogPostProzessfuehrung />} />
-          <Route path="/kompetenz/wertpapier-und-kapitalmarktrecht" element={<BlogPostWertpapier />} />
-          <Route path="/kompetenz/kryptonachverfolgung-und-mittelherkunftsnachweis" element={<BlogPostKryptonachverfolgung />} />
-          <Route path="/kompetenz/cybercrime" element={<BlogPostCeoFraud2 />} />
-          <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <AuthProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/kontakt" element={<Kontakt />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route path="/admin" element={
+              <ProtectedRoute requireAdmin>
+                <Admin />
+              </ProtectedRoute>
+            } />
+            <Route path="/unsere-partner" element={<UnserePartner />} />
+            <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
+            <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
+            <Route path="/kompetenz/immobilienrecht" element={<BlogPostImmobilienrecht />} />
+            <Route path="/kompetenz/datenschutz-und-compliance" element={<BlogPostDatenschutz />} />
+            <Route path="/kompetenz/gesellschafts-und-unternehmensrecht" element={<BlogPostGesellschaftsrecht />} />
+            <Route path="/kompetenz/private-clients-family-offices" element={<BlogPostPrivateClients />} />
+            <Route path="/kompetenz/prozessfuhrung" element={<BlogPostProzessfuehrung />} />
+            <Route path="/kompetenz/wertpapier-und-kapitalmarktrecht" element={<BlogPostWertpapier />} />
+            <Route path="/kompetenz/kryptonachverfolgung-und-mittelherkunftsnachweis" element={<BlogPostKryptonachverfolgung />} />
+            <Route path="/kompetenz/cybercrime" element={<BlogPostCeoFraud2 />} />
+            <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </AuthProvider>
   </QueryClientProvider>
 );
 
