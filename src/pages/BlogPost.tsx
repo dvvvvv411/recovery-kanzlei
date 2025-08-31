@@ -138,7 +138,7 @@ const BlogPost = () => {
               {/* Legal Document */}
               <div className="my-12">
                 <img 
-                  src="/lovable-uploads/c35afcf3-2404-4d36-a3f3-66dee674bbb9.png"
+                  src="/lovable-uploads/bbde2e85-c4fa-4b33-a468-08b4ef5956a9.png"
                   alt="Sicherstellungsanordnung der Staatsanwaltschaft Innsbruck"
                   className="w-full rounded-lg shadow-lg"
                 />
