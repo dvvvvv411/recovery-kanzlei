@@ -30,6 +30,9 @@ export const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-gray-900 border-gray-700 z-50">
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
+                <Link to="/#about" className="w-full">Über Uns</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
                 <Link to="/#team" className="w-full">Team</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
@@ -76,7 +79,7 @@ export const Header = () => {
           </DropdownMenu>
 
           {/* Einzelne Links */}
-          <Link to="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
+          <Link to="/#successes" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
             Erfolge
           </Link>
           <Link to="/#contact" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
