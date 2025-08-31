@@ -193,8 +193,8 @@ const BlogPost = () => {
                   Für weitere Informationen und individuelle Beratung stehen Ihnen <strong>Bernhard Bovensiepen</strong> und <strong>Leonard Grimm</strong> jederzeit zur Verfügung.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-4">
-                  <a href="mailto:office@atb.law" className="text-primary hover:underline font-medium">
-                    office@atb.law
+                  <a href="mailto:info@bovensiepen-partner.de" className="text-primary hover:underline font-medium">
+                    info@bovensiepen-partner.de
                   </a>
                   <a href="tel:+4313912345" className="text-primary hover:underline font-medium">
                     +43 1 39 123 45

@@ -150,11 +150,11 @@ const BlogPostKreditgebuehr = () => {
                   Als spezialisierte Rechtsanwälte für Verbraucher- und Bankrecht unterstützen wir Sie bei der Durchsetzung Ihrer Ansprüche – kompetent, effizient und erfolgsorientiert.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Für weitere Informationen und eine Ersteinschätzung stehen Bernhard Bovensiepen und Leonard Grimm jederzeit unter office@atb.law bzw. telefonisch unter 01 39 12345 zur Verfügung.
+                  Für weitere Informationen und eine Ersteinschätzung stehen Bernhard Bovensiepen und Leonard Grimm jederzeit unter info@bovensiepen-partner.de bzw. telefonisch unter 01 39 12345 zur Verfügung.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-4">
-                  <a href="mailto:office@atb.law" className="text-primary hover:underline font-medium">
-                    office@atb.law
+                  <a href="mailto:info@bovensiepen-partner.de" className="text-primary hover:underline font-medium">
+                    info@bovensiepen-partner.de
                   </a>
                   <a href="tel:+43139123456" className="text-primary hover:underline font-medium">
                     +43 1 39 123 45
