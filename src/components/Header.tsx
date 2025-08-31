@@ -52,28 +52,28 @@ export const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-gray-900 border-gray-700 z-50">
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/#cybercrime" className="w-full">Cybercrime</Link>
+                <Link to="/kompetenz/cybercrime" className="w-full">Cybercrime</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/blog/datenschutz" className="w-full">Datenschutz und Compliance</Link>
+                <Link to="/kompetenz/datenschutz-und-compliance" className="w-full">Datenschutz und Compliance</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/blog/gesellschaftsrecht" className="w-full">Gesellschafts- und Unternehmensrecht</Link>
+                <Link to="/kompetenz/gesellschafts-und-unternehmensrecht" className="w-full">Gesellschafts- und Unternehmensrecht</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/blog/immobilienrecht" className="w-full">Immobilienrecht</Link>
+                <Link to="/kompetenz/immobilienrecht" className="w-full">Immobilienrecht</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/blog/private-clients" className="w-full">Private Clients / Family Offices</Link>
+                <Link to="/kompetenz/private-clients-family-offices" className="w-full">Private Clients / Family Offices</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/blog/prozessfuehrung" className="w-full">Prozessführung</Link>
+                <Link to="/kompetenz/prozessfuhrung" className="w-full">Prozessführung</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/blog/wertpapier" className="w-full">Wertpapier- und Kapitalmarktrecht</Link>
+                <Link to="/kompetenz/wertpapier-und-kapitalmarktrecht" className="w-full">Wertpapier- und Kapitalmarktrecht</Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="text-white hover:bg-primary hover:text-white focus:bg-primary focus:text-white">
-                <Link to="/blog/kryptonachverfolgung" className="w-full">Kryptonachverfolgung und Mittelherkunftsnachweis</Link>
+                <Link to="/kompetenz/kryptonachverfolgung-und-mittelherkunftsnachweis" className="w-full">Kryptonachverfolgung und Mittelherkunftsnachweis</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
