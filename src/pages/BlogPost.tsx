@@ -115,7 +115,7 @@ const BlogPost = () => {
               {/* Bitcoin Tracking Diagram */}
               <div className="my-12">
                 <img 
-                  src="/lovable-uploads/ab82bf83-5ca8-46b3-83b4-5cb6f9c16646.png"
+                  src="/lovable-uploads/681b548e-7cfe-4c26-b050-76226bf9cead.png"
                   alt="Nachverfolgung Bitcoin - Blockchain-Forensik Diagramm"
                   className="w-full rounded-lg shadow-lg"
                 />
