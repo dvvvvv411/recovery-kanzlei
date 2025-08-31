@@ -1,22 +1,23 @@
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { Mail, Phone, MapPin, Clock, Shield, Award, CheckCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { Section, SectionHeader, SectionTitle, SectionDescription } from '@/components/ui/section';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Badge } from '@/components/ui/badge';
-import { toast } from 'sonner';
-import { supabase } from '@/integrations/supabase/client';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Section } from "@/components/ui/section";
+import { Phone, Mail, MapPin, Clock, Shield, CheckCircle, Star, ArrowRight, AlertTriangle, Users, Award } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/components/ui/use-toast";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import heroImage from "@/assets/crypto-hero-bg.jpg";
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name muss mindestens 2 Zeichen haben'),
@@ -32,6 +33,7 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function Kontakt() {
+  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStartTime, setSubmitStartTime] = useState<number>(0);
   
@@ -48,6 +50,11 @@ export default function Kontakt() {
       honeypot: '',
     },
   });
+
+  // Set page title
+  useEffect(() => {
+    document.title = 'Kontakt | Recovery Kanzlei';
+  }, []);
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
@@ -74,14 +81,25 @@ export default function Kontakt() {
 
       if (error) {
         console.error('Error submitting form:', error);
-        toast.error('Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.');
+        toast({
+          title: "Fehler",
+          description: "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.",
+          variant: "destructive",
+        });
       } else {
-        toast.success('Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 60 Minuten bei Ihnen.');
+        toast({
+          title: "Nachricht gesendet",
+          description: "Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 60 Minuten bei Ihnen.",
+        });
         form.reset();
       }
     } catch (err) {
       console.error('Submission error:', err);
-      toast.error('Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
+      toast({
+        title: "Fehler",
+        description: "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+        variant: "destructive",
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -93,135 +111,259 @@ export default function Kontakt() {
     }
   };
 
+  const scrollToForm = () => {
+    document.getElementById('kontakt-form')?.scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  };
+
+  const partnerLogos = [
+    {
+      name: "Cybercrime Komplettschutz",
+      logo: "/lovable-uploads/da91dba8-4542-49e2-a65f-f3c47c7a5afd.png"
+    },
+    {
+      name: "Polizei Nordrhein-Westfalen",
+      logo: "/lovable-uploads/1834d8de-5216-4084-be7f-b4973552d4e2.png"
+    },
+    {
+      name: "Bundeskriminalamt", 
+      logo: "/lovable-uploads/b2f48b3f-04a9-45fa-93e8-b4a2979906d0.png"
+    },
+    {
+      name: "Coinbase",
+      logo: "/lovable-uploads/40855976-8084-4aa6-8ab3-40a1b0d75ab6.png"
+    },
+    {
+      name: "Binance",
+      logo: "/lovable-uploads/a353d06a-d600-40b4-8ac2-e8fae21230d5.png"
+    },
+    {
+      name: "IOSCO",
+      logo: "/lovable-uploads/7cf1155a-1e93-404a-bb7f-b70fbba16ab9.png"
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-primary/5">
+    <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
-      <Section className="pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          <SectionHeader>
-            <SectionTitle className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
-              Schnelle Hilfe bei Krypto-Betrug
-            </SectionTitle>
-            <SectionDescription className="text-xl">
-              Kostenlose Erstberatung • Rückmeldung in der Regel innerhalb von 60 Minuten
-            </SectionDescription>
-            <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <Badge variant="secondary" className="px-4 py-2">
-                <Award className="w-4 h-4 mr-2" />
-                500+ erfolgreiche Fälle
-              </Badge>
-              <Badge variant="secondary" className="px-4 py-2">
-                <Shield className="w-4 h-4 mr-2" />
-                Spezialisiert auf Krypto-Recovery
-              </Badge>
-              <Badge variant="secondary" className="px-4 py-2">
-                <CheckCircle className="w-4 h-4 mr-2" />
-                Kein Erfolg = keine Kosten
-              </Badge>
+      <Section className="py-20 lg:py-32 relative overflow-hidden h-[80vh] flex items-center">
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src={heroImage}
+            alt="Crypto Recovery Background"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-transparent to-primary/20"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ textShadow: 'var(--text-glow-strong)' }}>
+              Schnelle Hilfe bei<br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent drop-shadow-lg">Krypto-Betrug</span>
+            </h1>
+            <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow)' }}>
+              Kostenlose Erstberatung – Rückmeldung in der Regel innerhalb von 60 Minuten
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
+                asChild
+              >
+                <a href="tel:+4912345678">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Soforthilfe: Jetzt anrufen
+                </a>
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="text-lg px-8 py-6 h-auto bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20"
+                onClick={scrollToForm}
+              >
+                Kostenlose Erstberatung anfragen
+              </Button>
             </div>
-          </SectionHeader>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-200">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-primary" />
+                100% kostenlose Erstberatung
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-primary" />
+                Kein Erfolg = keine Kosten
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-primary" />
+                24/7 Notfall-Hotline
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Social Proof Section */}
+      <Section className="py-12 bg-gradient-glass backdrop-blur-md">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <p className="text-muted-foreground text-sm uppercase tracking-wider font-medium">
+              Vertrauen von führenden Institutionen
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12 opacity-70 hover:opacity-100 transition-opacity">
+            {partnerLogos.map((partner, index) => (
+              <div key={index} className="flex items-center justify-center h-12">
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-8 lg:h-10 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </Section>
 
       {/* Contact Section */}
-      <Section className="py-16">
+      <Section className="py-20 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
             
-            {/* Left Column - Info */}
+            {/* Left Column - Info & Trust */}
             <div className="space-y-8">
-              <Card className="glass-card border-0 shadow-xl">
+              {/* Contact Information */}
+              <Card className="border-0 shadow-card bg-card">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-foreground">
+                  <CardTitle className="text-2xl font-bold flex items-center gap-2">
+                    <Phone className="h-6 w-6 text-primary" />
                     Kontaktinformationen
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Phone className="h-6 w-6 text-primary" />
+                  <Button 
+                    variant="outline" 
+                    className="w-full justify-start h-auto p-4 hover:bg-primary/5"
+                    asChild
+                  >
+                    <a href="tel:+4912345678" className="flex items-center gap-3">
+                      <div className="p-2 rounded-full bg-primary/10">
+                        <Phone className="h-5 w-5 text-primary" />
+                      </div>
+                      <div className="text-left">
+                        <p className="font-semibold">Telefon</p>
+                        <p className="text-sm text-muted-foreground">+49 (0) 123 456 789</p>
+                      </div>
+                    </a>
+                  </Button>
+                  
+                  <Button 
+                    variant="outline" 
+                    className="w-full justify-start h-auto p-4 hover:bg-primary/5"
+                    asChild
+                  >
+                    <a href="mailto:kontakt@recovery-kanzlei.de" className="flex items-center gap-3">
+                      <div className="p-2 rounded-full bg-primary/10">
+                        <Mail className="h-5 w-5 text-primary" />
+                      </div>
+                      <div className="text-left">
+                        <p className="font-semibold">E-Mail</p>
+                        <p className="text-sm text-muted-foreground">kontakt@recovery-kanzlei.de</p>
+                      </div>
+                    </a>
+                  </Button>
+                  
+                  <div className="flex items-center gap-3 p-4 rounded-lg border bg-muted/20">
+                    <div className="p-2 rounded-full bg-primary/10">
+                      <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">Telefon</p>
-                      <p className="text-muted-foreground">+49 (0) 123 456 789</p>
+                      <p className="font-semibold">Adresse</p>
+                      <p className="text-sm text-muted-foreground">Musterstraße 123<br />12345 Musterstadt</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Mail className="h-6 w-6 text-primary" />
+                  <div className="flex items-center gap-3 p-4 rounded-lg border bg-muted/20">
+                    <div className="p-2 rounded-full bg-primary/10">
+                      <Clock className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">E-Mail</p>
-                      <p className="text-muted-foreground">kontakt@recovery-kanzlei.de</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <MapPin className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Adresse</p>
-                      <p className="text-muted-foreground">Musterstraße 123<br />12345 Musterstadt</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Clock className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Öffnungszeiten</p>
-                      <p className="text-muted-foreground">Mo-Fr: 8:00 - 18:00 Uhr<br />Sa: 9:00 - 14:00 Uhr</p>
+                      <p className="font-semibold">Öffnungszeiten</p>
+                      <p className="text-sm text-muted-foreground">Mo-Fr: 8:00 - 18:00 Uhr<br />Sa: 9:00 - 14:00 Uhr</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="glass-card border-0 shadow-xl">
+              {/* 3-Step Process */}
+              <Card className="border-0 shadow-card bg-card">
                 <CardHeader>
-                  <CardTitle className="text-xl font-bold text-foreground">
-                    Warum uns vertrauen?
-                  </CardTitle>
+                  <CardTitle className="text-xl font-bold">So läuft es ab</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                      <span>Kostenlose Erstberatung</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                      <span>Persönliche Ansprechperson</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                      <span>Diskret & schnell</span>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                      <span>Spezialisiert auf Cybercrime</span>
-                    </li>
-                  </ul>
-                  
-                  <div className="mt-6 p-4 bg-primary/5 rounded-lg border border-primary/20">
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Datenschutz:</strong> Ihre Daten werden streng vertraulich behandelt und gemäß DSGVO verarbeitet.
-                    </p>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                    <div>
+                      <h4 className="font-semibold">Kurzes Gespräch</h4>
+                      <p className="text-sm text-muted-foreground">Kostenlos, unverbindlich - wir hören uns Ihren Fall an</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                    <div>
+                      <h4 className="font-semibold">Forensische Ersteinschätzung</h4>
+                      <p className="text-sm text-muted-foreground">60-Minuten Rückmeldung zu Ihren Erfolgsaussichten</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                    <div>
+                      <h4 className="font-semibold">Maßnahmenplan</h4>
+                      <p className="text-sm text-muted-foreground">Erfolgsbasiert - Sie zahlen nur bei Erfolg</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Trust Signals */}
+              <Card className="border-0 shadow-card bg-gradient-to-br from-primary/5 to-primary/10">
+                <CardContent className="p-6">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-primary mb-1">500+</div>
+                      <p className="text-sm text-muted-foreground">erfolgreiche Fälle</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-primary mb-1">15+</div>
+                      <p className="text-sm text-muted-foreground">Jahre Erfahrung</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-primary mb-1">24/7</div>
+                      <p className="text-sm text-muted-foreground">Erreichbarkeit</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-primary mb-1">100%</div>
+                      <p className="text-sm text-muted-foreground">DSGVO konform</p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            {/* Right Column - Form */}
-            <Card className="glass-card border-0 shadow-xl">
+            {/* Right Column - Contact Form */}
+            <Card id="kontakt-form" className="border-0 shadow-card bg-card">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-foreground">
+                <CardTitle className="text-2xl font-bold">
                   Kostenlose Erstberatung anfragen
                 </CardTitle>
+                <p className="text-muted-foreground">
+                  Schildern Sie uns Ihren Fall – wir melden uns innerhalb von 60 Minuten
+                </p>
               </CardHeader>
               <CardContent>
                 <Form {...form}>
@@ -297,7 +439,7 @@ export default function Kontakt() {
                                   <SelectValue placeholder="Bitte wählen" />
                                 </SelectTrigger>
                               </FormControl>
-                              <SelectContent>
+                              <SelectContent className="z-50 bg-popover">
                                 <SelectItem value="cybercrime">Cybercrime/Betrug</SelectItem>
                                 <SelectItem value="kryptonachverfolgung">Kryptonachverfolgung</SelectItem>
                                 <SelectItem value="wertpapier">Wertpapier/Kapitalmarkt</SelectItem>
@@ -371,7 +513,12 @@ export default function Kontakt() {
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? 'Wird gesendet...' : 'Kostenlose Erstberatung anfragen'}
+                      {!isSubmitting && <ArrowRight className="ml-2 h-5 w-5" />}
                     </Button>
+                    
+                    <p className="text-center text-sm text-muted-foreground">
+                      100% kostenlos & unverbindlich
+                    </p>
                   </form>
                 </Form>
               </CardContent>
@@ -381,50 +528,88 @@ export default function Kontakt() {
       </Section>
 
       {/* FAQ Section */}
-      <Section className="py-16">
+      <Section className="py-16 bg-muted/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <SectionHeader>
-              <SectionTitle>Häufig gestellte Fragen</SectionTitle>
-            </SectionHeader>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4">Häufig gestellte Fragen</h2>
+              <p className="text-lg text-muted-foreground">
+                Antworten auf die wichtigsten Fragen rund um unsere Hilfe bei Krypto-Betrug
+              </p>
+            </div>
             
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="glass-card border-0 px-6 rounded-lg">
-                <AccordionTrigger className="text-left">
+              <AccordionItem value="item-1" className="bg-card border-0 px-6 rounded-lg shadow-sm">
+                <AccordionTrigger className="text-left font-semibold">
                   Wie schnell melden Sie sich bei mir?
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="text-muted-foreground">
                   Wir melden uns in der Regel innerhalb von 60 Minuten bei Ihnen zurück, 
                   oft sogar schneller. Bei Eingang außerhalb der Geschäftszeiten spätestens 
                   am nächsten Werktag bis 9:00 Uhr.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="glass-card border-0 px-6 rounded-lg">
-                <AccordionTrigger className="text-left">
+              <AccordionItem value="item-2" className="bg-card border-0 px-6 rounded-lg shadow-sm">
+                <AccordionTrigger className="text-left font-semibold">
                   Was kostet die Erstberatung?
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="text-muted-foreground">
                   Die Erstberatung ist für Sie völlig kostenlos und unverbindlich. 
                   Erst wenn Sie sich für eine Zusammenarbeit entscheiden, entstehen Kosten - 
-                  und diese nur bei erfolgreichem Ausgang Ihres Falls.
+                  und auch dann arbeiten wir erfolgsbasiert.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="glass-card border-0 px-6 rounded-lg">
-                <AccordionTrigger className="text-left">
+              <AccordionItem value="item-3" className="bg-card border-0 px-6 rounded-lg shadow-sm">
+                <AccordionTrigger className="text-left font-semibold">
                   Welche Informationen sollte ich bereitstellen?
                 </AccordionTrigger>
-                <AccordionContent>
-                  Je mehr Details Sie uns mitteilen können, desto besser können wir Ihnen helfen. 
-                  Wichtig sind: Zeitpunkt des Betrugs, beteiligte Plattformen, Transaktionsdaten, 
-                  Kommunikation mit den Betrügern und bereits unternommene Schritte.
+                <AccordionContent className="text-muted-foreground">
+                  Je mehr Details Sie uns mitteilen können, desto besser können wir Ihnen helfen: 
+                  Wallet-Adressen, Transaktions-IDs, Screenshots, E-Mail-Verläufe, Namen der 
+                  verdächtigen Personen oder Plattformen.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="bg-card border-0 px-6 rounded-lg shadow-sm">
+                <AccordionTrigger className="text-left font-semibold">
+                  Welche Erfolgsaussichten gibt es?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Die Erfolgsaussichten hängen stark vom Einzelfall ab. In über 500 Fällen konnten 
+                  wir bereits erfolgreich Gelder zurückholen. Eine erste Einschätzung erhalten Sie 
+                  kostenlos in unserem Erstgespräch.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
         </div>
       </Section>
+
+      {/* Mobile Sticky CTA Bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t shadow-lg p-4 lg:hidden">
+        <div className="flex gap-2">
+          <Button 
+            size="sm" 
+            className="flex-1"
+            asChild
+          >
+            <a href="tel:+4912345678">
+              <Phone className="mr-2 h-4 w-4" />
+              Anrufen
+            </a>
+          </Button>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="flex-1"
+            onClick={scrollToForm}
+          >
+            Formular
+          </Button>
+        </div>
+      </div>
 
       <Footer />
     </div>
