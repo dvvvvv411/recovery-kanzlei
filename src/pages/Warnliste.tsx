@@ -47,246 +47,6 @@ const Warnliste = () => {
       website: "okwex.com",
       category: "Totalverlust",
       description: "Wohlverdienter Eintrag auf unserer Anlagebetrug Warnliste. Übelste Erfahrungen liegen uns vor. Keinesfalls einzahlen!"
-    },
-    {
-      name: "Super Star Finance",
-      website: "superstarfinance.co.uk",
-      category: "Dubios",
-      description: "Keine Empfehlung. Womöglich wird Ihr Investment eingesackt und es kommt zu keiner Auszahlung. Es könnte sich um einen waschechten Betrug handeln."
-    },
-    {
-      name: "QUMAXCOFXS",
-      website: "qumaxcofxs.com",
-      category: "FCA Warnung",
-      description: "FCA hat diese Website auf ihre Warnliste verfrachtet. Möglicher Anlagebetrug. Lieber fernbleiben!"
-    },
-    {
-      name: "FIN Anwalt",
-      website: "finanwalt.com",
-      category: "Identitätsdiebstahl",
-      description: "Auch hier eine gefälschte Kanzlei. Es gibt diesen \"Rechtsanwalt Philipp Angelo\" nicht. Negative Erfahrungen liegen vor. Rechtsanwaltskammer wurde informiert."
-    },
-    {
-      name: "TinePrime",
-      website: "tprimelimited.com",
-      category: "Keine Auszahlung",
-      description: "Hier warten Anlegerinnen und Anleger vergeblich auf ihre Auszahlungen."
-    },
-    {
-      name: "SpringFX",
-      website: "spring-fx.com",
-      category: "Dubios",
-      description: "Eintrag auf der Anlagebetrug Warnliste, da hier Unstimmigkeiten festgestellt worden sind. Ihr Kapital ist dort in Gefahr."
-    },
-    {
-      name: "Brain Stone FX Ltd.",
-      website: "bsfxl.live",
-      category: "Identitätsdiebstahl",
-      description: "Hier wird im Wege eines Identitätsdiebstahls die Firmendaten eines echten Unternehmens zweckentfremdet. Nicht darauf eingehen. Erfahrungen dürften verheerend werden."
-    },
-    {
-      name: "COZ FX",
-      website: "mycozfx.com",
-      category: "FCA Warnung",
-      description: "Die englische FCA hat eine Warnung veröffentlicht und diese Website auf ihre eigene Warnliste gesetzt. Somit besteht die Möglichkeit, dass hier ein Anlagebetrug begangen wird."
-    },
-    {
-      name: "World Pay Bank",
-      website: "worldpaybank.icu",
-      category: "Unlizenziert",
-      description: "Anscheinend werden Investoren diverse Angebote gemacht – aber die rechtlichen Bestimmungen sind nicht eingehalten worden. Vielleicht kommt die Auszahlung, vielleicht nicht. Risiko lieber vermeiden!"
-    },
-    {
-      name: "Mineo Trading FX",
-      website: "mineotradingfx.com",
-      category: "Behördliche Warnung",
-      description: "Unklar, wie hier die Erfahrungen sind. Es könnte ein Betrug sein. Stand jetzt finden sich lediglich Hinweise darauf, dass behördlicherseits gewarnt wird, Investments dort zu tätigen."
-    },
-    {
-      name: "FXGrowth",
-      website: "fxgrowth.online",
-      category: "Dubios",
-      description: "Dubiose Plattform, die hiermit auf die Warnliste Anlagebetrug gesetzt wird. Anscheinend gibt es bereits negative Erfahrungen."
-    },
-    {
-      name: "Ant Contract",
-      website: "antcoins.cc",
-      category: "Krypto-Betrug",
-      description: "Vieles deutet auf einen Betrug mit Kryptowährungen hin."
-    },
-    {
-      name: "Coin Fx Earners",
-      website: "coin-fxearners.com",
-      category: "Krypto-Betrug",
-      description: "Kryptowährungen stehen hier im Fokus. Ob die Auszahlung erfolgt, ist jedoch nicht belegt. Aktuell besser kein Geschäft dort tätigen."
-    },
-    {
-      name: "FX Finance Traders",
-      website: "fx-financetraders.com",
-      category: "Behördliche Warnung",
-      description: "Hier gibt es die unschöne Erwähnung in einer behördlichen Warnliste für Anlagebetrug. Daher keine Empfehlung."
-    },
-    {
-      name: "Crypto Limited",
-      website: "cryptolimited.online",
-      category: "FCA Warnung",
-      description: "Von Seiten der britischen Finanzaufsicht wird dieser Anbieter kritisiert. Womöglich Betrug mit Kryptowährungen. Konkrete Erfahrungen bisher nicht vorliegend."
-    },
-    {
-      name: "TMXB",
-      website: "9bxz.com",
-      category: "Dubios",
-      description: "Dubiose Plattform, die Gewinne einzusacken scheint. Fernhalten und sich nicht \"hereinreden\" lassen!"
-    },
-    {
-      name: "BCCN",
-      website: "bcc.fun",
-      category: "Dubios",
-      description: "Vermutlich Anlagebetrug durch betrügerische Broker und hübsch gemachter Internetpräsenz."
-    },
-    {
-      name: "xTuucu",
-      website: "xtuucu.com",
-      category: "Totalverlust",
-      description: "Keine Empfehlung. Ein Anleger wurde hier geschädigt."
-    },
-    {
-      name: "Spark Paradise Bank",
-      website: "sparkparadisebank.com",
-      category: "Dubios",
-      description: "Ob es sich hierbei wirklich um eine seriöse Bank handelt, ist nicht gesagt. Denn es gibt Anzeichen, die auf ein unseriöses Geschäftsgebaren hindeuten."
-    },
-    {
-      name: "Kingly Fx Trades",
-      website: "kinglyfxtrades.com",
-      category: "Behördliche Warnung",
-      description: "Von einer Finanzaufsichtsbehörde gibt es einen Eintrag auf der Warnliste Anlagebetrug. Somit hochverdächtig. Keinesfalls dort einzahlen."
-    },
-    {
-      name: "Unique Fx Trades",
-      website: "uniquefxtrades.net",
-      category: "FCA Warnung",
-      description: "Die FCA kritisiert diese Website. Erfahrungen liegen uns noch nicht vor. Ob die Auszahlung kommt, ist nicht abzuschätzen. Besser nicht ausprobieren!"
-    },
-    {
-      name: "Capizal Trade",
-      website: "capizaltrade.com",
-      category: "Dubios",
-      description: "Nicht gesichert, ob dies ein seriöser Anbieter ist. Es gibt erste Hinweise darauf, dass etwas gehörig nicht stimmt. Daher Eintrag auf der Anlagebetrug Warnliste."
-    },
-    {
-      name: "Lamatrade Investments Ltd.",
-      website: "lamatrade.com",
-      category: "Unlizenziert",
-      description: "Die FCA teilt mit, dass diese Website ohne die erforderliche Zulassung tätig ist. Seriös ist das also nicht."
-    },
-    {
-      name: "Fx Million Biz",
-      website: "fxmillion.biz",
-      category: "Dubios",
-      description: "Diese Website wird von den Verantwortlichen hinter Lamatrade Investments Ltd. verwendet – was keinen großen Sinne ergibt, aber umso wachsamer machen sollte. Normal ist das sicher nicht!"
-    },
-    {
-      name: "InstantGrow",
-      website: "instantgrow.cc",
-      category: "Dubios",
-      description: "Anscheinend liegen schlechte Erfahrungen vor. Nehmen Sie Abstand von einer Einzahlung, da unklar ist, ob eine Auszahlung erfolgen würde."
-    },
-    {
-      name: "Kingsway Commercial Bank",
-      website: "kingswaycommercialbank.com",
-      category: "Dubios",
-      description: "Möglicher Anlagebetrug, daher Eintrag auf unserer Warnliste. Ob das eine echte Bank ist, dürfte mehr als fraglich sein."
-    },
-    {
-      name: "Vertex Finworth",
-      website: "vertexfinworth.com",
-      category: "FCA Warnung",
-      description: "Englische Finanzaufsicht hat diesen Anbieter unter kritischer Beobachtung. Keine Empfehlung."
-    },
-    {
-      name: "Infinite Crypto",
-      website: "infinitecryptoltd.com",
-      category: "Krypto-Betrug",
-      description: "Eventuell Anlagebetrug mit Kryptowährungen wie Bitcoin. Warnmeldung der FCA unbedingt ernst nehmen."
-    },
-    {
-      name: "OkCoin-PM",
-      website: "okcoin-pm.com",
-      category: "Krypto-Betrug",
-      description: "Anscheinend zwielichtige Plattform, die Kryptowährungen abzockt. Fern halten!"
-    },
-    {
-      name: "City Finances",
-      website: "city-finance.co.uk",
-      category: "FCA Warnung",
-      description: "Erfahrungen bisher noch ausstehend. Doch die britische Finanzaufsichtsbehörde warnt."
-    },
-    {
-      name: "SpringWellFX",
-      website: "springwellfx.com",
-      category: "Behördliche Warnung",
-      description: "Behördliche Kritik liegt vor. Somit Eintrag auf der Anlagebetrug Warnliste. Ihre Auszahlung ist dort in Gefahr. Lieber meiden!"
-    },
-    {
-      name: "Ethereal Fx Pro",
-      website: "etherealfxpro.com",
-      category: "Dubios",
-      description: "Auffälligkeiten festgestellt. Wie die Erfahrungen sind, wird sich noch zeigen müssen. Aber aktuell ist das Risiko unserer Ansicht nach zu groß."
-    },
-    {
-      name: "Smart Coin FX",
-      website: "smartcoinfx.com",
-      category: "FCA Warnung",
-      description: "FCA Warnmeldung wurde veröffentlicht. Es könnte ein Betrug mit Kryptowährungen sein. Wer dort investiert, spielt mit dem Feuer."
-    },
-    {
-      name: "Assets PNC",
-      website: "assetspnc.com",
-      category: "Keine Auszahlung",
-      description: "Übler Anbieter. Kein Geld wird ausgezahlt."
-    },
-    {
-      name: "Stone X",
-      website: "pc.stonexly.cc",
-      category: "Dubios",
-      description: "Keine vertrauenswürdige Handelsplattform."
-    },
-    {
-      name: "Octa Fx Elite Trade",
-      website: "octafxelitetrade.com",
-      category: "Dubios",
-      description: "Womöglich ein unseriöser Anbieter. Noch keine Erfahrungen vorliegend. Ob die Auszahlung gewährt wird, steht in den Sternen."
-    },
-    {
-      name: "Krypto Reichtum",
-      website: "krypto-reichtum.de",
-      category: "Krypto-Betrug",
-      description: "Vermutung auf Anlagebetrug mit Kryptowährungen wie Bitcoin. Daher Eintrag auf der vorliegenden Warnliste."
-    },
-    {
-      name: "jpmgroup.io",
-      website: "jpmgroup.io",
-      category: "Identitätsdiebstahl",
-      description: "Möglicher Identitätsdiebstahl zu Lasten eines echten, seriösen Finanzunternehmens. Ferner Erwähnung auf der Warnliste \"Watchlist Internet\" aus Österreich."
-    },
-    {
-      name: "BMB Green",
-      website: "bmbgreen.com",
-      category: "Totalverlust",
-      description: "Übler Anlagebetrug durch negative Erfahrungen belegt. Wohlverdienter Eintrag auf meiner Warnliste."
-    },
-    {
-      name: "FX Genius",
-      website: "",
-      category: "Behördliche Warnung",
-      description: "Behördliche Meldung aus UK liegt zu dieser Plattform vor. Hohe Gefahr, dass es in einem Anlagebetrug endet."
-    },
-    {
-      name: "Profit Crunch",
-      website: "profit-crunch.com",
-      category: "Dubios",
-      description: "Negative Erfahrungen wurden von betroffenen Anlegerinnen und Anlegern auf Trustpilot berichtet. Keine Empfehlung."
     }
   ];
 
@@ -310,31 +70,6 @@ const Warnliste = () => {
       name: "Venus Investment Alliance",
       platform: "WhatsApp/Telegram",
       description: "Wohlverdienter Eintrag auf unserer Warnliste Anlagebetrug. Hier wird abgezockt – und zwar per WhatsApp Gruppenchat."
-    },
-    {
-      name: "E02 – Wertsteigerung",
-      platform: "WhatsApp/Telegram",
-      description: "Anlagebetrug vom Feinsten. Keinesfalls den Anweisungen dieser Leute folgen."
-    },
-    {
-      name: "C=01 SSCP Vermögensstrategie Akademie",
-      platform: "Telegram",
-      description: "Investment Betrugsmasche über Messengerdienst."
-    },
-    {
-      name: "Kapital und Wachstum 17",
-      platform: "WhatsApp/Telegram",
-      description: "Üble Chatgruppe auf Telegram und WhatsApp, die im Finanzbetrug endet. Nicht darauf einlassen!"
-    },
-    {
-      name: "KKR Investorenclub",
-      platform: "WhatsApp/Telegram",
-      description: "Ihr Investment würde hier im Totalverlust enden – daher meiden Sie diese Chatgruppe besser."
-    },
-    {
-      name: "Makro am Morgen Telegram Chatgruppe",
-      platform: "Telegram",
-      description: "Sicherlich keine echte Finanzberatung, sondern ein Investment-Scam."
     }
   ];
 
@@ -380,7 +115,7 @@ const Warnliste = () => {
               }
             },
             "datePublished": "2025-01-01",
-            "dateModified": "2025-09-01",
+            "dateModified": "2025-01-01",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://bovensiepen-partner.de/warnliste-anlagebetrug"
@@ -449,23 +184,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Sticky Navigation */}
-      <div className="sticky top-16 z-40 bg-background/95 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-4">
-          <div className="flex overflow-x-auto scrollbar-hide py-3 gap-6">
-            <a href="#intro" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Einführung</a>
-            <a href="#broker-liste" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Broker-Liste</a>
-            <a href="#whatsapp-gruppen" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">WhatsApp Gruppen</a>
-            <a href="#warnsignale" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Warnsignale</a>
-            <a href="#fallstudie" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Fallstudie</a>
-            <a href="#rechtshilfe" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Rechtshilfe</a>
-            <a href="#kontakt" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Kontakt</a>
-          </div>
-        </div>
-      </div>
-
       {/* Intro Section */}
-      <Section id="intro" className="scroll-mt-24 bg-gradient-light">
+      <Section>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="border-0 shadow-card bg-card/50 backdrop-blur-sm">
@@ -494,11 +214,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
       {/* Table of Contents */}
-      <Section className="py-12 scroll-mt-24 bg-background">
+      <Section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="border-0 shadow-card">
@@ -533,11 +250,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
       {/* Statistics */}
-      <Section className="scroll-mt-24 bg-gradient-glass">
+      <Section className="bg-gradient-glass">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
@@ -560,11 +274,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
       {/* Fraudulent Brokers List */}
-      <Section id="broker-liste" className="scroll-mt-24 bg-muted/40">
+      <Section id="broker-liste">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Aktuelle Warnliste: Betrügerische Broker</SectionTitle>
@@ -576,7 +287,7 @@ const Warnliste = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid gap-6">
               {fraudulentBrokers.map((broker, index) => (
-                <Card key={index} className="border-l-4 border-l-destructive hover:shadow-card transition-all duration-200 hover:scale-[1.01]">
+                <Card key={index} className="border-l-4 border-l-destructive">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                       <div className="flex-1">
@@ -584,11 +295,9 @@ const Warnliste = () => {
                           <h3 className="text-xl font-bold text-foreground">{broker.name}</h3>
                           <Badge variant="destructive">{broker.category}</Badge>
                         </div>
-                        {broker.website && (
-                          <p className="text-sm text-muted-foreground mb-2">
-                            Website: <span className="font-mono bg-muted px-2 py-1 rounded">{broker.website}</span>
-                          </p>
-                        )}
+                        <p className="text-sm text-muted-foreground mb-2">
+                          Website: <span className="font-mono bg-muted px-2 py-1 rounded">{broker.website}</span>
+                        </p>
                         <p className="text-muted-foreground">{broker.description}</p>
                       </div>
                       <Button variant="destructive" size="sm">
@@ -611,11 +320,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
       {/* WhatsApp Groups */}
-      <Section id="whatsapp-gruppen" className="scroll-mt-24 bg-gradient-glass">
+      <Section id="whatsapp-gruppen" className="bg-gradient-glass">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Betrügerische WhatsApp & Telegram Gruppen</SectionTitle>
@@ -627,7 +333,7 @@ const Warnliste = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
               {chatGroups.map((group, index) => (
-                <Card key={index} className="border-l-4 border-l-orange-500 hover:shadow-card transition-all duration-200 hover:scale-[1.02]">
+                <Card key={index} className="border-l-4 border-l-orange-500">
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-3">
                       <h3 className="font-bold text-foreground">{group.name}</h3>
@@ -642,11 +348,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
       {/* Warning Signals */}
-      <Section id="warnsignale" className="scroll-mt-24 bg-background">
+      <Section id="warnsignale">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Warnsignale für Anlagebetrug erkennen</SectionTitle>
@@ -668,11 +371,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
       {/* Case Study */}
-      <Section id="fallstudie" className="scroll-mt-24 bg-gradient-mystery">
+      <Section id="fallstudie" className="bg-gradient-glass">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Echte Fallschilderung einer betrogenen Investorin</SectionTitle>
@@ -730,11 +430,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
       {/* Legal Action */}
-      <Section id="rechtshilfe" className="scroll-mt-24 bg-muted/20">
+      <Section id="rechtshilfe">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Rechtlich gegen Anlagebetrüger vorgehen</SectionTitle>
@@ -745,7 +442,7 @@ const Warnliste = () => {
 
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center p-6 hover:shadow-card transition-all duration-200 hover:scale-[1.02]">
+              <Card className="text-center p-6">
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
@@ -755,7 +452,7 @@ const Warnliste = () => {
                 </p>
               </Card>
 
-              <Card className="text-center p-6 hover:shadow-card transition-all duration-200 hover:scale-[1.02]">
+              <Card className="text-center p-6">
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <AlertTriangle className="h-8 w-8 text-primary" />
                 </div>
@@ -765,7 +462,7 @@ const Warnliste = () => {
                 </p>
               </Card>
 
-              <Card className="text-center p-6 hover:shadow-card transition-all duration-200 hover:scale-[1.02]">
+              <Card className="text-center p-6">
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="h-8 w-8 text-primary" />
                 </div>
@@ -779,11 +476,8 @@ const Warnliste = () => {
         </div>
       </Section>
 
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
       {/* Contact CTA */}
-      <Section id="kontakt" className="scroll-mt-24 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <Section id="kontakt" className="bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Card className="border-0 shadow-elegant bg-card/80 backdrop-blur-sm">
