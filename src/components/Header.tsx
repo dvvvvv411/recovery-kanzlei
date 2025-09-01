@@ -79,6 +79,9 @@ export const Header = () => {
           <Link to="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
             Erfolge
           </Link>
+          <Link to="/warnliste-anlagebetrug" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
+            Warnliste 2025
+          </Link>
           <Link to="/kontakt" className="text-white hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_10px_hsl(214_100%_60%_/_0.8)]" style={{ textShadow: 'var(--text-glow)' }}>
             Kontakt
           </Link>
