@@ -10,6 +10,7 @@ interface AuthContextType {
   signUp: (email: string, password: string) => Promise<{ error: any }>;
   signOut: () => Promise<void>;
   isAdmin: boolean;
+  adminLoading: boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -27,6 +28,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [adminLoading, setAdminLoading] = useState(true);
 
   useEffect(() => {
     // Set up auth state listener
@@ -38,11 +40,13 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         
         // Check admin status when auth state changes
         if (session?.user) {
+          setAdminLoading(true);
           setTimeout(() => {
             checkAdminStatus(session.user.id);
           }, 0);
         } else {
           setIsAdmin(false);
+          setAdminLoading(false);
         }
       }
     );
@@ -54,9 +58,12 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       setLoading(false);
       
       if (session?.user) {
+        setAdminLoading(true);
         setTimeout(() => {
           checkAdminStatus(session.user.id);
         }, 0);
+      } else {
+        setAdminLoading(false);
       }
     });
 
@@ -80,6 +87,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     } catch (err) {
       console.error('Error checking admin status:', err);
       setIsAdmin(false);
+    } finally {
+      setAdminLoading(false);
     }
   };
 
@@ -116,6 +125,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     signUp,
     signOut,
     isAdmin,
+    adminLoading,
   };
 
   return (

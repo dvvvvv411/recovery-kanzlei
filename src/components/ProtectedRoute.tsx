@@ -8,7 +8,7 @@ interface ProtectedRouteProps {
 }
 
 export const ProtectedRoute = ({ children, requireAdmin = false }: ProtectedRouteProps) => {
-  const { user, loading, isAdmin } = useAuth();
+  const { user, loading, isAdmin, adminLoading } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,14 +18,14 @@ export const ProtectedRoute = ({ children, requireAdmin = false }: ProtectedRout
         return;
       }
       
-      if (requireAdmin && !isAdmin) {
+      if (requireAdmin && !adminLoading && !isAdmin) {
         navigate('/');
         return;
       }
     }
-  }, [user, loading, isAdmin, requireAdmin, navigate]);
+  }, [user, loading, isAdmin, adminLoading, requireAdmin, navigate]);
 
-  if (loading) {
+  if (loading || (requireAdmin && adminLoading)) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-primary/5 flex items-center justify-center">
         <div className="text-lg">Laden...</div>
