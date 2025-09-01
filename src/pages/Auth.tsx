@@ -1,4 +1,5 @@
-import { useState } from 'react';
+
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -24,7 +25,7 @@ export default function Auth() {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [activeTab, setActiveTab] = useState('signin');
-  const { signIn, signUp, user } = useAuth();
+  const { signIn, signUp, user, isAdmin, adminLoading } = useAuth();
   const navigate = useNavigate();
 
   const form = useForm<AuthFormData>({
@@ -35,10 +36,26 @@ export default function Auth() {
     },
   });
 
-  // Redirect if already logged in
+  // Redirect logic for already logged in users
+  useEffect(() => {
+    if (user && !adminLoading) {
+      if (isAdmin) {
+        console.log('Redirecting admin user to /admin');
+        navigate('/admin');
+      } else {
+        console.log('Redirecting regular user to /');
+        navigate('/');
+      }
+    }
+  }, [user, isAdmin, adminLoading, navigate]);
+
+  // Don't render the form if user is already logged in
   if (user) {
-    navigate('/');
-    return null;
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-primary/5 flex items-center justify-center">
+        <div className="text-lg">Weiterleitung...</div>
+      </div>
+    );
   }
 
   const onSignIn = async (data: AuthFormData) => {
@@ -56,7 +73,7 @@ export default function Auth() {
         }
       } else {
         toast.success('Erfolgreich angemeldet!');
-        navigate('/');
+        // Navigation will be handled by useEffect above
       }
     } catch (err) {
       toast.error('Ein unerwarteter Fehler ist aufgetreten.');
