@@ -17,7 +17,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/components/ui/use-toast";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import heroImage from "@/assets/crypto-hero-bg.jpg";
+import heroImage from "@/assets/contact-hero-bg.jpg";
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name muss mindestens 2 Zeichen haben'),
@@ -149,11 +149,11 @@ export default function Kontakt() {
       <Header />
 
       {/* Hero Section */}
-      <Section className="py-20 lg:py-32 relative overflow-hidden h-[80vh] flex items-center">
+      <Section className="py-16 lg:py-20 relative overflow-hidden h-[40vh] flex items-center">
         <div className="absolute inset-0 w-full h-full">
           <img
             src={heroImage}
-            alt="Crypto Recovery Background"
+            alt="Professional Law Office"
             className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
