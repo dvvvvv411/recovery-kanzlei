@@ -297,12 +297,17 @@ Mit freundlichen Grüßen`;
       <Header />
 
       {/* Hero Section */}
-      <Section className="py-16 lg:py-20 relative overflow-hidden h-[40vh] flex items-center">
+      <Section className="py-16 lg:py-20 relative overflow-hidden h-[40vh] flex items-center bg-gray-800">
         <div className="absolute inset-0 w-full h-full">
-          <img
-            src={heroImage}
-            alt="Professional Law Office"
+          <video
+            src="/video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
             className="absolute inset-0 w-full h-full object-cover"
+            aria-label="Professional Law Office Background Video"
           />
         </div>
         <div className="absolute inset-0 bg-black/70"></div>

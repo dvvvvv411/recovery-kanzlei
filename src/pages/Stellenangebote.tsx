@@ -297,12 +297,17 @@ export default function Stellenangebote() {
       <Header />
 
       {/* Hero Section */}
-      <Section className="py-16 lg:py-24 relative overflow-hidden h-[60vh] flex items-center">
+      <Section className="py-16 lg:py-24 relative overflow-hidden h-[60vh] flex items-center bg-gray-800">
         <div className="absolute inset-0 w-full h-full">
-          <img
-            src={heroImage}
-            alt="Legal Team Working"
+          <video
+            src="/video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
             className="absolute inset-0 w-full h-full object-cover"
+            aria-label="Legal Team Working Background Video"
           />
         </div>
         <div className="absolute inset-0 bg-black/70"></div>

@@ -126,7 +126,7 @@ const Warnliste = () => {
 
       {/* Hero Section with Video Background */}
       <Section className="py-20 lg:py-32 relative overflow-hidden h-[60vh] flex items-center bg-gray-800">
-        <div className="absolute inset-0 w-full h-full" style={{ top: '-64px', height: 'calc(100% + 64px)' }}>
+        <div className="absolute inset-0 w-full h-full">
           <video
             src="/video.mp4"
             autoPlay
@@ -134,8 +134,7 @@ const Warnliste = () => {
             muted
             playsInline
             preload="metadata"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover"
-            style={{width:"177.78vh", height:"calc(100vh + 64px)", minWidth:"100%", minHeight:"calc(100% + 64px)"}}
+            className="absolute inset-0 w-full h-full object-cover"
             aria-label="Warning Background Video"
           />
         </div>
