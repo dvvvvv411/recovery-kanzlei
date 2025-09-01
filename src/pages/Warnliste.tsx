@@ -6,6 +6,9 @@ import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/comp
 import { Separator } from "@/components/ui/separator";
 import { AlertTriangle, Shield, Eye, Phone, Mail, ArrowRight, CheckCircle, Clock, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 const Warnliste = () => {
   const fraudulentBrokers = [
@@ -81,6 +84,8 @@ const Warnliste = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
+      
       <Helmet>
         <title>Warnliste Anlagebetrug 2025 | Bovensiepen & Partner - Betrugs-Broker erkennen</title>
         <meta name="description" content="Aktuelle Warnliste Anlagebetrug 2025 ✓ Betrügerische Broker & Trading-Plattformen ✓ WhatsApp Betrugsgruppen ✓ Schutz vor Krypto-Betrug ✓ Rechtshilfe bei Anlagebetrug" />
@@ -119,35 +124,59 @@ const Warnliste = () => {
         </script>
       </Helmet>
 
-      {/* Hero Section */}
-      <Section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/5 pt-24 pb-16">
-        <div className="absolute inset-0 bg-gradient-subtle opacity-50" />
+      {/* Hero Section with Video Background */}
+      <Section className="py-20 lg:py-32 relative overflow-hidden h-[60vh] flex items-center bg-gray-800">
+        <div className="absolute inset-0 w-full h-full" style={{ top: '-64px', height: 'calc(100% + 64px)' }}>
+          <video
+            src="/video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover"
+            style={{width:"177.78vh", height:"calc(100vh + 64px)", minWidth:"100%", minHeight:"calc(100% + 64px)"}}
+            aria-label="Warning Background Video"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-destructive/20 via-transparent to-destructive/30"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
+            {/* Breadcrumb */}
+            <Breadcrumb className="mb-8">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/" className="text-white/80 hover:text-white">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator className="text-white/60" />
+                <BreadcrumbPage className="text-white">Warnliste Anlagebetrug 2025</BreadcrumbPage>
+              </BreadcrumbList>
+            </Breadcrumb>
+            
             <div className="flex items-center justify-center mb-6">
-              <AlertTriangle className="h-16 w-16 text-destructive mr-4" />
-              <Badge variant="destructive" className="text-lg px-4 py-2">
+              <AlertTriangle className="h-16 w-16 text-white mr-4" />
+              <Badge variant="destructive" className="text-lg px-4 py-2 bg-destructive/80 text-white border-white/30">
                 Warnliste 2025
               </Badge>
             </div>
             
-            <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Warnliste Anlagebetrug 2025: diese Broker sind aufgefallen!
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight" style={{ textShadow: 'var(--text-glow-strong), 0 0 60px hsl(0 84% 60% / 0.8)' }}>
+              Warnliste Anlagebetrug 2025: <span className="bg-gradient-to-r from-red-300 to-red-500 bg-clip-text text-transparent">diese Broker sind aufgefallen!</span>
             </h1>
             
-            <SectionDescription className="text-xl mb-8">
-              Mit unserer aktuellen Warnliste sollen Geldanleger vor betrügerischen Brokern und Trading-Plattformen gewarnt werden. 
-              Bereits geschädigte Personen können prüfen, ob ihr Anbieter aufgeführt wird.
-            </SectionDescription>
+            <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow), 0 0 30px hsl(0 84% 60% / 0.4)' }}>
+              Mit unserer aktuellen Warnliste sollen Geldanleger vor betrügerischen Brokern und Trading-Plattformen gewarnt werden.
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
+              <Button size="lg" asChild className="bg-white text-primary hover:bg-white/90">
                 <Link to="/kontakt">
                   <Shield className="mr-2 h-5 w-5" />
                   Sofortige Rechtshilfe
                 </Link>
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
                 <Eye className="mr-2 h-5 w-5" />
                 Liste durchsuchen
               </Button>
@@ -557,6 +586,8 @@ const Warnliste = () => {
           </div>
         </div>
       </Section>
+
+      <Footer />
     </div>
   );
 };
