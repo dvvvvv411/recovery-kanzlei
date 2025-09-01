@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -330,29 +330,6 @@ export default function Kontakt() {
                 </CardContent>
               </Card>
 
-              {/* Trust Signals */}
-              <Card className="border-0 shadow-card bg-gradient-to-br from-primary/5 to-primary/10">
-                <CardContent className="p-6">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">500+</div>
-                      <p className="text-sm text-muted-foreground">erfolgreiche Fälle</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">15+</div>
-                      <p className="text-sm text-muted-foreground">Jahre Erfahrung</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">24/7</div>
-                      <p className="text-sm text-muted-foreground">Erreichbarkeit</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">100%</div>
-                      <p className="text-sm text-muted-foreground">DSGVO konform</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
 
             {/* Right Column - Contact Form */}
@@ -521,6 +498,48 @@ export default function Kontakt() {
                     </p>
                   </form>
                 </Form>
+              </CardContent>
+              <CardFooter className="mt-auto border-t bg-muted/10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full text-center">
+                  <div className="flex items-center justify-center gap-2">
+                    <Shield className="h-4 w-4 text-primary" />
+                    <span className="text-sm text-muted-foreground">Ihre Daten sind sicher</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <Clock className="h-4 w-4 text-primary" />
+                    <span className="text-sm text-muted-foreground">Rückmeldung in 60 Min</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <CheckCircle className="h-4 w-4 text-primary" />
+                    <span className="text-sm text-muted-foreground">Kostenlos & unverbindlich</span>
+                  </div>
+                </div>
+              </CardFooter>
+            </Card>
+          </div>
+
+          {/* Trust Bar - Full Width */}
+          <div className="max-w-7xl mx-auto mt-16">
+            <Card className="border-0 shadow-card bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5">
+              <CardContent className="p-8">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 divide-x-0 md:divide-x divide-primary/20">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                    <p className="text-sm text-muted-foreground">erfolgreiche Fälle</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                    <p className="text-sm text-muted-foreground">Jahre Erfahrung</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+                    <p className="text-sm text-muted-foreground">Erreichbarkeit</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">100%</div>
+                    <p className="text-sm text-muted-foreground">DSGVO konform</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
