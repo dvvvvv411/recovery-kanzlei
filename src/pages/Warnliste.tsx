@@ -449,10 +449,48 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Sticky Navigation */}
+      <div className="sticky top-16 z-40 bg-background/95 backdrop-blur-sm border-b shadow-sm">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-2 py-3">
+            <a href="#intro" className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              Hinweise
+            </a>
+            <a href="#statistiken" className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              Statistiken
+            </a>
+            <a href="#broker-liste" className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              Broker Warnliste
+            </a>
+            <a href="#whatsapp-gruppen" className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              Chat Gruppen
+            </a>
+            <a href="#warnsignale" className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              Warnsignale
+            </a>
+            <a href="#fallstudie" className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              Fallbeispiel
+            </a>
+            <a href="#rechtshilfe" className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              Rechtshilfe
+            </a>
+            <a href="#kontakt" className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+              Beratung
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Intro Section */}
-      <Section>
+      <Section id="intro" className="scroll-mt-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-2 mb-4">
+              <Badge variant="outline" className="text-xs">
+                Wichtige Hinweise
+              </Badge>
+            </div>
+            
             <Card className="border-0 shadow-card bg-card/50 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="prose prose-lg max-w-none">
@@ -479,8 +517,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Table of Contents */}
-      <Section className="py-12">
+      <Section className="py-12 bg-muted/40">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="border-0 shadow-card">
@@ -515,9 +556,18 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Statistics */}
-      <Section className="bg-gradient-glass">
+      <Section id="statistiken" className="scroll-mt-24 bg-gradient-glass">
         <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-8 justify-center">
+            <Badge variant="outline" className="text-xs">
+              Aktuelle Zahlen
+            </Badge>
+          </div>
+          
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">150+</div>
@@ -539,9 +589,18 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Fraudulent Brokers List */}
-      <Section id="broker-liste">
+      <Section id="broker-liste" className="scroll-mt-24 bg-background">
         <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Badge variant="destructive" className="text-xs">
+              Broker Warnliste
+            </Badge>
+          </div>
+          
           <SectionHeader>
             <SectionTitle>Aktuelle Warnliste: Betrügerische Broker</SectionTitle>
             <SectionDescription>
@@ -587,9 +646,18 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* WhatsApp Groups */}
-      <Section id="whatsapp-gruppen" className="bg-gradient-glass">
+      <Section id="whatsapp-gruppen" className="scroll-mt-24 bg-muted/40">
         <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Badge variant="outline" className="text-xs border-orange-500 text-orange-600">
+              Chat Betrug
+            </Badge>
+          </div>
+          
           <SectionHeader>
             <SectionTitle>Betrügerische WhatsApp & Telegram Gruppen</SectionTitle>
             <SectionDescription>
@@ -615,9 +683,18 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Warning Signals */}
-      <Section id="warnsignale">
+      <Section id="warnsignale" className="scroll-mt-24 bg-gradient-glass">
         <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Badge variant="outline" className="text-xs border-destructive text-destructive">
+              Warnsignale
+            </Badge>
+          </div>
+          
           <SectionHeader>
             <SectionTitle>Warnsignale für Anlagebetrug erkennen</SectionTitle>
             <SectionDescription>
@@ -638,9 +715,18 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Case Study */}
-      <Section id="fallstudie" className="bg-gradient-glass">
+      <Section id="fallstudie" className="scroll-mt-24 bg-background">
         <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Badge variant="outline" className="text-xs border-primary text-primary">
+              Praxis-Beispiel
+            </Badge>
+          </div>
+          
           <SectionHeader>
             <SectionTitle>Echte Fallschilderung einer betrogenen Investorin</SectionTitle>
             <SectionDescription>
@@ -697,9 +783,18 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Legal Action */}
-      <Section id="rechtshilfe">
+      <Section id="rechtshilfe" className="scroll-mt-24 bg-muted/40">
         <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Badge variant="outline" className="text-xs border-primary text-primary">
+              Rechtshilfe
+            </Badge>
+          </div>
+          
           <SectionHeader>
             <SectionTitle>Rechtlich gegen Anlagebetrüger vorgehen</SectionTitle>
             <SectionDescription>
@@ -743,11 +838,20 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Contact CTA */}
-      <Section id="kontakt" className="bg-gradient-to-br from-primary/5 to-secondary/5">
+      <Section id="kontakt" className="scroll-mt-24 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-4 justify-center">
+            <Badge variant="outline" className="text-xs border-primary text-primary">
+              Kostenlose Beratung
+            </Badge>
+          </div>
+          
           <div className="max-w-4xl mx-auto text-center">
-            <Card className="border-0 shadow-elegant bg-card/80 backdrop-blur-sm">
+            <Card className="border-0 shadow-glass bg-card/80 backdrop-blur-sm">
               <CardContent className="p-12">
                 <h2 className="text-3xl font-bold text-foreground mb-6">
                   Kostenfreie Ersteinschätzung zum Anlagebetrug
@@ -808,8 +912,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Visual Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Additional Information */}
-      <Section>
+      <Section className="bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="border-0 shadow-card">
