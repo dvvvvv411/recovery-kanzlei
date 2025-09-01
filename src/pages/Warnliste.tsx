@@ -449,8 +449,23 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Sticky Navigation */}
+      <div className="sticky top-16 z-40 bg-background/95 backdrop-blur-sm border-b">
+        <div className="container mx-auto px-4">
+          <div className="flex overflow-x-auto scrollbar-hide py-3 gap-6">
+            <a href="#intro" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Einführung</a>
+            <a href="#broker-liste" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Broker-Liste</a>
+            <a href="#whatsapp-gruppen" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">WhatsApp Gruppen</a>
+            <a href="#warnsignale" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Warnsignale</a>
+            <a href="#fallstudie" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Fallstudie</a>
+            <a href="#rechtshilfe" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Rechtshilfe</a>
+            <a href="#kontakt" className="whitespace-nowrap text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-3 py-1 rounded-full hover:bg-muted/50">Kontakt</a>
+          </div>
+        </div>
+      </div>
+
       {/* Intro Section */}
-      <Section>
+      <Section id="intro" className="scroll-mt-24 bg-gradient-light">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="border-0 shadow-card bg-card/50 backdrop-blur-sm">
@@ -479,8 +494,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Table of Contents */}
-      <Section className="py-12">
+      <Section className="py-12 scroll-mt-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="border-0 shadow-card">
@@ -515,8 +533,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Statistics */}
-      <Section className="bg-gradient-glass">
+      <Section className="scroll-mt-24 bg-gradient-glass">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
@@ -539,8 +560,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Fraudulent Brokers List */}
-      <Section id="broker-liste">
+      <Section id="broker-liste" className="scroll-mt-24 bg-muted/40">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Aktuelle Warnliste: Betrügerische Broker</SectionTitle>
@@ -552,7 +576,7 @@ const Warnliste = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid gap-6">
               {fraudulentBrokers.map((broker, index) => (
-                <Card key={index} className="border-l-4 border-l-destructive">
+                <Card key={index} className="border-l-4 border-l-destructive hover:shadow-card transition-all duration-200 hover:scale-[1.01]">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                       <div className="flex-1">
@@ -587,8 +611,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* WhatsApp Groups */}
-      <Section id="whatsapp-gruppen" className="bg-gradient-glass">
+      <Section id="whatsapp-gruppen" className="scroll-mt-24 bg-gradient-glass">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Betrügerische WhatsApp & Telegram Gruppen</SectionTitle>
@@ -600,7 +627,7 @@ const Warnliste = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
               {chatGroups.map((group, index) => (
-                <Card key={index} className="border-l-4 border-l-orange-500">
+                <Card key={index} className="border-l-4 border-l-orange-500 hover:shadow-card transition-all duration-200 hover:scale-[1.02]">
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-3">
                       <h3 className="font-bold text-foreground">{group.name}</h3>
@@ -615,8 +642,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Warning Signals */}
-      <Section id="warnsignale">
+      <Section id="warnsignale" className="scroll-mt-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Warnsignale für Anlagebetrug erkennen</SectionTitle>
@@ -638,8 +668,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Case Study */}
-      <Section id="fallstudie" className="bg-gradient-glass">
+      <Section id="fallstudie" className="scroll-mt-24 bg-gradient-mystery">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Echte Fallschilderung einer betrogenen Investorin</SectionTitle>
@@ -697,8 +730,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Legal Action */}
-      <Section id="rechtshilfe">
+      <Section id="rechtshilfe" className="scroll-mt-24 bg-muted/20">
         <div className="container mx-auto px-4">
           <SectionHeader>
             <SectionTitle>Rechtlich gegen Anlagebetrüger vorgehen</SectionTitle>
@@ -709,7 +745,7 @@ const Warnliste = () => {
 
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center p-6">
+              <Card className="text-center p-6 hover:shadow-card transition-all duration-200 hover:scale-[1.02]">
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-8 w-8 text-primary" />
                 </div>
@@ -719,7 +755,7 @@ const Warnliste = () => {
                 </p>
               </Card>
 
-              <Card className="text-center p-6">
+              <Card className="text-center p-6 hover:shadow-card transition-all duration-200 hover:scale-[1.02]">
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <AlertTriangle className="h-8 w-8 text-primary" />
                 </div>
@@ -729,7 +765,7 @@ const Warnliste = () => {
                 </p>
               </Card>
 
-              <Card className="text-center p-6">
+              <Card className="text-center p-6 hover:shadow-card transition-all duration-200 hover:scale-[1.02]">
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="h-8 w-8 text-primary" />
                 </div>
@@ -743,8 +779,11 @@ const Warnliste = () => {
         </div>
       </Section>
 
+      {/* Divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+
       {/* Contact CTA */}
-      <Section id="kontakt" className="bg-gradient-to-br from-primary/5 to-secondary/5">
+      <Section id="kontakt" className="scroll-mt-24 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Card className="border-0 shadow-elegant bg-card/80 backdrop-blur-sm">
