@@ -519,7 +519,7 @@ Mit freundlichen Grüßen`;
                         <FormItem>
                           <FormLabel>Vor- und Nachname *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Max Mustermann" {...field} />
+                            <Input placeholder="Ihr Vor- und Nachname" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -534,7 +534,7 @@ Mit freundlichen Grüßen`;
                           <FormItem>
                             <FormLabel>E-Mail-Adresse *</FormLabel>
                             <FormControl>
-                              <Input placeholder="max@beispiel.de" type="email" {...field} />
+                              <Input placeholder="Ihre Email-Adresse" type="email" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -548,7 +548,7 @@ Mit freundlichen Grüßen`;
                           <FormItem>
                             <FormLabel>Telefonnummer (optional)</FormLabel>
                             <FormControl>
-                              <Input placeholder="+49 123 456789" {...field} />
+                              <Input placeholder="Ihre Telefonnummer" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -563,22 +563,9 @@ Mit freundlichen Grüßen`;
                         render={({ field }) => (
                           <FormItem>
                             <FormLabel>Thema/Anliegen *</FormLabel>
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
-                              <FormControl>
-                                <SelectTrigger>
-                                  <SelectValue placeholder="Bitte wählen" />
-                                </SelectTrigger>
-                              </FormControl>
-                              <SelectContent className="z-50 bg-popover">
-                                <SelectItem value="bewerbung">Bewerbung/Karriere</SelectItem>
-                                <SelectItem value="cybercrime">Cybercrime/Betrug</SelectItem>
-                                <SelectItem value="kryptonachverfolgung">Kryptonachverfolgung</SelectItem>
-                                <SelectItem value="wertpapier">Wertpapier/Kapitalmarkt</SelectItem>
-                                <SelectItem value="datenschutz">Datenschutz</SelectItem>
-                                <SelectItem value="immobilienrecht">Immobilienrecht</SelectItem>
-                                <SelectItem value="sonstiges">Sonstiges</SelectItem>
-                              </SelectContent>
-                            </Select>
+                            <FormControl>
+                              <Input placeholder="Ihr Thema oder Anliegen" {...field} />
+                            </FormControl>
                             <FormMessage />
                           </FormItem>
                         )}
