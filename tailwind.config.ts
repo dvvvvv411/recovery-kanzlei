@@ -67,14 +67,11 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-light': 'var(--gradient-light)',
-				'gradient-glass': 'var(--gradient-glass)',
-				'gradient-mystery': 'var(--gradient-mystery)'
+				'gradient-light': 'var(--gradient-light)'
 			},
 			boxShadow: {
 				'modern': 'var(--shadow-modern)',
-				'card': 'var(--shadow-card)',
-				'glass': 'var(--shadow-glass)'
+				'card': 'var(--shadow-card)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
