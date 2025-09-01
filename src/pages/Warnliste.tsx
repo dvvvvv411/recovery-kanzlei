@@ -1,0 +1,564 @@
+import { Helmet } from "react-helmet";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
+import { Separator } from "@/components/ui/separator";
+import { AlertTriangle, Shield, Eye, Phone, Mail, ArrowRight, CheckCircle, Clock, Users } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const Warnliste = () => {
+  const fraudulentBrokers = [
+    {
+      name: "Basic Loans",
+      website: "basicloans.uk",
+      category: "Unlizenziert",
+      description: "Anscheinend ist dieser Anbieter ohne die erforderliche Zulassung tätig. Daher Eintrag auf der Anlagebetrug Warnliste. Nicht einzahlen."
+    },
+    {
+      name: "SNUTX",
+      website: "snutx.com",
+      category: "App Betrug",
+      description: "Desaströse Erfahrungen mit der App und der Börse. Eindeutige Betrugsmasche, bei der Sie abgezockt werden."
+    },
+    {
+      name: "Digital Crypto Market Pro",
+      website: "digitalcryptompro.com",
+      category: "FCA Warnung",
+      description: "Erfahrungen könnten zunächst positiv sein – aber wie geht die Sache aus? Die britische FCA ist bereits aktiv geworden."
+    },
+    {
+      name: "ZRAOX",
+      website: "zraox.com",
+      category: "BaFin Warnung",
+      description: "Offizielle Warnmeldung der BaFin liegt vor. Anscheinend Anlagebetrug über WhatsApp Gruppenchat. Keinesfalls einzahlen oder den Chatgruppen vertrauen!"
+    },
+    {
+      name: "TWAAO",
+      website: "twaao.com",
+      category: "Fake App",
+      description: "Erfahrungen sehr schlecht. Keine Auszahlung. Völlig unseriös. Die App und Börse ist ein kompletter Fake."
+    },
+    {
+      name: "Okwex",
+      website: "okwex.com",
+      category: "Totalverlust",
+      description: "Wohlverdienter Eintrag auf unserer Anlagebetrug Warnliste. Übelste Erfahrungen liegen uns vor. Keinesfalls einzahlen!"
+    }
+  ];
+
+  const chatGroups = [
+    {
+      name: "Reichtumslicht",
+      platform: "WhatsApp",
+      description: "Dubioser Gruppenchat auf WhatsApp, der zum Anlagebetrug führt. Nicht mitmachen!"
+    },
+    {
+      name: "E Fidelity Institut",
+      platform: "WhatsApp",
+      description: "Das ist nicht die echte Onlinepräsenz von Fidelity, und die angebliche Fidelity App in der WhatsApp-Gruppe ist eine Fälschung."
+    },
+    {
+      name: "fake Marcel Fratzscher Gruppe",
+      platform: "WhatsApp",
+      description: "Hier sprechen Sie nicht mit dem echten Marcel Fratzscher, sondern mit einem Betrugsnetzwerk – Identitätsdiebstahl und Anlagebetrug mit Kryptowährungen."
+    },
+    {
+      name: "Venus Investment Alliance",
+      platform: "WhatsApp/Telegram",
+      description: "Wohlverdienter Eintrag auf unserer Warnliste Anlagebetrug. Hier wird abgezockt – und zwar per WhatsApp Gruppenchat."
+    }
+  ];
+
+  const warningSignals = [
+    "Broker zahlt nicht aus",
+    "Kontaktabbruch mit Trading-Plattform",
+    "Dubiose Dokumente wurden übersandt",
+    "Angebliche Steuern, Gebühren oder Liquiditätsnachweise sollen erbracht werden",
+    "Die persönlichen Betreuer wechseln ständig",
+    "Auszahlung wird verweigert"
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Warnliste Anlagebetrug 2025 | Bovensiepen & Partner - Betrugs-Broker erkennen</title>
+        <meta name="description" content="Aktuelle Warnliste Anlagebetrug 2025 ✓ Betrügerische Broker & Trading-Plattformen ✓ WhatsApp Betrugsgruppen ✓ Schutz vor Krypto-Betrug ✓ Rechtshilfe bei Anlagebetrug" />
+        <meta name="keywords" content="Warnliste Anlagebetrug, Broker Betrug, Trading Betrug, Krypto Betrug, Bitcoin Betrug, Anlagebetrug Anwalt, Betrugs Broker, Investment Scam" />
+        <link rel="canonical" href="https://bovensiepen-partner.de/warnliste-anlagebetrug" />
+        <meta property="og:title" content="Warnliste Anlagebetrug 2025 | Bovensiepen & Partner" />
+        <meta property="og:description" content="Schützen Sie sich vor Anlagebetrug! Aktuelle Liste betrügerischer Broker, Trading-Plattformen und WhatsApp-Betrugsgruppen. Professionelle Rechtshilfe." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://bovensiepen-partner.de/warnliste-anlagebetrug" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Warnliste Anlagebetrug 2025: diese Broker sind aufgefallen!",
+            "description": "Aktuelle Warnliste vor betrügerischen Brokern, Trading-Plattformen und Investment-Scams. Schutz vor Anlagebetrug und rechtliche Hilfe.",
+            "author": {
+              "@type": "Organization",
+              "name": "Bovensiepen & Partner Rechtsanwälte"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Bovensiepen & Partner",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://bovensiepen-partner.de/logo.png"
+              }
+            },
+            "datePublished": "2025-01-01",
+            "dateModified": "2025-01-01",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://bovensiepen-partner.de/warnliste-anlagebetrug"
+            }
+          })}
+        </script>
+      </Helmet>
+
+      {/* Hero Section */}
+      <Section className="relative bg-gradient-to-br from-primary/5 via-background to-secondary/5 pt-24 pb-16">
+        <div className="absolute inset-0 bg-gradient-subtle opacity-50" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex items-center justify-center mb-6">
+              <AlertTriangle className="h-16 w-16 text-destructive mr-4" />
+              <Badge variant="destructive" className="text-lg px-4 py-2">
+                Warnliste 2025
+              </Badge>
+            </div>
+            
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+              Warnliste Anlagebetrug 2025: diese Broker sind aufgefallen!
+            </h1>
+            
+            <SectionDescription className="text-xl mb-8">
+              Mit unserer aktuellen Warnliste sollen Geldanleger vor betrügerischen Brokern und Trading-Plattformen gewarnt werden. 
+              Bereits geschädigte Personen können prüfen, ob ihr Anbieter aufgeführt wird.
+            </SectionDescription>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <Link to="/kontakt">
+                  <Shield className="mr-2 h-5 w-5" />
+                  Sofortige Rechtshilfe
+                </Link>
+              </Button>
+              <Button variant="outline" size="lg">
+                <Eye className="mr-2 h-5 w-5" />
+                Liste durchsuchen
+              </Button>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Intro Section */}
+      <Section>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-0 shadow-card bg-card/50 backdrop-blur-sm">
+              <CardContent className="p-8">
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    Falls Sie Ihren Finanzdienstleister oder Broker hier vorfinden, sollten Sie zeitnah 
+                    <strong className="text-foreground"> einen spezialisierten Rechtsanwalt für Anlagebetrug</strong> einschalten. 
+                    Es gilt, schnellstmöglich gegen den möglichen Anlagebetrug vorzugehen.
+                  </p>
+                  
+                  <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg">
+                    <p className="text-foreground font-medium mb-2">
+                      ⚠️ Wichtiger Hinweis:
+                    </p>
+                    <p className="text-muted-foreground">
+                      Falls Sie Ihren Finanzdienstleister oder Broker auf unserer Warnliste Anlagebetrug nicht finden, 
+                      bedeutet dies leider nicht, dass es ein seriöser Anbieter ist. Betrüger sind oft monatelang 
+                      aktiv, bevor der Betrug auffliegt.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </Section>
+
+      {/* Table of Contents */}
+      <Section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-0 shadow-card">
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <Eye className="mr-2 h-5 w-5" />
+                  Inhaltsverzeichnis
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-semibold mb-3">Aktuelle Warnungen</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li><a href="#broker-liste" className="text-primary hover:underline">Betrügerische Broker</a></li>
+                      <li><a href="#whatsapp-gruppen" className="text-primary hover:underline">WhatsApp Betrugsgruppen</a></li>
+                      <li><a href="#warnsignale" className="text-primary hover:underline">Warnsignale erkennen</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3">Hilfe & Beratung</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li><a href="#fallstudie" className="text-primary hover:underline">Echte Fallschilderung</a></li>
+                      <li><a href="#rechtshilfe" className="text-primary hover:underline">Rechtliche Schritte</a></li>
+                      <li><a href="#kontakt" className="text-primary hover:underline">Kostenlose Erstberatung</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </Section>
+
+      {/* Statistics */}
+      <Section className="bg-gradient-glass">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary mb-2">150+</div>
+              <div className="text-sm text-muted-foreground">Betrügerische Broker gelistet</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary mb-2">500+</div>
+              <div className="text-sm text-muted-foreground">Geschädigten geholfen</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary mb-2">€50M+</div>
+              <div className="text-sm text-muted-foreground">Schäden dokumentiert</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+              <div className="text-sm text-muted-foreground">Notfallberatung</div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Fraudulent Brokers List */}
+      <Section id="broker-liste">
+        <div className="container mx-auto px-4">
+          <SectionHeader>
+            <SectionTitle>Aktuelle Warnliste: Betrügerische Broker</SectionTitle>
+            <SectionDescription>
+              Diese Anbieter sind uns durch Betrugsvorwürfe, behördliche Warnungen oder negative Erfahrungsberichte aufgefallen.
+            </SectionDescription>
+          </SectionHeader>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="grid gap-6">
+              {fraudulentBrokers.map((broker, index) => (
+                <Card key={index} className="border-l-4 border-l-destructive">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-3">
+                          <h3 className="text-xl font-bold text-foreground">{broker.name}</h3>
+                          <Badge variant="destructive">{broker.category}</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          Website: <span className="font-mono bg-muted px-2 py-1 rounded">{broker.website}</span>
+                        </p>
+                        <p className="text-muted-foreground">{broker.description}</p>
+                      </div>
+                      <Button variant="destructive" size="sm">
+                        <AlertTriangle className="h-4 w-4 mr-2" />
+                        Nicht einzahlen!
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="mt-8 p-6 bg-muted/50 rounded-lg">
+              <p className="text-sm text-muted-foreground">
+                <strong>Hinweis:</strong> Diese Liste ist nicht abschließend. Ein Eintrag erfolgt nur bei erhärtetem Betrugsverdacht 
+                durch geschädigte Investoren oder behördliche Warnmeldungen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* WhatsApp Groups */}
+      <Section id="whatsapp-gruppen" className="bg-gradient-glass">
+        <div className="container mx-auto px-4">
+          <SectionHeader>
+            <SectionTitle>Betrügerische WhatsApp & Telegram Gruppen</SectionTitle>
+            <SectionDescription>
+              Vorsicht vor diesen Investment-Gruppen in Messengerdiensten - hier lauern Betrüger!
+            </SectionDescription>
+          </SectionHeader>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6">
+              {chatGroups.map((group, index) => (
+                <Card key={index} className="border-l-4 border-l-orange-500">
+                  <CardContent className="p-6">
+                    <div className="flex items-start justify-between mb-3">
+                      <h3 className="font-bold text-foreground">{group.name}</h3>
+                      <Badge variant="outline">{group.platform}</Badge>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{group.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Warning Signals */}
+      <Section id="warnsignale">
+        <div className="container mx-auto px-4">
+          <SectionHeader>
+            <SectionTitle>Warnsignale für Anlagebetrug erkennen</SectionTitle>
+            <SectionDescription>
+              Diese Anzeichen deuten auf möglichen Betrug hin - werden Sie aktiv!
+            </SectionDescription>
+          </SectionHeader>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-4">
+              {warningSignals.map((signal, index) => (
+                <div key={index} className="flex items-center p-4 bg-destructive/5 border border-destructive/20 rounded-lg">
+                  <AlertTriangle className="h-5 w-5 text-destructive mr-3 flex-shrink-0" />
+                  <span className="text-sm">{signal}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Case Study */}
+      <Section id="fallstudie" className="bg-gradient-glass">
+        <div className="container mx-auto px-4">
+          <SectionHeader>
+            <SectionTitle>Echte Fallschilderung einer betrogenen Investorin</SectionTitle>
+            <SectionDescription>
+              Ein anonymisierter Fall aus unserer Beratungspraxis zeigt, wie perfide die Betrüger vorgehen.
+            </SectionDescription>
+          </SectionHeader>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-8">
+                <div className="prose max-w-none">
+                  <blockquote className="border-l-4 border-muted pl-4 italic text-muted-foreground mb-6">
+                    "Sehr geehrte Damen und Herren von Bovensiepen & Partner,<br/><br/>
+                    ich bin einem Bitcoin-Betrüger auf den Leim gegangen. Insgesamt habe ich 5.000 Euro verloren. 
+                    1.000 Euro habe ich in Bitcoin investiert und einen angeblichen Gewinn von 38.000 Euro gemacht. 
+                    Um diese ausgezahlt zu bekommen, sollte ich eine Provision von 4.000 Euro überweisen..."
+                  </blockquote>
+                  
+                  <h4 className="text-lg font-semibold mb-3">Typisches Betrugsmuster:</h4>
+                  <div className="grid md:grid-cols-3 gap-4 mb-6">
+                    <Card className="p-4">
+                      <div className="text-center">
+                        <div className="bg-green-100 text-green-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">1</div>
+                        <h5 className="font-semibold mb-2">Kleine Einzahlung</h5>
+                        <p className="text-sm text-muted-foreground">1.000€ "Test-Investment"</p>
+                      </div>
+                    </Card>
+                    <Card className="p-4">
+                      <div className="text-center">
+                        <div className="bg-yellow-100 text-yellow-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">2</div>
+                        <h5 className="font-semibold mb-2">Scheingewinne</h5>
+                        <p className="text-sm text-muted-foreground">38.000€ angeblicher Gewinn</p>
+                      </div>
+                    </Card>
+                    <Card className="p-4">
+                      <div className="text-center">
+                        <div className="bg-red-100 text-red-800 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">3</div>
+                        <h5 className="font-semibold mb-2">Nachzahlung</h5>
+                        <p className="text-sm text-muted-foreground">4.000€ "Provision" gefordert</p>
+                      </div>
+                    </Card>
+                  </div>
+
+                  <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
+                    <p className="text-sm text-green-800">
+                      <strong>Erfolgreiche Hilfe:</strong> Dieser Investorin konnten wir zeitnah weiterhelfen. 
+                      Durch schnelle rechtliche Schritte war eine teilweise Rückholung der Gelder möglich.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </Section>
+
+      {/* Legal Action */}
+      <Section id="rechtshilfe">
+        <div className="container mx-auto px-4">
+          <SectionHeader>
+            <SectionTitle>Rechtlich gegen Anlagebetrüger vorgehen</SectionTitle>
+            <SectionDescription>
+              Betrugsopfer sind nicht schutzlos - wir helfen Ihnen bei der Rückholung Ihres Geldes.
+            </SectionDescription>
+          </SectionHeader>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="text-center p-6">
+                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Beweise sichern</h3>
+                <p className="text-muted-foreground">
+                  Sämtliche Kommunikationsdaten und Geldströme gerichtsfest dokumentieren
+                </p>
+              </Card>
+
+              <Card className="text-center p-6">
+                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <AlertTriangle className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Strafanzeige</h3>
+                <p className="text-muted-foreground">
+                  Schnellstmögliche, juristisch fundierte Strafanzeige bei den Ermittlungsbehörden
+                </p>
+              </Card>
+
+              <Card className="text-center p-6">
+                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Geld zurückholen</h3>
+                <p className="text-muted-foreground">
+                  Zivilrechtliche Maßnahmen zur Rückholung der verlorenen Gelder
+                </p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Contact CTA */}
+      <Section id="kontakt" className="bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Card className="border-0 shadow-elegant bg-card/80 backdrop-blur-sm">
+              <CardContent className="p-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Kostenfreie Ersteinschätzung zum Anlagebetrug
+                </h2>
+                
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h3 className="text-lg font-semibold mb-4">Wurden Sie Opfer von Anlagebetrug?</h3>
+                    <ul className="text-left space-y-2 text-muted-foreground">
+                      <li>• Bei welchem Broker haben Sie investiert?</li>
+                      <li>• Wurden Kryptowährungen verwendet?</li>
+                      <li>• Wird eine Auszahlung verweigert?</li>
+                      <li>• Haben Sie die Warnliste geprüft?</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-lg font-semibold mb-4">Das erwartet Sie:</h3>
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <Clock className="h-5 w-5 text-primary mr-3" />
+                        <span className="text-sm">Rückmeldung innerhalb von 60 Minuten</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Shield className="h-5 w-5 text-primary mr-3" />
+                        <span className="text-sm">100% vertraulich und DSGVO-konform</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Users className="h-5 w-5 text-primary mr-3" />
+                        <span className="text-sm">Spezialisiert auf Anlagebetrug</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button size="lg" asChild>
+                    <Link to="/kontakt">
+                      <Mail className="mr-2 h-5 w-5" />
+                      Kostenlose Beratung anfragen
+                    </Link>
+                  </Button>
+                  <Button variant="outline" size="lg" asChild>
+                    <a href="tel:+4930123456789">
+                      <Phone className="mr-2 h-5 w-5" />
+                      Sofort anrufen
+                    </a>
+                  </Button>
+                </div>
+
+                <p className="text-sm text-muted-foreground mt-6">
+                  Zeitnah erhalten Sie eine kostenfreie Ersteinschätzung zu Ihrem konkreten Einzelfall. 
+                  Auf dieser Grundlage können Sie entscheiden, ob Sie rechtliche Maßnahmen wünschen.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </Section>
+
+      {/* Additional Information */}
+      <Section>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-0 shadow-card">
+              <CardContent className="p-8">
+                <h2 className="text-2xl font-bold mb-6">Anlagebetrug im Internet durch hochprofessionelle Betrügernetzwerke</h2>
+                
+                <div className="prose max-w-none text-muted-foreground">
+                  <p className="mb-4">
+                    Es handelt sich um ein internationales Netzwerk an hochprofessionellen Straftätern. 
+                    Einerseits werden eine Unzahl an seriös wirkenden, letztlich aber gefälschten Trading-Plattformen vorbereitet.
+                  </p>
+                  
+                  <p className="mb-4">
+                    Diese Handelsplattformen werden von den Tätern in sozialen Medien oder auf YouTube massiv beworben. 
+                    Den Betrugsopfern wird suggeriert, sie könnten spielend leicht und zunächst mit sehr überschaubaren, 
+                    kleineren Geldsummen die Trading-Plattform „testen".
+                  </p>
+
+                  <div className="bg-destructive/5 border-l-4 border-destructive p-4 rounded-r-lg my-6">
+                    <h4 className="font-semibold text-foreground mb-2">Typisches Betrugsmuster:</h4>
+                    <ol className="list-decimal list-inside space-y-1 text-sm">
+                      <li>Kleine "Test"-Einzahlung wird verlangt</li>
+                      <li>Scheingewinne werden angezeigt</li>
+                      <li>"Persönlicher Betreuer" meldet sich</li>
+                      <li>Größere Einzahlungen werden gefordert</li>
+                      <li>Auszahlung wird verweigert oder verzögert</li>
+                      <li>Weitere Gebühren werden erfunden</li>
+                    </ol>
+                  </div>
+
+                  <p>
+                    Wichtig: Viele der Finanzbetrüger haben gefälschte Dokumente an die Betrugsopfer versendet. 
+                    Diese Schriftstücke sind meist als „von der Blockchain" stammend gekennzeichnet. 
+                    <strong className="text-foreground"> Keinesfalls sollten daraufhin Zahlungen geleistet werden</strong>, 
+                    sonst vergrößert sich der Vermögensschaden.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </Section>
+    </div>
+  );
+};
+
+export default Warnliste;
