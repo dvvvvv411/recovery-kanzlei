@@ -85,11 +85,11 @@ export const NewsCarousel = () => {
 
             {/* Right Column - Image */}
             <div className="relative h-full flex items-stretch">
-              <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
+              <div className="relative overflow-hidden rounded-2xl w-full">
                 <img 
                   src="/lovable-uploads/9ecefdcb-e027-44d3-b2f1-e452a231af2d.png" 
                   alt="Rechtsdokument Bitcoin Rückgabe"
-                  className="w-full h-[400px] object-cover object-center rounded-xl"
+                  className="w-full h-[400px] object-cover object-center"
                 />
               </div>
             </div>
@@ -138,11 +138,11 @@ export const NewsCarousel = () => {
 
             {/* Right Column - Image */}
             <div className="relative h-full flex items-stretch">
-              <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
+              <div className="relative overflow-hidden rounded-2xl w-full">
                 <img 
                   src="/lovable-uploads/e6fcfe46-5300-4b17-bafe-fda583555ddc.png"
                   alt="CEO-Fraud und Überweisungsbetrug - Illustration"
-                  className="w-full h-[400px] object-cover object-center rounded-xl"
+                  className="w-full h-[400px] object-cover object-center"
                 />
               </div>
             </div>
@@ -191,11 +191,11 @@ export const NewsCarousel = () => {
 
             {/* Right Column - Image */}
             <div className="relative h-full flex items-stretch">
-              <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
+              <div className="relative overflow-hidden rounded-2xl w-full">
                 <img 
                   src="/lovable-uploads/80e2e160-2ba5-459b-b753-58265ea0882e.png"
                   alt="Bearbeitungsgebühr zurückholen"
-                  className="w-full h-[400px] object-cover object-center rounded-xl"
+                  className="w-full h-[400px] object-cover object-center"
                 />
               </div>
             </div>
