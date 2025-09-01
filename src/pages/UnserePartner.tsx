@@ -108,13 +108,13 @@ const UnserePartner = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-4 gap-8 items-center">
-              <div className="col-span-1">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+              <div className="col-span-1 md:col-span-1">
                 <h2 className="text-2xl lg:text-3xl font-bold text-white text-center">
                   Ein globales Netzwerk für Ihre Rechte
                 </h2>
               </div>
-              <div className="col-span-3">
+              <div className="col-span-1 md:col-span-3">
                 <p className="text-lg lg:text-xl text-white leading-relaxed text-left">
                   In der komplexen Welt der Kryptowährungen sind starke Partnerschaften entscheidend für den Erfolg. 
                   Unsere strategischen Allianzen mit führenden Börsen, Strafverfolgungsbehörden und internationalen 
@@ -194,8 +194,8 @@ const UnserePartner = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
-              <div className="col-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+              <div className="col-span-1 md:col-span-2">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
                   Profitieren Sie von unserem Netzwerk
                 </h2>
@@ -204,7 +204,7 @@ const UnserePartner = () => {
                   erfolgreich zu sein. Kontaktieren Sie uns für eine kostenlose Erstberatung.
                 </p>
               </div>
-              <div className="col-span-1">
+              <div className="col-span-1 md:col-span-1">
                 <div className="flex flex-col gap-4">
                   <Link to="/kontakt">
                     <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white font-semibold px-8 py-3 border border-white/20 backdrop-blur-sm w-full">

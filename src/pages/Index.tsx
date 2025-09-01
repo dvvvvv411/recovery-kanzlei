@@ -253,13 +253,13 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent"></div>
         <div className="relative z-10">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-4 gap-8 items-center">
-            <div className="col-span-1">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+            <div className="col-span-1 md:col-span-1">
               <h2 className="text-2xl lg:text-3xl font-bold text-white text-center">
                 SUCCESS AS A SERVICE
               </h2>
             </div>
-            <div className="col-span-3">
+            <div className="col-span-1 md:col-span-3">
               <p className="text-lg lg:text-xl text-white leading-relaxed text-left">
                 Wir verstehen uns nicht „nur" als Rechtsvertreter im klassischen Sinn, sondern vielmehr als langfristiger Wegbegleiter und Partner. Mandant:innen sollen von unserer Arbeit auch tatsächlich profitieren. Wir legen daher den Fokus auf die individuellen Bedürfnisse und finden gemeinsam maßgeschneiderte Lösungen.
               </p>
@@ -275,7 +275,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700/10 via-transparent to-transparent"></div>
         <div className="relative z-10">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-4 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
             {/* First Stat */}
             <div className="text-center relative">
               <div className="mb-2">
@@ -285,7 +285,7 @@ const Index = () => {
                 Jahre Fachexpertise
               </p>
               {/* Divider */}
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20 hidden md:block"></div>
             </div>
 
             {/* Second Stat */}
@@ -297,7 +297,7 @@ const Index = () => {
                 Euro verfolgtes Schadensvolumen bei Cybercrime
               </p>
               {/* Divider */}
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20 hidden md:block"></div>
             </div>
 
             {/* Third Stat */}
@@ -309,7 +309,7 @@ const Index = () => {
                 topmotivierte Mitarbeiter:innen
               </p>
               {/* Divider */}
-              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20"></div>
+              <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 bg-white/20 hidden md:block"></div>
             </div>
 
             {/* Fourth Stat */}

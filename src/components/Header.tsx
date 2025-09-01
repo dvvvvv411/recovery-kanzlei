@@ -6,7 +6,19 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { ChevronDown, Menu } from "lucide-react";
 
 export const Header = () => {
   return (
@@ -91,6 +103,119 @@ export const Header = () => {
               Beratung anfragen
             </Button>
           </Link>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="sm" className="bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 p-2">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] bg-gray-900/95 backdrop-blur-md border-gray-700">
+              <div className="flex flex-col gap-6 mt-8">
+                {/* Logo */}
+                <Link to="/" className="flex justify-center">
+                  <SheetClose asChild>
+                    <img 
+                      src="/lovable-uploads/3863a302-63a5-4e77-ac24-0c7f1592c2ea.png" 
+                      alt="CryptoLaw Logo" 
+                      className="h-10 w-auto"
+                    />
+                  </SheetClose>
+                </Link>
+
+                {/* Navigation Items */}
+                <Accordion type="single" collapsible className="w-full">
+                  {/* Kanzlei Dropdown */}
+                  <AccordionItem value="kanzlei" className="border-gray-700">
+                    <AccordionTrigger className="text-white hover:text-primary">
+                      Kanzlei
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-3 pl-4">
+                        <SheetClose asChild>
+                          <Link to="/#team" className="text-gray-300 hover:text-primary text-left">Team</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/blog" className="text-gray-300 hover:text-primary text-left">News</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/unsere-partner" className="text-gray-300 hover:text-primary text-left">Unsere Partner</Link>
+                        </SheetClose>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  {/* Kompetenzen Dropdown */}
+                  <AccordionItem value="kompetenzen" className="border-gray-700">
+                    <AccordionTrigger className="text-white hover:text-primary">
+                      Kompetenzen
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="flex flex-col gap-3 pl-4">
+                        <SheetClose asChild>
+                          <Link to="/kompetenz/cybercrime" className="text-gray-300 hover:text-primary text-left">Cybercrime</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/kompetenz/datenschutz-und-compliance" className="text-gray-300 hover:text-primary text-left">Datenschutz und Compliance</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/kompetenz/gesellschafts-und-unternehmensrecht" className="text-gray-300 hover:text-primary text-left">Gesellschafts- und Unternehmensrecht</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/kompetenz/immobilienrecht" className="text-gray-300 hover:text-primary text-left">Immobilienrecht</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/kompetenz/private-clients-family-offices" className="text-gray-300 hover:text-primary text-left">Private Clients / Family Offices</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/kompetenz/prozessfuhrung" className="text-gray-300 hover:text-primary text-left">Prozessführung</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/kompetenz/wertpapier-und-kapitalmarktrecht" className="text-gray-300 hover:text-primary text-left">Wertpapier- und Kapitalmarktrecht</Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link to="/kompetenz/kryptonachverfolgung-und-mittelherkunftsnachweis" className="text-gray-300 hover:text-primary text-left">Kryptonachverfolgung und Mittelherkunftsnachweis</Link>
+                        </SheetClose>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+
+                {/* Direct Links */}
+                <div className="flex flex-col gap-4">
+                  <SheetClose asChild>
+                    <Link to="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" className="text-white hover:text-primary text-left">
+                      Erfolge
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link to="/kontakt" className="text-white hover:text-primary text-left">
+                      Kontakt
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link to="/stellenangebote" className="text-white hover:text-primary text-left">
+                      Stellenangebote
+                    </Link>
+                  </SheetClose>
+                </div>
+
+                {/* CTA Button */}
+                <div className="mt-6">
+                  <SheetClose asChild>
+                    <Link to="/kontakt" className="w-full">
+                      <Button variant="outline" className="w-full bg-gradient-glass backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:border-primary/50 transition-all duration-300">
+                        Beratung anfragen
+                      </Button>
+                    </Link>
+                  </SheetClose>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
