@@ -283,7 +283,7 @@ const faqs = [
 export default function Stellenangebote() {
   // Set page title
   useEffect(() => {
-    document.title = 'Karriere | CryptoLaw - Stellenangebote';
+    document.title = 'Karriere bei Bovensiepen & Partner – Stellenangebote';
   }, []);
 
   const scrollToJobs = () => {
@@ -311,7 +311,7 @@ export default function Stellenangebote() {
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ textShadow: 'var(--text-glow-strong)' }}>
               Karriere bei<br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent drop-shadow-lg">CryptoLaw</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent drop-shadow-lg">Bovensiepen & Partner</span>
             </h1>
             <p className="text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed" style={{ textShadow: 'var(--text-glow)' }}>
               Wachse mit einer spezialisierten Kanzlei für Krypto-Recht und Streitführung
@@ -361,7 +361,7 @@ export default function Stellenangebote() {
       <Section className="py-20 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto px-4">
           <SectionHeader>
-            <SectionTitle>Warum CryptoLaw?</SectionTitle>
+            <SectionTitle>Warum Bovensiepen & Partner?</SectionTitle>
             <SectionDescription>
               Entdecken Sie die Vorteile einer Karriere in unserer innovativen und wachsenden Kanzlei
             </SectionDescription>
