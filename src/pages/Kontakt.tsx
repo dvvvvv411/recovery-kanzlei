@@ -233,10 +233,10 @@ export default function Kontakt() {
       {/* Contact Section */}
       <Section className="py-20 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 items-stretch max-w-7xl mx-auto">
             
             {/* Left Column - Info & Trust */}
-            <div className="space-y-8">
+            <div className="h-full flex flex-col space-y-8">
               {/* Contact Information */}
               <Card className="border-0 shadow-card bg-card">
                 <CardHeader>
@@ -356,7 +356,7 @@ export default function Kontakt() {
             </div>
 
             {/* Right Column - Contact Form */}
-            <Card id="kontakt-form" className="border-0 shadow-card bg-card">
+            <Card id="kontakt-form" className="border-0 shadow-card bg-card h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">
                   Kostenlose Erstberatung anfragen
@@ -365,9 +365,9 @@ export default function Kontakt() {
                   Schildern Sie uns Ihren Fall – wir melden uns innerhalb von 60 Minuten
                 </p>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-1 flex flex-col">
                 <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" onFocus={handleFormStart}>
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 h-full flex flex-col" onFocus={handleFormStart}>
                     
                     {/* Honeypot field - hidden from users */}
                     <FormField
