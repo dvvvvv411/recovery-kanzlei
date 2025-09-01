@@ -28,18 +28,32 @@ import { AuthProvider } from "./hooks/useAuth";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { AdminAutoRedirect } from "./components/AdminAutoRedirect";
 import ScrollToTop from "./components/ScrollToTop";
+import { SettingsProvider, useSettings } from "./hooks/useSettings";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <AuthProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <AdminAutoRedirect />
+function LoadingScreen() {
+  return (
+    <div className="fixed inset-0 bg-background flex items-center justify-center">
+      <div className="text-center">
+        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+        <p className="text-muted-foreground">Laden...</p>
+      </div>
+    </div>
+  );
+}
+
+function AppContent() {
+  const { isLoading } = useSettings();
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <AdminAutoRedirect />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
@@ -66,9 +80,21 @@ const App = () => (
             <Route path="/blog-post/ogh-kreditgebuehr-unzulaessig" element={<BlogPostKreditgebuehr />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
+        </Routes>
+    </BrowserRouter>
+  );
+}
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <AuthProvider>
+      <SettingsProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <AppContent />
+        </TooltipProvider>
+      </SettingsProvider>
     </AuthProvider>
   </QueryClientProvider>
 );

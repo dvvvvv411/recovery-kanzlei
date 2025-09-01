@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { LogOut, Search, Filter, Eye, Calendar, User, Mail, Phone, MessageSquare } from 'lucide-react';
+import { LogOut, Search, Filter, Eye, Calendar, User, Mail, Phone, MessageSquare, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -7,10 +7,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Section, SectionHeader, SectionTitle } from '@/components/ui/section';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/hooks/useAuth';
+import { AdminSettings } from '@/components/AdminSettings';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 
@@ -194,6 +196,19 @@ export default function Admin() {
       </div>
 
       <div className="container mx-auto px-4 py-8">
+        <Tabs defaultValue="messages" className="w-full">
+          <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="messages" className="flex items-center gap-2">
+              <MessageSquare className="h-4 w-4" />
+              Kontaktanfragen
+            </TabsTrigger>
+            <TabsTrigger value="settings" className="flex items-center gap-2">
+              <Settings className="h-4 w-4" />
+              Einstellungen
+            </TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="messages" className="space-y-6">
         {/* Stats */}
         <div className="grid md:grid-cols-4 gap-6 mb-8">
           <Card className="glass-card">
@@ -434,6 +449,12 @@ export default function Admin() {
             </div>
           </CardContent>
         </Card>
+          </TabsContent>
+          
+          <TabsContent value="settings">
+            <AdminSettings />
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );

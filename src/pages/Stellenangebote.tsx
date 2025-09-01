@@ -32,7 +32,7 @@ const jobPositions = [
   {
     id: "ra-gesellschaftsrecht",
     title: "Rechtsanwalt (m/w/d) Gesellschafts- und Unternehmensrecht",
-    location: "Berlin",
+    location: "München",
     type: "Vollzeit",
     experience: "3+ Jahre",
     workModel: "Hybrid",
@@ -86,7 +86,7 @@ const jobPositions = [
   {
     id: "ra-datenschutz",
     title: "Rechtsanwalt (m/w/d) Datenschutz & Compliance",
-    location: "Berlin",
+    location: "München",
     type: "Vollzeit", 
     experience: "2-5 Jahre",
     workModel: "Hybrid",
@@ -113,7 +113,7 @@ const jobPositions = [
   {
     id: "referendar",
     title: "Referendar / Wissenschaftlicher Mitarbeiter (m/w/d)",
-    location: "Berlin/München",
+    location: "München",
     type: "Teilzeit",
     experience: "Juristisches Studium",
     workModel: "Hybrid",
@@ -140,7 +140,7 @@ const jobPositions = [
   {
     id: "paralegal",
     title: "Rechtsanwaltsfachangestellte / Paralegal (m/w/d)",
-    location: "Berlin",
+    location: "München",
     type: "Vollzeit",
     experience: "2+ Jahre",
     workModel: "Onsite/Hybrid",
@@ -167,7 +167,7 @@ const jobPositions = [
   {
     id: "legal-tech-werkstudent",
     title: "Werkstudent:in Legal Tech / IT (m/w/d)",
-    location: "Berlin",
+    location: "München",
     type: "Teilzeit (20h/Woche)",
     experience: "Studium (Jura/Informatik)",
     workModel: "Hybrid",

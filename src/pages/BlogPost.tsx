@@ -196,9 +196,7 @@ const BlogPost = () => {
                   <a href="mailto:info@bovensiepen-partner.de" className="text-primary hover:underline font-medium">
                     info@bovensiepen-partner.de
                   </a>
-                  <a href="tel:+4313912345" className="text-primary hover:underline font-medium">
-                    +43 1 39 123 45
-                  </a>
+                  <PhoneLink />
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import { PhoneDisplay } from "./PhoneDisplay";
 
 export const Footer = () => {
   return (
@@ -79,17 +80,17 @@ export const Footer = () => {
                 <div className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-300">
-                    Friedrichstraße 123<br />
-                    10117 Berlin
+                    Nymphenburger Str. 20<br />
+                    80335 München
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                  <span className="text-gray-300">+49 30 123 456 789</span>
+                  <PhoneDisplay />
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                  <span className="text-gray-300">info@cryptolaw.de</span>
+                  <span className="text-gray-300">info@bovensiepen-partner.de</span>
                 </div>
               </div>
 

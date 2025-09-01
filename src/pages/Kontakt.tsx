@@ -18,6 +18,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { useLocation } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { useSettings } from "@/hooks/useSettings";
 import heroImage from "@/assets/contact-hero-bg.jpg";
 
 const contactSchema = z.object({
@@ -35,6 +36,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function Kontakt() {
   const { toast } = useToast();
+  const { phone } = useSettings();
   const location = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStartTime, setSubmitStartTime] = useState<number>(0);
@@ -328,7 +330,7 @@ Mit freundlichen Grüßen`;
                 className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
                 asChild
               >
-                <a href="tel:+4912345678">
+                <a href={`tel:${phone}`}>
                   <Phone className="mr-2 h-5 w-5" />
                   Soforthilfe: Jetzt anrufen
                 </a>
@@ -404,13 +406,13 @@ Mit freundlichen Grüßen`;
                     className="w-full justify-start h-auto p-4 hover:bg-primary/5"
                     asChild
                   >
-                    <a href="tel:+4912345678" className="flex items-center gap-3">
+                    <a href={`tel:${phone}`} className="flex items-center gap-3">
                       <div className="p-2 rounded-full bg-primary/10">
                         <Phone className="h-5 w-5 text-primary" />
                       </div>
                       <div className="text-left">
                         <p className="font-semibold">Telefon</p>
-                        <p className="text-sm text-muted-foreground">+49 (0) 123 456 789</p>
+                        <p className="text-sm text-muted-foreground">{phone}</p>
                       </div>
                     </a>
                   </Button>
@@ -420,13 +422,13 @@ Mit freundlichen Grüßen`;
                     className="w-full justify-start h-auto p-4 hover:bg-primary/5"
                     asChild
                   >
-                    <a href="mailto:kontakt@recovery-kanzlei.de" className="flex items-center gap-3">
+                    <a href="mailto:info@bovensiepen-partner.de" className="flex items-center gap-3">
                       <div className="p-2 rounded-full bg-primary/10">
                         <Mail className="h-5 w-5 text-primary" />
                       </div>
                       <div className="text-left">
                         <p className="font-semibold">E-Mail</p>
-                        <p className="text-sm text-muted-foreground">kontakt@recovery-kanzlei.de</p>
+                        <p className="text-sm text-muted-foreground">info@bovensiepen-partner.de</p>
                       </div>
                     </a>
                   </Button>
@@ -437,7 +439,7 @@ Mit freundlichen Grüßen`;
                     </div>
                     <div>
                       <p className="font-semibold">Adresse</p>
-                      <p className="text-sm text-muted-foreground">Musterstraße 123<br />12345 Musterstadt</p>
+                      <p className="text-sm text-muted-foreground">Nymphenburger Str. 20<br />80335 München</p>
                     </div>
                   </div>
                   
@@ -755,7 +757,7 @@ Mit freundlichen Grüßen`;
             className="flex-1"
             asChild
           >
-            <a href="tel:+4912345678">
+            <a href={`tel:${phone}`}>
               <Phone className="mr-2 h-4 w-4" />
               Anrufen
             </a>
