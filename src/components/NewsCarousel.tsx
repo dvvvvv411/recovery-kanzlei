@@ -1,6 +1,8 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { CheckCircle, Shield, TrendingUp, Target, Users, Globe } from "lucide-react";
+import { CheckCircle, Shield, AlertTriangle, Scale, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
 import { type CarouselApi } from "@/components/ui/carousel";
 
@@ -41,7 +43,7 @@ export const NewsCarousel = () => {
       className="w-full relative"
     >
       <CarouselContent className="-ml-4">
-        {/* Slide 1 - Original Story */}
+        {/* Slide 1 - Bitcoin Recovery Story */}
         <CarouselItem className="pl-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
@@ -71,6 +73,14 @@ export const NewsCarousel = () => {
                   <span className="text-green-800 font-medium">Blockchain-Forensik</span>
                 </div>
               </div>
+              <div className="mt-6">
+                <Link to="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck">
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    Mehr erfahren
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
             </div>
 
             {/* Right Column - Image */}
@@ -86,35 +96,43 @@ export const NewsCarousel = () => {
           </div>
         </CarouselItem>
 
-        {/* Slide 2 - New Story */}
+        {/* Slide 2 - CEO-Fraud und Überweisungsbetrug */}
         <CarouselItem className="pl-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
             <div className="space-y-6">
               <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                Ethereum Recovery bringt
-                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> 2,1 Millionen EUR zurück</span>
+                CEO-Fraud und
+                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> Überweisungsbetrug</span>
               </h3>
               <div className="space-y-4">
                 <h4 className="text-xl font-semibold text-blue-800">
-                  Bahnbrechender Fall in der DeFi-Recovery
+                  Was tun bei Falschüberweisung nach gefälschten E-Mails?
                 </h4>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Durch innovative Smart Contract Analyse gelang es unserer Kanzlei, gestohlene Ethereum im Wert von 2,1 Millionen EUR aus einem DeFi-Protokoll zurückzuholen. Der komplexe Fall erforderte monatelange Blockchain-Forensik und internationale Kooperation.
+                  Ein Klick, eine kurze Unachtsamkeit und eine erhebliche Geldsumme wurde auf ein Konto überwiesen, das sich später als Empfängerkonto von Betrügern anstatt des eigenen Geschäftspartners hausstellt. In vielen Fällen liegt ein gezielter Angriff durch CEO-Fraud vor.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Dieser Präzedenzfall zeigt neue Möglichkeiten auf, auch bei komplexesten DeFi-Betrügereien erfolgreich vorzugehen und Vermögenswerte zu rekonstruieren.
+                  Durch schnelles, rechtlich fundiertes Handeln und enger Zusammenarbeit mit den Strafverfolgungsbehörden ist es möglich die Sicherstellung bzw. Beschlagnahme der überwiesenen Gelder zu erwirken.
                 </p>
               </div>
               <div className="flex items-center gap-4 pt-4">
+                <div className="flex items-center gap-2 px-4 py-2 bg-red-100 rounded-full">
+                  <AlertTriangle className="h-5 w-5 text-red-600" />
+                  <span className="text-red-800 font-medium">Schnelle Hilfe nötig</span>
+                </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                  <TrendingUp className="h-5 w-5 text-blue-600" />
-                  <span className="text-blue-800 font-medium">2,1 Mio EUR Recovery</span>
+                  <Shield className="h-5 w-5 text-blue-600" />
+                  <span className="text-blue-800 font-medium">CyberCrime</span>
                 </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full">
-                  <Target className="h-5 w-5 text-purple-600" />
-                  <span className="text-purple-800 font-medium">DeFi-Expertise</span>
-                </div>
+              </div>
+              <div className="mt-6">
+                <Link to="/blog-post/ceo-fraud-und-ueberweisungsbetrug">
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    Mehr erfahren
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -122,8 +140,8 @@ export const NewsCarousel = () => {
             <div className="relative h-full flex items-stretch">
               <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
                 <img 
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&crop=smart"
-                  alt="Ethereum Blockchain Forensik"
+                  src="/lovable-uploads/e6fcfe46-5300-4b17-bafe-fda583555ddc.png"
+                  alt="CEO-Fraud und Überweisungsbetrug - Illustration"
                   className="w-full h-[400px] object-cover object-center rounded-xl"
                 />
               </div>
@@ -131,35 +149,43 @@ export const NewsCarousel = () => {
           </div>
         </CarouselItem>
 
-        {/* Slide 3 - New Story */}
+        {/* Slide 3 - Kreditbearbeitungsgebühren unzulässig */}
         <CarouselItem className="pl-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
             <div className="space-y-6">
               <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                Internationale NFT-Betrug Aufklärung
-                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> erfolgreich abgeschlossen</span>
+                Kreditbearbeitungsgebühren
+                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> unzulässig</span>
               </h3>
               <div className="space-y-4">
                 <h4 className="text-xl font-semibold text-blue-800">
-                  Grenzüberschreitende Zusammenarbeit führt zum Erfolg
+                  OGH-Urteil ermöglicht Rückforderung
                 </h4>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  In einem spektakulären Fall konnten wir gemeinsam mit internationalen Behörden einen groß angelegten NFT-Betrug aufdecken. Über 500 Geschädigte erhielten ihre Investitionen zurück, nachdem die Täter zur Rechenschaft gezogen wurden.
+                  In einem richtungsweisenden Urteil hat der Oberste Gerichtshof (OGH) entschieden, dass bestimmte Kreditbearbeitungsgebühren unzulässig sind. Damit wurde ein deutliches Signal für den Verbraucherschutz gesetzt.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Die Kooperation zwischen deutschen, amerikanischen und asiatischen Strafverfolgungsbehörden zeigt die Effektivität moderner Cybercrime-Bekämpfung.
+                  Für Konsument:innen eröffnet sich nun die Möglichkeit, diese Entgelte prüfen zu lassen. Bei unzulässigen Klauseln können bereits bezahlte Beträge zurückgefordert werden – selbst bei bereits getilgten Krediten.
                 </p>
               </div>
               <div className="flex items-center gap-4 pt-4">
+                <div className="flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full">
+                  <Scale className="h-5 w-5 text-green-600" />
+                  <span className="text-green-800 font-medium">OGH-Urteil</span>
+                </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full">
-                  <Users className="h-5 w-5 text-blue-600" />
-                  <span className="text-blue-800 font-medium">500+ Geschädigte</span>
+                  <CheckCircle className="h-5 w-5 text-blue-600" />
+                  <span className="text-blue-800 font-medium">Verbraucherschutz</span>
                 </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-orange-100 rounded-full">
-                  <Globe className="h-5 w-5 text-orange-600" />
-                  <span className="text-orange-800 font-medium">International</span>
-                </div>
+              </div>
+              <div className="mt-6">
+                <Link to="/blog-post/ogh-kreditgebuehr-unzulaessig">
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    Mehr erfahren
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -167,8 +193,8 @@ export const NewsCarousel = () => {
             <div className="relative h-full flex items-stretch">
               <div className="relative overflow-hidden rounded-2xl bg-white p-2 w-full">
                 <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=smart"
-                  alt="NFT und Blockchain Technologie"
+                  src="/lovable-uploads/80e2e160-2ba5-459b-b753-58265ea0882e.png"
+                  alt="Bearbeitungsgebühr zurückholen"
                   className="w-full h-[400px] object-cover object-center rounded-xl"
                 />
               </div>
