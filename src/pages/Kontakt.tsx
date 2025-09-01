@@ -9,12 +9,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Section } from "@/components/ui/section";
 import { Phone, Mail, MapPin, Clock, Shield, CheckCircle, Star, ArrowRight, AlertTriangle, Users, Award } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/components/ui/use-toast";
+import { useLocation } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import heroImage from "@/assets/contact-hero-bg.jpg";
@@ -34,6 +35,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function Kontakt() {
   const { toast } = useToast();
+  const location = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStartTime, setSubmitStartTime] = useState<number>(0);
   
@@ -51,10 +53,156 @@ export default function Kontakt() {
     },
   });
 
-  // Set page title
+  // Set page title and handle job parameter
   useEffect(() => {
     document.title = 'Kontakt | Recovery Kanzlei';
-  }, []);
+    
+    // Check for job query parameter and prefill message
+    const searchParams = new URLSearchParams(location.search);
+    const jobParam = searchParams.get('job');
+    
+    if (jobParam && !form.getValues('message')) {
+      let messageText = '';
+      
+      switch (jobParam) {
+        case 'initiativbewerbung':
+        case 'initiativbewerbung':
+          messageText = `Initiativbewerbung
+
+Sehr geehrte Damen und Herren,
+
+hiermit möchte ich mich initiativ bei Ihrer Kanzlei bewerben.
+
+Kurz zu mir:
+- 
+- 
+- 
+
+Ich freue mich auf ein persönliches Gespräch.
+
+Mit freundlichen Grüßen`;
+          break;
+        case 'ra-gesellschaftsrecht':
+          messageText = `Bewerbung: Rechtsanwalt (m/w/d) Gesellschafts- und Unternehmensrecht
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich um die ausgeschriebene Position als Rechtsanwalt (m/w/d) für Gesellschafts- und Unternehmensrecht.
+
+Kurz zu mir:
+- 
+- 
+- 
+
+Gerne stelle ich mich Ihnen in einem persönlichen Gespräch vor.
+
+Mit freundlichen Grüßen`;
+          break;
+        case 'ra-prozessfuehrung':
+          messageText = `Bewerbung: Rechtsanwalt (m/w/d) Prozessführung/Litigation
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich um die ausgeschriebene Position als Rechtsanwalt (m/w/d) für Prozessführung/Litigation.
+
+Kurz zu mir:
+- 
+- 
+- 
+
+Ich freue mich auf ein persönliches Gespräch.
+
+Mit freundlichen Grüßen`;
+          break;
+        case 'ra-datenschutz':
+          messageText = `Bewerbung: Rechtsanwalt (m/w/d) Datenschutz & Compliance
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich um die ausgeschriebene Position als Rechtsanwalt (m/w/d) für Datenschutz & Compliance.
+
+Kurz zu mir:
+- 
+- 
+- 
+
+Gerne stelle ich mich Ihnen in einem persönlichen Gespräch vor.
+
+Mit freundlichen Grüßen`;
+          break;
+        case 'referendar':
+          messageText = `Bewerbung: Referendar / Wissenschaftlicher Mitarbeiter (m/w/d)
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich um die ausgeschriebene Position als Referendar / Wissenschaftlicher Mitarbeiter (m/w/d).
+
+Kurz zu mir:
+- 
+- 
+- 
+
+Ich freue mich auf ein persönliches Gespräch.
+
+Mit freundlichen Grüßen`;
+          break;
+        case 'paralegal':
+          messageText = `Bewerbung: Rechtsanwaltsfachangestellte / Paralegal (m/w/d)
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich um die ausgeschriebene Position als Rechtsanwaltsfachangestellte / Paralegal (m/w/d).
+
+Kurz zu mir:
+- 
+- 
+- 
+
+Gerne stelle ich mich Ihnen in einem persönlichen Gespräch vor.
+
+Mit freundlichen Grüßen`;
+          break;
+        case 'legal-tech-werkstudent':
+          messageText = `Bewerbung: Werkstudent:in Legal Tech / IT (m/w/d)
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich um die ausgeschriebene Position als Werkstudent:in Legal Tech / IT (m/w/d).
+
+Kurz zu mir:
+- 
+- 
+- 
+
+Ich freue mich auf ein persönliches Gespräch.
+
+Mit freundlichen Grüßen`;
+          break;
+        default:
+          // For any other job parameter
+          messageText = `Bewerbung: ${jobParam}
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich um die ausgeschriebene Position.
+
+Kurz zu mir:
+- 
+- 
+- 
+
+Ich freue mich auf ein persönliches Gespräch.
+
+Mit freundlichen Grüßen`;
+          break;
+      }
+      
+      if (messageText) {
+        form.setValue('message', messageText);
+        form.setValue('topic', 'Bewerbung/Karriere');
+      }
+    }
+  }, [location.search, form]);
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
@@ -417,6 +565,7 @@ export default function Kontakt() {
                                 </SelectTrigger>
                               </FormControl>
                               <SelectContent className="z-50 bg-popover">
+                                <SelectItem value="bewerbung">Bewerbung/Karriere</SelectItem>
                                 <SelectItem value="cybercrime">Cybercrime/Betrug</SelectItem>
                                 <SelectItem value="kryptonachverfolgung">Kryptonachverfolgung</SelectItem>
                                 <SelectItem value="wertpapier">Wertpapier/Kapitalmarkt</SelectItem>

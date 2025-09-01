@@ -21,6 +21,7 @@ import BlogPostKryptonachverfolgung from "./pages/BlogPostKryptonachverfolgung";
 import Kontakt from "./pages/Kontakt";
 import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
+import Stellenangebote from "./pages/Stellenangebote";
 import { AuthProvider } from "./hooks/useAuth";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
@@ -44,6 +45,7 @@ const App = () => (
               </ProtectedRoute>
             } />
             <Route path="/unsere-partner" element={<UnserePartner />} />
+            <Route path="/stellenangebote" element={<Stellenangebote />} />
             <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
             <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
             <Route path="/kompetenz/immobilienrecht" element={<BlogPostImmobilienrecht />} />
