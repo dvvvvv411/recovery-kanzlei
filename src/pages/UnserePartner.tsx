@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import partnerBkaImage from "@/assets/partner-bka-cooperation.jpg";
@@ -205,10 +206,12 @@ const UnserePartner = () => {
               </div>
               <div className="col-span-1">
                 <div className="flex flex-col gap-4">
-                  <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white font-semibold px-8 py-3 border border-white/20 backdrop-blur-sm">
-                    <Phone className="h-5 w-5 mr-2" />
-                    Kostenlose Beratung
-                  </Button>
+                  <Link to="/kontakt">
+                    <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white font-semibold px-8 py-3 border border-white/20 backdrop-blur-sm w-full">
+                      <Phone className="h-5 w-5 mr-2" />
+                      Kostenlose Beratung
+                    </Button>
+                  </Link>
                   <Button size="lg" variant="outline" className="bg-transparent hover:bg-white/10 text-white border-white/30 font-semibold px-8 py-3">
                     <ArrowRight className="h-5 w-5 mr-2" />
                     Mehr erfahren

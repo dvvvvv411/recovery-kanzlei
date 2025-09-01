@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Calendar, Clock, User, Scale, Mail, ChevronRight, MapPin, Phone, AlertTriangle, Shield, Award, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -212,10 +213,12 @@ const BlogPostKryptonachverfolgung = () => {
                 Kontaktieren Sie unsere Experten für eine unverbindliche Erstberatung. Wir helfen Ihnen bei der Kryptonachverfolgung und dem Nachweis der Mittelherkunft.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Beratung anfragen
-                </Button>
+                <Link to="/kontakt">
+                  <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+                    <Mail className="mr-2 h-5 w-5" />
+                    Beratung anfragen
+                  </Button>
+                </Link>
                 <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg font-semibold">
                   <Phone className="mr-2 h-5 w-5" />
                   +43 512 313 313
