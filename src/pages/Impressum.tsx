@@ -1,17 +1,15 @@
-import { Header } from "@/components/Header";
+import { HeaderWithDarkBg } from "@/components/HeaderWithDarkBg";
 import { Footer } from "@/components/Footer";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { PhoneDisplay } from "@/components/PhoneDisplay";
 import { Separator } from "@/components/ui/separator";
-import { BlueHero } from "@/components/BlueHero";
 
 const Impressum = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      <BlueHero />
+      <HeaderWithDarkBg />
       
-      <main>
+      <main className="pt-24">
         <Section className="py-12">
           <div className="container mx-auto px-4 max-w-4xl">
             <SectionHeader>
