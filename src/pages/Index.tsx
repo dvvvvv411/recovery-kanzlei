@@ -349,7 +349,7 @@ const Index = () => {
       </Section>
 
       {/* Unser Team Section */}
-      <Section className="py-16 bg-gradient-to-br from-white via-gray-50/30 to-white relative overflow-hidden">
+      <Section id="team" className="py-16 bg-gradient-to-br from-white via-gray-50/30 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-blue-600/5"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
         <div className="relative z-10">
