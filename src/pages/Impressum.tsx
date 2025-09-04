@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SubtleHero } from "@/components/SubtleHero";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { PhoneDisplay } from "@/components/PhoneDisplay";
 import { Separator } from "@/components/ui/separator";
@@ -9,7 +8,6 @@ const Impressum = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <SubtleHero />
       
       <main className="pt-24">
         <Section className="py-12">
