@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
 import { PhoneDisplay } from "./PhoneDisplay";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -51,14 +52,14 @@ export const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4 text-white">Kompetenzen</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="/#cybercrime" className="text-gray-300 hover:text-blue-400 transition-colors">Cybercrime</a></li>
-                <li><a href="/#datenschutz" className="text-gray-300 hover:text-blue-400 transition-colors">Datenschutz und Compliance</a></li>
-                <li><a href="/#gesellschaftsrecht" className="text-gray-300 hover:text-blue-400 transition-colors">Gesellschafts- und Unternehmensrecht</a></li>
-                <li><a href="/#immobilienrecht" className="text-gray-300 hover:text-blue-400 transition-colors">Immobilienrecht</a></li>
-                <li><a href="/#private-clients" className="text-gray-300 hover:text-blue-400 transition-colors">Private Clients / Family Offices</a></li>
-                <li><a href="/#prozessfuehrung" className="text-gray-300 hover:text-blue-400 transition-colors">Prozessführung</a></li>
-                <li><a href="/#wertpapier" className="text-gray-300 hover:text-blue-400 transition-colors">Wertpapier- und Kapitalmarktrecht</a></li>
-                <li><a href="/#kryptonachverfolgung" className="text-gray-300 hover:text-blue-400 transition-colors">Kryptonachverfolgung und Mittelherkunftsnachweis</a></li>
+                <li><Link to="/kompetenz/cybercrime" className="text-gray-300 hover:text-blue-400 transition-colors">Cybercrime</Link></li>
+                <li><Link to="/kompetenz/datenschutz-und-compliance" className="text-gray-300 hover:text-blue-400 transition-colors">Datenschutz und Compliance</Link></li>
+                <li><Link to="/kompetenz/gesellschafts-und-unternehmensrecht" className="text-gray-300 hover:text-blue-400 transition-colors">Gesellschafts- und Unternehmensrecht</Link></li>
+                <li><Link to="/kompetenz/immobilienrecht" className="text-gray-300 hover:text-blue-400 transition-colors">Immobilienrecht</Link></li>
+                <li><Link to="/kompetenz/private-clients-family-offices" className="text-gray-300 hover:text-blue-400 transition-colors">Private Clients / Family Offices</Link></li>
+                <li><Link to="/kompetenz/prozessfuhrung" className="text-gray-300 hover:text-blue-400 transition-colors">Prozessführung</Link></li>
+                <li><Link to="/kompetenz/wertpapier-und-kapitalmarktrecht" className="text-gray-300 hover:text-blue-400 transition-colors">Wertpapier- und Kapitalmarktrecht</Link></li>
+                <li><Link to="/kompetenz/kryptonachverfolgung-und-mittelherkunftsnachweis" className="text-gray-300 hover:text-blue-400 transition-colors">Kryptonachverfolgung und Mittelherkunftsnachweis</Link></li>
               </ul>
             </div>
             
