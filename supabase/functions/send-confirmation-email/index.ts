@@ -1,7 +1,14 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { Resend } from "npm:resend@2.0.0";
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+
+// Initialize Supabase client
+const supabase = createClient(
+  Deno.env.get('SUPABASE_URL') ?? '',
+  Deno.env.get('SUPABASE_ANON_KEY') ?? '',
+);
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -18,7 +25,7 @@ interface ContactEmailRequest {
   message: string;
 }
 
-const createEmailTemplate = (data: ContactEmailRequest): string => {
+const createEmailTemplate = (data: ContactEmailRequest, firmPhone: string): string => {
   return `
 <!DOCTYPE html>
 <html lang="de">
@@ -110,7 +117,7 @@ const createEmailTemplate = (data: ContactEmailRequest): string => {
         </h3>
         <p style="margin: 0; color: #444;">
           Bei besonders eiligen Fällen können Sie uns auch direkt telefonisch erreichen:<br>
-          <strong style="color: hsl(214 100% 14%); font-size: 18px;">+49 89 123456789</strong>
+          <strong style="color: hsl(214 100% 14%); font-size: 18px;">${firmPhone}</strong>
         </p>
       </div>
 
@@ -179,8 +186,18 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
+    // Fetch phone number from settings
+    const { data: phoneData, error: phoneError } = await supabase
+      .from('settings')
+      .select('value')
+      .eq('key', 'phone')
+      .single();
+
+    const firmPhone = phoneData?.value || '000000000';
+    console.log("Loaded phone number from settings:", firmPhone);
+
     // Generate email content
-    const emailHtml = createEmailTemplate(requestData);
+    const emailHtml = createEmailTemplate(requestData, firmPhone);
 
     // Send email via Resend
     console.log("Sending email to:", requestData.email);
