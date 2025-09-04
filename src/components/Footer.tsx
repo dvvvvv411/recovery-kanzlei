@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { PhoneDisplay } from "./PhoneDisplay";
 import { Link } from "react-router-dom";
 
@@ -92,25 +92,6 @@ export const Footer = () => {
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-blue-400 flex-shrink-0" />
                   <span className="text-gray-300">info@bovensiepen-partner.de</span>
-                </div>
-              </div>
-
-              {/* Social Media */}
-              <div className="mt-6">
-                <h5 className="font-medium mb-3 text-white">Folgen Sie uns</h5>
-                <div className="flex gap-3">
-                  <a href="#" className="w-8 h-8 bg-slate-700/50 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
-                    <Linkedin className="h-4 w-4" />
-                  </a>
-                  <a href="#" className="w-8 h-8 bg-slate-700/50 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
-                    <Twitter className="h-4 w-4" />
-                  </a>
-                  <a href="#" className="w-8 h-8 bg-slate-700/50 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
-                    <Facebook className="h-4 w-4" />
-                  </a>
-                  <a href="#" className="w-8 h-8 bg-slate-700/50 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
-                    <Youtube className="h-4 w-4" />
-                  </a>
                 </div>
               </div>
             </div>
