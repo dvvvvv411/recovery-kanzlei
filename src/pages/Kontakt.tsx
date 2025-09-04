@@ -213,6 +213,7 @@ Mit freundlichen Grüßen`;
     const spamScore = submitDuration < 2000 ? 10 : 0; // Flag if submitted too quickly
     
     try {
+      // First, save to Supabase
       const { error } = await supabase
         .from('contact_messages')
         .insert({
@@ -236,13 +237,49 @@ Mit freundlichen Grüßen`;
           description: "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.",
           variant: "destructive",
         });
-      } else {
+        return;
+      }
+
+      // If Supabase insert successful, send confirmation email
+      try {
+        console.log('Sending confirmation email...');
+        
+        const emailResponse = await supabase.functions.invoke('send-confirmation-email', {
+          body: {
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            topic: data.topic,
+            damage_amount: data.damage_amount,
+            message: data.message,
+          }
+        });
+
+        if (emailResponse.error) {
+          console.error('Error sending confirmation email:', emailResponse.error);
+          // Don't fail the entire submission if email fails
+          toast({
+            title: "Nachricht gesendet",
+            description: "Ihre Nachricht wurde erfolgreich übermittelt. Wir melden uns innerhalb von 60 Minuten bei Ihnen.",
+          });
+        } else {
+          console.log('Confirmation email sent successfully');
+          toast({
+            title: "Nachricht gesendet",
+            description: "Vielen Dank für Ihre Nachricht! Eine Bestätigung wurde an Ihre E-Mail-Adresse gesendet. Wir melden uns innerhalb von 60 Minuten bei Ihnen.",
+          });
+        }
+      } catch (emailError) {
+        console.error('Error sending confirmation email:', emailError);
+        // Don't fail the entire submission if email fails
         toast({
           title: "Nachricht gesendet",
-          description: "Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 60 Minuten bei Ihnen.",
+          description: "Ihre Nachricht wurde erfolgreich übermittelt. Wir melden uns innerhalb von 60 Minuten bei Ihnen.",
         });
-        form.reset();
       }
+
+      form.reset();
+      
     } catch (err) {
       console.error('Submission error:', err);
       toast({
