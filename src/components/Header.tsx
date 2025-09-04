@@ -28,7 +28,7 @@ export const Header = () => {
           <Link to="/">
             <img 
               src="/lovable-uploads/3863a302-63a5-4e77-ac24-0c7f1592c2ea.png" 
-              alt="CryptoLaw Logo" 
+              alt="Bovensiepen & Partner Logo" 
               className="h-12 w-auto"
             />
           </Link>
@@ -120,7 +120,7 @@ export const Header = () => {
                   <SheetClose asChild>
                     <img 
                       src="/lovable-uploads/3863a302-63a5-4e77-ac24-0c7f1592c2ea.png" 
-                      alt="CryptoLaw Logo" 
+                      alt="Bovensiepen & Partner Logo" 
                       className="h-10 w-auto"
                     />
                   </SheetClose>

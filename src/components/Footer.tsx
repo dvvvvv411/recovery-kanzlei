@@ -19,7 +19,7 @@ export const Footer = () => {
               <div className="flex items-center mb-6">
                 <img 
                   src="/lovable-uploads/3863a302-63a5-4e77-ac24-0c7f1592c2ea.png" 
-                  alt="CryptoLaw Logo" 
+                  alt="Bovensiepen & Partner Logo" 
                   className="h-16 w-auto"
                 />
               </div>
@@ -119,7 +119,7 @@ export const Footer = () => {
           <div className="pt-8 border-t border-slate-700">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-gray-400">
-                © 2024 CryptoLaw. Alle Rechte vorbehalten.
+                © 2025 Bovensiepen & Partner. Alle Rechte vorbehalten.
               </p>
               <div className="flex gap-6 text-sm">
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Impressum</a>
