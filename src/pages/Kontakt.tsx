@@ -24,10 +24,10 @@ import heroImage from "@/assets/contact-hero-bg.jpg";
 const contactSchema = z.object({
   name: z.string().min(2, 'Name muss mindestens 2 Zeichen haben'),
   email: z.string().email('Bitte geben Sie eine gültige E-Mail-Adresse ein'),
-  phone: z.string().optional(),
+  phone: z.string().min(1, 'Telefonnummer ist erforderlich'),
   topic: z.string().min(1, 'Bitte wählen Sie ein Thema aus'),
   damage_amount: z.string().optional(),
-  message: z.string().min(20, 'Nachricht muss mindestens 20 Zeichen haben'),
+  message: z.string().min(1, 'Bitte geben Sie eine Nachricht ein'),
   consent: z.boolean().refine((val) => val === true, 'Sie müssen der Datenschutzerklärung zustimmen'),
   honeypot: z.string().max(0, 'Bot detected'),
 });
@@ -585,9 +585,9 @@ Mit freundlichen Grüßen`;
                         name="phone"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Telefonnummer (optional)</FormLabel>
+                            <FormLabel>Telefonnummer *</FormLabel>
                             <FormControl>
-                              <Input placeholder="Ihre Telefonnummer" {...field} />
+                              <Input type="tel" placeholder="Ihre Telefonnummer" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
