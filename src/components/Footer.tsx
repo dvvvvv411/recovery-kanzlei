@@ -67,10 +67,10 @@ export const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4 text-white">Rechtliches</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Impressum</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Datenschutz</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">AGB</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Haftungsausschluss</a></li>
+                <li><Link to="/impressum" className="text-gray-300 hover:text-blue-400 transition-colors">Impressum</Link></li>
+                <li><Link to="/datenschutz" className="text-gray-300 hover:text-blue-400 transition-colors">Datenschutz</Link></li>
+                <li><Link to="/agb" className="text-gray-300 hover:text-blue-400 transition-colors">AGB</Link></li>
+                <li><Link to="/haftungsausschluss" className="text-gray-300 hover:text-blue-400 transition-colors">Haftungsausschluss</Link></li>
               </ul>
             </div>
             
@@ -123,8 +123,8 @@ export const Footer = () => {
                 © 2025 Bovensiepen & Partner. Alle Rechte vorbehalten.
               </p>
               <div className="flex gap-6 text-sm">
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Impressum</a>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Datenschutz</a>
+                <Link to="/impressum" className="text-gray-400 hover:text-blue-400 transition-colors">Impressum</Link>
+                <Link to="/datenschutz" className="text-gray-400 hover:text-blue-400 transition-colors">Datenschutz</Link>
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Cookie-Einstellungen</a>
               </div>
             </div>

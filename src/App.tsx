@@ -23,6 +23,10 @@ import Kontakt from "./pages/Kontakt";
 import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
 import Stellenangebote from "./pages/Stellenangebote";
+import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
+import AGB from "./pages/AGB";
+import Haftungsausschluss from "./pages/Haftungsausschluss";
 
 import { AuthProvider } from "./hooks/useAuth";
 import { ProtectedRoute } from "./components/ProtectedRoute";
@@ -66,6 +70,10 @@ function AppContent() {
             } />
             <Route path="/unsere-partner" element={<UnserePartner />} />
             <Route path="/stellenangebote" element={<Stellenangebote />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<Datenschutz />} />
+            <Route path="/agb" element={<AGB />} />
+            <Route path="/haftungsausschluss" element={<Haftungsausschluss />} />
             
             <Route path="/blog-post/krypto-betrugsopfer-bekommt-869-bitcoin-zurueck" element={<BlogPost />} />
             <Route path="/blog-post/ceo-fraud-und-ueberweisungsbetrug" element={<BlogPostCeoFraud />} />
