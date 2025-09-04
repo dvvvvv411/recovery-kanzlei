@@ -2,13 +2,15 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { Separator } from "@/components/ui/separator";
+import { BlueHero } from "@/components/BlueHero";
 
 const Datenschutz = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <BlueHero />
       
-      <main className="pt-24">
+      <main>
         <Section className="py-12">
           <div className="container mx-auto px-4 max-w-4xl">
             <SectionHeader>
