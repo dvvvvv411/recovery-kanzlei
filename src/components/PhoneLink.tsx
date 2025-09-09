@@ -6,7 +6,11 @@ interface PhoneLinkProps {
 }
 
 export const PhoneLink = ({ className = "text-primary hover:underline font-medium", children }: PhoneLinkProps) => {
-  const { phone } = useSettings();
+  const { phone, phoneEnabled } = useSettings();
+  
+  if (!phoneEnabled) {
+    return null;
+  }
   
   return (
     <a href={`tel:${phone}`} className={className}>

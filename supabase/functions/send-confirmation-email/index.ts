@@ -25,7 +25,7 @@ interface ContactEmailRequest {
   message: string;
 }
 
-const createEmailTemplate = (data: ContactEmailRequest, firmPhone: string): string => {
+const createEmailTemplate = (data: ContactEmailRequest, firmPhone: string, phoneEnabled: boolean = true): string => {
   return `
 <!DOCTYPE html>
 <html lang="de">
@@ -111,6 +111,7 @@ const createEmailTemplate = (data: ContactEmailRequest, firmPhone: string): stri
       </div>
 
       <!-- Emergency Contact -->
+      ${phoneEnabled ? `
       <div style="background-color: #fff3e0; padding: 20px; border-radius: 8px; margin: 25px 0; border: 1px solid #ffcc02;">
         <h3 style="color: #e65100; font-size: 18px; font-weight: 600; margin: 0 0 15px 0;">
           Dringender Fall?
@@ -120,6 +121,7 @@ const createEmailTemplate = (data: ContactEmailRequest, firmPhone: string): stri
           <strong style="color: hsl(214 100% 14%); font-size: 18px;">${firmPhone}</strong>
         </p>
       </div>
+      ` : ''}
 
       <!-- Closing -->
       <p style="font-size: 16px; margin: 30px 0 0 0; color: #444;">
@@ -186,18 +188,26 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Fetch phone number from settings
-    const { data: phoneData, error: phoneError } = await supabase
+    // Fetch phone number and phone enabled setting from settings
+    const { data: settingsData, error: settingsError } = await supabase
       .from('settings')
-      .select('value')
-      .eq('key', 'phone')
-      .single();
+      .select('key, value')
+      .in('key', ['phone', 'phone_enabled']);
 
-    const firmPhone = phoneData?.value || '000000000';
-    console.log("Loaded phone number from settings:", firmPhone);
+    if (settingsError) {
+      console.error('Error fetching settings:', settingsError);
+    }
+
+    const phoneRow = settingsData?.find(row => row.key === 'phone');
+    const phoneEnabledRow = settingsData?.find(row => row.key === 'phone_enabled');
+    
+    const firmPhone = phoneRow?.value || '000000000';
+    const phoneEnabled = phoneEnabledRow?.value === 'true';
+    
+    console.log("Loaded settings from database:", { firmPhone, phoneEnabled });
 
     // Generate email content
-    const emailHtml = createEmailTemplate(requestData, firmPhone);
+    const emailHtml = createEmailTemplate(requestData, firmPhone, phoneEnabled);
 
     // Send email via Resend
     console.log("Sending email to:", requestData.email);
