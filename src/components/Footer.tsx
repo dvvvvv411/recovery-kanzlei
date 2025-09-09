@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { PhoneDisplay } from "./PhoneDisplay";
+import { useSettings } from "@/hooks/useSettings";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
+  const { phoneEnabled } = useSettings();
   return (
     <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
       {/* Background Effects */}
@@ -85,10 +87,12 @@ export const Footer = () => {
                     80335 München
                   </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                  <PhoneDisplay />
-                </div>
+                {phoneEnabled && (
+                  <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-blue-400 flex-shrink-0" />
+                    <PhoneDisplay />
+                  </div>
+                )}
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-blue-400 flex-shrink-0" />
                   <span className="text-gray-300">info@bovensiepen-partner.de</span>

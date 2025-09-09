@@ -36,7 +36,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function Kontakt() {
   const { toast } = useToast();
-  const { phone } = useSettings();
+  const { phone, phoneEnabled } = useSettings();
   const location = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStartTime, setSubmitStartTime] = useState<number>(0);
@@ -362,16 +362,18 @@ Mit freundlichen Grüßen`;
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
-                asChild
-              >
-                <a href={`tel:${phone}`}>
-                  <Phone className="mr-2 h-5 w-5" />
-                  Soforthilfe: Jetzt anrufen
-                </a>
-              </Button>
+              {phoneEnabled && (
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
+                  asChild
+                >
+                  <a href={`tel:${phone}`}>
+                    <Phone className="mr-2 h-5 w-5" />
+                    Soforthilfe: Jetzt anrufen
+                  </a>
+                </Button>
+              )}
               <Button 
                 variant="outline" 
                 size="lg" 
@@ -438,21 +440,23 @@ Mit freundlichen Grüßen`;
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <Button 
-                    variant="outline" 
-                    className="w-full justify-start h-auto p-4 hover:bg-primary/5"
-                    asChild
-                  >
-                    <a href={`tel:${phone}`} className="flex items-center gap-3">
-                      <div className="p-2 rounded-full bg-primary/10">
-                        <Phone className="h-5 w-5 text-primary" />
-                      </div>
-                      <div className="text-left">
-                        <p className="font-semibold">Telefon</p>
-                        <p className="text-sm text-muted-foreground">{phone}</p>
-                      </div>
-                    </a>
-                  </Button>
+                  {phoneEnabled && (
+                    <Button 
+                      variant="outline" 
+                      className="w-full justify-start h-auto p-4 hover:bg-primary/5"
+                      asChild
+                    >
+                      <a href={`tel:${phone}`} className="flex items-center gap-3">
+                        <div className="p-2 rounded-full bg-primary/10">
+                          <Phone className="h-5 w-5 text-primary" />
+                        </div>
+                        <div className="text-left">
+                          <p className="font-semibold">Telefon</p>
+                          <p className="text-sm text-muted-foreground">{phone}</p>
+                        </div>
+                      </a>
+                    </Button>
+                  )}
                   
                   <Button 
                     variant="outline" 
@@ -789,16 +793,18 @@ Mit freundlichen Grüßen`;
       {/* Mobile Sticky CTA Bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t shadow-lg p-4 lg:hidden">
         <div className="flex gap-2">
-          <Button 
-            size="sm" 
-            className="flex-1"
-            asChild
-          >
-            <a href={`tel:${phone}`}>
-              <Phone className="mr-2 h-4 w-4" />
-              Anrufen
-            </a>
-          </Button>
+          {phoneEnabled && (
+            <Button 
+              size="sm" 
+              className="flex-1"
+              asChild
+            >
+              <a href={`tel:${phone}`}>
+                <Phone className="mr-2 h-4 w-4" />
+                Anrufen
+              </a>
+            </Button>
+          )}
           <Button 
             variant="outline" 
             size="sm" 

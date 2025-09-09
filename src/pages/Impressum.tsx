@@ -2,9 +2,11 @@ import { HeaderWithDarkBg } from "@/components/HeaderWithDarkBg";
 import { Footer } from "@/components/Footer";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { PhoneDisplay } from "@/components/PhoneDisplay";
+import { useSettings } from "@/hooks/useSettings";
 import { Separator } from "@/components/ui/separator";
 
 const Impressum = () => {
+  const { phoneEnabled } = useSettings();
   return (
     <div className="min-h-screen bg-background">
       <HeaderWithDarkBg />
@@ -37,7 +39,7 @@ const Impressum = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Kontakt</h3>
                 <div className="space-y-2 text-muted-foreground">
-                  <p><span className="font-medium">Telefon:</span> <PhoneDisplay /></p>
+                  {phoneEnabled && <p><span className="font-medium">Telefon:</span> <PhoneDisplay /></p>}
                   <p><span className="font-medium">E-Mail:</span> info@bovensiepen-partner.de</p>
                 </div>
               </div>

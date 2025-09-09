@@ -3,8 +3,10 @@ import { Footer } from "@/components/Footer";
 import { Section, SectionHeader, SectionTitle, SectionDescription } from "@/components/ui/section";
 import { Separator } from "@/components/ui/separator";
 import { PhoneDisplay } from "@/components/PhoneDisplay";
+import { useSettings } from "@/hooks/useSettings";
 
 const AGB = () => {
+  const { phoneEnabled } = useSettings();
   return (
     <div className="min-h-screen bg-background">
       <HeaderWithDarkBg />
@@ -240,7 +242,7 @@ const AGB = () => {
                   <p className="font-medium text-foreground">Bovensiepen & Partner</p>
                   <p>Nymphenburger Str. 20</p>
                   <p>80335 München</p>
-                  <p><span className="font-medium">Telefon:</span> <PhoneDisplay /></p>
+                  {phoneEnabled && <p><span className="font-medium">Telefon:</span> <PhoneDisplay /></p>}
                   <p><span className="font-medium">E-Mail:</span> info@bovensiepen-partner.de</p>
                 </div>
               </div>

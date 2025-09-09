@@ -6,8 +6,10 @@ import { Calendar, Clock, User, Scale, Mail, ChevronRight, MapPin, Phone, AlertT
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneLink } from "@/components/PhoneLink";
+import { useSettings } from "@/hooks/useSettings";
 
 const BlogPostKreditgebuehr = () => {
+  const { phoneEnabled } = useSettings();
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -151,13 +153,13 @@ const BlogPostKreditgebuehr = () => {
                   Als spezialisierte Rechtsanwälte für Verbraucher- und Bankrecht unterstützen wir Sie bei der Durchsetzung Ihrer Ansprüche – kompetent, effizient und erfolgsorientiert.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Für weitere Informationen und eine Ersteinschätzung stehen Bernhard Bovensiepen und Leonard Grimm jederzeit unter info@bovensiepen-partner.de bzw. telefonisch unter 01 39 12345 zur Verfügung.
+                  Für weitere Informationen und eine Ersteinschätzung stehen Bernhard Bovensiepen und Leonard Grimm jederzeit unter info@bovensiepen-partner.de{phoneEnabled ? ' bzw. telefonisch' : ''} zur Verfügung.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-4">
                   <a href="mailto:info@bovensiepen-partner.de" className="text-primary hover:underline font-medium">
                     info@bovensiepen-partner.de
                   </a>
-                  <PhoneLink />
+                  {phoneEnabled && <PhoneLink />}
                 </div>
               </div>
             </div>
