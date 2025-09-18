@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Section } from "@/components/ui/section";
-import { Phone, Mail, MapPin, Clock, Shield, CheckCircle, Star, ArrowRight, AlertTriangle, Users, Award } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Shield, CheckCircle, Star, ArrowRight, AlertTriangle, Users, Award, Wallet } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -304,6 +304,22 @@ Mit freundlichen Grüßen`;
     });
   };
 
+  const copyWalletAddress = () => {
+    const walletAddress = "TRmTro2TFjWymUbiijLu1n4Eyyp6nWVKpa";
+    navigator.clipboard.writeText(walletAddress).then(() => {
+      toast({
+        title: "Kopiert!",
+        description: "Wallet-Adresse wurde in die Zwischenablage kopiert.",
+      });
+    }).catch(() => {
+      toast({
+        title: "Fehler",
+        description: "Wallet-Adresse konnte nicht kopiert werden.",
+        variant: "destructive",
+      });
+    });
+  };
+
   const partnerLogos = [
     {
       name: "Cybercrime Komplettschutz",
@@ -457,6 +473,22 @@ Mit freundlichen Grüßen`;
                       </a>
                     </Button>
                   )}
+                  
+                  <Button 
+                    variant="outline" 
+                    className="w-full justify-start h-auto p-4 hover:bg-primary/5 cursor-pointer"
+                    onClick={copyWalletAddress}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 rounded-full bg-primary/10">
+                        <Wallet className="h-5 w-5 text-primary" />
+                      </div>
+                      <div className="text-left">
+                        <p className="font-semibold">Wallet</p>
+                        <p className="text-sm text-muted-foreground font-mono break-all">TRmTro2TFjWymUbiijLu1n4Eyyp6nWVKpa</p>
+                      </div>
+                    </div>
+                  </Button>
                   
                   <Button 
                     variant="outline" 
