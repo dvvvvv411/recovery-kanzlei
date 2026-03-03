@@ -282,7 +282,7 @@ const BlogPostPrivateClients = () => {
                   className="text-lg px-8 py-4 h-auto bg-white/20 backdrop-blur-md border-white/30 text-white hover:bg-white/30 hover:border-white/50 transition-all duration-300"
                 >
                   <Mail className="mr-2 h-5 w-5" />
-                  info@bovensiepen-partner.de
+                  info@bovensiepen-kanzlei.de
                 </Button>
               </div>
               <p className="text-sm text-white/80 mt-4">

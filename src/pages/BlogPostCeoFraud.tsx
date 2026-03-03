@@ -139,8 +139,8 @@ const BlogPostCeoFraud = () => {
                   Für weitere Informationen und individuelle Beratung stehen Ihnen <strong>Bernhard Bovensiepen</strong> und <strong>Steffen Rheinböcker</strong> jederzeit zur Verfügung.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-4">
-                  <a href="mailto:info@bovensiepen-partner.de" className="text-primary hover:underline font-medium">
-                    info@bovensiepen-partner.de
+                  <a href="mailto:info@bovensiepen-kanzlei.de" className="text-primary hover:underline font-medium">
+                    info@bovensiepen-kanzlei.de
                   </a>
                   <PhoneLink />
                 </div>

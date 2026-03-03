@@ -95,7 +95,7 @@ export const Footer = () => {
                 )}
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                  <span className="text-gray-300">info@bovensiepen-partner.de</span>
+                  <span className="text-gray-300">info@bovensiepen-kanzlei.de</span>
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@ export const Footer = () => {
           <div className="pt-8 border-t border-slate-700">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-gray-400">
-                © 2025 Bovensiepen & Partner. Alle Rechte vorbehalten.
+                © 2026 Bovensiepen & Partner. Alle Rechte vorbehalten.
               </p>
               <div className="flex gap-6 text-sm">
                 <Link to="/impressum" className="text-gray-400 hover:text-blue-400 transition-colors">Impressum</Link>

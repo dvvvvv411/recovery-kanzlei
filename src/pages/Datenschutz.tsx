@@ -27,7 +27,7 @@ const Datenschutz = () => {
                   <p>Nymphenburger Str. 20</p>
                   <p>80335 München</p>
                   <p>Deutschland</p>
-                  <p><span className="font-medium">E-Mail:</span> info@bovensiepen-partner.de</p>
+                  <p><span className="font-medium">E-Mail:</span> info@bovensiepen-kanzlei.de</p>
                 </div>
               </div>
 
@@ -38,7 +38,7 @@ const Datenschutz = () => {
                 <h3 className="text-xl font-semibold mb-4 text-foreground">2. Datenschutzbeauftragter</h3>
                 <p className="text-muted-foreground">
                   Für Fragen zum Datenschutz wenden Sie sich bitte an unseren Datenschutzbeauftragten 
-                  unter datenschutz@bovensiepen-partner.de
+                  unter datenschutz@bovensiepen-kanzlei.de
                 </p>
               </div>
 
