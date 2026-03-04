@@ -1,16 +1,24 @@
 
 
-## Plan: Telefonnummer in der Datenbank aktualisieren
+## Plan: Domain von `bovensiepen-kanzlei.de` zu `bovensiepenpartner.de` ändern
 
-Die Telefonnummer wird zentral in der Supabase `settings`-Tabelle gespeichert und von dort auf der gesamten Website angezeigt. Der aktuelle Wert ist `089 41613320` -- er muss auf `06131-6365850` geändert werden.
+Globales Suchen-und-Ersetzen in 13 Dateien. Alle Vorkommen von `bovensiepen-kanzlei.de` werden durch `bovensiepenpartner.de` ersetzt:
 
-### Aktion
+| Datei | Änderungen |
+|-------|------------|
+| `src/components/Footer.tsx` | `info@bovensiepenpartner.de` |
+| `src/pages/Kontakt.tsx` | mailto + Anzeige |
+| `src/pages/Impressum.tsx` | info@ |
+| `src/pages/Datenschutz.tsx` | info@ + datenschutz@ |
+| `src/pages/Haftungsausschluss.tsx` | info@ |
+| `src/pages/AGB.tsx` | info@ |
+| `src/pages/BlogPost.tsx` | mailto + Anzeige |
+| `src/pages/BlogPostCeoFraud.tsx` | mailto + Anzeige |
+| `src/pages/BlogPostKreditgebuehr.tsx` | 3x (Text + mailto + Anzeige) |
+| `src/pages/BlogPostImmobilienrecht.tsx` | info@ |
+| `src/pages/BlogPostProzessfuehrung.tsx` | info@ |
+| `src/pages/BlogPostPrivateClients.tsx` | info@ |
+| `supabase/functions/send-confirmation-email/index.ts` | from-Adresse + Footer-Texte |
 
-Ein einzelnes SQL-Update in der `settings`-Tabelle:
-
-```sql
-UPDATE settings SET value = '06131-6365850' WHERE key = 'phone';
-```
-
-Das war's. Alle Seiten (Kontakt, Footer, Impressum, Blog-Posts, E-Mails) lesen die Nummer dynamisch aus dieser Tabelle -- nach dem Update wird überall `06131-6365850` angezeigt.
+Einfaches String-Replace in allen Dateien, keine Logikänderung.
 
