@@ -243,7 +243,7 @@ const AGB = () => {
                   <p>Nymphenburger Str. 20</p>
                   <p>80335 München</p>
                   {phoneEnabled && <p><span className="font-medium">Telefon:</span> <PhoneDisplay /></p>}
-                  <p><span className="font-medium">E-Mail:</span> info@bovensiepen-kanzlei.de</p>
+                  <p><span className="font-medium">E-Mail:</span> info@bovensiepenpartner.de</p>
                 </div>
               </div>
 

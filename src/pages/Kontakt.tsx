@@ -463,13 +463,13 @@ Mit freundlichen Grüßen`;
                     className="w-full justify-start h-auto p-4 hover:bg-primary/5"
                     asChild
                   >
-                    <a href="mailto:info@bovensiepen-kanzlei.de" className="flex items-center gap-3">
+                    <a href="mailto:info@bovensiepenpartner.de" className="flex items-center gap-3">
                       <div className="p-2 rounded-full bg-primary/10">
                         <Mail className="h-5 w-5 text-primary" />
                       </div>
                       <div className="text-left">
                         <p className="font-semibold">E-Mail</p>
-                        <p className="text-sm text-muted-foreground">info@bovensiepen-kanzlei.de</p>
+                        <p className="text-sm text-muted-foreground">info@bovensiepenpartner.de</p>
                       </div>
                     </a>
                   </Button>
