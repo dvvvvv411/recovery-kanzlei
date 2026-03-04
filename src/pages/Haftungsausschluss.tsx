@@ -202,7 +202,7 @@ const Haftungsausschluss = () => {
                   <p className="font-medium text-foreground">Bovensiepen & Partner</p>
                   <p>Nymphenburger Str. 20</p>
                   <p>80335 München</p>
-                  <p><span className="font-medium">E-Mail:</span> info@bovensiepen-kanzlei.de</p>
+                  <p><span className="font-medium">E-Mail:</span> info@bovensiepenpartner.de</p>
                   <p className="text-xs mt-4 p-3 bg-amber-50 dark:bg-amber-950 rounded border-l-4 border-amber-400">
                     <strong>Wichtiger Hinweis:</strong> Für eine verbindliche Rechtsberatung 
                     kontaktieren Sie uns bitte direkt. Die Informationen auf dieser Website 
